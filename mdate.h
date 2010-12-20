@@ -192,9 +192,10 @@ private:
 	corr cor_usr;
 };
 
+// gmt is now default, the -g option is ignored.
 inline julian::julian(void)
 {
-	cor_def = 584285.0L;
+	cor_def = 584283.0L;
 	cor_gmt = 584283.0L;
 	// cor_usr is uninitialised so it can be set
 	corr_set = 0;

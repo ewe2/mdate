@@ -19,7 +19,7 @@ static char en_helptext[] __attribute__ ((unused)) =
 "   -h, --help                Print help and exit\n"
 "   -V, --version             Print version and exit\n"
 "   -p, --parseable           program-parseable output (default=off)\n"
-"   -g, --gmt                 use gmt correlation (default=off)\n"
+"   -g, --gmt                 use gmt correlation (default=on)\n"
 "   -L, --lang=LANGUAGE       change language (default en)\n"
 "   -c, --correlation=DOUBLE  optional correlation (default=no)\n"
 "   -d, --dmy=STRING          day month year (Gregorian)\n"

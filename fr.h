@@ -14,7 +14,7 @@ static char fr_helptext[] __attribute__ ((unused)) =
 "   -h, --help                Affiche ce message d'aide et quitte\n"
 "   -V, --version             Affiche le numéro de version et quitte\n"
 "   -p, --parseable           sortie à format fixe (par défaut : non)\n"
-"   -g, --gmt                 utilise la corrélation GTM (par défaut : non)\n"
+"   -g, --gmt                 utilise la corrélation GTM (par défaut : oui)\n"
 "   -L, --lang=LANGUE         change la langue (par défaut : en)\n"
 "   -c, --correlation=DOUBLE  corrélation optionnelle (par défaut : non)\n"
 "   -d, --dmy=CHAîNE          jour mois année (calendrier grégorien)\n"

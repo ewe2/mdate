@@ -19,7 +19,7 @@ static char de_helptext[] __attribute__ ((unused)) =
 "  -h, --help                    Gibt Hilfe aus und beendet\n"
 "  -V, --version                 Gibt die Version und beendet\n"
 "  -p, --parseable        Für Programme verarbeitbare Ausgabe (Standard=nein)\n"
-"  -g, --gmt                     Benutzen Sie GMT Korrelation (Standard=nein)\n"
+"  -g, --gmt                     Benutzen Sie GMT Korrelation (Standard=ja)\n"
 "  -L, --lang=SPRACHE            Sprache (Standard en)\n"
 "  -c, --correlation=DOUBLE      Benutzen Sie Korrelation (Standard=nein)\n"
 "  -d, --dmy=ZEICHENKETTE        Tag, Monat, Jahr (Gregorianisch)\n"

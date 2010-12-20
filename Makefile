@@ -37,7 +37,7 @@
 .SUFFIXES: .c .cpp .exe .o .obj
 
 PACKAGE=mdate
-VERSION=1.5.8
+VERSION=1.6.0
 
 #SVNVERSION = 1-5-7
 # Use the trunk, Luke. This is only for branches and tags work, we don't use
@@ -46,7 +46,7 @@ VERSION=1.5.8
 # out the REPOS you aren't using.
 # REPOS=https://mdate.svn.sourceforge.net/svnroot/mdate/mdate
 # REPOS=https://mdate.googlecode.com/svn/trunk
-REPOS=http://netstor.pengsheep.org/svn/mdate
+REPOS=http://git.pengsheep.org/git/mdate.git
 
 ## DEFINE YOUR PREFERRED DEFAULT LANGUAGE HERE with a 1!
 DEF_EN=
