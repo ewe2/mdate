@@ -40,13 +40,15 @@ PACKAGE=mdate
 VERSION=1.6.0
 
 #SVNVERSION = 1-5-7
-# Use the trunk, Luke. This is only for branches and tags work, we don't use
-# this for commits, etc.
-# this is currently our outside SVN. We also work on an internal SVN. Comment
-# out the REPOS you aren't using.
+
+# Outside repositories that are recently current. We'll be moving to an
+# internet-based git repository soon (yet another confusing update).
 # REPOS=https://mdate.svn.sourceforge.net/svnroot/mdate/mdate
 # REPOS=https://mdate.googlecode.com/svn/trunk
-REPOS=http://git.pengsheep.org/git/mdate.git
+
+# This is the working bare repository we push commits to. Ideally, we'll clone
+# this to update the upcoming internet version.
+REPOS=ssh://git.pengsheep.org/~ewe2/devel/md
 
 ## DEFINE YOUR PREFERRED DEFAULT LANGUAGE HERE with a 1!
 DEF_EN=
@@ -239,7 +241,7 @@ endif
 
 all: mdate
 
-.PHONY: help clean docpplean distclean updatesvn dotag dorelease
+.PHONY: help clean docpplean distclean updatesvn gitch updategit
 
 mdate: $(OBJS)
 	$(CXX) $(CFLAGS) $(INC) -o mdate $(OBJS) $(LDFLAGS) $(LIBS)
@@ -321,18 +323,19 @@ distclean: clean docpplean
 
 SOURCES=*.cpp *.c *.h
 DOX=mdate.html mdate.pdf mdate.txt NEWS README GPL API ChangeLog \
-AUTHORS mdate.xml Translators mdate.1 BUGS 
+AUTHORS mdate.xml Translators mdate.1 BUGS ChangeLog.old README.devel
 CONFS=Makefile mdate.spec ChangeLog.header .svnignore mdate.xpr
 DEBCONF=debian/*
 DISTFILES= $(SOURCES) $(DOX) $(CONFS)
 
 # developers targets only!
 
-# we now need to use svn; I use a wrapper around svn2cl.xsl; we don't tag
-# willy-nilly as a tag is just a snapshot directory in the repository, so the
-# release target is the LAST thing we want to do. I don't know whether silent
-# ChangeLog commits will turn up; I assume they do.
-#
+# the simple way to log!
+gitch:
+	cat ChangeLog.header > ChangeLog
+	git log --name-only >> ChangeLog
+
+# Retained for historical use, do not use.
 # svn2cl has now been debianized so i am using that with appropriate flags.
 
 
@@ -347,21 +350,16 @@ updatesvn:
 # release from the tags, the branches arent for releasing.
 # MAKE SURE YOU HAVE THE RIGHT VERSION!
 
-#
-#
-# FIXME: this is WIP, NOT for release yet!!!!!!
-#
-#
+#dorelease:
+#	svn copy $(REPOS)/trunk $(REPOS)/branches/$(VERSION)
 
-dorelease:
-	svn copy $(REPOS)/trunk $(REPOS)/branches/$(VERSION)
+#dotag:
+#	svn copy $(REPOS)/trunk $(REPOS)/tags/$(VERSION)
 
-dotag:
-	svn copy $(REPOS)/trunk $(REPOS)/tags/$(VERSION)
-
-srcdir = $(REPOS)/tags/$(VERSION)
-distdir = $(PACKAGE)-$(VERSION)
-debdir = $(distdir)/debian
+# old dist target, needs reworking.
+#srcdir = $(REPOS)/tags/$(VERSION)
+#distdir = $(PACKAGE)-$(VERSION)
+#debdir = $(distdir)/debian
 #dist:
 #	rm -fr $(distdir)
 #	mkdir -p $(debdir)

@@ -1,0 +1,103 @@
+commit 920fe8033ff7446c6774c517d4b40c1c1bbfddbe
+Author: Sean Dwyer <ewe2@marvin.pengsheep.org>
+Date:   Tue Dec 21 04:28:11 2010 +1100
+
+    added a new readme about vcs issues
+
+README.devel
+
+commit b2d3df1028610fed0538adc7d46f6b414fe39579
+Author: Sean Dwyer <ewe2@marvin.pengsheep.org>
+Date:   Tue Dec 21 03:40:58 2010 +1100
+
+    changelog edits and mdate.xml update
+
+ChangeLog
+debian/changelog
+mdate.xml
+
+commit 24b540a2450ce3bd4b2860ae576512432fd8eeb7
+Author: Sean Dwyer <ewe2@marvin.pengsheep.org>
+Date:   Tue Dec 21 03:40:40 2010 +1100
+
+    changelog edits and mdate.xml update
+
+ChangeLog.old
+
+commit 21513fa6e8a8e1a51a1f05b4ec7daf4597c8fb7f
+Author: sean dwyer <ewe2@marvin.pengsheep.org>
+Date:   Tue Dec 21 02:42:16 2010 +1100
+
+    updated debian copyright
+
+debian/copyright
+
+commit 6b8d8476bccaf769911c41b455408828b0c14b4c
+Author: sean dwyer <ewe2@marvin.pengsheep.org>
+Date:   Tue Dec 21 02:34:23 2010 +1100
+
+    Reversioned to 1.6.0, changed REPO and indicate that gmt is now the default correlation
+
+Makefile
+de.h
+en.h
+fr.h
+mdate.h
+
+commit d4f7e2018fe4c893aa5d429c77225815bb9b6f8c
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Mon Dec 20 13:44:24 2010 +1100
+
+    Initial commit of mdate to git
+
+.gitignore
+API
+AUTHORS
+BUGS
+ChangeLog
+ChangeLog.header
+GPL
+Makefile
+NEWS
+README
+TODO
+Translators
+cmdline.cpp
+cmdline.h
+config.h
+db2fo
+db2html
+de.h
+debian/README.Debian
+debian/changelog
+debian/compat
+debian/control
+debian/copyright
+debian/doc-base
+debian/docs
+debian/manpages
+debian/rules
+en.h
+es.h
+fr.h
+getopt.c
+getopt.h
+getopt1.c
+lang.cpp
+lang.h
+main.cpp
+mdate.1
+mdate.cpp
+mdate.h
+mdate.html
+mdate.pdf
+mdate.ps
+mdate.sgml
+mdate.spec
+mdate.txt
+mdate.xml
+mdate.xpr
+mdate_pl.sgml
+names.h
+pl.h
+snprintf.c

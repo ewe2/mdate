@@ -2,8 +2,9 @@
  ChangeLog for Mdate
 -===================-
 
- - Generated from svn log entries (svn2cl.xsl)
- - Will always generate HEAD entries.
+ - Generated from git log entries (git log --name-only)
+ - These commits are relative to an internal bare repository and may bear no
+ relation to world-accessible upstreams.
 
 -- 
 

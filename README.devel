@@ -1,4 +1,8 @@
-mdate has been through several different VCS. The latest is git. The VCS model
+Mdate has been through several different VCS. The latest is git. The VCS model
 I'm using is the bare master repository on git.pengsheep.org and my working
 branch here on marvin.pengsheep.org. This ensures I always have an up to date
 version of the code available to the net, and can safely authenticate commits.
+
+The old way of working involved making release tags so I had a permanent
+history of the development of mdate outside the trunk. Git works totally
+differently, so the idea of using revision tags has to change.
