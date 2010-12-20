@@ -1,0 +1,222 @@
+.\" $Id: mdate.1 50 2009-11-03 07:04:00Z  $
+.TH MDATE 1 "May 2009" "Linux" "1.5.8"
+.SH NAME
+mdate \- a command-line mayan date utility
+.SH SYNOPSIS
+.B mdate , mdate [OPTIONS]... [+FORMAT]
+.SH DESCRIPTION
+.B mdate
+with no arguments prints the Mayan Calendar date for today.
+.SH OPTIONS
+.TP 4
+.B mdate
+Returns the current Mayan Calendar date for today in default format.
+.TP
+.B -p, --parseable
+Returns the current Mayan Calendar date in program-parseable format.
+Silently ignored on versions above 1.4.5 unless configured. Kept for backwards
+compatibility otherwise.
+.TP
+.B -g, --gmt
+Returns the current Mayan Calendar date using the GMT correlation.
+.TP
+.B -L, --lang[=LANGUAGE]
+switches language support. By default this is English, but may vary. See
+mdate's help for current language support.
+.TP
+.B -c, --correlation[=DOUBLE]
+Enter a correlation different from the default. This is a Julian Day Number
+representing the beginning of the Mayan Calendar according to different
+authorities. See the 
+.B
+-j, --julian 
+option below. The default correlation used
+by mdate is the Lounsbury correlation (JDN 584285.0) , which may have its
+critics, but has impressive evidence to back it up.
+.TP
+.B -d, --dmy[="dd mm [-]yyyy"]
+Enter a day month year in the form dd mm [-]yyyy
+Gets the Mayan date for the date specified. The year may be negative for
+BC dates. Gregorian dates are always returned.
+.TP
+.B -j, --julian[=DOUBLE]
+Enter a number with or without a decimal point eg 
+.IP
+.RS 8
+.B mdate
+-j 584285.0, --julian=584285.0
+.RE
+.IP
+Gets the Mayan date on a specified Julian Date.
+.IP
+.RS 8
+.B mdate
+-j 584285, --julian=584285
+.RE
+.IP
+gets the same result.
+.TP
+.B -l, --longcount[="00 00 00 00 00"]
+Enter a Mayan Long Count in the form baktun katun tun kin uinal using leading
+zeros where necessary.
+.IP
+.RS 8
+.B mdate
+-l "12 19 07 08 00"
+.RE
+.IP
+gets the Gregorian Date on a specified Long Count.
+.TP
+.B -L --lang=LANGUAGE
+Use a language different than the compile-time default. 
+.TP
+.B -h, --help
+Displays the version and help for
+.B mdate
+Check this for date format options and current language support.
+.TP
+.B -v, -V, --version
+Displays the version of
+.B mdate
+and exits.
+.P
+Options may be combined in any order, but certain options, such as -g and -c
+will give an error (since you can only specify one correlation at once).
+.PP
+FORMAT controls the output for current dates only. The list of available
+formats are:
+.TP
+@a
+abbreviated weekday name. This only works for the current date, not past or
+future dates.
+.TP
+@A
+full weekday name. This only works for the current date, not past or future
+dates.
+.TP
+@b
+abbreviated month name
+.TP
+@B
+full month name
+.TP
+@C
+century as 2 digits
+.TP
+@d
+weekday (01..31)
+.TP
+@e
+weekday without a leading zero
+.TP
+@F
+ISO format Gregorian date (%Y-%m-%d)
+.TP
+@f
+ISO format Gregorian date (%Y%m%d)
+.TP
+@h
+unpadded Haab date
+.TP
+@H
+padded Haab date
+.TP
+@l
+Long Count
+.TP
+@M
+named Gregorian month
+.TP
+@m
+numbered Gregorian month
+.TP
+@t
+padded Tzolkin date
+.TP
+@T
+unpadded Tzolkin date
+.TP
+@y
+year as decimal 00 to 99
+.TP
+@Y
+Gregorian year
+.TP
+@n
+add a newline to the output
+.TP
+@j
+add a tab to the output
+.SH EXAMPLES
+.PP
+To get today's date
+.IP
+mdate
+.PP
+To get today's date using the day month year arguments
+.IP
+mdate -d "24 03 1999"
+.PP
+To get the current Mayan Long Count using today's Julian Day Number
+.IP
+mdate -j 2451215.0
+.PP
+To get today's date using the current Mayan Long Count
+.IP
+mdate -l "12 19 05 16 12" or mdate --longcount="12 19 05 16 12"
+.PP
+To get today's date using a simple format which outputs the ISO year and Long
+Count
+.IP
+mdate '+@f @l'
+.PP
+To get a specific date using the same format:
+.IP
+mdate -d '10 09 2003' '+@f @l'
+.PP
+Dates specified in this way will only be formatted according to
+program-parseable output. The use of
+.B
+-p
+in this context will force padded output for some fields, and isn't strictly
+necessary.
+.SH LICENSE
+Mdate is licensed under the terms of the GNU General Public License version 2.
+Where applicable, public domain algorithms and derivative works from other GPL
+sources are duly acknowleged where they occur in code.
+.SH NOTES
+.B mdate
+\'s command-line output is simplified to a one-liner for easier parsing by
+other programs well as future output interfaces.
+.SH DIAGNOSTICS
+.B mdate
+does not accept dates beyond the beginning of the current epoch, consistent
+with the Julian Day Number correlation. Invalid input of dates, JDN's or Long
+Counts causes
+.B mdate
+to exit with an error message indicating (I hope) the source of the problem.
+.SH BUGS
+An awful lot probably. There is at least one correlation I cannot use.
+.P
+The field of mayan calendars, in fact, is strewn with pitfalls, and there are
+many other applications of mayan calendars i could add to the program if i
+wished, but the current purposes i feel are hairy enough to start with.
+.SH SEE ALSO
+Please refer to the accompanying documentation in the distribution source
+directory (available in several formats, depending on your tools) or in
+.I
+/usr/local/share/doc/mdate
+if that exists.
+.TP
+.B mdate
+can be downloaded from
+.IP
+.UN
+http://mdate.sourceforge.net/
+.P
+.SH FILES
+.B Mdate
+doesn't require any specific files.
+.SH AUTHOR
+Sean Dwyer
+.B <ewe2@users.sourceforge.net>

@@ -1,0 +1,13 @@
+Source: mdate
+Section: misc
+Priority: optional
+Maintainer: Sean Dwyer <ewe2@users.sourceforge.net>
+Build-Depends: debhelper (>= 4.0.0)
+Standards-Version: 3.8.4
+
+Package: mdate
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A utility to report Mayan dates
+ This is a command-line tool similar to date(1) to format and convert between
+ Mayan and Gregorian calendars.

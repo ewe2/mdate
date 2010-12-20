@@ -1,0 +1,12 @@
+Document: mdate
+Title: Debian mdate Manual
+Author: Sean Dwyer
+Abstract: This manual describes what mdate is
+ and how it can be used.
+Section: Apps/Tools
+
+Format: HTML
+Index: /usr/share/doc/mdate/html/index.html
+Files: /usr/share/doc/mdate/html/*.html
+
+  

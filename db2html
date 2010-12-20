@@ -1,0 +1,48 @@
+#!/bin/sh 
+# $Id: db2html 64 2009-11-15 12:42:46Z ewe2 $
+#
+# db2html: generate chunked or single-file HTML FROM DocBook xml.
+
+# Fink directory on OSX
+#export DOCBOOK_XSL_HOME=/sw/share/xml/xsl/docbook-xsl
+# docbook directory on Debian lenny
+export DOCBOOK_XSL_HOME=/usr/share/xml/docbook/stylesheet/nwalsh
+
+XSL=0;
+
+prog=`basename $0`
+while [ $# -gt 0 ]
+do
+  case "$1" in
+	 --chunk)
+	 XSL=1;
+	 shift
+	 ;;
+	--help)
+	echo "Usage: $prog [OPTION]..."
+	echo "Generate chunked or single html from a docbook xml file, output to stdout"
+	echo ""
+	echo " --chunk         generate chunked html"
+	echo " -h, --help      help"
+	echo ""
+	exit 0
+	;;
+	-*)
+	echo "$prog: invalid option -- $1"
+	echo "Try \`$prog --help' for more information."
+	exit 1
+	;;
+	*)
+	 arg=`echo "$1" | sed "s/'/'\"'\"'/g"`
+	 shift
+	 ;;
+  esac
+done
+
+
+if [ $XSL -eq 1 ];
+then
+	xsltproc --stringparam base.dir ./output/ $DOCBOOK_XSL_HOME/html/chunk.xsl $arg;
+else
+	xsltproc $DOCBOOK_XSL_HOME/html/docbook.xsl $arg; 
+fi

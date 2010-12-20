@@ -1,0 +1,31 @@
+How to translate Mdate++ (version 1.5.0 compliance)
+===================================================
+
+Currently Mdate has a very simple translation system, based on the system
+implemented in the famous mplayer source code. We define any strings or
+messages in one file, and translate based on whether that file is included in
+"lang.cc". Doing it this way makes it easier to keep track of output strings,
+and not have to deal with gettext() so much unless we are doing serious i18n
+compatibility (wchar_t and friends).
+
+Mdate itself doesn't have proper wide-byte character support as yet;
+internationalization is complicated and the support programs are constantly
+changing. If ANY output isn't working, and you suspect this is due to
+insufficient support for your language you MUST contact me (Sean Dwyer
+<ewe2@users.sourceforge.net>) immediately with as much information about your
+problem, so I can fix it!
+
+Most translation is simple: copy en.h to your_language.h, and edit it for your
+language. You aren't required to keep it in iso-8859-1 format (UTF-8 is fine),
+and you are encouraged to add useful information to the header (see pl.h for
+example). If you are uncertain what the file should be called, try "echo
+$LANG" and lop off anything after the first two letters (eg en_AU becomes en).
+Unless there is specific need for a regional variant to your language, keep it
+simple! These languages are C/C++ language files, they are actually compiled
+into the program, so pay careful attention to the syntax.
+
+In versions prior to 1.4.2 users wishing to use your translation edited
+lang.h, replacing "en.h" with "your_language.h" and recompiled.
+
+Now you send in your language.h, and I will add it to lang.cc. Users can just
+recompile ONCE and they have ALL the languages, no editing required!

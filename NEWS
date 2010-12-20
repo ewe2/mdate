@@ -1,0 +1,126 @@
+1.5.7: converted linuxdoc sgml documentation to DocBook XML. mdate.xpr is an
+Oxygen project file used during development. Added converter utilities.
+Removed the Polish documentation until an xml equivalent can be produced.
+
+1.5.6: 'return to sourceforge' revision, updated for OSX Leopard 10.5, many
+small changes
+
+1.5.5: internal revision, updated for tools
+
+1.5.4: internal revision, updated for tools
+
+
+1.5.3:
+
+Relicensed the documentation to normal GPL to comply with Debian documentation
+requirements. No other changes.
+
+1.5.2:
+
+Trying out subversion as an alternate VC system to encourage multiple
+developer access. This changes many things, including keyword substitution and
+forces me to yet again change the Changelog format.
+
+This also means that we'll probably be moving over to savannah and leaving our
+home of many years at sourceforge.net (sniffle). It's a hard decision, and I'm
+not blaming sf in any way, but subversion enables me to organize multiple
+developers better and the process is much safer than cvs.
+
+
+1.5.1: 
+
+Removed @a as default format because it screws up pre Year 0 dates (and
+even some post Year 0 dates). Sorry folks, you'll have to add it yourself :(
+Any good suggestions to fix the locale/struct tm problems that I suspect are
+causing the problem will be doing a service to the entire *nix community!
+
+Fixed a minor formatting bug that cut off the date.
+
+1.5.0: code and formats overhaul. Removed @C (useless). Fixed @T, @t. Fixed
+@a, @A. made @a part of the default format, which introduces it's own
+problems, I'm sure. New language file formats!!
+
+1.4.8: bugfix edition
+
+1.4.7:
+
+Added FreeBSD port. Killed pretty format because it triggers bizarre and
+subtle bugs with different versions of gcc on different OS's. Just call me
+format nazi. Ok Ok, you can have it back if you WANT_PRETTY. grrr. Oh, and
+added a new OSX port.
+
+1.4.6: internal revisions
+
+1.4.5:
+
+New French translation! w00t! New Mayan month names compile-time option.
+
+1.4.4:
+
+Corrected another silly Makefile bug. Debianized and Rpmized Mdate! I can
+show my face in polite company now.
+
+1.4.3:
+
+Finally got the mingw32 cross-compilation target working: the getopt sources
+needed updating as did my debs of the cross-compiler. See www.mingw.org for
+the current upstream source. Rewrote config.h, made default languages possible
+(this is still a workaround), and fixed stuff.
+
+1.4.2:
+
+Integrated Shard's runtime language support (nice!). Did I mention we now have
+a PORT to BeOS?!?! Look for it on mdate.sourceforge.net! Added German
+translation, bringing the total of languages up to four.
+
+1.4.1:
+
+fixed typo bugs, removed @D (ordinals - until I find a workable solution), @G,
+and @V (dependent on fields in struct tm that we don't need) and @Z, @z -
+timezone stuff better left alone.
+
+1.4.0:
+
+date formatting, many fixes and updates to the general interface, improvements
+to the make system (work in progress), removal of redundancies like version.h
+
+1.3.5:
+
+Updated Polish translation.
+
+1.3.4:
+
+Some synchronization between internal cvs version 1.3.3 and outside version
+1.3.4. cvs2cl now used to generate the ChangeLog. Mdate multi-format
+documentation now under the FDL, not the (ephemeral) ODL. Work started on i18n
+following the mplayer model.
+
+New Polish translation added, thanks to Tuvok!
+
+1.3.3:
+
+Thanks to Tuvok for pointing out the 'February bug', which occurs in mdate
+versions 1.3.2 and below with any date in January and February, with a bad JDN
+a year ahead.
+
+1.3.2:
+
+Multiple targets in Makefile for cygwin users. More doc work.
+
+1.3.1:
+
+The biggest change this version is the replacement of Ivan Van Langingham's
+derived functions with tweaked versions of the public domain Fliegel/Van
+Flandern algorithms. These algorithms shut the gate on any chance mdate would
+use fractional JDN's, if that matters. No bugs that I can see.
+
+Added compatible snprintf and (GNU) getopt functions for those who require
+them (AFAIK getopts vary hugely even between BSDish systems, so you probably
+want this).
+
+Decided to shut up gcc by using GNUC-dependent __attribute__ 's for my CVS
+magic strings. I haven't seen a clean way of avoiding this yet.
+
+1.3.0:
+
+internal cvs version.

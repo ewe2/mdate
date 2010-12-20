@@ -1,0 +1,136 @@
+Mdate API
+=========
+
+Updated for v1.5.0
+------------------------------------------------------------------------------
+
+Rough description of the API:
+
+Firstly, an excuse: it's not really that object-orientated, I'm just using
+some handy features of C++ to get what otherwise is messy and verbose in C.
+Unfortunately, that sacrifices the relative clarity of C headers with
+tricky-looking C++ headers.
+
+What I chiefly needed was a hassle-free correlation option, a revamped parser,
+and a structure that can bear further development without turning into the
+mess that C mdate became, not to mention overloading.
+
+Overview of the overview:
+
+Most code involves converting to/from a Julian Day Number (NOT fractional),
+then converting the result into a string buffer, often preformatted. Use of
+the JDN in converting between calendars is time-honoured; using string buffers
+is great for GUI interfaces.
+
+mdate.h outline:
+
+The global variables:
+- Various i18n bits to later support wide-byte characters.
+- A typedef Bool is safer for older compilers, but until someone actually
+  needs this, I'm sticking with the c++ standard (as far as g++ goes).
+- julian_date is used by everything to convert to/from dates. also used by
+  the driver, so it's not static.
+- corr is heavily used also by most functions and the driver.
+
+There are a few public data members, intended mostly for possible future use:
+
+julian::corr_set - used in julian::set_correlation(corr c). 
+- since the parser can already check for this, it may go soon.
+
+mdate::pflag 
+- this was an obsolete method to control output, now recycled for similar
+  reasons, but not so visible.
+
+There are a few friends about, sorry about that. It was either make all data
+members public (ugh) or force interface functions on other classes, which is
+also wrong IMHO.
+
+class mdate inherits from everywhere else, but also hosts some core methods as
+they depend on accessing the parent classes. mdate also initialises all the
+parent constructors.
+
+The various *date classes are self-explainatory, class julian is interesting
+because it deals with the correlations. Our standard (584285) is the Lounsbury
+Correlation (after Floyd Lounsbury), also known as GMT3 after the
+GoodMan-Martinez-Thompson standard (GMT1), see
+http://www.members.shaw.ca/mjfinley/corr.html for a really indepth discussion
+of the difficulties on correlating the Mayan Long Count with the Gregorian
+calendar.  There's also a roll-your-own option for those who disagree with
+everyone (anyone worked out what the hell the dreamspell people think it is?!)
+:) Whatever your choice, there is a compile-time option to hardcode the default.
+
+Version 1.4.0 expanded class gregdate's data fields to accomodate more of
+date(1) and strftime(3)'s timezone/ISO date formats, but in 1.4.1 this was
+removed, as the present structure doesn't permit it, and their utility was
+doubtful. gregdate::gregdate_sstr() does most of the work of passing date
+formats to strftime() There are still some (overloaded) string
+functions, but they will in time be totally replaced.
+
+mdate.cc outline:
+
+The AMOD(x,y) macro ensures positive moduli in certain situations. It's only
+used in one place, don't panic.
+
+David Starner kindly wrote a C version of BSD drem(). I should explain why
+it's used at all: fmod() discriminates between +ve and -ve numbers, drem()
+doesnt, which is important when you're taking a modulus from floating-point
+numbers. It surprises me that it's seen so rarely, it's so useful. Of course,
+some *nix'es decided to call it remainder() to avoid that BSDish taint from
+their otherwise pristine SYSV flavour. And some have never heard of it. So
+my_mod() tries to cope with it all in one go.
+
+The two most important functions convert JDN's to Gregorian dates and vice
+versa. Many, many people have tried this and everyone disagrees with everyone
+else's code. For much of mdate's life I used Ivan Van Langingham's python
+functions translated to C. Since then, I've been reacquainted with the public
+domain Fliegel/Van Flandern algorithms which are fine as I don't use
+fractional JDN's which are more in line with the more academic uses of Mayan
+calendars. Since such dates are of the most obscure academic use, academics
+probably have far superior programs for that.
+
+The gregdate string functions have a GNU-specific quirk; either strftime() is
+different, or the non-constant gtm structure is allowable. This certainly
+didn't work the last time I tried compiling this function with Borland C/C++,
+it may not work with other compilers/systems. 
+
+From 1.4.2, mdate::mdate_strftime() was put back into mdate.cc and heaviliy
+modified for various uses. It takes format arguments and generally passes them
+off to gregdate::gregdate_sstr(), which in turn calls strftime(). Only tm_day,
+tm_month, tm_year in struct tm is ever accessed/initialized by any format
+request, therefore no format that depends on any other field is accessable or
+useful. This is intentional.
+
+Every attempt has been made to avoid language-dependent code in this module,
+but there were obviously issues with gregdate_ordstr(), so it was removed in
+v1.4.1. 
+
+In 1.5.0 hard-coded strings were removed from functions here and put into
+names.h. This only affects variant Mayan calendar spellings. A new weekday
+calculator, gregdate::gregdate_str() was added to augment the default format
+output.
+
+
+main.cc:
+
+The business-end of the program.
+
+The structure is heavily command-line orientated, but the simple pathway to
+getting a Mayan date is:
+
+- set the correlation (jdate.setcorrelation(correlation))
+- get the current time (set_time(corelation, (julian_date &) date)
+- give a format (datey)
+- format the result (mdate_strftime(correlation,buffer,datey,(julian_date
+  &) date))
+- standard output.
+
+In most cases, given a specific type of argument (a gregorian date, etc), we
+call the appropriate class's data initialization function
+(class.set_datetype(data members)) and derive a Julian Day Number from that,
+which initializes everything else (class.jdate_from_datetype(correlation,
+dateclass, julian_date)). Some of those functions (the gregdate functions
+particularly) are boolean because they need to be checked for validity.
+
+In 1.4.6-1.4.7, the pretty output became a compile-time option only. It still
+has subtle bugs due to optimization and/or differences in memory allocation on
+different platforms.

@@ -1,0 +1,74 @@
+mdate (1.5.8-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- ewe2 <ewe2@pengsheep.org>  Wed, 22 Sep 2010 17:28:56 +1000
+
+mdate (1.5.6-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- ewe2 <ewe2@users.sourceforge.net>  Fri, 29 May 2009 06:40:56 +1000
+
+mdate (1.5.5-1) unstable; urgency=low
+ 
+  * SVN branch version for maintenence.
+ 
+ -- ewe2 <ewe2@users.sourceforge.net>  Wed, 22 Aug 2007 21:26:45 +1000
+ 
+mdate (1.5.3-1) unstable; urgency=low
+
+  * New upstream version, relicensed documentation for Debian. 
+
+ -- ewe2 <ewe2@users.sourceforge.net>  Fri,  7 Oct 2005 00:11:55 +1000
+
+mdate (1.5.2-1) unstable; urgency=low
+
+  * New upstream version, changed VC to subversion.
+
+ -- Sean Dwyer <ewe2@users.sourceforge.net>  Sun, 19 Dec 2004 10:56:14 +1100
+
+mdate (1.5.0-1) unstable; urgency=low
+
+  * New upstream release, fixes several bugs
+  * New DOW default format.
+
+ -- Sean Dwyer <ewe2@users.sourceforge.net>  Mon, 14 Jun 2004 19:52:58 +1000
+
+mdate (1.4.8-1) unstable; urgency=low
+
+  * New upstream release.
+  * bugfixes for docs, Makefile.
+
+ -- Sean Dwyer <ewe2@users.sourceforge.net>  Sun, 30 May 2004 14:41:08 +1000
+
+mdate (1.4.7-1) unstable; urgency=low
+
+  * New upstream release.
+  * Added FreeBSD OSX ports
+
+ -- Sean Dwyer <ewe2@users.sourceforge.net>  Thu, 27 May 2004 16:02:50 +1000
+
+mdate (1.4.5-1) unstable; urgency=low
+
+  * New upstream version. Updated accordingly.
+  * New French translation.
+
+ -- Sean Dwyer <ewe2@can.org.au>  Fri, 17 Oct 2003 10:20:09 +1000
+
+mdate (1.4.4-2) unstable; urgency=low
+
+  * Updated standards version to 3.6.1.0
+  * Fixed copyright boilerplate
+  * lintian/dpkg-gencontrol updated, but still don't cope with standards
+    version or misc:Depends
+
+ -- Sean Dwyer <ewe2@can.org.au>  Fri, 10 Oct 2003 13:25:49 +1000
+
+mdate (1.4.4-1) unstable; urgency=low
+
+  * Initial Release.
+  * Added DESTDIR to Makefile
+
+ -- Sean Dwyer <ewe2@can.org.au>  Thu,  9 Oct 2003 23:14:12 +1000
+

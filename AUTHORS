@@ -1,0 +1,33 @@
+Author: Sean Dwyer <ewe2@berlios.de>
+
+Thanks to the following coders who have contributed to mdate, past and
+present: they made the pursuit of Open Source involvement an abiding joy for
+me.
+
+Past:
+
+- Craig Robbins, who helped shape the basis for mdate's logical structure.
+- David Starner, who was an effective editor and contributed a great drem()
+  replacement.
+- Matthias Bauer, the first person to translate mdate into anything (and
+  you're welcome to do so again :)
+- Marcus Berglund, who was the genesis behind the c++ version.
+
+A special thanks to Ivan Van Laningham, who thought I was crazy to attempt a
+C/C++ Mayan date program (his Python version is elegant and more detailed),
+but encouraged me to continue.
+
+Present:
+
+- Peter da Silva, who wanted date formatting. I'm slow, but I do get there :)
+- Tuvok, the Polish translator, and the only person who noticed the 'February
+  bug' after an entire year. And still notices bugs :)
+- Quique, the (incredibly fast) Spanish translator and bug-wrangler.
+
+- ahwayakchih (a.k.a Shard), who not only ported mdate to BeOS, but rewrote
+  the i18n support to allow runtime configuration, and robust handling. AND
+  knows what a pointer is and that strstream thingy.
+
+- François-Xavier, who provided a French translation.
+
+- Vampyr Twilight, who sent in a patch for OS X ports.

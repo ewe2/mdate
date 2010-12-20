@@ -1,0 +1,5 @@
+*.deps
+*.bak
+*~
+build-stamp
+configure-stamp

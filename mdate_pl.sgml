@@ -1,0 +1,275 @@
+<!doctype linuxdoc system>
+<!-- $Id: mdate_pl.sgml 30 2010-12-04 12:00:35Z ewe2 $ -->
+
+<article>
+
+<title>Mdate
+<author>Sean Dwyer &lt;ewe2@users.sourceforge.net&gt;
+<date>$Revision: 1.2 $ $Date: 2004-05-28 16:34:04 +1000 (Fri, 28 May 2004) $
+<abstract>
+Mdate to ³atwe w u¿yciu narzêdzie uruchamiane z linii poleceñ, slu¿±ce do konwersji
+dat pomiêdzy kalendarzami Gregoriañskim i Majów.
+</abstract>
+
+<toc>
+
+<sect>Wstêp
+<p>
+Mdate zosta³ napisany w ramach zapotrzebowania na prosty, ³atwo dostêpny
+i darmowy program dla ludzi zainteresowanych kalendarzem Majów.
+Oprócz kalendarza Majów w Emacs (który ma kilka powa¿nych ograniczeñ),
+takiego programu brakowa³o w ka¿dym z popularnych systemów operacyjnych - 
+dziwne zw³aszcza ¿e istnieje spore zainteresowanie cywilizacj± Majów.
+<p>
+Mdate jest w trakcie ci±g³ego rozwoju od ponad 4 lat, g³ównie przez ma³e
+zainteresowanie takim programem w¶ród programistów,
+na szczê¶cie w przeciwieñstwie do u¿ytkowników.
+
+<sect1>Licencja
+<p>
+Ten dokument jest rozpowrzechniany w wierze ¿e bêdzie przydatny,
+jednak BEZ ¯ADNYCH GWARANCJI; nawet implikowania gwarancji
+WARTO¦CI HANDLOWEJ lub SPE£NIENIA KONKRETNEGO CELU.
+
+Copyright (c) 2002-2003 by Sean Dwyer. Ten materia³ mo¿e byæ dystrybuowany tylko
+jako podmiot okre¶leñ i warunków stanowionych przez GNU Free Documentation
+License, v1.1 lub pó¿niejsz± (najnowsza wersja jest aktualnie dostêpna na stronie www
+http://www.gnu.org/copyleft/fdl.html).
+
+Mo¿esz dowolnie kopiowaæ i dystybuowaæ (sprzedawaæ lub rozdawaæ) ten dokument,
+w jakimkolwiek formacie, dopóki spe³niasz warunki wymienionej wy¿ej Licencji.
+Wszelkie poprawki i/lub zmiany powinny byæ zg³aszane do w³a¶ciciela tego dokumentu.
+
+<sect1>Historia
+<p>
+Aktualna wersja Mdate to 1.4.5, napisana przez Sean'a Dwyer'a.
+
+Pierwsz± publicznie dostêpn± wersj± Mdate by³a wersja 0.5.0, napisana pod koniec 1998 roku,
+i by³a dostêpna na MS-DOS. Craig Robbins pomaga³ przy wersjach 0.5.1 do 1.0.0beta1.
+Wersja 1.0.0beta1 (1999) by³a pierwsz± wersj± Mdate udostêpnion± na licencji GPL,
+i zawiera³a interfejs oparty na Tk.
+
+Mdate 1.0.5 by³ wielojêzykowy i szybko zast±piony wersj± 1.1.0, by³ tak¿e pierwsz± wersj±
+w nowym domu projektu - sourcefoge.net.
+
+Mdate 1.2.0 zosta³ zmodularyzowany do biblioteki (libmdate) i interfejsów dla Tk, linii poleceñ i GTK+.
+
+Mdate 1.2.8 by³ ostatni± wersj± bazuj±c± na libmdate i zorentowan± na interfejsy Mdate,
+do tego czasu obci±¿on± zbyt wielk± ilo¶ci± kodu ustawieñ i niadba³o¶ci±.
+
+Mdate 1.3.0 zrezygnowa³ z zale¿no¶æ od libmdate, zosta³ przepisany na nowo w C++/C i
+otrzyma³ znacznie prostszy system kompilacji, jednak z brakiem wsparcia
+dla internacjonalizacji i potrzeb± nowych interfejsów.
+
+Mdate 1.3.4 dodano prost± pow³okê dla t³umaczeñ, wzorowan± na metodzie mplayer'a.
+
+Mdate 1.4.0 przyniós³ formatowanie daty przez u¿ytkownika (jak <tt>date(1)</tt>),
+i rozpocz±³ proces poprawnej internacjonalizacji i konfiguracji, nadal bior±c
+przyk³ad z mplayer'a.
+
+Pierwszy port do BeOS'a zosta³ zrobiony w wersji Mdate 1.4.1.
+
+Mdate 1.4.2 ulepszy³ wsparcie jêzykowe dodaj±c mo¿liwo¶æ wyboru jêzyka jako
+opcje w trakcie dzia³ania programu.
+
+Mdate 1.4.3 doda³ mo¿liwo¶æ kompilacji na mingw32 oraz wyboru domy¶lnego jêzyka.
+
+<sect>Instrukcja obs³ugi
+<sect1>Opcje
+
+<sect2>Wsparcie jêzykowe
+<p>
+Od wersji 1.4.2 Mdate posiada cztery wersje jêzykowe: Angielsk±, Hiszpañsk±, Niemieck±
+i Polsk± (en, es, de oraz pl). T³umacznia s± wkompilowane i aktualnie ignorowane s±
+¶rodowiskowe zmienne jêzykowe.
+
+Przyk³ad u¿ycia:
+
+<tscreen><verb>
+$ mdate -L pl
+
+Data Gregoriañska  : 16-October-2003 (16/10/2003)
+Juliañski Nr. Dnia : 2452929.0
+D³. Rachuba Kal.   : 12.19.10.12.04
+Data Tzolkin       : 2 Kan
+Data Haab          : 12 Yax
+</verb></tscreen>
+
+Domy¶lnym jêzykiem jest Angielski (en). Nie ma regionalnych odmian
+jêzyka (np. en_AU).
+
+<sect2>Formatowanie
+<p>
+Domy¶lnie Mdate wypisze aktualn± datê, u¿ywaj±c korelacji Loundsbury
+dla aktualnej daty:
+
+<tscreen><verb>
+$ mdate
+
+Gregorian Date    : 05-April-2002 (05/04/2002)
+Julian Day Number : 2452370.0
+Long Count       : 12.19.09.02.05
+Tzolkin Date      : 2 Chicchan
+Haab Date         : 3 Uayeb
+</verb></tscreen>
+
+<p>
+Opcja <tt>-p, --parseable</tt> spowoduje wypisanie tej informacji w jedej linii,
+co mo¿e byæ wygodne do dodawania do mail'a lub przekierowania do innych programów.
+Przyk³ad:
+
+<tscreen><verb>
+$ mdate -p
+
+JDN: 2452370.0 date:  05  04  2002 12.19.09.02.05  02 Chicchan  03 Uayeb 
+</verb></tscreen>
+
+<p>
+Opcja -p mo¿e byæ ³±czone z ka¿d± inn± z opcji Mdate.
+
+<sect2>Formatowanie daty
+<p>
+Mo¿esz podaæ swoj± aktualn± datê w okre¶lony przez siebie sposób, u¿ywaj±c
+opcji formatowania z poni¿szej listy:
+
+<p>
+<tscreen><verb>
+@a skrót nazwy dnia tygodnia
+@A pe³na nazwa dnia tygodnia
+@b skrót nazwy miesi±ca
+@B pe³na nazwa miesi±ca
+@C dwie cyfry stulecia
+@d numer dnia miesi±ca (01..31)
+@e numer dnia bez poprzedzaj±cego zera
+@F format ISO daty Gregoriañskiej (%R-%m-%d)
+@f format ISO daty Gregoriañskiej (%R%m%d)
+@h data Haab bez poprzedzaj±cej spacji i zera
+@H data Haab z poprzedzaj±c± spacj± i zerem
+@l D³uga Rachuba Kalendarzowa
+@M nazwa miesi±ca Gregoriañskiego
+@m numer miesi±ca Gregoriañskiego
+@T data Tzolkin bez poprzedzaj±cej spacji i zera
+@t data Tzolkin z poprzedzaj±c± spacj± i zerem
+@y rok jako dwie cyfry (00-99)
+@Y rok Gregoriañski
+@n dodaje znak nowej lini
+@j dodaje dodaje znak tab
+</verb></tscreen>
+
+<p>
+Tak jak <tt>date(1)</tt>, Mdate przekszta³ci date po otrzymaniu opcji `+',
+na przyk³ad:
+
+<tscreen><verb>
+$ mdate -d '07 09 2003' +'@f @l'
+
+20030907 12.19.10.10.15
+</verb></tscreen>
+
+<p>
+To by³o potrzebne dla tych którzy chciali dodaæ jednoliniow± datê Majów do
+maili i stron www. Jednak Mdate nigdy nie wspiera³ formatowania czasu dnia,
+wiêc nie jest w pe³ni zgodny z rfc822! Wiêkszo¶æ formatów jest po prostu
+przekazywana do <tt>strftime(3)</tt> je¶li tylko to mo¿liwe.
+
+<sect2>Opcje korelacji
+<p>
+Domy¶lnie Mdate u¿ywa korelacji Loundsbury, co jest równe
+Juliañskiemu Numerowi Dnia 584285. Nie musisz tego u¿ywaæ je¶li nie chcesz.
+Poni¿ej kilka opcji dla korelacyjnie-poprawnych :)
+<p>
+Opcja <tt>-g, --gmt</tt> u¿ywa standardowej korelacji Goodman-Martinez-Thompson
+(w skrócie GMT). Równa siê to Juliañskiemu Numerowi Dnia 584283.
+<p>
+Je¶li nie zgadzasz siê z ¿adn± z powy¿szych sta³ych korelacji, opcja <tt>-c,
+--correlation[=DOUBLE]</tt> pozwala na podanie w³asnej korelacji.
+Jednak mo¿e ona nie zadzia³aæ poprawnie, szczególnie gdy ustawisz
+zbyt ma³y Juliañski Numer Dnia (patrz dzia³ <ref id="limits"
+name="Limity"> po wiêcej informacji)
+
+<sect2>Podawanie daty
+<p>
+Prawdopodobnie kiedy¶ przyda siê sprawdzenie konkretnej daty. Mo¿na to
+osi±gn±æ na kilka sposobów, w zale¿no¶ci od rodzaju posiadanej daty.
+<p>
+Opcja <tt>-d, --dmy[="dd mm [-]yyyy"]</tt> pozwala na podanie konkretnej daty
+Gregoriañskiej. Mo¿esz tak¿e podaæ liczbê ujêmn± lat (p.n.e).
+
+<tscreen><verb>
+$ mdate -d '05 04 2002'
+
+Gregorian Date    : 05-April-2002 (05/04/2002)
+Julian Day Number : 2452370.0
+Long Count        : 12.19.09.02.05
+Tzolkin Date      : 2 Chicchan
+Haab Date         : 3 Uayeb
+</verb></tscreen>
+
+<p>
+W ten sam sposób opcja <tt>-j, --julian=[DOUBLE]</tt> wypisze datê
+z podanym Juliañskim Numerem Dnia:
+
+<tscreen><verb>
+$ mdate -j 2452370
+
+Data Gregoriañska    : 05-April-2002 (05/04/2002)
+Julian Day Number : 2452370.0
+Long Count       : 12.19.09.02.05
+Tzolkin Date      : 2 Chicchan
+Haab Date         : 3 Uayeb
+</verb></tscreen>
+
+Zauwa¿ ¿e mo¿esz pomin±æ liczbê po przecinku je¶li chcesz.
+<p>
+Na koniec opcja <tt>-l, --longcount[="nn nn nn nn nn"]</tt> która powoduje to samo
+tylko ¿e po podaniu daty wed³ug D³ugiej Rachuby Kalendarzowej:
+
+<tscreen><verb>
+$ mdate -l '12 19 09 02 05'
+
+Data Gregoriañska    : 05-April-2002 (05/04/2002)
+Julian Day Number : 2452370.0
+Long Count        : 12.19.09.02.05
+Tzolkin Date      : 2 Chicchan
+Haab Date         : 3 Uayeb
+</verb></tscreen>
+
+<sect2>Przydatne opcje
+<p>
+Opcja <tt>-h, --help</tt> powoduje wypisanie prostej intrukcji do Mdate.
+<p>
+Opcja <tt>-v, -V, --version</tt> wypisuje wersjê Mdate.
+
+<sect>Limity
+<label id="limits">
+<p>
+Mdate nie wspiera dat z przed aktualnej epoki
+(Dluga Rachuba Kalendarzowa 0.0.0.0.0) zgodnej z korelacj± Juliañskiego Numeru Dnia,
+w³±czaj±c daty Gregoriañskie. Jednak mo¿esz siê pobawiæ korelacjami, na przyk³ad:
+
+<tscreen><verb>
+$ mdate -c 0 -j 0
+
+Data Gregoriañska    : 24-November--4713 (24/11/-4713)
+Julian Day Number : 0.0
+Long Count        : 00.00.00.00.00
+Tzolkin Date      : 4 Ahau
+Haab Date         : 8 Cumku
+</verb></tscreen>
+
+Jednak data Majów powy¿ej nic nie znaczy :)
+
+<sect>Historia zmian dokumentu
+<label id="revision">
+<p>
+<itemize>
+<item>1.1 Pierwsza wersja.
+<item>1.2 Poprawki ortografii i uk³adu.
+<item>1.3 Ta historia, uaktualniona wersja.
+<item>1.4 G³ówna aktualizacja dla Mdate 1.4.0
+<item>1.9 zmiany dla 1.4.1
+<item>1.11 zmiany dla 1.4.2
+<item>1.15 zmiany dla 1.4.3
+</itemize>
+</article>
+ 

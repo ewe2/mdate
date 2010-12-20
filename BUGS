@@ -1,0 +1,25 @@
+Documentation bug with mdate.txt, its missing lines and characters from the
+fop conversion for some reason.
+
+There's a GCC or gnu library bug somewhere that gets triggered by
+optimizations (or i18n bugs?) for certain languages, de and es.
+
+I fixed es by removing an empty line (big clue) and by lowering the
+optimization under linux, that fixed de. But under FreeBSD optimization isn't
+a good idea anyway, so de is still hosed. Users of the FreeBSD port are warned
+that WANT_PRETTY is NOT a good idea if you intend to use the German language,
+unless you like leaving core files around! Any help with this pernicious bug
+would be greatly appreciated.
+
+Going back too far with a default @a/@A is asking for trouble. Try:
+
+mdate -c 5848285 -j 584285
+
+it's a mess; even worse try:
+
+mdate -j 584285.0
+
+Previously, you could mdate -c 0 -j 0 but that makes a bigger
+mess now. The only fix for this is to NOT make @a/@A default values for now,
+but I suspect it's a locale/struct tm problem really and nothing I care to
+rewrite for now.

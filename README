@@ -1,0 +1,84 @@
+Mdate++ 1.5.7  Copyright(c) 1998-2009 Sean Dwyer <ewe2@users.sourceforge.net>
+=============================================================================
+
+Mdate++ is really Mdate 1.2.8 rewritten in C++, folding in libmdate 0.0.5, and
+removing autoconf facilities. It is distributed under the terms of the GNU
+General Public License version 2.
+
+This version conforms to the GNU getopt command-line conventions (with help
+from gengetopt) and introduces new correlation options. More features will be
+added as requested, now that the parser is actually sane.
+
+For those new to the mdate utilities, Mdate++ outputs simple Mayan dates for
+casual use or for use by other programs (e.g. mailers and editors). There are
+very few freely-available Mayan date programs which concerned me enough to
+attempt one.
+
+This release includes run-time language configuration, currently:
+
+English (en is default)
+German (de),
+French (fr),
+Spanish (es)
+Polish (pl).
+
+Get _your_ translation in today, see the Translators file!
+
+Installation
+============
+
+Check the config.h for any defines you may need to change. Please READ the
+comments in there, they will help I hope. Basically, if you're running a BSD
+with GNU tools, or GNU related system, you can pretty much leave things as
+they are. I develop on a Debian testing/unstable x86 system which may be a bit
+cutting-edge for some. BeOS users have the luxury of their own port - check
+http://mdate.sourceforge.net/ for details. OSX users also have their own port,
++which should be up soon at the same place. A cross-compiled mingw32 port can
+be generated from this source.
+
+Makefile User Configuration:
+
+1. Define a default language (DEF_EN by default).
+2. Define BINDIR, MANDIR, DOCDIR. This defaults to /usr/bin,
+   /usr/share/man/man1, and /usr/share/doc/mdate.
+
+3. If you have a *nix that needs them, define nosnprintf, nogetopt or noi18n.
+4. Define pretty if you want an alternate output format rather than standard
+   date(1) behaviour
+5. Define oldmayan or newmayan according to your taste in Mayan names.
+
+
+There are also helpful comments in the Makefile if you get lost: just type
+make, and make install. Users of previous mdates may like to rename/remove
+older versions. There's also plenty of documentation you may wish to install,
+try make createdoc, which creates html, text, TeX, dvi, ps and pdf output.
+These may or may not work depending on your tools. A manual page, text and
+html versions of the documentation are always provided.
+
+If you want to generate your own documentation, you'll need a Docbook
+installation, xsltproc, fop and html2text.
+
+It is assumed that you're using GNU C/C++ and GNU Make; unfortunately I have
+no access to different OS's and architectures. You are encouraged to add a
+target or defines so that others might benefit and enjoy Mdate.
+
+
+Suggested Usage
+===============
+
+Something nice and terse for an email line might be:
+
+mdate -d '10 09 2003' '+@l @t @h'
+which gives you:
+
+12.19.10.10.08 05 Lamat 16 Mol
+
+For help in your chosen language try:
+
+mdate -L <your language> -h
+
+A nice format for the current date could be:
+
+mdate '+@A @B @d @l'
+
+note this won't work for past or future dates.
