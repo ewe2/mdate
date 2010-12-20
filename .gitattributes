@@ -1,0 +1,8 @@
+*.h ident
+*.cpp ident
+*.sgml ident
+*.xml ident
+Makefile
+db2fo
+db2html
+*.c
