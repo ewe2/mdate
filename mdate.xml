@@ -54,7 +54,7 @@
                 documentation may, if wished, also fall under GPL on contact with the author.
             </para>
             <para>
-                Copyright (c) 2002-2009 by Sean Dwyer.
+                Copyright (c) 2002-2010 by Sean Dwyer.
             </para>
             <para>
                 Please freely copy and distribute (sell or give away) this document in any
@@ -131,6 +131,10 @@
 			</para>
 			<para>
 				Mdate 1.5.7 was the first release on code.google.com.
+			</para>
+			<para>
+				Mdate 1.6.0 made the GMT correlation the default. Mdate was
+				moved to git version control.
 			</para>
         </sect2>
     </sect1>
@@ -240,15 +244,15 @@ $ mdate -d '07 09 2003' +'@f @l'
         </sect2>
         <sect2>
             <title>Correlation Options</title>
-            <para>By default, Mdate uses the Lounsbury correlation which is equivalent to the
-                    Julian Day Number 584285. You're not forced to use this if you don't want to.
-                    Here are a couple of options for the correlationally-strict :)
+            <para>By default, Mdate used the Lounsbury correlation which is equivalent to the
+				Julian Day Number 584285 in versions of Mdate prior to 1.6.0.
+				Since then the GMT correlation is standard.
             </para>
             <para>The <command>-g, --gmt</command> option uses the standard Goodman-Martinez-Thompson
-                correlation (GMT for short). It corresponds to the Julian Day Number 584283.
+                correlation (GMT for short). It corresponds to the Julian Day Number 584283. Versions of Mdate from 1.6.0 silently ignores this option.
             </para>
             <para>
-               If you don't agree with either of the above correlation constants, the <command>-c,
+               If you don't agree with the correlation constant, the <command>-c,
                --correlation[=DOUBLE]</command> allows you to specify a correlation of your own.
                Don't be surprised, however if it doesn't work the way you intended,
                especially if you set the Julian Day Number too low (see <xref linkend="limits"/>
