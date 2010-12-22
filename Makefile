@@ -241,7 +241,7 @@ endif
 
 all: mdate
 
-.PHONY: help clean docpplean distclean updatesvn gitch updategit
+.PHONY: help clean docpplean distclean gitch updategit reltag devtag
 
 mdate: $(OBJS)
 	$(CXX) $(CFLAGS) $(INC) -o mdate $(OBJS) $(LDFLAGS) $(LIBS)
@@ -301,8 +301,8 @@ installman: mdate
 
 installdoc: createdoc installman
 	[ -d $(DOCDIR) ] || mkdir -p $(DOCDIR); \
-	install -m 644  mdate.dvi mdate.ps mdate.sgml $(DOCDIR); \
-	gzip $(DOCDIR)/mdate.dvi $(DOCDIR)/mdate.ps $(DOCDIR)/mdate.sgml; \
+	install -m 644  mdate.dvi mdate.ps $(DOCDIR); \
+	gzip $(DOCDIR)/mdate.dvi $(DOCDIR)/mdate.ps; \
 	install -m 644 mdate.text $(DOCDIR);	gzip $(DOCDIR)/mdate.text ; \
 	install -m 644  README NEWS ChangeLog GPL API $(DOCDIR); \
 	install -m 644  AUTHORS Translators $(DOCDIR); \
@@ -324,7 +324,7 @@ distclean: clean docpplean
 SOURCES=*.cpp *.c *.h
 DOX=mdate.html mdate.pdf mdate.txt NEWS README GPL API ChangeLog \
 AUTHORS mdate.xml Translators mdate.1 BUGS ChangeLog.old README.devel
-CONFS=Makefile mdate.spec ChangeLog.header .svnignore mdate.xpr
+CONFS=Makefile mdate.spec ChangeLog.header .gitattributes .gitignore mdate.xpr
 DEBCONF=debian/*
 DISTFILES= $(SOURCES) $(DOX) $(CONFS)
 
@@ -335,13 +335,26 @@ gitch:
 	cat ChangeLog.header > ChangeLog
 	git log --name-only >> ChangeLog
 
+
+# tagging commits for different purposes. we use a version tag to mark them.
+# remember tags are just a shorthand for commits they aren't the actual
+# branches which have their own name.
+
+relb=v1.6.0
+devb=v1.7.1
+
+reltag:
+	GIT_COMMITER_DATE=`date +'%F %R'` git tag $(relb) $(com)
+
+devtag:
+	GIT_COMMITTER_DATE=`date +'%f %R'` git tag $(devb) $(com)
+
 # Retained for historical use, do not use.
 # svn2cl has now been debianized so i am using that with appropriate flags.
 
-
-updatesvn:
-	cat ChangeLog.header > ChangeLog
-	svn2cl -i -r HEAD:0 --group-by-day --stdout >> ChangeLog
+#updatesvn:
+#	cat ChangeLog.header > ChangeLog
+#	svn2cl -i -r HEAD:0 --group-by-day --stdout >> ChangeLog
 
 # this is now how a release is archived. dorelease and dotag are NOT really
 # the same: dorelease is a stable branch off the working trunk, dotags is the

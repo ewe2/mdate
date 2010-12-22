@@ -1,3 +1,9 @@
+1.6.0 Mdate moves to git. Development shall split with the basic 1.6.0 as a
+release+patch branch and a 1.7.x working branch. Major change is GMT
+correlation by default. mdate.sgml is retired.
+
+1.5.8: internal version
+
 1.5.7: converted linuxdoc sgml documentation to DocBook XML. mdate.xpr is an
 Oxygen project file used during development. Added converter utilities.
 Removed the Polish documentation until an xml equivalent can be produced.

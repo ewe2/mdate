@@ -1,3 +1,33 @@
+
+ ChangeLog for Mdate
+-===================-
+
+ - Generated from git log entries (git log --name-only)
+ - These commits are relative to an internal bare repository and may bear no
+ relation to world-accessible upstreams.
+
+-- 
+
+commit 6c28fca1dbb320ec4a6adb7ae3e9d1c9868c6fe2
+Author: Sean Dwyer <ewe2@marvin.pengsheep.org>
+Date:   Tue Dec 21 05:24:09 2010 +1100
+
+    added .gitattributes to maintain revision tags
+
+.gitattributes
+
+commit d600b2f6c958269dd6d18a6ea06b31d024f63986
+Author: Sean Dwyer <ewe2@marvin.pengsheep.org>
+Date:   Tue Dec 21 05:12:26 2010 +1100
+
+    Enabled new ChangeLog format/automation with git-enabled Makefile targets
+
+ChangeLog
+ChangeLog.header
+Makefile
+README.devel
+debian/changelog
+
 commit 920fe8033ff7446c6774c517d4b40c1c1bbfddbe
 Author: Sean Dwyer <ewe2@marvin.pengsheep.org>
 Date:   Tue Dec 21 04:28:11 2010 +1100

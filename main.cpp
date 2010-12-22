@@ -21,7 +21,7 @@
 
 using namespace std;
 
-static char rcsid[] __attribute__ ((unused)) = "@(#) $Id: main.cpp 30 2010-12-04 12:00:35Z ewe2 $";
+static char rcsid[] __attribute__ ((unused)) = "@(#) $Id$";
 
 // the massive big ooooge main thingy. this is all we do here, everything else
 // has been folded into other files.
@@ -63,11 +63,12 @@ int main (int argc, char *argv[])
 		(!args_info.julian_given) &&
 		(!args_info.longcount_given)){
 		
-		// set up the correlation
+		// set up the correlation. silently ignore gmt option
+		// this should be a conf file option
 		if (args_info.correlation_given)
 			cor = args_info.correlation_arg;
 		else if (args_info.gmt_given)
-			cor = 584283.0;
+			cor = 584285.0;
 		else
 			cor = 584285.0;
 		
