@@ -2,9 +2,9 @@
 // lang.cc : derived from runtime language support (c)2003 by Shard
 // <shard@>
 //
-// Copyright (c) under GPL 1998-2009 Sean Dwyer <ewe2@users.sourceforge.net>
+// Copyright (c) under GPL 1998-2011 Sean Dwyer <ewe2@users.sourceforge.net>
 
-static char rcsid[] __attribute__ ((unused)) = "@(#) $Id: lang.cpp 30 2010-12-04 12:00:35Z ewe2 $";
+static char rcsid[] __attribute__ ((unused)) = "@(#) $Id$";
 
 #include "lang.h"
 

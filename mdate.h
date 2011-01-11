@@ -1,7 +1,7 @@
 // mdate.h - class defs for mdate++
-// Copyright(c) under GPL 1998-2009 Sean Dwyer <ewe2@users.sourceforge.net>
+// Copyright(c) under GPL 1998-2011 Sean Dwyer <ewe2@users.sourceforge.net>
 
-// $Id: mdate.h 30 2010-12-04 12:00:35Z ewe2 $
+// $Id$
 
 #ifndef _mdate_h
 #define _mdate_h

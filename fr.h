@@ -2,7 +2,7 @@
 // <coudert@users.sourceforge.net>
  
 // version 1.5.1
-// $Id: fr.h 30 2010-12-04 12:00:35Z ewe2 $
+// $Id$
 
 // ============================= Mdate help ===============================
 

@@ -8,7 +8,7 @@
 //  gengetopt output files to be in the public domain:
 //  we make no copyright claims on it.
 //
-// cmdline.cc - Copyright(c) under GPL 2003-2009 Sean Dwyer <ewe2@users.sourceforge.net>
+// cmdline.cc - Copyright(c) under GPL 2003-2011 Sean Dwyer <ewe2@users.sourceforge.net>
 // hacked around a bit from the original generated cmdline.c
 
 #include <cstdio>
@@ -26,7 +26,7 @@
 
 #include "mdate.h"
 
-static char rcsid[] __attribute__ ((unused)) = "@(#) $Id: cmdline.cpp 30 2010-12-04 12:00:35Z ewe2 $";
+static char rcsid[] __attribute__ ((unused)) = "@(#) $Id$";
 
 using namespace std;
 
@@ -48,7 +48,7 @@ void
 cmdline_parser_print_version (void)
 {
 	std::cout << PACKAGE << " " << VERSION << "\n";
-	std::cout << "Copyright(c) 1998-2009 Sean Dwyer <ewe2@users.sourceforge.net>\n";
+	std::cout << "Copyright(c) 1998-2011 Sean Dwyer <ewe2@users.sourceforge.net>\n";
 }
 
 void

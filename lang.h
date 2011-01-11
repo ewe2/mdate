@@ -1,10 +1,10 @@
-/* lang.h: Copyright (C) 2003-2010 Sean Dwyer <ewe2@users.sourceforge.net>
+/* lang.h: Copyright (C) 2003-2011 Sean Dwyer <ewe2@users.sourceforge.net>
  * under GPL
  */
 #ifndef _lang_h
 #define _lang_h
 
-/* $Id: lang.h 30 2010-12-04 12:00:35Z ewe2 $ */
+/* $Id$ */
  
 extern const char* helptext;
 

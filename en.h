@@ -7,7 +7,7 @@
 // version your translation is synced for below to help keep things updated.
  
 // version 1.5.0
-// $Id: en.h 30 2010-12-04 12:00:35Z ewe2 $
+// $Id$
 
 // ============================= Mdate help ===============================
 

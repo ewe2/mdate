@@ -4,7 +4,7 @@
 // Contributed by ahwayakchih.
 // takes care of any variant spellings mdate users might wish for
 //
-// $Id: names.h 30 2010-12-04 12:00:35Z ewe2 $
+// $Id$
 
 #ifndef _names_h
 #define _names_h

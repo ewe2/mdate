@@ -35,7 +35,7 @@
 
 using namespace std;
 
-static char rcsid[] __attribute__ ((unused)) = "@(#) $Id: mdate.cpp 30 2010-12-04 12:00:35Z ewe2 $";
+static char rcsid[] __attribute__ ((unused)) = "@(#) $Id$";
 
 // Reinholt & Dershowitz augmented modulus, preventing over/underflow
 #define AMOD(x,y) (1 + (((x) - 1) % (y)))

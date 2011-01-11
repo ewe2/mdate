@@ -1,9 +1,9 @@
 /* config.h - part of Mdate++
  * Rewritten September 2003 to clarify further porting issues.
- * Copyright (C) under GPL 2003-2009 Sean Dwyer <ewe2@users.sourceforge.net>
+ * Copyright (C) under GPL 2003-2011 Sean Dwyer <ewe2@users.sourceforge.net>
  */
 
-/* $Id: config.h 30 2010-12-04 12:00:35Z ewe2 $ */
+/* $Id$ */
 
 /* There are probably massive issues regarding architectures and this file.
  * mdate (in the _very_ early days) was ported to sparc, ppc and alpha
