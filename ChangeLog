@@ -8,6 +8,44 @@
 
 -- 
 
+commit 321267c68a3fcde7461e56131c4e5a0f4d0dd5ac
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Wed Jan 12 00:43:07 2011 +1100
+
+    Ident and doc changes.
+
+cmdline.cpp
+cmdline.h
+config.h
+de.h
+en.h
+es.h
+fr.h
+lang.cpp
+lang.h
+mdate.cpp
+mdate.h
+mdate.xml
+mdate_pl.sgml
+names.h
+pl.h
+
+commit 59680bf5b6f43abe109cf6217e6237d8d9d3dbb7
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Thu Dec 23 02:15:49 2010 +1100
+
+    pre-github commit
+
+ChangeLog
+Makefile
+NEWS
+README
+README.devel
+TODO
+main.cpp
+mdate.1
+mdate.sgml
+
 commit 6c28fca1dbb320ec4a6adb7ae3e9d1c9868c6fe2
 Author: Sean Dwyer <ewe2@marvin.pengsheep.org>
 Date:   Tue Dec 21 05:24:09 2010 +1100
