@@ -8,6 +8,22 @@
 
 -- 
 
+commit 14cbf9db282affe5c875c1a238cacf3a36ba5913
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Mon Feb 28 22:44:51 2011 +1100
+
+    altered dist target for simple git archives.
+
+Makefile
+
+commit cc0f669b713c5a00a6aaad66e5a596dcd4d5d8a0
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Wed Feb 16 01:05:19 2011 +1100
+
+    modified changelog
+
+ChangeLog
+
 commit 321267c68a3fcde7461e56131c4e5a0f4d0dd5ac
 Author: Sean Dwyer <ewetoo@gmail.com>
 Date:   Wed Jan 12 00:43:07 2011 +1100

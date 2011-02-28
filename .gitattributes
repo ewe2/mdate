@@ -2,7 +2,7 @@
 *.cpp ident
 *.sgml ident
 *.xml ident
-Makefile
+Makefile ident
 db2fo
 db2html
 *.c

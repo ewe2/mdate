@@ -1,6 +1,6 @@
 ################################################################################
 # Makefile for mdate++                                                         
-# $Id: Makefile 27 2010-12-04 11:40:04Z ewe2 $
+# $Id$
 #
 # Usage:
 #	make target=linux					# linux
@@ -419,16 +419,17 @@ docpplean: foclean
 help:
 	@echo " "
 	@echo "Usage:"
-	@echo "   make target=linux"
-	@echo "   make target=cygwin"
-	@echo "   make target=mingw32-cross mdate.exe"
-	@echo "   make target=beos"
-	@echo "   gmake target=freebsd"
-	@echo "   make target=osx"
-	@echo "   make target=uniosx"
-	@echo "The default target is linux on x86 with a pentium-class processor."
-	@echo "I can't guarantee the other targets will work. I haven't used Cygwin for"
-	@echo "quite a while, now it's probably out of date. Fixes would be most welcome."
-	@echo "If the CFLAGS bother you please don't change -ffloat-store which avoids"
-	@echo "architecture-related problems."
+	@echo "	make target=linux"
+	@echo "	make target=cygwin"
+	@echo "	make target=mingw32-cross mdate.exe"
+	@echo "	make target=beos"
+	@echo "	gmake target=freebsd"
+	@echo "	make target=osx"
+	@echo "	make target=uniosx"
 	@echo " "
+	@echo "Dev targets:"
+	@echo "	make gitch   - use git to update Changelog"
+	@echo "	make devdist - nightly tarballs"
+	@echo "	make reldist - release tarballs"
+	@echo "	make rpm     - rpm package"
+	@echo "	make deb     - deb package"
