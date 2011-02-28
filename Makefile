@@ -39,6 +39,11 @@
 PACKAGE=mdate
 VERSION=1.6.0
 
+# tagging for release and development. development branch should be tagged
+# DEVTAG when release master is done.
+RELTAG=1.6.0
+DEVTAG=1.7.0
+
 #SVNVERSION = 1-5-7
 
 # Outside repositories that are recently current. We'll be moving to an
@@ -338,16 +343,15 @@ gitch:
 
 # tagging commits for different purposes. we use a version tag to mark them.
 # remember tags are just a shorthand for commits they aren't the actual
-# branches which have their own name.
+# branches which have their own name, but it's easier to refer to the tags if
+# releases should be made from a branch.
 
-relb=v1.6.0
-devb=v1.7.1
 
 reltag:
-	GIT_COMMITER_DATE=`date +'%F %R'` git tag $(relb) $(com)
+	GIT_COMMITER_DATE=`date +'%F %R'` git tag $(RELTAG) $(com)
 
 devtag:
-	GIT_COMMITTER_DATE=`date +'%f %R'` git tag $(devb) $(com)
+	GIT_COMMITTER_DATE=`date +'%f %R'` git tag $(DEVTAG) $(com)
 
 # Retained for historical use, do not use.
 # svn2cl has now been debianized so i am using that with appropriate flags.
@@ -387,6 +391,14 @@ devtag:
 #	done
 #	tar zchovf $(distdir).tar.gz $(distdir)
 #	rm -fr $(distdir)
+
+# tarballs via git
+# You can choose HEAD or a tag here
+# assumes you've committed, etc.
+reldist:
+	git archive --format=tar --prefix=mdate-$(RELTAG)/ HEAD | gzip>mdate-$(RELTAG).tar.gz
+devdist:
+	git archive --format=tar --prefix=mdate-dev$(DEVTAG)/ $(DEVTAG) | gzip>mdate-dev$(DEVTAG).tar.gz
 
 # both these targets are heavily system-dependent and prone to syntax changes.
 rpm:
