@@ -23,7 +23,7 @@
 				<revremark>Minor work.</revremark>
 			</revision>
 			<revision>
-				<revnumber>$Rev$</revnumber>
+				<revnumber>$Id$</revnumber>
 				<date>2011-01-12</date>
 				<authorinitials>asd</authorinitials>
 				<revremark>per-version updates</revremark>
@@ -59,7 +59,7 @@
                 documentation may, if wished, also fall under GPL on contact with the author.
             </para>
             <para>
-                Copyright (c) 2002-2010 by Sean Dwyer.
+                Copyright (c) 2002-2011 by Sean Dwyer.
             </para>
             <para>
                 Please freely copy and distribute (sell or give away) this document in any
@@ -140,6 +140,9 @@
 			<para>
 				Mdate 1.6.0 made the GMT correlation the default. Mdate was
 				moved to git version control.
+			</para>
+			<para>
+				Mdate 1.7.0 implemented a configuration file.
 			</para>
         </sect2>
     </sect1>

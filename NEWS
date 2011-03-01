@@ -1,3 +1,5 @@
+1.7.0 Development branch of Mdate, adds a configuration file.
+
 1.6.0 Mdate moves to git. Development shall split with the basic 1.6.0 as a
 release+patch branch and a 1.7.x working branch. Major change is GMT
 correlation by default. mdate.sgml is retired.
