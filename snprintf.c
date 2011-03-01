@@ -5,7 +5,7 @@
  * on all source code distributions
  */
 
-/* $Id: snprintf.c 30 2010-12-04 12:00:35Z ewe2 $ */
+/* $Id$ */
 
 /**************************************************************
  * Original:
