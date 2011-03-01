@@ -1,5 +1,5 @@
 ################################################################################
-# Makefile for mdate++                                                         
+# Makefile for mdate
 # $Id$
 #
 # Usage:
@@ -41,13 +41,13 @@ VERSION=1.6.0
 
 # tagging for release and development. development branch should be tagged
 # DEVTAG when release master is done.
-RELTAG=1.6.0
-DEVTAG=1.7.0
+RELTAG=v1.6.0
+DEVTAG=v1.7.0
 
 #SVNVERSION = 1-5-7
 
-# Outside repositories that are recently current. We'll be moving to an
-# internet-based git repository soon (yet another confusing update).
+# Obsolete repositories that are recently current.
+# Moved to github
 # REPOS=https://mdate.svn.sourceforge.net/svnroot/mdate/mdate
 # REPOS=https://mdate.googlecode.com/svn/trunk
 
@@ -348,10 +348,10 @@ gitch:
 
 
 reltag:
-	GIT_COMMITER_DATE=`date +'%F %R'` git tag $(RELTAG) $(com)
+	GIT_COMMITER_DATE=`date +'%F %R'` git tag -s -m "mdate $(RELTAG)" $(RELTAG) $(com)
 
 devtag:
-	GIT_COMMITTER_DATE=`date +'%f %R'` git tag $(DEVTAG) $(com)
+	GIT_COMMITTER_DATE=`date +'%f %R'` git tag -s -m "mdate $(DEVTAG)" $(DEVTAG) $(com)
 
 # Retained for historical use, do not use.
 # svn2cl has now been debianized so i am using that with appropriate flags.
