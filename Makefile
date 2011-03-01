@@ -37,17 +37,18 @@
 .SUFFIXES: .c .cpp .exe .o .obj
 
 PACKAGE=mdate
-VERSION=1.6.0
+VERSION=1.6.0.1
+DEVVER=1.7.0
 
 # tagging for release and development. development branch should be tagged
 # DEVTAG when release master is done.
-RELTAG=v1.6.0
-DEVTAG=v1.7.0
+RELTAG=v$(VERSION)
+DEVTAG=v$(DEVVER)
 
 #SVNVERSION = 1-5-7
 
 # Obsolete repositories that are recently current.
-# Moved to github.
+# Moved to github
 # REPOS=https://mdate.svn.sourceforge.net/svnroot/mdate/mdate
 # REPOS=https://mdate.googlecode.com/svn/trunk
 
@@ -348,10 +349,10 @@ gitch:
 
 
 reltag:
-	GIT_COMMITER_DATE=`date +'%F %R'` git tag -s -m "mdate $(RELTAG) " $(RELTAG) $(com)
+	GIT_COMMITER_DATE=`date +'%F %R'` git tag -s -m "mdate $(RELTAG)" $(RELTAG) $(com)
 
 devtag:
-	GIT_COMMITTER_DATE=`date +'%f %R'` git tag -s -m "mdate $(DEVTAG) " $(DEVTAG) $(com)
+	GIT_COMMITTER_DATE=`date +'%f %R'` git tag -s -m "mdate $(DEVTAG)" $(DEVTAG) $(com)
 
 # Retained for historical use, do not use.
 # svn2cl has now been debianized so i am using that with appropriate flags.
@@ -396,9 +397,9 @@ devtag:
 # You can choose HEAD or a tag here
 # assumes you've committed, etc.
 reldist:
-	git archive --format=tar --prefix=mdate-$(RELTAG)/ HEAD | gzip>mdate-$(RELTAG).tar.gz
+	git archive --format=tar --prefix=mdate-$(RELTAG)/ HEAD | gzip>mdate-$(VERSION).tar.gz
 devdist:
-	git archive --format=tar --prefix=mdate-dev$(DEVTAG)/ $(DEVTAG) | gzip>mdate-dev$(DEVTAG).tar.gz
+	git archive --format=tar --prefix=mdate-dev$(DEVTAG)/ $(DEVTAG) | gzip>mdate-dev$(DEVVER).tar.gz
 
 # both these targets are heavily system-dependent and prone to syntax changes.
 rpm:
