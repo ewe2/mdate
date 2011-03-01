@@ -8,7 +8,7 @@ history of the development of mdate outside the trunk. Git works totally
 differently, so the idea of using revision tags has to change. With Git, a tag
 only refers to the current commit normally. In order for a tagged release, we
 need to branch and tag that, which actually makes sense. Gitattributes allow
-keyword substitution for $Id$ on a branch checkout also.
+keyword substitution for Id on a branch checkout also.
 
 Suggested format for tags is GIT_COMMITTER_DATE=`date +'%F %R'` git tag <tag>,
 this ensures more helpful history. Add -s -m "mdate $TAG" to help track the
