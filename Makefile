@@ -38,11 +38,12 @@
 
 PACKAGE=mdate
 VERSION=1.6.0.1
+DEVVER=1.7.0
 
 # tagging for release and development. development branch should be tagged
 # DEVTAG when release master is done.
-RELTAG=v1.6.0.1
-DEVTAG=v1.7.0
+RELTAG=v$(VERSION)
+DEVTAG=v$(DEVVER)
 
 #SVNVERSION = 1-5-7
 
@@ -396,9 +397,9 @@ devtag:
 # You can choose HEAD or a tag here
 # assumes you've committed, etc.
 reldist:
-	git archive --format=tar --prefix=mdate-$(RELTAG)/ HEAD | gzip>mdate-$(RELTAG).tar.gz
+	git archive --format=tar --prefix=mdate-$(RELTAG)/ HEAD | gzip>mdate-$(VERSION).tar.gz
 devdist:
-	git archive --format=tar --prefix=mdate-dev$(DEVTAG)/ $(DEVTAG) | gzip>mdate-dev$(DEVTAG).tar.gz
+	git archive --format=tar --prefix=mdate-dev$(DEVTAG)/ $(DEVTAG) | gzip>mdate-dev$(DEVVER).tar.gz
 
 # both these targets are heavily system-dependent and prone to syntax changes.
 rpm:
