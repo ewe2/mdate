@@ -429,6 +429,8 @@ help:
 	@echo " "
 	@echo "Dev targets:"
 	@echo "	make gitch   - use git to update Changelog"
+	@echo "	make devtag  - tag src for development"
+	@echo "	make reltag  - tag src for release"
 	@echo "	make devdist - nightly tarballs"
 	@echo "	make reldist - release tarballs"
 	@echo "	make rpm     - rpm package"
