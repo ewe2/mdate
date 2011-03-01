@@ -8,6 +8,24 @@
 
 -- 
 
+commit 3ee2aabee0e254b84c003590220b150bb0ee6a03
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Tue Mar 1 17:26:16 2011 +1100
+
+    Explanation of git workflow
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+README.devel
+
+commit 75c8a339e812de381ed2d47d374d3fe810aa2da9
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Tue Mar 1 16:43:14 2011 +1100
+
+    Updated master ChangeLog
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+ChangeLog
+
 commit 71726f581ca560205a8d12ccb2f2a2b03b005217
 Author: Sean Dwyer <ewetoo@gmail.com>
 Date:   Tue Mar 1 15:40:08 2011 +1100

@@ -37,11 +37,11 @@
 .SUFFIXES: .c .cpp .exe .o .obj
 
 PACKAGE=mdate
-VERSION=1.6.0
+VERSION=1.6.0.1
 
 # tagging for release and development. development branch should be tagged
 # DEVTAG when release master is done.
-RELTAG=v1.6.0
+RELTAG=v1.6.0.1
 DEVTAG=v1.7.0
 
 #SVNVERSION = 1-5-7
