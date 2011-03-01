@@ -41,13 +41,13 @@ DEVVER=1.7.0.2
 
 # tagging for release and development. development branch should be tagged
 # DEVTAG when release master is done.
-RELTAG=v$(VERSION)
-DEVTAG=v$(DEVVER)
+RELTAG=v1.6.0
+DEVTAG=v1.7.0
 
 #SVNVERSION = 1-5-7
 
 # Obsolete repositories that are recently current.
-# Moved to github
+# Moved to github.
 # REPOS=https://mdate.svn.sourceforge.net/svnroot/mdate/mdate
 # REPOS=https://mdate.googlecode.com/svn/trunk
 
