@@ -1,5 +1,5 @@
 #!/bin/sh 
-# $Id: db2html 64 2009-11-15 12:42:46Z ewe2 $
+# $Id$
 #
 # db2html: generate chunked or single-file HTML FROM DocBook xml.
 
