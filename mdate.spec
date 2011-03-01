@@ -1,5 +1,5 @@
 %define name mdate
-%define version 1.5.8
+%define version 1.7.0
 %define release 1
 %define prefix /usr
 %define docdir %{_datadir}/doc/%{name}

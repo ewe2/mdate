@@ -37,7 +37,7 @@
 .SUFFIXES: .c .cpp .exe .o .obj
 
 PACKAGE=mdate
-VERSION=1.6.0.1
+VERSION=1.7.0
 DEVVER=1.7.0
 
 # tagging for release and development. development branch should be tagged

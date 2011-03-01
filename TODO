@@ -1,4 +1,4 @@
-For 1.6.x: 
+For 1.7.x:
 
 implement a config file, for parameters such as correlation and Julian
 Calendar > Gregorian Calendar changeover.
@@ -6,6 +6,8 @@ Calendar > Gregorian Calendar changeover.
 implement jdn <-> julian dates. if possible, integrate into jdn<-> gregdates.
 
 implement CR and other calculations.
+
+For 1.6.x:
 
 alter development to release+patch branch and unstable branch, to manage
 implementation changes and release on github.
