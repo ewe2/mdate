@@ -8,6 +8,32 @@
 
 -- 
 
+commit 71726f581ca560205a8d12ccb2f2a2b03b005217
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Tue Mar 1 15:40:08 2011 +1100
+
+    fixing Makefile
+
+Makefile
+
+commit a59de1771709e27072e0ec1c484116b08be5248c
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Tue Mar 1 15:05:27 2011 +1100
+
+    updated attributes and make targets
+
+Makefile
+
+commit e91a6eae8a86c3933125e9f59f3bc5e05dfc242f
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Mon Feb 28 22:58:29 2011 +1100
+
+    Makefile adjustments, attempt to fix ident issue (installing rcs might help)
+
+.gitattributes
+ChangeLog
+Makefile
+
 commit 14cbf9db282affe5c875c1a238cacf3a36ba5913
 Author: Sean Dwyer <ewetoo@gmail.com>
 Date:   Mon Feb 28 22:44:51 2011 +1100
