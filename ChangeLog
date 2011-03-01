@@ -8,6 +8,7 @@
 
 -- 
 
+<<<<<<< HEAD
 commit c7091eff950122c59a2c173beb45c8404e82c2b0
 Author: Sean Dwyer <ewetoo@gmail.com>
 Date:   Fri Apr 1 02:44:52 2011 +1100
@@ -152,6 +153,82 @@ Date:   Mon Feb 28 22:58:29 2011 +1100
 ChangeLog
 Makefile
 
+||||||| merged common ancestors
+=======
+commit 7917045349f464aac30438510c489ece67d01290
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Wed Mar 2 00:30:28 2011 +1100
+
+    versioning for 1.7.x
+    
+	Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+Makefile
+NEWS
+README
+TODO
+debian/changelog
+mdate.1
+mdate.spec
+mdate.xml
+
+commit c62165541ca8b1da703696a1565f1a56c9a02974
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Tue Mar 1 23:29:04 2011 +1100
+
+    removed README.devel
+   
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+README.devel
+
+commit f45369e3d0ac128a0b39fb51da9685fd3e621faf
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Tue Mar 1 18:30:47 2011 +1100
+
+    fixed documentation
+
+Makefile
+README.devel
+
+commit 73cca55de2d42a5360c8773b38f5272b2b3d673b
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Tue Mar 1 17:41:49 2011 +1100
+
+    ident branch commits
+
+db2fo
+db2html
+mdate.1
+snprintf.c
+
+commit 9b88b73454f3176881818c797bd0105434b93faf
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Tue Mar 1 16:15:43 2011 +1100
+
+    synchronized devel with master
+
+Makefile
+
+commit a59de1771709e27072e0ec1c484116b08be5248c
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Tue Mar 1 15:05:27 2011 +1100
+
+    updated attributes and make targets
+
+Makefile
+
+commit e91a6eae8a86c3933125e9f59f3bc5e05dfc242f
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Mon Feb 28 22:58:29 2011 +1100
+
+    Makefile adjustments, attempt to fix ident issue (installing rcs might help)
+
+.gitattributes
+ChangeLog
+Makefile
+
+>>>>>>> ChangeLog update
 commit 14cbf9db282affe5c875c1a238cacf3a36ba5913
 Author: Sean Dwyer <ewetoo@gmail.com>
 Date:   Mon Feb 28 22:44:51 2011 +1100
