@@ -1,7 +1,8 @@
 For 1.7.x:
 
 implement a config file, for parameters such as correlation and Julian
-Calendar > Gregorian Calendar changeover.
+Calendar > Gregorian Calendar changeover. Rewrite parsing code to use
+libboost-program-options to implement commandine and config-file.
 
 implement jdn <-> julian dates. if possible, integrate into jdn<-> gregdates.
 
