@@ -1,7 +1,7 @@
 // bparse.cpp - use libboost_program_options to simplify commandline parsing
 // and configuration file handling.
-//
-//
+// Copyright (c) under GPLv2 2011 Sean Dwyer <ewetoo@gmail.com>
+// $Id$
 
 #include <boost/program_options.hpp>
 namespace po = boost::program_options;
