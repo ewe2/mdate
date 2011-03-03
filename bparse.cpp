@@ -21,6 +21,16 @@ namespace po = boost::program_options;
 using namespace std;
 
 // mostly based on boost example code.
+template<class T>
+ostream& operator<<(ostream& os, const vector<T>(cout, " "));
+{
+	copy(v.begin(), v.end(), ostream_iterator<T>(cout, " "));
+	return os;
+}
+
+// Parser code. In order to support our language scheme, we have to catch our
+// own exceptions, and output our own messages.
+
 
 // test output
 #ifdef TEST
