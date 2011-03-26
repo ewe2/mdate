@@ -1,11 +1,17 @@
-// mdate.h - class defs for mdate++
-// Copyright(c) under GPL 1998-2011 Sean Dwyer <ewe2@users.sourceforge.net>
+//! \file mdate.h
+//! \brief class definitions for mdate
 
+//! This file holds the central object structure of mdate. This is designed to
+//! provide a simple yet flexible interface for applications whether they are
+//! commandline-oriented or event-driven GUIs.
+//
+// Copyright(c) under GPL 1998-2011 Sean Dwyer <ewetoo@gmail.com>
 // $Id$
 
 #ifndef _mdate_h
 #define _mdate_h
 
+//! \def Simple system configuraton header.
 #ifdef HAVE_CONFIG_H
 #include "config.h"
 #endif
@@ -34,6 +40,7 @@
 
 #include <cmath>
 
+//! \def Internationalization requirement.
 #ifdef USE_I18N
 #include <libintl.h>
 #include <locale.h>
@@ -42,22 +49,26 @@
 #define md_gettext(String) String
 #endif
 
-// Mayan and language-dependent day/month names
+//! \def Mayan and language-dependent day/month names
 #include "names.h"
 
-// size of temporary date string buffer (should be enough to contain any date
-// as string)
+//! \def Size of temporary date string buffer (should be enough to contain any date
+//! as string)
 #define DATE_BUFSIZE 1024
 
-// required here for translation support across all modules
+//! \def Required here for translation support across all modules
 #include "lang.h"
 
-// this is outdated in g++ terms, but may still be needed for older compilers
-//typedef enum {FALSE, TRUE} bool;
+//! \var This is outdated in g++ terms, but may still be needed for older compilers.
+//! typedef enum {FALSE, TRUE} bool;
+//! \var typedef double julian_date
+//! \brief Global variable to hold the current Julian Day Number.
+//! \var typdef double corr
+//! \brief Global variable to hold the current correlation constant.
 typedef double julian_date;
 typedef double corr;
 
-//forward defs
+//! Forward class definitions
 class mdate;
 class longdate;
 class gregdate;
@@ -65,7 +76,10 @@ class haabdate;
 class tzolkindate;
 class julian;
 
-// class defs
+
+//! \class longdate
+//! \brief A Mayan Long Count object class
+
 class longdate {
 public:
 	//constructor
@@ -91,8 +105,11 @@ inline longdate::longdate(void)
 	bak = kat = tun = uin = kin = 0;
 }
 
-// note that wday is ONLY used in formatting, and isn't required for most
-// uses.
+//! \class gregdate
+//! \brief A Gregorian Calendar object class
+
+//! Note that wday is ONLY used in formatting, and isn't required for most
+//! uses.
 class gregdate {
 public:
 	//constructor
@@ -121,6 +138,9 @@ inline gregdate::gregdate(void)
 	day = month = year = wday = 0;
 }
 
+//! \class haabdate
+//! \brief A Mayan Haab date object class
+
 class haabdate {
 public:
 	//constructor
@@ -142,6 +162,8 @@ inline haabdate::haabdate(void)
 	month = day = 0;
 }
 
+//! \class tzolkindate
+//! \brief A Mayan Tzolkin date object class
 class tzolkindate {
 public:
 	//constructor
@@ -163,6 +185,11 @@ inline tzolkindate::tzolkindate(void)
 	month = day = 0;
 }
 
+//! \class julian
+//! \brief A Julian Day Number object class
+
+//! Gets/Sets the current JDN correlation for use with the other classes.
+//! Validates the JDN and provides a string representation.
 class julian {
 public:
 	//constructor
@@ -200,6 +227,13 @@ inline julian::julian(void)
 	// cor_usr is uninitialised so it can be set
 	corr_set = 0;
 }
+
+//! \class mdate
+//! \brief A Mayan date class
+
+//! Class mdate inherits several date objects to provide a simple interface
+//! for converting Western calendar dates to and from Mayan calendar dates via
+//! Julian Day numbers.
 
 class mdate : public longdate, gregdate, haabdate, tzolkindate, julian {
 public:

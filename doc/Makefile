@@ -33,3 +33,6 @@ mdate.pdf: mdate.xml
 # pregenerated.
 apidoc:
 	doxygen Doxyfile
+
+apiclean:
+	rm -rf html/ xml/
