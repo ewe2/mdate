@@ -1,6 +1,9 @@
 Mdate API
 =========
 
+The information in this file is likely to be obsolete! Please refer to the
+Doxygen generated API instead!
+
 Updated for v1.5.0
 ------------------------------------------------------------------------------
 
@@ -66,7 +69,7 @@ doubtful. gregdate::gregdate_sstr() does most of the work of passing date
 formats to strftime() There are still some (overloaded) string
 functions, but they will in time be totally replaced.
 
-mdate.cc outline:
+mdate.cpp outline:
 
 The AMOD(x,y) macro ensures positive moduli in certain situations. It's only
 used in one place, don't panic.
@@ -110,7 +113,7 @@ calculator, gregdate::gregdate_str() was added to augment the default format
 output.
 
 
-main.cc:
+main.cpp:
 
 The business-end of the program.
 

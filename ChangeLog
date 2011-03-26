@@ -152,23 +152,15 @@ Date:   Mon Feb 28 22:58:29 2011 +1100
 ChangeLog
 Makefile
 
-commit 05d398763d20152b58f865e374e433b2fc064bcd
+commit 17ea749653437f1b57971d6698bdac4e4d356c41
 Author: Sean Dwyer <ewetoo@gmail.com>
-Date:   Sun Mar 27 02:42:24 2011 +1100
+Date:   Sun Mar 27 02:48:44 2011 +1100
 
-    Documentation targets and structure overhaul.
+    Removed pregenerated api documentation, oops
     
-    New doc/ subdirectory and submake added. This doesn't alter the main Makefile too much.
-    Added Doxygen API target and pregenerated documentation. Fixed a bug in the main xml target.
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
 
-Makefile
-db2fo
-db2html
-doc/Doxyfile
-doc/Makefile
-doc/db2fo
-doc/db2html
-doc/doxygen_log.txt
+ChangeLog
 doc/html/annotated.html
 doc/html/bc_s.png
 doc/html/bparse_8cpp.html
@@ -344,14 +336,6 @@ doc/html/tab_b.png
 doc/html/tab_h.png
 doc/html/tab_s.png
 doc/html/tabs.css
-doc/mdate.1
-doc/mdate.html
-doc/mdate.pdf
-doc/mdate.ps
-doc/mdate.txt
-doc/mdate.xml
-doc/mdate.xpr
-doc/mdate_pl.sgml
 doc/xml/bparse_8cpp.xml
 doc/xml/classgregdate.xml
 doc/xml/classhaabdate.xml
