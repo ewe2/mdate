@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="es_8h" kind="file">
+    <compoundname>es.h</compoundname>
+    <includedby refid="lang_8cpp" local="yes">/home/ewe2/devel/mdate/lang.cpp</includedby>
+    <invincdepgraph>
+      <node id="45">
+        <label>/home/ewe2/devel/mdate/es.h</label>
+        <link refid="es.h"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>/home/ewe2/devel/mdate/lang.cpp</label>
+        <link refid="lang_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="es_8h_1a4a188a3783858642396bcdb72815587d" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ES_MSG_CERR</definition>
+        <argsstring></argsstring>
+        <name>ES_MSG_CERR</name>
+        <initializer>&quot;Mdate: La opción `--correlation&apos; (`-c&apos;) aparece más de una vez.\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/es.h" line="60" bodyfile="/home/ewe2/devel/mdate/es.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="es_8h_1a4296d74f38c0b3602865057116b098f5" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ES_MSG_DERR</definition>
+        <argsstring></argsstring>
+        <name>ES_MSG_DERR</name>
+        <initializer>&quot;Mdate: La opción `--dmy&apos; (`-d&apos;) aparece más de una vez.\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/es.h" line="61" bodyfile="/home/ewe2/devel/mdate/es.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="es_8h_1a6276441dcb3cdd530568d688a412034c" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ES_MSG_JERR</definition>
+        <argsstring></argsstring>
+        <name>ES_MSG_JERR</name>
+        <initializer>&quot;Mdate: La opción `--<ref refid="classjulian" kindref="compound">julian</ref>&apos; (`-j&apos;) aparece más de una vez.\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/es.h" line="62" bodyfile="/home/ewe2/devel/mdate/es.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="es_8h_1a9b10024bedc75e87fe5a48f3a36139cb" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ES_MSG_LERR</definition>
+        <argsstring></argsstring>
+        <name>ES_MSG_LERR</name>
+        <initializer>&quot;Mdate: La opción `--longcount&apos; (`-l&apos;) aparece más de una vez.\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/es.h" line="63" bodyfile="/home/ewe2/devel/mdate/es.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="es_8h_1a8e6815c0dda54ea7f3cd30526a4a8339" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ES_MSG_OPTERR</definition>
+        <argsstring></argsstring>
+        <name>ES_MSG_OPTERR</name>
+        <initializer>&quot;Mdate: Opción desconocida: &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/es.h" line="64" bodyfile="/home/ewe2/devel/mdate/es.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="es_8h_1a5659f291d02e13b4d8a1f0a39af107b3" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ES_MSG_NONOPTERR</definition>
+        <argsstring></argsstring>
+        <name>ES_MSG_NONOPTERR</name>
+        <initializer>&quot;Demasiados argumentos que no eran opciones.\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/es.h" line="65" bodyfile="/home/ewe2/devel/mdate/es.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="es_8h_1a1013e4b250d7e595c06f57ee9e936917" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ES_MSG_LONGERR</definition>
+        <argsstring></argsstring>
+        <name>ES_MSG_LONGERR</name>
+        <initializer>&quot;La cuenta larga producida por esta fecha no es válida.\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/es.h" line="66" bodyfile="/home/ewe2/devel/mdate/es.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="es_8h_1a47ad087a674cc7958ffb66bf209b884f" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ES_MSG_GENERR</definition>
+        <argsstring></argsstring>
+        <name>ES_MSG_GENERR</name>
+        <initializer>&quot;¡Error!\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/es.h" line="67" bodyfile="/home/ewe2/devel/mdate/es.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="es_8h_1a042beed266f4e062732de549da8ec12b" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ES_MSG_ILC</definition>
+        <argsstring></argsstring>
+        <name>ES_MSG_ILC</name>
+        <initializer>&quot;La cuenta larga introducida no es válida.\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/es.h" line="68" bodyfile="/home/ewe2/devel/mdate/es.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="es_8h_1a9853261bb62fb7193d6e5a8aefe965ab" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ES_MSG_IGD</definition>
+        <argsstring></argsstring>
+        <name>ES_MSG_IGD</name>
+        <initializer>&quot;La fecha gregoriana introducida no es válida.\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/es.h" line="69" bodyfile="/home/ewe2/devel/mdate/es.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="es_8h_1a2512ac35b3b220380b03b172e7083178" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ES_MSG_IJDN</definition>
+        <argsstring></argsstring>
+        <name>ES_MSG_IJDN</name>
+        <initializer>&quot;El número de día juliano introducido no es válido.\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/es.h" line="70" bodyfile="/home/ewe2/devel/mdate/es.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="es_8h_1a0a160b4cff4ee84a2da5e7dcc65a1f41" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ES_MSG_FORMATERR</definition>
+        <argsstring></argsstring>
+        <name>ES_MSG_FORMATERR</name>
+        <initializer>&quot;¡Formato desconocido!\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/es.h" line="71" bodyfile="/home/ewe2/devel/mdate/es.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="es_8h_1a8eda316854840c950006c3bc8e8c4ddd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char es_pretty_format[]</type>
+        <definition>static char es_pretty_format [] __attribute__</definition>
+        <argsstring>((unused))</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(unused)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/es.h" line="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Translation<sp/>of<sp/>mdate<sp/>to<sp/>Castilian<sp/>(Spanish)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>distributed<sp/>under<sp/>the<sp/>same<sp/>license<sp/>as<sp/>the<sp/>mdate<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>1998-2009<sp/>Sean<sp/>Dwyer<sp/>&lt;ewe2@users.sourceforge.net&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Quique<sp/>&lt;quique@sindominio.net&gt;,<sp/>2003,<sp/>2004</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>version<sp/>1.5.1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>$Id$</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>=============================<sp/>Mdate<sp/>help<sp/>===============================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>STATIC_HELP</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>es_helptext[]<sp/>__attribute__<sp/>((unused))<sp/>=</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Mdate<sp/>muestra<sp/>fechas<sp/>mayas<sp/>simples.\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Sintaxis:<sp/>mdate<sp/>[OPCIÓN]...<sp/>[+FORMATO]\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>-h,<sp/>--help<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Muestra<sp/>este<sp/>mensaje<sp/>de<sp/>ayuda<sp/>y<sp/>acaba.\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>-V,<sp/>--version<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Muestra<sp/>la<sp/>versión<sp/>del<sp/>programa<sp/>y<sp/>acaba.\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>-p,<sp/>--parseable<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Salida<sp/>analizable<sp/>por<sp/>un<sp/>programa\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(por<sp/>omisión:<sp/>desactivado).\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>-g,<sp/>--gmt<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Usa<sp/>la<sp/>correlación<sp/>Goodman-Martínez-Thompson.\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(por<sp/>omisión:<sp/>desactivado).\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>-L,<sp/>--lang=IDIOMA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Cambia<sp/>de<sp/>idioma<sp/>(por<sp/>omisión:<sp/>en).\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>-c,<sp/>--correlation=DOBLE<sp/><sp/><sp/>Correlación<sp/>opcional<sp/>(por<sp/>omisión:<sp/>no).\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>-d,<sp/>--dmy=CADENA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Día<sp/>mes<sp/>año<sp/>(gregoriano).\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>-j,<sp/>--julian=DOBLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Número<sp/>de<sp/>día<sp/>juliano.\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>-l,<sp/>--longcount=CADENA<sp/><sp/><sp/><sp/>Cuenta<sp/>larga.\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Se<sp/>aceptan<sp/>los<sp/>siguientes<sp/>identificadores<sp/>de<sp/>IDIOMA:\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>en<sp/>Inglés\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>es<sp/>Castellano\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>pl<sp/>Polaco\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>de<sp/>Alemán\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>fr<sp/>Francés\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Se<sp/>aceptan<sp/>los<sp/>siguientes<sp/>identificadores<sp/>de<sp/>FORMATO:\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@a<sp/>nombre<sp/>del<sp/>día<sp/>de<sp/>la<sp/>semana<sp/>abreviado\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@A<sp/>nombre<sp/>del<sp/>día<sp/>de<sp/>la<sp/>semana<sp/>completo\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@b<sp/>nombre<sp/>del<sp/>mes<sp/>abreviado\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@B<sp/>nombre<sp/>del<sp/>mes<sp/>completo\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@d<sp/>día<sp/>del<sp/>mes<sp/>(01<sp/>-<sp/>31)\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@e<sp/>día<sp/>del<sp/>mes<sp/>sin<sp/>cero<sp/>inicial\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@F<sp/>fecha<sp/>gregoriana<sp/>en<sp/>formato<sp/>ISO<sp/>(%Y-%m-%d)\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@f<sp/>fecha<sp/>gregoriana<sp/>en<sp/>formato<sp/>ISO<sp/>(%Y%m%d)\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@h<sp/>fecha<sp/>Haab<sp/>sin<sp/>relleno\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@H<sp/>fecha<sp/>Haab<sp/>con<sp/>relleno\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@l<sp/>cuenta<sp/>larga\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@M<sp/>nombre<sp/>del<sp/>mes<sp/>gregoriano\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@m<sp/>número<sp/>del<sp/>mes<sp/>gregoriano\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@t<sp/>fecha<sp/>Tzolkin<sp/>con<sp/>relleno\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@T<sp/>fecha<sp/>Tzolkin<sp/>sin<sp/>relleno\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@y<sp/>año<sp/>como<sp/>decimal<sp/>de<sp/>00<sp/>a<sp/>99\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@Y<sp/>año<sp/>gregoriano\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@n<sp/>añadir<sp/>un<sp/>salto<sp/>de<sp/>línea<sp/>a<sp/>la<sp/>salida\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@j<sp/>añadir<sp/>un<sp/>tabulador<sp/>a<sp/>la<sp/>salida\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/>=============================<sp/>Mdate<sp/>messages<sp/>===========================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="es_8h_1a4a188a3783858642396bcdb72815587d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="es_8h_1a4a188a3783858642396bcdb72815587d" kindref="member">ES_MSG_CERR</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Mdate:<sp/>La<sp/>opción<sp/>`--correlation&apos;<sp/>(`-c&apos;)<sp/>aparece<sp/>más<sp/>de<sp/>una<sp/>vez.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61" refid="es_8h_1a4296d74f38c0b3602865057116b098f5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="es_8h_1a4296d74f38c0b3602865057116b098f5" kindref="member">ES_MSG_DERR</ref><sp/>=<sp/><sp/></highlight><highlight class="stringliteral">&quot;Mdate:<sp/>La<sp/>opción<sp/>`--dmy&apos;<sp/>(`-d&apos;)<sp/>aparece<sp/>más<sp/>de<sp/>una<sp/>vez.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62" refid="es_8h_1a6276441dcb3cdd530568d688a412034c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="es_8h_1a6276441dcb3cdd530568d688a412034c" kindref="member">ES_MSG_JERR</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Mdate:<sp/>La<sp/>opción<sp/>`--julian&apos;<sp/>(`-j&apos;)<sp/>aparece<sp/>más<sp/>de<sp/>una<sp/>vez.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63" refid="es_8h_1a9b10024bedc75e87fe5a48f3a36139cb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="es_8h_1a9b10024bedc75e87fe5a48f3a36139cb" kindref="member">ES_MSG_LERR</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Mdate:<sp/>La<sp/>opción<sp/>`--longcount&apos;<sp/>(`-l&apos;)<sp/>aparece<sp/>más<sp/>de<sp/>una<sp/>vez.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64" refid="es_8h_1a8e6815c0dda54ea7f3cd30526a4a8339" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="es_8h_1a8e6815c0dda54ea7f3cd30526a4a8339" kindref="member">ES_MSG_OPTERR</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Mdate:<sp/>Opción<sp/>desconocida:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65" refid="es_8h_1a5659f291d02e13b4d8a1f0a39af107b3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="es_8h_1a5659f291d02e13b4d8a1f0a39af107b3" kindref="member">ES_MSG_NONOPTERR</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Demasiados<sp/>argumentos<sp/>que<sp/>no<sp/>eran<sp/>opciones.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66" refid="es_8h_1a1013e4b250d7e595c06f57ee9e936917" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="es_8h_1a1013e4b250d7e595c06f57ee9e936917" kindref="member">ES_MSG_LONGERR</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;La<sp/>cuenta<sp/>larga<sp/>producida<sp/>por<sp/>esta<sp/>fecha<sp/>no<sp/>es<sp/>válida.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67" refid="es_8h_1a47ad087a674cc7958ffb66bf209b884f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="es_8h_1a47ad087a674cc7958ffb66bf209b884f" kindref="member">ES_MSG_GENERR</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;¡Error!\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68" refid="es_8h_1a042beed266f4e062732de549da8ec12b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="es_8h_1a042beed266f4e062732de549da8ec12b" kindref="member">ES_MSG_ILC</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;La<sp/>cuenta<sp/>larga<sp/>introducida<sp/>no<sp/>es<sp/>válida.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69" refid="es_8h_1a9853261bb62fb7193d6e5a8aefe965ab" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="es_8h_1a9853261bb62fb7193d6e5a8aefe965ab" kindref="member">ES_MSG_IGD</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;La<sp/>fecha<sp/>gregoriana<sp/>introducida<sp/>no<sp/>es<sp/>válida.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70" refid="es_8h_1a2512ac35b3b220380b03b172e7083178" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="es_8h_1a2512ac35b3b220380b03b172e7083178" kindref="member">ES_MSG_IJDN</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;El<sp/>número<sp/>de<sp/>día<sp/>juliano<sp/>introducido<sp/>no<sp/>es<sp/>válido.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71" refid="es_8h_1a0a160b4cff4ee84a2da5e7dcc65a1f41" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="es_8h_1a0a160b4cff4ee84a2da5e7dcc65a1f41" kindref="member">ES_MSG_FORMATERR</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;¡Formato<sp/>desconocido!\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/>=============================<sp/>Mdate<sp/>formats<sp/>============================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>es_pretty_format[]<sp/>__attribute__<sp/>((unused))<sp/>=</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Fecha<sp/>gregoriana<sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>@d-@B-@Y<sp/>(@d/@m/@Y)\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Número<sp/>de<sp/>día<sp/>juliano<sp/>:<sp/>@J\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Cuenta<sp/>larga<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>@l\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Fecha<sp/>Tzolkin<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>@T\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Fecha<sp/>Haab<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>@h\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>es_default_format[]<sp/>__attribute__<sp/>((unused))<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;NDJ:<sp/>@J<sp/>fecha:<sp/>@d<sp/>@m<sp/>@Y<sp/><sp/>@l<sp/>@T<sp/>@H&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//<sp/>=============================<sp/>Mdate<sp/>days<sp/>===============================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*es_short_days[]<sp/>__attribute__<sp/>((unused))<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;lun&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;mar&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;mié&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;jue&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;vie&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;sáb&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;dom&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*es_days[]<sp/>__attribute__<sp/>((unused))<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;lunes&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;martes&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;miércoles&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;jueves&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;viernes&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;sábado&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;domingo&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/ewe2/devel/mdate/es.h"/>
+  </compounddef>
+</doxygen>

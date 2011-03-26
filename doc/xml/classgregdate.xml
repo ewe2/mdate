@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="classgregdate" kind="class" prot="public">
+    <compoundname>gregdate</compoundname>
+    <derivedcompoundref refid="classmdate" prot="private" virt="non-virtual">mdate</derivedcompoundref>
+    <includes refid="mdate_8h" local="no">mdate.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classgregdate_1aa1d735148f6cba1d928f28633359e5c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class mdate</definition>
+        <argsstring></argsstring>
+        <name>mdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="102" bodyfile="/home/ewe2/devel/mdate/mdate.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgregdate_1a1c694c2f9a754320a36cf03da1f3e36a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gregdate::day</definition>
+        <argsstring></argsstring>
+        <name>day</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="116" bodyfile="/home/ewe2/devel/mdate/mdate.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgregdate_1a195e5c1d58f60d5e23988e1c678fbab2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gregdate::month</definition>
+        <argsstring></argsstring>
+        <name>month</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="116" bodyfile="/home/ewe2/devel/mdate/mdate.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgregdate_1aecce5207759e9d13da46aac829cc1344" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gregdate::year</definition>
+        <argsstring></argsstring>
+        <name>year</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="116" bodyfile="/home/ewe2/devel/mdate/mdate.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgregdate_1a4ba313592c2e3e813e753f18703b9300" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gregdate::wday</definition>
+        <argsstring></argsstring>
+        <name>wday</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="116" bodyfile="/home/ewe2/devel/mdate/mdate.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgregdate_1a5b657c34269f9d1247b04c6a94ff328d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gregdate::gregdate</definition>
+        <argsstring>(void)</argsstring>
+        <name>gregdate</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="99" bodyfile="/home/ewe2/devel/mdate/mdate.h" bodystart="119" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classgregdate_1ab05124cab2f4b7af18df7b9a8b8b7705" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gregdate::gregorian_leap_year</definition>
+        <argsstring>(int g_year)</argsstring>
+        <name>gregorian_leap_year</name>
+        <param>
+          <type>int</type>
+          <declname>g_year</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="105" bodyfile="/home/ewe2/devel/mdate/mdate.cpp" bodystart="214" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classgregdate_1a02487efb588ca55e0f43e284324bb385" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gregdate::gregdate_weekday</definition>
+        <argsstring>(gregdate from)</argsstring>
+        <name>gregdate_weekday</name>
+        <param>
+          <type><ref refid="classgregdate" kindref="compound">gregdate</ref></type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="106" bodyfile="/home/ewe2/devel/mdate/mdate.cpp" bodystart="220" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classgregdate_1afa7258dda92aab04ce365d7dcafaf747" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gregdate::is_valid_gregdate</definition>
+        <argsstring>(gregdate date)</argsstring>
+        <name>is_valid_gregdate</name>
+        <param>
+          <type><ref refid="classgregdate" kindref="compound">gregdate</ref></type>
+          <declname>date</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="107" bodyfile="/home/ewe2/devel/mdate/mdate.cpp" bodystart="241" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="classgregdate_1aa8147581a4a6395bad1d017e45e683f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gregdate::set_gregdate</definition>
+        <argsstring>(int day, int month, int year)</argsstring>
+        <name>set_gregdate</name>
+        <param>
+          <type>int</type>
+          <declname>day</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>month</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="108" bodyfile="/home/ewe2/devel/mdate/mdate.cpp" bodystart="134" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classgregdate_1a4a39294a22ed6c033c725c769e480de8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gregdate::gregdate_tostr</definition>
+        <argsstring>(gregdate from, char *to)</argsstring>
+        <name>gregdate_tostr</name>
+        <param>
+          <type><ref refid="classgregdate" kindref="compound">gregdate</ref></type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="109" bodyfile="/home/ewe2/devel/mdate/mdate.cpp" bodystart="260" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classgregdate_1a25c3aba20144a807cadeaf766ed178b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gregdate::gregdate_tostr</definition>
+        <argsstring>(int pflag, gregdate from, char *to)</argsstring>
+        <name>gregdate_tostr</name>
+        <param>
+          <type>int</type>
+          <declname>pflag</declname>
+        </param>
+        <param>
+          <type><ref refid="classgregdate" kindref="compound">gregdate</ref></type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="110" bodyfile="/home/ewe2/devel/mdate/mdate.cpp" bodystart="270" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classgregdate_1accd8cc5622f583157f84cd926b25bf72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gregdate::gregdate_sstr</definition>
+        <argsstring>(char *format, gregdate from, char *to)</argsstring>
+        <name>gregdate_sstr</name>
+        <param>
+          <type>char *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type><ref refid="classgregdate" kindref="compound">gregdate</ref></type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="111" bodyfile="/home/ewe2/devel/mdate/mdate.cpp" bodystart="285" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classgregdate_1af04d56abe4f25069950c090eaa3c479e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * gregdate::gregday_str</definition>
+        <argsstring>(int flag, int from)</argsstring>
+        <name>gregday_str</name>
+        <param>
+          <type>int</type>
+          <declname>flag</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="112" bodyfile="/home/ewe2/devel/mdate/mdate.cpp" bodystart="398" bodyend="407"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>mdate</label>
+        <link refid="classmdate"/>
+        <childnode refid="2" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gregdate</label>
+        <link refid="classgregdate"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/ewe2/devel/mdate/mdate.h" line="96" bodyfile="/home/ewe2/devel/mdate/mdate.h" bodystart="96" bodyend="117"/>
+    <listofallmembers>
+      <member refid="classgregdate_1a1c694c2f9a754320a36cf03da1f3e36a" prot="private" virt="non-virtual"><scope>gregdate</scope><name>day</name></member>
+      <member refid="classgregdate_1a5b657c34269f9d1247b04c6a94ff328d" prot="public" virt="non-virtual"><scope>gregdate</scope><name>gregdate</name></member>
+      <member refid="classgregdate_1accd8cc5622f583157f84cd926b25bf72" prot="public" virt="non-virtual"><scope>gregdate</scope><name>gregdate_sstr</name></member>
+      <member refid="classgregdate_1a4a39294a22ed6c033c725c769e480de8" prot="public" virt="non-virtual"><scope>gregdate</scope><name>gregdate_tostr</name></member>
+      <member refid="classgregdate_1a25c3aba20144a807cadeaf766ed178b1" prot="public" virt="non-virtual"><scope>gregdate</scope><name>gregdate_tostr</name></member>
+      <member refid="classgregdate_1a02487efb588ca55e0f43e284324bb385" prot="public" virt="non-virtual"><scope>gregdate</scope><name>gregdate_weekday</name></member>
+      <member refid="classgregdate_1af04d56abe4f25069950c090eaa3c479e" prot="public" virt="non-virtual"><scope>gregdate</scope><name>gregday_str</name></member>
+      <member refid="classgregdate_1ab05124cab2f4b7af18df7b9a8b8b7705" prot="public" virt="non-virtual"><scope>gregdate</scope><name>gregorian_leap_year</name></member>
+      <member refid="classgregdate_1afa7258dda92aab04ce365d7dcafaf747" prot="public" virt="non-virtual"><scope>gregdate</scope><name>is_valid_gregdate</name></member>
+      <member refid="classgregdate_1aa1d735148f6cba1d928f28633359e5c8" prot="public" virt="non-virtual"><scope>gregdate</scope><name>mdate</name></member>
+      <member refid="classgregdate_1a195e5c1d58f60d5e23988e1c678fbab2" prot="private" virt="non-virtual"><scope>gregdate</scope><name>month</name></member>
+      <member refid="classgregdate_1aa8147581a4a6395bad1d017e45e683f2" prot="public" virt="non-virtual"><scope>gregdate</scope><name>set_gregdate</name></member>
+      <member refid="classgregdate_1a4ba313592c2e3e813e753f18703b9300" prot="private" virt="non-virtual"><scope>gregdate</scope><name>wday</name></member>
+      <member refid="classgregdate_1aecce5207759e9d13da46aac829cc1344" prot="private" virt="non-virtual"><scope>gregdate</scope><name>year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

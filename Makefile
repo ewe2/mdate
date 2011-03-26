@@ -238,7 +238,7 @@ endif
 
 all: mdate
 
-.PHONY: help clean docclean distclean gitch updategit reltag devtag
+.PHONY: help clean docpplean distclean gitch updategit reltag devtag
 # need this for directory search
 
 mdate: $(OBJS)
@@ -271,6 +271,9 @@ installman: mdate
 
 installdoc: createdoc installman
 	[ -d $(DOCDIR) ] || mkdir -p $(DOCDIR); \
+	install -m 644  doc/mdate.dvi doc/mdate.ps $(DOCDIR); \
+	gzip $(DOCDIR)/mdate.dvi $(DOCDIR)/mdate.ps; \
+	install -m 644 doc/mdate.text $(DOCDIR);	gzip $(DOCDIR)/mdate.text ; \
 	install -m 644  README NEWS ChangeLog GPL API $(DOCDIR); \
 	install -m 644  AUTHORS Translators $(DOCDIR); \
 	[ -d $(HTMLDIR) ] || mkdir -p $(HTMLDIR); \
@@ -297,7 +300,7 @@ distclean: clean docclean
 SOURCES=*.cpp *.c *.h
 DOX=doc/mdate.html doc/mdate.pdf doc/mdate.txt NEWS README GPL API ChangeLog \
 AUTHORS doc/mdate.xml Translators doc/mdate.1 BUGS ChangeLog.old README.devel
-CONFS=Makefile mdate.spec ChangeLog.header .gitattributes .gitignore
+CONFS=Makefile mdate.spec ChangeLog.header .gitattributes .gitignore doc/mdate.xpr
 DEBCONF=debian/*
 DISTFILES= $(SOURCES) $(DOX) $(CONFS)
 

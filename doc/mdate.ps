@@ -1,0 +1,10252 @@
+%!PS-Adobe-3.0
+%%Creator: (Apache FOP Version 0.95)
+%%CreationDate: 2011-03-27T02:18:53
+%%LanguageLevel: 3
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%HiResBoundingBox: (atend)
+%%DocumentSuppliedResources: (atend)
+%%EndComments
+%%BeginDefaults
+%%EndDefaults
+%%BeginProlog
+%%BeginResource: procset (Apache XML Graphics Std ProcSet) 1.0 0
+%%Version: 1.0 0
+%%Copyright: (Copyright 2001-2003 The Apache Software Foundation. License terms: http://www.apache.org/licenses/LICENSE-2.0)
+%%Title: (Basic set of procedures used by the XML Graphics project \(Batik and FOP\))
+/bd{bind def}bind def
+/ld{load def}bd
+/M/moveto ld
+/RM/rmoveto ld
+/t/show ld
+/A/ashow ld
+/cp/closepath ld
+/re {4 2 roll M
+1 index 0 rlineto
+0 exch rlineto
+neg 0 rlineto
+cp } bd
+/_ctm matrix def
+/_tm matrix def
+/BT { _ctm currentmatrix pop matrix _tm copy pop 0 0 moveto } bd
+/ET { _ctm setmatrix } bd
+/iTm { _ctm setmatrix _tm concat } bd
+/Tm { _tm astore pop iTm 0 0 moveto } bd
+/ux 0.0 def
+/uy 0.0 def
+/F {
+  /Tp exch def
+  /Tf exch def
+  Tf findfont Tp scalefont setfont
+  /cf Tf def  /cs Tp def  /cw ( ) stringwidth pop def
+} bd
+/ULS {currentpoint /uy exch def /ux exch def} bd
+/ULE {
+  /Tcx currentpoint pop def
+  gsave
+  newpath
+  cf findfont cs scalefont dup
+  /FontMatrix get 0 get /Ts exch def /FontInfo get dup
+  /UnderlinePosition get Ts mul /To exch def
+  /UnderlineThickness get Ts mul /Tt exch def
+  ux uy To add moveto  Tcx uy To add lineto
+  Tt setlinewidth stroke
+  grestore
+} bd
+/OLE {
+  /Tcx currentpoint pop def
+  gsave
+  newpath
+  cf findfont cs scalefont dup
+  /FontMatrix get 0 get /Ts exch def /FontInfo get dup
+  /UnderlinePosition get Ts mul /To exch def
+  /UnderlineThickness get Ts mul /Tt exch def
+  ux uy To add cs add moveto Tcx uy To add cs add lineto
+  Tt setlinewidth stroke
+  grestore
+} bd
+/SOE {
+  /Tcx currentpoint pop def
+  gsave
+  newpath
+  cf findfont cs scalefont dup
+  /FontMatrix get 0 get /Ts exch def /FontInfo get dup
+  /UnderlinePosition get Ts mul /To exch def
+  /UnderlineThickness get Ts mul /Tt exch def
+  ux uy To add cs 10 mul 26 idiv add moveto Tcx uy To add cs 10 mul 26 idiv add lineto
+  Tt setlinewidth stroke
+  grestore
+} bd
+/QUADTO {
+/Y22 exch store
+/X22 exch store
+/Y21 exch store
+/X21 exch store
+currentpoint
+/Y21 load 2 mul add 3 div exch
+/X21 load 2 mul add 3 div exch
+/X21 load 2 mul /X22 load add 3 div
+/Y21 load 2 mul /Y22 load add 3 div
+/X22 load /Y22 load curveto
+} bd
+/SSPD {
+dup length /d exch dict def
+{
+/v exch def
+/k exch def
+currentpagedevice k known {
+/cpdv currentpagedevice k get def
+v cpdv ne {
+/upd false def
+/nullv v type /nulltype eq def
+/nullcpdv cpdv type /nulltype eq def
+nullv nullcpdv or
+{
+/upd true def
+} {
+/sametype v type cpdv type eq def
+sametype {
+v type /arraytype eq {
+/vlen v length def
+/cpdvlen cpdv length def
+vlen cpdvlen eq {
+0 1 vlen 1 sub {
+/i exch def
+/obj v i get def
+/cpdobj cpdv i get def
+obj cpdobj ne {
+/upd true def
+exit
+} if
+} for
+} {
+/upd true def
+} ifelse
+} {
+v type /dicttype eq {
+v {
+/dv exch def
+/dk exch def
+/cpddv cpdv dk get def
+dv cpddv ne {
+/upd true def
+exit
+} if
+} forall
+} {
+/upd true def
+} ifelse
+} ifelse
+} if
+} ifelse
+upd true eq {
+d k v put
+} if
+} if
+} if
+} forall
+d length 0 gt {
+d setpagedevice
+} if
+} bd
+%%EndResource
+%%BeginResource: procset (Apache XML Graphics EPS ProcSet) 1.0 0
+%%Version: 1.0 0
+%%Copyright: (Copyright 2002-2003 The Apache Software Foundation. License terms: http://www.apache.org/licenses/LICENSE-2.0)
+%%Title: (EPS procedures used by the Apache XML Graphics project \(Batik and FOP\))
+/BeginEPSF { %def
+/b4_Inc_state save def         % Save state for cleanup
+/dict_count countdictstack def % Count objects on dict stack
+/op_count count 1 sub def      % Count objects on operand stack
+userdict begin                 % Push userdict on dict stack
+/showpage { } def              % Redefine showpage, { } = null proc
+0 setgray 0 setlinecap         % Prepare graphics state
+1 setlinewidth 0 setlinejoin
+10 setmiterlimit [ ] 0 setdash newpath
+/languagelevel where           % If level not equal to 1 then
+{pop languagelevel             % set strokeadjust and
+1 ne                           % overprint to their defaults.
+{false setstrokeadjust false setoverprint
+} if
+} if
+} bd
+/EndEPSF { %def
+count op_count sub {pop} repeat            % Clean up stacks
+countdictstack dict_count sub {end} repeat
+b4_Inc_state restore
+} bd
+%%EndResource
+%%EndProlog
+%%BeginSetup
+%FOPBeginFontDict
+%%IncludeResource: font Courier-Bold
+%%IncludeResource: font Courier-BoldOblique
+%%IncludeResource: font Courier-Oblique
+%%IncludeResource: font Times-BoldItalic
+%%IncludeResource: font Courier
+%%IncludeResource: font Times-Italic
+%%IncludeResource: font Times-Bold
+%%IncludeResource: font Symbol
+%%IncludeResource: font ZapfDingbats
+%%IncludeResource: font Helvetica
+%%IncludeResource: font Times-Roman
+%%IncludeResource: font Helvetica-BoldOblique
+%%IncludeResource: font Helvetica-Bold
+%%IncludeResource: font Helvetica-Oblique
+%FOPEndFontDict
+%FOPBeginFontReencode
+%%BeginResource: encoding WinAnsiEncoding
+/WinAnsiEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle
+/parenleft /parenright /asterisk /plus /comma
+/hyphen /period /slash /zero /one
+/two /three /four /five /six
+/seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at
+/A /B /C /D /E
+/F /G /H /I /J
+/K /L /M /N /O
+/P /Q /R /S /T
+/U /V /W /X /Y
+/Z /bracketleft /backslash /bracketright /asciicircum
+/underscore /quoteleft /a /b /c
+/d /e /f /g /h
+/i /j /k /l /m
+/n /o /p /q /r
+/s /t /u /v /w
+/x /y /z /braceleft /bar
+/braceright /asciitilde /bullet /Euro /bullet
+/quotesinglbase /florin /quotedblbase /ellipsis /dagger
+/daggerdbl /circumflex /perthousand /Scaron /guilsinglleft
+/OE /bullet /Zcaron /bullet /bullet
+/quoteleft /quoteright /quotedblleft /quotedblright /bullet
+/endash /emdash /asciitilde /trademark /scaron
+/guilsinglright /oe /bullet /zcaron /Ydieresis
+/space /exclamdown /cent /sterling /currency
+/yen /brokenbar /section /dieresis /copyright
+/ordfeminine /guillemotleft /logicalnot /sfthyphen /registered
+/macron /degree /plusminus /twosuperior /threesuperior
+/acute /mu /paragraph /middot /cedilla
+/onesuperior /ordmasculine /guillemotright /onequarter /onehalf
+/threequarters /questiondown /Agrave /Aacute /Acircumflex
+/Atilde /Adieresis /Aring /AE /Ccedilla
+/Egrave /Eacute /Ecircumflex /Edieresis /Igrave
+/Iacute /Icircumflex /Idieresis /Eth /Ntilde
+/Ograve /Oacute /Ocircumflex /Otilde /Odieresis
+/multiply /Oslash /Ugrave /Uacute /Ucircumflex
+/Udieresis /Yacute /Thorn /germandbls /agrave
+/aacute /acircumflex /atilde /adieresis /aring
+/ae /ccedilla /egrave /eacute /ecircumflex
+/edieresis /igrave /iacute /icircumflex /idieresis
+/eth /ntilde /ograve /oacute /ocircumflex
+/otilde /odieresis /divide /oslash /ugrave
+/uacute /ucircumflex /udieresis /yacute /thorn
+/ydieresis
+] def
+%%EndResource
+/Courier-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Courier-Bold exch definefont pop
+/Courier-BoldOblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Courier-BoldOblique exch definefont pop
+/Courier-Oblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Courier-Oblique exch definefont pop
+/Times-BoldItalic findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Times-BoldItalic exch definefont pop
+/Courier findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Courier exch definefont pop
+/Times-Italic findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Times-Italic exch definefont pop
+/Times-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Times-Bold exch definefont pop
+/Helvetica findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Helvetica exch definefont pop
+/Times-Roman findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Times-Roman exch definefont pop
+/Helvetica-BoldOblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Helvetica-BoldOblique exch definefont pop
+/Helvetica-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Helvetica-Bold exch definefont pop
+/Helvetica-Oblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding WinAnsiEncoding def
+  currentdict
+end
+/Helvetica-Oblique exch definefont pop
+%FOPEndFontReencode
+%%EndSetup
+%%Page: 1 1
+%%PageBoundingBox: 0 0 612 792
+%%PageHiResBoundingBox: 0 0 612 792
+%%PageResources: (atend)
+%FOPSimplePageMaster: body-first
+%%BeginPageSetup
+%FOPBeginSetPageDevice
+<<
+/PageSize [612 792]
+/ImagingBBox null
+>> setpagedevice
+%FOPEndSetPageDevice
+[1 0 0 -1 0 792] concat
+%%EndPageSetup
+%FOPBeginRegionViewport: xsl-region-before-first
+gsave
+[1 0 0 1 72 36] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+156 14.25 M
+156 14.5 lineto
+0 14.5 lineto
+0 14.25 lineto
+0 14 lineto
+156 14 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 14.25 M 156 14.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+gsave
+[1 0 0 1 156 0] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+156 14.25 M
+156 14.5 lineto
+0 14.5 lineto
+0 14.25 lineto
+0 14 lineto
+156 14 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 14.25 M 156 14.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+grestore
+gsave
+[1 0 0 1 312 0] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+156 14.25 M
+156 14.5 lineto
+0 14.5 lineto
+0 14.25 lineto
+0 14 lineto
+156 14 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 14.25 M 156 14.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+grestore
+grestore
+%FOPEndRegionViewport
+%FOPBeginRegionViewport: xsl-region-after-first
+gsave
+[1 0 0 1 72 727.2] concat
+gsave
+[1 0 0 1 0 28.55] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+0 0.25 M
+0 0 lineto
+156 0 lineto
+156 0.25 lineto
+156 0.5 lineto
+0 0.5 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 0.25 M 156 0.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+grestore
+gsave
+[1 0 0 1 156 28.55] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+0 0.25 M
+0 0 lineto
+156 0 lineto
+156 0.25 lineto
+156 0.5 lineto
+0 0.5 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 0.25 M 156 0.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+/Times-Roman 10 F
+gsave
+BT
+1 0 0 -1 75.5 10.83 Tm
+(1) t
+ET
+grestore
+grestore
+gsave
+[1 0 0 1 312 28.55] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+0 0.25 M
+0 0 lineto
+156 0 lineto
+156 0.25 lineto
+156 0.5 lineto
+0 0.5 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 0.25 M 156 0.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+grestore
+grestore
+%FOPEndRegionViewport
+%FOPBeginRegionViewport: xsl-region-body
+gsave
+[1 0 0 1 72 72] concat
+/Helvetica-Bold 24.883 F
+gsave
+BT
+1 0 0 -1 198.058 21.287 Tm
+(Mdate)
+[20.727 15.203 13.834 8.286 13.834]
+xshow
+/Helvetica 14.4 F
+1 0 0 -1 71.829 49.378 Tm
+(Sean)
+[9.604 8.006 8.006 8.006]
+xshow
+4.003 0 RM
+(Dwyer)
+[10.396 10.396 7.2 8.006 4.795]
+xshow
+4.003 0 RM
+/Courier 14.4 F
+1 0 0 -1 154.25 49.378 Tm
+(<ewe2@users.sourceforge.net>)
+[8.64 8.64 8.64 8.64 8.64 8.64 8.64 8.64
+8.64 8.64 8.64 8.64 8.64 8.64 8.64 8.64
+8.64 8.64 8.64 8.64 8.64 8.64 8.64 8.64
+8.64 8.64 8.64 8.64]
+xshow
+ET
+grestore
+gsave
+[1 0 0 1 0 59.339] concat
+/Helvetica 10 F
+gsave
+BT
+1 0 0 -1 197.885 8.555 Tm
+(Revision)
+[7.22 5.56 5 2.22 5 2.22 5.56 5.56]
+xshow
+2.78 0 RM
+(History)
+[7.22 2.22 5 2.78 5.56 3.33 5]
+xshow
+ET
+grestore
+grestore
+gsave
+[1 0 0 1 0 71.339] concat
+/Helvetica 10 F
+gsave
+BT
+1 0 0 -1 50.49 8.555 Tm
+(Revision)
+[7.22 5.56 5 2.22 5 2.22 5.56 5.56]
+xshow
+2.78 0 RM
+(0.1)
+[5.56 2.78 5.56]
+xshow
+ET
+grestore
+grestore
+gsave
+[1 0 0 1 156 71.339] concat
+/Helvetica 10 F
+gsave
+BT
+1 0 0 -1 52.43 8.555 Tm
+(2009-06-14)
+[5.56 5.56 5.56 5.56 3.33 5.56 5.56 3.33
+5.56 5.56]
+xshow
+ET
+grestore
+grestore
+gsave
+[1 0 0 1 312 71.339] concat
+/Helvetica 10 F
+gsave
+BT
+1 0 0 -1 69.94 8.555 Tm
+(asd)
+[5.56 5 5.56]
+xshow
+ET
+grestore
+grestore
+gsave
+[1 0 0 1 0 83.339] concat
+/Helvetica 10 F
+gsave
+BT
+1 0 0 -1 127.295 8.555 Tm
+(Initial)
+[2.78 5.56 2.22 2.78 2.22 5.56 2.22]
+xshow
+2.78 0 RM
+(conversion)
+[5 5.56 5.56 5 5.56 3.33 5 2.22
+5.56 5.56]
+xshow
+2.78 0 RM
+(from)
+[2.78 3.33 5.56 8.33]
+xshow
+2.78 0 RM
+(linuxdoc)
+[2.22 2.22 5.56 5.56 5 5.56 5.56 5]
+xshow
+2.78 0 RM
+(to)
+[2.78 5.56]
+xshow
+2.78 0 RM
+(Docbook)
+[7.22 5.56 5 5.56 5.56 5.56 5]
+xshow
+2.78 0 RM
+(XML)
+[6.67 8.33 5.56]
+xshow
+ET
+grestore
+grestore
+gsave
+[1 0 0 1 0 95.339] concat
+/Helvetica 10 F
+gsave
+BT
+1 0 0 -1 33.26 8.555 Tm
+(Revision)
+[7.22 5.56 5 2.22 5 2.22 5.56 5.56]
+xshow
+2.78 0 RM
+($Rev:)
+[5.56 7.22 5.56 5 2.78]
+xshow
+2.78 0 RM
+(18)
+[5.56 5.56]
+xshow
+2.78 0 RM
+($)
+[5.56]
+xshow
+ET
+grestore
+grestore
+gsave
+[1 0 0 1 156 95.339] concat
+/Helvetica 10 F
+gsave
+BT
+1 0 0 -1 52.43 8.555 Tm
+(2009-11-15)
+[5.56 5.56 5.56 5.56 3.33 5.56 5.56 3.33
+5.56 5.56]
+xshow
+ET
+grestore
+grestore
+gsave
+[1 0 0 1 312 95.339] concat
+/Helvetica 10 F
+gsave
+BT
+1 0 0 -1 69.94 8.555 Tm
+(asd)
+[5.56 5 5.56]
+xshow
+ET
+grestore
+grestore
+gsave
+[1 0 0 1 0 107.339] concat
+/Helvetica 10 F
+gsave
+BT
+1 0 0 -1 208.165 8.555 Tm
+(Minor)
+[8.33 2.22 5.56 5.56 3.33]
+xshow
+2.78 0 RM
+(work.)
+[7.22 5.56 3.33 5 2.78]
+xshow
+ET
+grestore
+grestore
+gsave
+[1 0 0 1 0 119.339] concat
+/Helvetica 10 F
+gsave
+BT
+1 0 0 -1 49.1 8.555 Tm
+(Revision)
+[7.22 5.56 5 2.22 5 2.22 5.56 5.56]
+xshow
+2.78 0 RM
+($Id:)
+[5.56 2.78 5.56 2.78]
+xshow
+1 0 0 -1 -30.97 20.555 Tm
+(3b7919e113e1b728e73921c3386eece98fc78a4b)
+[5.56 5.56 5.56 5.56 5.56 5.56 5.56 5.56
+5.56 5.56 5.56 5.56 5.56 5.56 5.56 5.56
+5.56 5.56 5.56 5.56 5.56 5.56 5 5.56
+5.56 5.56 5.56 5.56 5.56 5 5.56 5.56
+5.56 2.78 5 5.56 5.56 5.56 5.56 5.56]
+xshow
+1 0 0 -1 75.22 32.555 Tm
+($)
+[5.56]
+xshow
+ET
+grestore
+grestore
+gsave
+[1 0 0 1 156 119.339] concat
+/Helvetica 10 F
+gsave
+BT
+1 0 0 -1 52.43 8.555 Tm
+(2011-01-12)
+[5.56 5.56 5.56 5.56 3.33 5.56 5.56 3.33
+5.56 5.56]
+xshow
+ET
+grestore
+grestore
+gsave
+[1 0 0 1 312 119.339] concat
+/Helvetica 10 F
+gsave
+BT
+1 0 0 -1 69.94 8.555 Tm
+(asd)
+[5.56 5 5.56]
+xshow
+ET
+grestore
+grestore
+gsave
+[1 0 0 1 0 155.339] concat
+/Helvetica 10 F
+gsave
+BT
+1 0 0 -1 189.815 8.555 Tm
+(per-version)
+[5.56 5.56 3.33 3.33 5 5.56 3.33 5
+2.22 5.56 5.56]
+xshow
+2.78 0 RM
+(updates)
+[5.56 5.56 5.56 5.56 2.78 5.56 5]
+xshow
+ET
+grestore
+grestore
+/Helvetica-Bold 10 F
+gsave
+BT
+1 0 0 -1 213.72 184.191 Tm
+(Abstract)
+[7.22 6.11 5.56 3.33 3.89 5.56 5.56 3.33]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 0 204.263 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+2.5 0 RM
+(is)
+[2.78 3.89]
+xshow
+2.5 0 RM
+(an)
+[4.44 5]
+xshow
+2.5 0 RM
+(easy)
+[4.44 4.44 3.89 5]
+xshow
+2.5 0 RM
+(to)
+[2.78 5]
+xshow
+2.5 0 RM
+(use)
+[5 3.89 4.44]
+xshow
+2.5 0 RM
+(command-line)
+[4.44 5 7.78 7.78 4.44 5 5 3.33
+2.78 2.78 5 4.44]
+xshow
+2.5 0 RM
+(utility)
+[5 2.78 2.78 2.78 2.78 2.78 5]
+xshow
+2.5 0 RM
+(for)
+[3.33 5 3.33]
+xshow
+2.5 0 RM
+(conversion)
+[4.44 5 5 5 4.44 3.33 3.89 2.78
+5 5]
+xshow
+2.5 0 RM
+(between)
+[5 4.44 2.78 7.22 4.44 4.44 5]
+xshow
+2.5 0 RM
+(Gregorian)
+[7.22 3.33 4.44 5 5 3.33 2.78 4.44
+5]
+xshow
+2.5 0 RM
+(calendar)
+[4.44 4.44 2.78 4.44 5 5 4.44 3.33]
+xshow
+2.5 0 RM
+(dates)
+[5 4.44 2.78 4.44 3.89]
+xshow
+2.5 0 RM
+(and)
+[4.44 5 5]
+xshow
+2.5 0 RM
+(Mayan)
+[8.89 4.44 5 4.44 5]
+xshow
+2.5 0 RM
+(calendar)
+[4.44 4.44 2.78 4.44 5 5 4.44 3.33]
+xshow
+1 0 0 -1 0 216.263 Tm
+(dates.)
+[5 4.44 2.78 4.44 3.89 2.5]
+xshow
+/Helvetica-Bold 17.28 F
+1 0 0 -1 48 253.276 Tm
+(Table)
+[10.558 9.607 10.558 4.803 9.607]
+xshow
+4.803 0 RM
+(of)
+[10.558 5.754]
+xshow
+4.803 0 RM
+(Contents)
+[12.476 10.558 10.558 5.754 9.607 10.558 5.754 9.607]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 48 276.199 Tm
+(Introduction)
+[3.33 5 2.78 3.33 5 5 5 4.44
+2.78 2.78 5 5]
+xshow
+1 0 0 -1 97.44 276.199 Tm
+3.627 0 RM
+1 0 0 -1 101.067 276.199 Tm
+(.) t
+1 0 0 -1 104.067 276.199 Tm
+(.) t
+1 0 0 -1 107.067 276.199 Tm
+(.) t
+1 0 0 -1 110.067 276.199 Tm
+(.) t
+1 0 0 -1 113.067 276.199 Tm
+(.) t
+1 0 0 -1 116.067 276.199 Tm
+(.) t
+1 0 0 -1 119.067 276.199 Tm
+(.) t
+1 0 0 -1 122.067 276.199 Tm
+(.) t
+1 0 0 -1 125.067 276.199 Tm
+(.) t
+1 0 0 -1 128.067 276.199 Tm
+(.) t
+1 0 0 -1 131.067 276.199 Tm
+(.) t
+1 0 0 -1 134.067 276.199 Tm
+(.) t
+1 0 0 -1 137.067 276.199 Tm
+(.) t
+1 0 0 -1 140.067 276.199 Tm
+(.) t
+1 0 0 -1 143.067 276.199 Tm
+(.) t
+1 0 0 -1 146.067 276.199 Tm
+(.) t
+1 0 0 -1 149.067 276.199 Tm
+(.) t
+1 0 0 -1 152.067 276.199 Tm
+(.) t
+1 0 0 -1 155.067 276.199 Tm
+(.) t
+1 0 0 -1 158.067 276.199 Tm
+(.) t
+1 0 0 -1 161.067 276.199 Tm
+(.) t
+1 0 0 -1 164.067 276.199 Tm
+(.) t
+1 0 0 -1 167.067 276.199 Tm
+(.) t
+1 0 0 -1 170.067 276.199 Tm
+(.) t
+1 0 0 -1 173.067 276.199 Tm
+(.) t
+1 0 0 -1 176.067 276.199 Tm
+(.) t
+1 0 0 -1 179.067 276.199 Tm
+(.) t
+1 0 0 -1 182.067 276.199 Tm
+(.) t
+1 0 0 -1 185.067 276.199 Tm
+(.) t
+1 0 0 -1 188.067 276.199 Tm
+(.) t
+1 0 0 -1 191.067 276.199 Tm
+(.) t
+1 0 0 -1 194.067 276.199 Tm
+(.) t
+1 0 0 -1 197.067 276.199 Tm
+(.) t
+1 0 0 -1 200.067 276.199 Tm
+(.) t
+1 0 0 -1 203.067 276.199 Tm
+(.) t
+1 0 0 -1 206.067 276.199 Tm
+(.) t
+1 0 0 -1 209.067 276.199 Tm
+(.) t
+1 0 0 -1 212.067 276.199 Tm
+(.) t
+1 0 0 -1 215.067 276.199 Tm
+(.) t
+1 0 0 -1 218.067 276.199 Tm
+(.) t
+1 0 0 -1 221.067 276.199 Tm
+(.) t
+1 0 0 -1 224.067 276.199 Tm
+(.) t
+1 0 0 -1 227.067 276.199 Tm
+(.) t
+1 0 0 -1 230.067 276.199 Tm
+(.) t
+1 0 0 -1 233.067 276.199 Tm
+(.) t
+1 0 0 -1 236.067 276.199 Tm
+(.) t
+1 0 0 -1 239.067 276.199 Tm
+(.) t
+1 0 0 -1 242.067 276.199 Tm
+(.) t
+1 0 0 -1 245.067 276.199 Tm
+(.) t
+1 0 0 -1 248.067 276.199 Tm
+(.) t
+1 0 0 -1 251.067 276.199 Tm
+(.) t
+1 0 0 -1 254.067 276.199 Tm
+(.) t
+1 0 0 -1 257.067 276.199 Tm
+(.) t
+1 0 0 -1 260.067 276.199 Tm
+(.) t
+1 0 0 -1 263.067 276.199 Tm
+(.) t
+1 0 0 -1 266.067 276.199 Tm
+(.) t
+1 0 0 -1 269.067 276.199 Tm
+(.) t
+1 0 0 -1 272.067 276.199 Tm
+(.) t
+1 0 0 -1 275.067 276.199 Tm
+(.) t
+1 0 0 -1 278.067 276.199 Tm
+(.) t
+1 0 0 -1 281.067 276.199 Tm
+(.) t
+1 0 0 -1 284.067 276.199 Tm
+(.) t
+1 0 0 -1 287.067 276.199 Tm
+(.) t
+1 0 0 -1 290.067 276.199 Tm
+(.) t
+1 0 0 -1 293.067 276.199 Tm
+(.) t
+1 0 0 -1 296.067 276.199 Tm
+(.) t
+1 0 0 -1 299.067 276.199 Tm
+(.) t
+1 0 0 -1 302.067 276.199 Tm
+(.) t
+1 0 0 -1 305.067 276.199 Tm
+(.) t
+1 0 0 -1 308.067 276.199 Tm
+(.) t
+1 0 0 -1 311.067 276.199 Tm
+(.) t
+1 0 0 -1 314.067 276.199 Tm
+(.) t
+1 0 0 -1 317.067 276.199 Tm
+(.) t
+1 0 0 -1 320.067 276.199 Tm
+(.) t
+1 0 0 -1 323.067 276.199 Tm
+(.) t
+1 0 0 -1 326.067 276.199 Tm
+(.) t
+1 0 0 -1 329.067 276.199 Tm
+(.) t
+1 0 0 -1 332.067 276.199 Tm
+(.) t
+1 0 0 -1 335.067 276.199 Tm
+(.) t
+1 0 0 -1 338.067 276.199 Tm
+(.) t
+1 0 0 -1 341.067 276.199 Tm
+(.) t
+1 0 0 -1 344.067 276.199 Tm
+(.) t
+1 0 0 -1 347.067 276.199 Tm
+(.) t
+1 0 0 -1 350.067 276.199 Tm
+(.) t
+1 0 0 -1 353.067 276.199 Tm
+(.) t
+1 0 0 -1 356.067 276.199 Tm
+(.) t
+1 0 0 -1 359.067 276.199 Tm
+(.) t
+1 0 0 -1 362.067 276.199 Tm
+(.) t
+1 0 0 -1 365.067 276.199 Tm
+(.) t
+1 0 0 -1 368.067 276.199 Tm
+(.) t
+1 0 0 -1 371.067 276.199 Tm
+(.) t
+1 0 0 -1 374.067 276.199 Tm
+(.) t
+1 0 0 -1 377.067 276.199 Tm
+(.) t
+1 0 0 -1 380.067 276.199 Tm
+(.) t
+1 0 0 -1 383.067 276.199 Tm
+(.) t
+1 0 0 -1 386.067 276.199 Tm
+(.) t
+1 0 0 -1 389.067 276.199 Tm
+(.) t
+1 0 0 -1 392.067 276.199 Tm
+(.) t
+1 0 0 -1 395.067 276.199 Tm
+(.) t
+1 0 0 -1 398.067 276.199 Tm
+(.) t
+1 0 0 -1 401.067 276.199 Tm
+(.) t
+1 0 0 -1 404.067 276.199 Tm
+(.) t
+1 0 0 -1 407.067 276.199 Tm
+(.) t
+1 0 0 -1 410.067 276.199 Tm
+(.) t
+1 0 0 -1 413.067 276.199 Tm
+(.) t
+1 0 0 -1 416.067 276.199 Tm
+(.) t
+1 0 0 -1 419.067 276.199 Tm
+(.) t
+1 0 0 -1 422.067 276.199 Tm
+(.) t
+1 0 0 -1 425.067 276.199 Tm
+(.) t
+1 0 0 -1 428.067 276.199 Tm
+(.) t
+1 0 0 -1 431.067 276.199 Tm
+(.) t
+1 0 0 -1 434.067 276.199 Tm
+(.) t
+1 0 0 -1 437.067 276.199 Tm
+(.) t
+1 0 0 -1 440.067 276.199 Tm
+(.) t
+1 0 0 -1 443.067 276.199 Tm
+(.) t
+1 0 0 -1 446.067 276.199 Tm
+(.) t
+1 0 0 -1 449.067 276.199 Tm
+(.) t
+1 0 0 -1 452.067 276.199 Tm
+(.) t
+1 0 0 -1 455.067 276.199 Tm
+(.) t
+1 0 0 -1 459.371 276.199 Tm
+3.627 0 RM
+1 0 0 -1 462.998 276.199 Tm
+(1) t
+1 0 0 -1 72 288.199 Tm
+(What)
+[9.44 5 4.44 2.78]
+xshow
+3.563 0 RM
+(is)
+[2.78 3.89]
+xshow
+3.563 0 RM
+(Mdate?)
+[8.89 5 4.44 2.78 4.44 4.44]
+xshow
+1 0 0 -1 137.299 288.199 Tm
+3.563 0 RM
+1 0 0 -1 140.862 288.199 Tm
+(.) t
+1 0 0 -1 143.862 288.199 Tm
+(.) t
+1 0 0 -1 146.862 288.199 Tm
+(.) t
+1 0 0 -1 149.862 288.199 Tm
+(.) t
+1 0 0 -1 152.862 288.199 Tm
+(.) t
+1 0 0 -1 155.862 288.199 Tm
+(.) t
+1 0 0 -1 158.862 288.199 Tm
+(.) t
+1 0 0 -1 161.862 288.199 Tm
+(.) t
+1 0 0 -1 164.862 288.199 Tm
+(.) t
+1 0 0 -1 167.862 288.199 Tm
+(.) t
+1 0 0 -1 170.862 288.199 Tm
+(.) t
+1 0 0 -1 173.862 288.199 Tm
+(.) t
+1 0 0 -1 176.862 288.199 Tm
+(.) t
+1 0 0 -1 179.862 288.199 Tm
+(.) t
+1 0 0 -1 182.862 288.199 Tm
+(.) t
+1 0 0 -1 185.862 288.199 Tm
+(.) t
+1 0 0 -1 188.862 288.199 Tm
+(.) t
+1 0 0 -1 191.862 288.199 Tm
+(.) t
+1 0 0 -1 194.862 288.199 Tm
+(.) t
+1 0 0 -1 197.862 288.199 Tm
+(.) t
+1 0 0 -1 200.862 288.199 Tm
+(.) t
+1 0 0 -1 203.862 288.199 Tm
+(.) t
+1 0 0 -1 206.862 288.199 Tm
+(.) t
+1 0 0 -1 209.862 288.199 Tm
+(.) t
+1 0 0 -1 212.862 288.199 Tm
+(.) t
+1 0 0 -1 215.862 288.199 Tm
+(.) t
+1 0 0 -1 218.862 288.199 Tm
+(.) t
+1 0 0 -1 221.862 288.199 Tm
+(.) t
+1 0 0 -1 224.862 288.199 Tm
+(.) t
+1 0 0 -1 227.862 288.199 Tm
+(.) t
+1 0 0 -1 230.862 288.199 Tm
+(.) t
+1 0 0 -1 233.862 288.199 Tm
+(.) t
+1 0 0 -1 236.862 288.199 Tm
+(.) t
+1 0 0 -1 239.862 288.199 Tm
+(.) t
+1 0 0 -1 242.862 288.199 Tm
+(.) t
+1 0 0 -1 245.862 288.199 Tm
+(.) t
+1 0 0 -1 248.862 288.199 Tm
+(.) t
+1 0 0 -1 251.862 288.199 Tm
+(.) t
+1 0 0 -1 254.862 288.199 Tm
+(.) t
+1 0 0 -1 257.862 288.199 Tm
+(.) t
+1 0 0 -1 260.862 288.199 Tm
+(.) t
+1 0 0 -1 263.862 288.199 Tm
+(.) t
+1 0 0 -1 266.862 288.199 Tm
+(.) t
+1 0 0 -1 269.862 288.199 Tm
+(.) t
+1 0 0 -1 272.862 288.199 Tm
+(.) t
+1 0 0 -1 275.862 288.199 Tm
+(.) t
+1 0 0 -1 278.862 288.199 Tm
+(.) t
+1 0 0 -1 281.862 288.199 Tm
+(.) t
+1 0 0 -1 284.862 288.199 Tm
+(.) t
+1 0 0 -1 287.862 288.199 Tm
+(.) t
+1 0 0 -1 290.862 288.199 Tm
+(.) t
+1 0 0 -1 293.862 288.199 Tm
+(.) t
+1 0 0 -1 296.862 288.199 Tm
+(.) t
+1 0 0 -1 299.862 288.199 Tm
+(.) t
+1 0 0 -1 302.862 288.199 Tm
+(.) t
+1 0 0 -1 305.862 288.199 Tm
+(.) t
+1 0 0 -1 308.862 288.199 Tm
+(.) t
+1 0 0 -1 311.862 288.199 Tm
+(.) t
+1 0 0 -1 314.862 288.199 Tm
+(.) t
+1 0 0 -1 317.862 288.199 Tm
+(.) t
+1 0 0 -1 320.862 288.199 Tm
+(.) t
+1 0 0 -1 323.862 288.199 Tm
+(.) t
+1 0 0 -1 326.862 288.199 Tm
+(.) t
+1 0 0 -1 329.862 288.199 Tm
+(.) t
+1 0 0 -1 332.862 288.199 Tm
+(.) t
+1 0 0 -1 335.862 288.199 Tm
+(.) t
+1 0 0 -1 338.862 288.199 Tm
+(.) t
+1 0 0 -1 341.862 288.199 Tm
+(.) t
+1 0 0 -1 344.862 288.199 Tm
+(.) t
+1 0 0 -1 347.862 288.199 Tm
+(.) t
+1 0 0 -1 350.862 288.199 Tm
+(.) t
+1 0 0 -1 353.862 288.199 Tm
+(.) t
+1 0 0 -1 356.862 288.199 Tm
+(.) t
+1 0 0 -1 359.862 288.199 Tm
+(.) t
+1 0 0 -1 362.862 288.199 Tm
+(.) t
+1 0 0 -1 365.862 288.199 Tm
+(.) t
+1 0 0 -1 368.862 288.199 Tm
+(.) t
+1 0 0 -1 371.862 288.199 Tm
+(.) t
+1 0 0 -1 374.862 288.199 Tm
+(.) t
+1 0 0 -1 377.862 288.199 Tm
+(.) t
+1 0 0 -1 380.862 288.199 Tm
+(.) t
+1 0 0 -1 383.862 288.199 Tm
+(.) t
+1 0 0 -1 386.862 288.199 Tm
+(.) t
+1 0 0 -1 389.862 288.199 Tm
+(.) t
+1 0 0 -1 392.862 288.199 Tm
+(.) t
+1 0 0 -1 395.862 288.199 Tm
+(.) t
+1 0 0 -1 398.862 288.199 Tm
+(.) t
+1 0 0 -1 401.862 288.199 Tm
+(.) t
+1 0 0 -1 404.862 288.199 Tm
+(.) t
+1 0 0 -1 407.862 288.199 Tm
+(.) t
+1 0 0 -1 410.862 288.199 Tm
+(.) t
+1 0 0 -1 413.862 288.199 Tm
+(.) t
+1 0 0 -1 416.862 288.199 Tm
+(.) t
+1 0 0 -1 419.862 288.199 Tm
+(.) t
+1 0 0 -1 422.862 288.199 Tm
+(.) t
+1 0 0 -1 425.862 288.199 Tm
+(.) t
+1 0 0 -1 428.862 288.199 Tm
+(.) t
+1 0 0 -1 431.862 288.199 Tm
+(.) t
+1 0 0 -1 434.862 288.199 Tm
+(.) t
+1 0 0 -1 437.862 288.199 Tm
+(.) t
+1 0 0 -1 440.862 288.199 Tm
+(.) t
+1 0 0 -1 443.862 288.199 Tm
+(.) t
+1 0 0 -1 446.862 288.199 Tm
+(.) t
+1 0 0 -1 449.862 288.199 Tm
+(.) t
+1 0 0 -1 452.862 288.199 Tm
+(.) t
+1 0 0 -1 455.862 288.199 Tm
+(.) t
+1 0 0 -1 459.285 288.199 Tm
+3.563 0 RM
+1 0 0 -1 462.848 288.199 Tm
+(1) t
+1 0 0 -1 72 300.199 Tm
+(Disclaimer)
+[7.22 2.78 3.89 4.44 2.78 4.44 2.78 7.78
+4.44 3.33]
+xshow
+3.48 0 RM
+(&)
+[7.78]
+xshow
+3.48 0 RM
+(License)
+[6.11 2.78 4.44 4.44 5 3.89 4.44]
+xshow
+1 0 0 -1 161.572 300.199 Tm
+3.48 0 RM
+1 0 0 -1 165.052 300.199 Tm
+(.) t
+1 0 0 -1 168.052 300.199 Tm
+(.) t
+1 0 0 -1 171.052 300.199 Tm
+(.) t
+1 0 0 -1 174.052 300.199 Tm
+(.) t
+1 0 0 -1 177.052 300.199 Tm
+(.) t
+1 0 0 -1 180.052 300.199 Tm
+(.) t
+1 0 0 -1 183.052 300.199 Tm
+(.) t
+1 0 0 -1 186.052 300.199 Tm
+(.) t
+1 0 0 -1 189.052 300.199 Tm
+(.) t
+1 0 0 -1 192.052 300.199 Tm
+(.) t
+1 0 0 -1 195.052 300.199 Tm
+(.) t
+1 0 0 -1 198.052 300.199 Tm
+(.) t
+1 0 0 -1 201.052 300.199 Tm
+(.) t
+1 0 0 -1 204.052 300.199 Tm
+(.) t
+1 0 0 -1 207.052 300.199 Tm
+(.) t
+1 0 0 -1 210.052 300.199 Tm
+(.) t
+1 0 0 -1 213.052 300.199 Tm
+(.) t
+1 0 0 -1 216.052 300.199 Tm
+(.) t
+1 0 0 -1 219.052 300.199 Tm
+(.) t
+1 0 0 -1 222.052 300.199 Tm
+(.) t
+1 0 0 -1 225.052 300.199 Tm
+(.) t
+1 0 0 -1 228.052 300.199 Tm
+(.) t
+1 0 0 -1 231.052 300.199 Tm
+(.) t
+1 0 0 -1 234.052 300.199 Tm
+(.) t
+1 0 0 -1 237.052 300.199 Tm
+(.) t
+1 0 0 -1 240.052 300.199 Tm
+(.) t
+1 0 0 -1 243.052 300.199 Tm
+(.) t
+1 0 0 -1 246.052 300.199 Tm
+(.) t
+1 0 0 -1 249.052 300.199 Tm
+(.) t
+1 0 0 -1 252.052 300.199 Tm
+(.) t
+1 0 0 -1 255.052 300.199 Tm
+(.) t
+1 0 0 -1 258.052 300.199 Tm
+(.) t
+1 0 0 -1 261.052 300.199 Tm
+(.) t
+1 0 0 -1 264.052 300.199 Tm
+(.) t
+1 0 0 -1 267.052 300.199 Tm
+(.) t
+1 0 0 -1 270.052 300.199 Tm
+(.) t
+1 0 0 -1 273.052 300.199 Tm
+(.) t
+1 0 0 -1 276.052 300.199 Tm
+(.) t
+1 0 0 -1 279.052 300.199 Tm
+(.) t
+1 0 0 -1 282.052 300.199 Tm
+(.) t
+1 0 0 -1 285.052 300.199 Tm
+(.) t
+1 0 0 -1 288.052 300.199 Tm
+(.) t
+1 0 0 -1 291.052 300.199 Tm
+(.) t
+1 0 0 -1 294.052 300.199 Tm
+(.) t
+1 0 0 -1 297.052 300.199 Tm
+(.) t
+1 0 0 -1 300.052 300.199 Tm
+(.) t
+1 0 0 -1 303.052 300.199 Tm
+(.) t
+1 0 0 -1 306.052 300.199 Tm
+(.) t
+1 0 0 -1 309.052 300.199 Tm
+(.) t
+1 0 0 -1 312.052 300.199 Tm
+(.) t
+1 0 0 -1 315.052 300.199 Tm
+(.) t
+1 0 0 -1 318.052 300.199 Tm
+(.) t
+1 0 0 -1 321.052 300.199 Tm
+(.) t
+1 0 0 -1 324.052 300.199 Tm
+(.) t
+1 0 0 -1 327.052 300.199 Tm
+(.) t
+1 0 0 -1 330.052 300.199 Tm
+(.) t
+1 0 0 -1 333.052 300.199 Tm
+(.) t
+1 0 0 -1 336.052 300.199 Tm
+(.) t
+1 0 0 -1 339.052 300.199 Tm
+(.) t
+1 0 0 -1 342.052 300.199 Tm
+(.) t
+1 0 0 -1 345.052 300.199 Tm
+(.) t
+1 0 0 -1 348.052 300.199 Tm
+(.) t
+1 0 0 -1 351.052 300.199 Tm
+(.) t
+1 0 0 -1 354.052 300.199 Tm
+(.) t
+1 0 0 -1 357.052 300.199 Tm
+(.) t
+1 0 0 -1 360.052 300.199 Tm
+(.) t
+1 0 0 -1 363.052 300.199 Tm
+(.) t
+1 0 0 -1 366.052 300.199 Tm
+(.) t
+1 0 0 -1 369.052 300.199 Tm
+(.) t
+1 0 0 -1 372.052 300.199 Tm
+(.) t
+1 0 0 -1 375.052 300.199 Tm
+(.) t
+1 0 0 -1 378.052 300.199 Tm
+(.) t
+1 0 0 -1 381.052 300.199 Tm
+(.) t
+1 0 0 -1 384.052 300.199 Tm
+(.) t
+1 0 0 -1 387.052 300.199 Tm
+(.) t
+1 0 0 -1 390.052 300.199 Tm
+(.) t
+1 0 0 -1 393.052 300.199 Tm
+(.) t
+1 0 0 -1 396.052 300.199 Tm
+(.) t
+1 0 0 -1 399.052 300.199 Tm
+(.) t
+1 0 0 -1 402.052 300.199 Tm
+(.) t
+1 0 0 -1 405.052 300.199 Tm
+(.) t
+1 0 0 -1 408.052 300.199 Tm
+(.) t
+1 0 0 -1 411.052 300.199 Tm
+(.) t
+1 0 0 -1 414.052 300.199 Tm
+(.) t
+1 0 0 -1 417.052 300.199 Tm
+(.) t
+1 0 0 -1 420.052 300.199 Tm
+(.) t
+1 0 0 -1 423.052 300.199 Tm
+(.) t
+1 0 0 -1 426.052 300.199 Tm
+(.) t
+1 0 0 -1 429.052 300.199 Tm
+(.) t
+1 0 0 -1 432.052 300.199 Tm
+(.) t
+1 0 0 -1 435.052 300.199 Tm
+(.) t
+1 0 0 -1 438.052 300.199 Tm
+(.) t
+1 0 0 -1 441.052 300.199 Tm
+(.) t
+1 0 0 -1 444.052 300.199 Tm
+(.) t
+1 0 0 -1 447.052 300.199 Tm
+(.) t
+1 0 0 -1 450.052 300.199 Tm
+(.) t
+1 0 0 -1 453.052 300.199 Tm
+(.) t
+1 0 0 -1 456.052 300.199 Tm
+(.) t
+1 0 0 -1 459.37 300.199 Tm
+3.48 0 RM
+1 0 0 -1 462.85 300.199 Tm
+(1) t
+1 0 0 -1 72 312.199 Tm
+(History)
+[7.22 2.78 3.89 2.78 5 3.33 5]
+xshow
+1 0 0 -1 102 312.199 Tm
+3.685 0 RM
+1 0 0 -1 105.685 312.199 Tm
+(.) t
+1 0 0 -1 108.685 312.199 Tm
+(.) t
+1 0 0 -1 111.685 312.199 Tm
+(.) t
+1 0 0 -1 114.685 312.199 Tm
+(.) t
+1 0 0 -1 117.685 312.199 Tm
+(.) t
+1 0 0 -1 120.685 312.199 Tm
+(.) t
+1 0 0 -1 123.685 312.199 Tm
+(.) t
+1 0 0 -1 126.685 312.199 Tm
+(.) t
+1 0 0 -1 129.685 312.199 Tm
+(.) t
+1 0 0 -1 132.685 312.199 Tm
+(.) t
+1 0 0 -1 135.685 312.199 Tm
+(.) t
+1 0 0 -1 138.685 312.199 Tm
+(.) t
+1 0 0 -1 141.685 312.199 Tm
+(.) t
+1 0 0 -1 144.685 312.199 Tm
+(.) t
+1 0 0 -1 147.685 312.199 Tm
+(.) t
+1 0 0 -1 150.685 312.199 Tm
+(.) t
+1 0 0 -1 153.685 312.199 Tm
+(.) t
+1 0 0 -1 156.685 312.199 Tm
+(.) t
+1 0 0 -1 159.685 312.199 Tm
+(.) t
+1 0 0 -1 162.685 312.199 Tm
+(.) t
+1 0 0 -1 165.685 312.199 Tm
+(.) t
+1 0 0 -1 168.685 312.199 Tm
+(.) t
+1 0 0 -1 171.685 312.199 Tm
+(.) t
+1 0 0 -1 174.685 312.199 Tm
+(.) t
+1 0 0 -1 177.685 312.199 Tm
+(.) t
+1 0 0 -1 180.685 312.199 Tm
+(.) t
+1 0 0 -1 183.685 312.199 Tm
+(.) t
+1 0 0 -1 186.685 312.199 Tm
+(.) t
+1 0 0 -1 189.685 312.199 Tm
+(.) t
+1 0 0 -1 192.685 312.199 Tm
+(.) t
+1 0 0 -1 195.685 312.199 Tm
+(.) t
+1 0 0 -1 198.685 312.199 Tm
+(.) t
+1 0 0 -1 201.685 312.199 Tm
+(.) t
+1 0 0 -1 204.685 312.199 Tm
+(.) t
+1 0 0 -1 207.685 312.199 Tm
+(.) t
+1 0 0 -1 210.685 312.199 Tm
+(.) t
+1 0 0 -1 213.685 312.199 Tm
+(.) t
+1 0 0 -1 216.685 312.199 Tm
+(.) t
+1 0 0 -1 219.685 312.199 Tm
+(.) t
+1 0 0 -1 222.685 312.199 Tm
+(.) t
+1 0 0 -1 225.685 312.199 Tm
+(.) t
+1 0 0 -1 228.685 312.199 Tm
+(.) t
+1 0 0 -1 231.685 312.199 Tm
+(.) t
+1 0 0 -1 234.685 312.199 Tm
+(.) t
+1 0 0 -1 237.685 312.199 Tm
+(.) t
+1 0 0 -1 240.685 312.199 Tm
+(.) t
+1 0 0 -1 243.685 312.199 Tm
+(.) t
+1 0 0 -1 246.685 312.199 Tm
+(.) t
+1 0 0 -1 249.685 312.199 Tm
+(.) t
+1 0 0 -1 252.685 312.199 Tm
+(.) t
+1 0 0 -1 255.685 312.199 Tm
+(.) t
+1 0 0 -1 258.685 312.199 Tm
+(.) t
+1 0 0 -1 261.685 312.199 Tm
+(.) t
+1 0 0 -1 264.685 312.199 Tm
+(.) t
+1 0 0 -1 267.685 312.199 Tm
+(.) t
+1 0 0 -1 270.685 312.199 Tm
+(.) t
+1 0 0 -1 273.685 312.199 Tm
+(.) t
+1 0 0 -1 276.685 312.199 Tm
+(.) t
+1 0 0 -1 279.685 312.199 Tm
+(.) t
+1 0 0 -1 282.685 312.199 Tm
+(.) t
+1 0 0 -1 285.685 312.199 Tm
+(.) t
+1 0 0 -1 288.685 312.199 Tm
+(.) t
+1 0 0 -1 291.685 312.199 Tm
+(.) t
+1 0 0 -1 294.685 312.199 Tm
+(.) t
+1 0 0 -1 297.685 312.199 Tm
+(.) t
+1 0 0 -1 300.685 312.199 Tm
+(.) t
+1 0 0 -1 303.685 312.199 Tm
+(.) t
+1 0 0 -1 306.685 312.199 Tm
+(.) t
+1 0 0 -1 309.685 312.199 Tm
+(.) t
+1 0 0 -1 312.685 312.199 Tm
+(.) t
+1 0 0 -1 315.685 312.199 Tm
+(.) t
+1 0 0 -1 318.685 312.199 Tm
+(.) t
+1 0 0 -1 321.685 312.199 Tm
+(.) t
+1 0 0 -1 324.685 312.199 Tm
+(.) t
+1 0 0 -1 327.685 312.199 Tm
+(.) t
+1 0 0 -1 330.685 312.199 Tm
+(.) t
+1 0 0 -1 333.685 312.199 Tm
+(.) t
+1 0 0 -1 336.685 312.199 Tm
+(.) t
+1 0 0 -1 339.685 312.199 Tm
+(.) t
+1 0 0 -1 342.685 312.199 Tm
+(.) t
+1 0 0 -1 345.685 312.199 Tm
+(.) t
+1 0 0 -1 348.685 312.199 Tm
+(.) t
+1 0 0 -1 351.685 312.199 Tm
+(.) t
+1 0 0 -1 354.685 312.199 Tm
+(.) t
+1 0 0 -1 357.685 312.199 Tm
+(.) t
+1 0 0 -1 360.685 312.199 Tm
+(.) t
+1 0 0 -1 363.685 312.199 Tm
+(.) t
+1 0 0 -1 366.685 312.199 Tm
+(.) t
+1 0 0 -1 369.685 312.199 Tm
+(.) t
+1 0 0 -1 372.685 312.199 Tm
+(.) t
+1 0 0 -1 375.685 312.199 Tm
+(.) t
+1 0 0 -1 378.685 312.199 Tm
+(.) t
+1 0 0 -1 381.685 312.199 Tm
+(.) t
+1 0 0 -1 384.685 312.199 Tm
+(.) t
+1 0 0 -1 387.685 312.199 Tm
+(.) t
+1 0 0 -1 390.685 312.199 Tm
+(.) t
+1 0 0 -1 393.685 312.199 Tm
+(.) t
+1 0 0 -1 396.685 312.199 Tm
+(.) t
+1 0 0 -1 399.685 312.199 Tm
+(.) t
+1 0 0 -1 402.685 312.199 Tm
+(.) t
+1 0 0 -1 405.685 312.199 Tm
+(.) t
+1 0 0 -1 408.685 312.199 Tm
+(.) t
+1 0 0 -1 411.685 312.199 Tm
+(.) t
+1 0 0 -1 414.685 312.199 Tm
+(.) t
+1 0 0 -1 417.685 312.199 Tm
+(.) t
+1 0 0 -1 420.685 312.199 Tm
+(.) t
+1 0 0 -1 423.685 312.199 Tm
+(.) t
+1 0 0 -1 426.685 312.199 Tm
+(.) t
+1 0 0 -1 429.685 312.199 Tm
+(.) t
+1 0 0 -1 432.685 312.199 Tm
+(.) t
+1 0 0 -1 435.685 312.199 Tm
+(.) t
+1 0 0 -1 438.685 312.199 Tm
+(.) t
+1 0 0 -1 441.685 312.199 Tm
+(.) t
+1 0 0 -1 444.685 312.199 Tm
+(.) t
+1 0 0 -1 447.685 312.199 Tm
+(.) t
+1 0 0 -1 450.685 312.199 Tm
+(.) t
+1 0 0 -1 453.685 312.199 Tm
+(.) t
+1 0 0 -1 459.312 312.199 Tm
+3.685 0 RM
+1 0 0 -1 462.997 312.199 Tm
+(2) t
+1 0 0 -1 48 324.199 Tm
+(Usage)
+[7.22 3.89 4.44 5 4.44]
+xshow
+1 0 0 -1 72.99 324.199 Tm
+3.706 0 RM
+1 0 0 -1 76.696 324.199 Tm
+(.) t
+1 0 0 -1 79.696 324.199 Tm
+(.) t
+1 0 0 -1 82.696 324.199 Tm
+(.) t
+1 0 0 -1 85.696 324.199 Tm
+(.) t
+1 0 0 -1 88.696 324.199 Tm
+(.) t
+1 0 0 -1 91.696 324.199 Tm
+(.) t
+1 0 0 -1 94.696 324.199 Tm
+(.) t
+1 0 0 -1 97.696 324.199 Tm
+(.) t
+1 0 0 -1 100.696 324.199 Tm
+(.) t
+1 0 0 -1 103.696 324.199 Tm
+(.) t
+1 0 0 -1 106.696 324.199 Tm
+(.) t
+1 0 0 -1 109.696 324.199 Tm
+(.) t
+1 0 0 -1 112.696 324.199 Tm
+(.) t
+1 0 0 -1 115.696 324.199 Tm
+(.) t
+1 0 0 -1 118.696 324.199 Tm
+(.) t
+1 0 0 -1 121.696 324.199 Tm
+(.) t
+1 0 0 -1 124.696 324.199 Tm
+(.) t
+1 0 0 -1 127.696 324.199 Tm
+(.) t
+1 0 0 -1 130.696 324.199 Tm
+(.) t
+1 0 0 -1 133.696 324.199 Tm
+(.) t
+1 0 0 -1 136.696 324.199 Tm
+(.) t
+1 0 0 -1 139.696 324.199 Tm
+(.) t
+1 0 0 -1 142.696 324.199 Tm
+(.) t
+1 0 0 -1 145.696 324.199 Tm
+(.) t
+1 0 0 -1 148.696 324.199 Tm
+(.) t
+1 0 0 -1 151.696 324.199 Tm
+(.) t
+1 0 0 -1 154.696 324.199 Tm
+(.) t
+1 0 0 -1 157.696 324.199 Tm
+(.) t
+1 0 0 -1 160.696 324.199 Tm
+(.) t
+1 0 0 -1 163.696 324.199 Tm
+(.) t
+1 0 0 -1 166.696 324.199 Tm
+(.) t
+1 0 0 -1 169.696 324.199 Tm
+(.) t
+1 0 0 -1 172.696 324.199 Tm
+(.) t
+1 0 0 -1 175.696 324.199 Tm
+(.) t
+1 0 0 -1 178.696 324.199 Tm
+(.) t
+1 0 0 -1 181.696 324.199 Tm
+(.) t
+1 0 0 -1 184.696 324.199 Tm
+(.) t
+1 0 0 -1 187.696 324.199 Tm
+(.) t
+1 0 0 -1 190.696 324.199 Tm
+(.) t
+1 0 0 -1 193.696 324.199 Tm
+(.) t
+1 0 0 -1 196.696 324.199 Tm
+(.) t
+1 0 0 -1 199.696 324.199 Tm
+(.) t
+1 0 0 -1 202.696 324.199 Tm
+(.) t
+1 0 0 -1 205.696 324.199 Tm
+(.) t
+1 0 0 -1 208.696 324.199 Tm
+(.) t
+1 0 0 -1 211.696 324.199 Tm
+(.) t
+1 0 0 -1 214.696 324.199 Tm
+(.) t
+1 0 0 -1 217.696 324.199 Tm
+(.) t
+1 0 0 -1 220.696 324.199 Tm
+(.) t
+1 0 0 -1 223.696 324.199 Tm
+(.) t
+1 0 0 -1 226.696 324.199 Tm
+(.) t
+1 0 0 -1 229.696 324.199 Tm
+(.) t
+1 0 0 -1 232.696 324.199 Tm
+(.) t
+1 0 0 -1 235.696 324.199 Tm
+(.) t
+1 0 0 -1 238.696 324.199 Tm
+(.) t
+1 0 0 -1 241.696 324.199 Tm
+(.) t
+1 0 0 -1 244.696 324.199 Tm
+(.) t
+1 0 0 -1 247.696 324.199 Tm
+(.) t
+1 0 0 -1 250.696 324.199 Tm
+(.) t
+1 0 0 -1 253.696 324.199 Tm
+(.) t
+1 0 0 -1 256.696 324.199 Tm
+(.) t
+1 0 0 -1 259.696 324.199 Tm
+(.) t
+1 0 0 -1 262.696 324.199 Tm
+(.) t
+1 0 0 -1 265.696 324.199 Tm
+(.) t
+1 0 0 -1 268.696 324.199 Tm
+(.) t
+1 0 0 -1 271.696 324.199 Tm
+(.) t
+1 0 0 -1 274.696 324.199 Tm
+(.) t
+1 0 0 -1 277.696 324.199 Tm
+(.) t
+1 0 0 -1 280.696 324.199 Tm
+(.) t
+1 0 0 -1 283.696 324.199 Tm
+(.) t
+1 0 0 -1 286.696 324.199 Tm
+(.) t
+1 0 0 -1 289.696 324.199 Tm
+(.) t
+1 0 0 -1 292.696 324.199 Tm
+(.) t
+1 0 0 -1 295.696 324.199 Tm
+(.) t
+1 0 0 -1 298.696 324.199 Tm
+(.) t
+1 0 0 -1 301.696 324.199 Tm
+(.) t
+1 0 0 -1 304.696 324.199 Tm
+(.) t
+1 0 0 -1 307.696 324.199 Tm
+(.) t
+1 0 0 -1 310.696 324.199 Tm
+(.) t
+1 0 0 -1 313.696 324.199 Tm
+(.) t
+1 0 0 -1 316.696 324.199 Tm
+(.) t
+1 0 0 -1 319.696 324.199 Tm
+(.) t
+1 0 0 -1 322.696 324.199 Tm
+(.) t
+1 0 0 -1 325.696 324.199 Tm
+(.) t
+1 0 0 -1 328.696 324.199 Tm
+(.) t
+1 0 0 -1 331.696 324.199 Tm
+(.) t
+1 0 0 -1 334.696 324.199 Tm
+(.) t
+1 0 0 -1 337.696 324.199 Tm
+(.) t
+1 0 0 -1 340.696 324.199 Tm
+(.) t
+1 0 0 -1 343.696 324.199 Tm
+(.) t
+1 0 0 -1 346.696 324.199 Tm
+(.) t
+1 0 0 -1 349.696 324.199 Tm
+(.) t
+1 0 0 -1 352.696 324.199 Tm
+(.) t
+1 0 0 -1 355.696 324.199 Tm
+(.) t
+1 0 0 -1 358.696 324.199 Tm
+(.) t
+1 0 0 -1 361.696 324.199 Tm
+(.) t
+1 0 0 -1 364.696 324.199 Tm
+(.) t
+1 0 0 -1 367.696 324.199 Tm
+(.) t
+1 0 0 -1 370.696 324.199 Tm
+(.) t
+1 0 0 -1 373.696 324.199 Tm
+(.) t
+1 0 0 -1 376.696 324.199 Tm
+(.) t
+1 0 0 -1 379.696 324.199 Tm
+(.) t
+1 0 0 -1 382.696 324.199 Tm
+(.) t
+1 0 0 -1 385.696 324.199 Tm
+(.) t
+1 0 0 -1 388.696 324.199 Tm
+(.) t
+1 0 0 -1 391.696 324.199 Tm
+(.) t
+1 0 0 -1 394.696 324.199 Tm
+(.) t
+1 0 0 -1 397.696 324.199 Tm
+(.) t
+1 0 0 -1 400.696 324.199 Tm
+(.) t
+1 0 0 -1 403.696 324.199 Tm
+(.) t
+1 0 0 -1 406.696 324.199 Tm
+(.) t
+1 0 0 -1 409.696 324.199 Tm
+(.) t
+1 0 0 -1 412.696 324.199 Tm
+(.) t
+1 0 0 -1 415.696 324.199 Tm
+(.) t
+1 0 0 -1 418.696 324.199 Tm
+(.) t
+1 0 0 -1 421.696 324.199 Tm
+(.) t
+1 0 0 -1 424.696 324.199 Tm
+(.) t
+1 0 0 -1 427.696 324.199 Tm
+(.) t
+1 0 0 -1 430.696 324.199 Tm
+(.) t
+1 0 0 -1 433.696 324.199 Tm
+(.) t
+1 0 0 -1 436.696 324.199 Tm
+(.) t
+1 0 0 -1 439.696 324.199 Tm
+(.) t
+1 0 0 -1 442.696 324.199 Tm
+(.) t
+1 0 0 -1 445.696 324.199 Tm
+(.) t
+1 0 0 -1 448.696 324.199 Tm
+(.) t
+1 0 0 -1 451.696 324.199 Tm
+(.) t
+1 0 0 -1 454.696 324.199 Tm
+(.) t
+1 0 0 -1 459.292 324.199 Tm
+3.706 0 RM
+1 0 0 -1 462.998 324.199 Tm
+(3) t
+1 0 0 -1 72 336.199 Tm
+(Mayan)
+[8.89 4.44 5 4.44 5]
+xshow
+3.449 0 RM
+(Calendar)
+[6.67 4.44 2.78 4.44 5 5 4.44 3.33]
+xshow
+3.449 0 RM
+(Names)
+[7.22 4.44 7.78 4.44 3.89]
+xshow
+1 0 0 -1 170.391 336.199 Tm
+3.449 0 RM
+1 0 0 -1 173.84 336.199 Tm
+(.) t
+1 0 0 -1 176.84 336.199 Tm
+(.) t
+1 0 0 -1 179.84 336.199 Tm
+(.) t
+1 0 0 -1 182.84 336.199 Tm
+(.) t
+1 0 0 -1 185.84 336.199 Tm
+(.) t
+1 0 0 -1 188.84 336.199 Tm
+(.) t
+1 0 0 -1 191.84 336.199 Tm
+(.) t
+1 0 0 -1 194.84 336.199 Tm
+(.) t
+1 0 0 -1 197.84 336.199 Tm
+(.) t
+1 0 0 -1 200.84 336.199 Tm
+(.) t
+1 0 0 -1 203.84 336.199 Tm
+(.) t
+1 0 0 -1 206.84 336.199 Tm
+(.) t
+1 0 0 -1 209.84 336.199 Tm
+(.) t
+1 0 0 -1 212.84 336.199 Tm
+(.) t
+1 0 0 -1 215.84 336.199 Tm
+(.) t
+1 0 0 -1 218.84 336.199 Tm
+(.) t
+1 0 0 -1 221.84 336.199 Tm
+(.) t
+1 0 0 -1 224.84 336.199 Tm
+(.) t
+1 0 0 -1 227.84 336.199 Tm
+(.) t
+1 0 0 -1 230.84 336.199 Tm
+(.) t
+1 0 0 -1 233.84 336.199 Tm
+(.) t
+1 0 0 -1 236.84 336.199 Tm
+(.) t
+1 0 0 -1 239.84 336.199 Tm
+(.) t
+1 0 0 -1 242.84 336.199 Tm
+(.) t
+1 0 0 -1 245.84 336.199 Tm
+(.) t
+1 0 0 -1 248.84 336.199 Tm
+(.) t
+1 0 0 -1 251.84 336.199 Tm
+(.) t
+1 0 0 -1 254.84 336.199 Tm
+(.) t
+1 0 0 -1 257.84 336.199 Tm
+(.) t
+1 0 0 -1 260.84 336.199 Tm
+(.) t
+1 0 0 -1 263.84 336.199 Tm
+(.) t
+1 0 0 -1 266.84 336.199 Tm
+(.) t
+1 0 0 -1 269.84 336.199 Tm
+(.) t
+1 0 0 -1 272.84 336.199 Tm
+(.) t
+1 0 0 -1 275.84 336.199 Tm
+(.) t
+1 0 0 -1 278.84 336.199 Tm
+(.) t
+1 0 0 -1 281.84 336.199 Tm
+(.) t
+1 0 0 -1 284.84 336.199 Tm
+(.) t
+1 0 0 -1 287.84 336.199 Tm
+(.) t
+1 0 0 -1 290.84 336.199 Tm
+(.) t
+1 0 0 -1 293.84 336.199 Tm
+(.) t
+1 0 0 -1 296.84 336.199 Tm
+(.) t
+1 0 0 -1 299.84 336.199 Tm
+(.) t
+1 0 0 -1 302.84 336.199 Tm
+(.) t
+1 0 0 -1 305.84 336.199 Tm
+(.) t
+1 0 0 -1 308.84 336.199 Tm
+(.) t
+1 0 0 -1 311.84 336.199 Tm
+(.) t
+1 0 0 -1 314.84 336.199 Tm
+(.) t
+1 0 0 -1 317.84 336.199 Tm
+(.) t
+1 0 0 -1 320.84 336.199 Tm
+(.) t
+1 0 0 -1 323.84 336.199 Tm
+(.) t
+1 0 0 -1 326.84 336.199 Tm
+(.) t
+1 0 0 -1 329.84 336.199 Tm
+(.) t
+1 0 0 -1 332.84 336.199 Tm
+(.) t
+1 0 0 -1 335.84 336.199 Tm
+(.) t
+1 0 0 -1 338.84 336.199 Tm
+(.) t
+1 0 0 -1 341.84 336.199 Tm
+(.) t
+1 0 0 -1 344.84 336.199 Tm
+(.) t
+1 0 0 -1 347.84 336.199 Tm
+(.) t
+1 0 0 -1 350.84 336.199 Tm
+(.) t
+1 0 0 -1 353.84 336.199 Tm
+(.) t
+1 0 0 -1 356.84 336.199 Tm
+(.) t
+1 0 0 -1 359.84 336.199 Tm
+(.) t
+1 0 0 -1 362.84 336.199 Tm
+(.) t
+1 0 0 -1 365.84 336.199 Tm
+(.) t
+1 0 0 -1 368.84 336.199 Tm
+(.) t
+1 0 0 -1 371.84 336.199 Tm
+(.) t
+1 0 0 -1 374.84 336.199 Tm
+(.) t
+1 0 0 -1 377.84 336.199 Tm
+(.) t
+1 0 0 -1 380.84 336.199 Tm
+(.) t
+1 0 0 -1 383.84 336.199 Tm
+(.) t
+1 0 0 -1 386.84 336.199 Tm
+(.) t
+1 0 0 -1 389.84 336.199 Tm
+(.) t
+1 0 0 -1 392.84 336.199 Tm
+(.) t
+1 0 0 -1 395.84 336.199 Tm
+(.) t
+1 0 0 -1 398.84 336.199 Tm
+(.) t
+1 0 0 -1 401.84 336.199 Tm
+(.) t
+1 0 0 -1 404.84 336.199 Tm
+(.) t
+1 0 0 -1 407.84 336.199 Tm
+(.) t
+1 0 0 -1 410.84 336.199 Tm
+(.) t
+1 0 0 -1 413.84 336.199 Tm
+(.) t
+1 0 0 -1 416.84 336.199 Tm
+(.) t
+1 0 0 -1 419.84 336.199 Tm
+(.) t
+1 0 0 -1 422.84 336.199 Tm
+(.) t
+1 0 0 -1 425.84 336.199 Tm
+(.) t
+1 0 0 -1 428.84 336.199 Tm
+(.) t
+1 0 0 -1 431.84 336.199 Tm
+(.) t
+1 0 0 -1 434.84 336.199 Tm
+(.) t
+1 0 0 -1 437.84 336.199 Tm
+(.) t
+1 0 0 -1 440.84 336.199 Tm
+(.) t
+1 0 0 -1 443.84 336.199 Tm
+(.) t
+1 0 0 -1 446.84 336.199 Tm
+(.) t
+1 0 0 -1 449.84 336.199 Tm
+(.) t
+1 0 0 -1 452.84 336.199 Tm
+(.) t
+1 0 0 -1 455.84 336.199 Tm
+(.) t
+1 0 0 -1 459.4 336.199 Tm
+3.449 0 RM
+1 0 0 -1 462.849 336.199 Tm
+(3) t
+1 0 0 -1 72 348.199 Tm
+(Language)
+[6.11 4.44 5 5 5 4.44 5 4.44]
+xshow
+3.531 0 RM
+(Support)
+[5.56 5 5 5 5 3.33 2.78]
+xshow
+1 0 0 -1 146.557 348.199 Tm
+3.531 0 RM
+1 0 0 -1 150.088 348.199 Tm
+(.) t
+1 0 0 -1 153.088 348.199 Tm
+(.) t
+1 0 0 -1 156.088 348.199 Tm
+(.) t
+1 0 0 -1 159.088 348.199 Tm
+(.) t
+1 0 0 -1 162.088 348.199 Tm
+(.) t
+1 0 0 -1 165.088 348.199 Tm
+(.) t
+1 0 0 -1 168.088 348.199 Tm
+(.) t
+1 0 0 -1 171.088 348.199 Tm
+(.) t
+1 0 0 -1 174.088 348.199 Tm
+(.) t
+1 0 0 -1 177.088 348.199 Tm
+(.) t
+1 0 0 -1 180.088 348.199 Tm
+(.) t
+1 0 0 -1 183.088 348.199 Tm
+(.) t
+1 0 0 -1 186.088 348.199 Tm
+(.) t
+1 0 0 -1 189.088 348.199 Tm
+(.) t
+1 0 0 -1 192.088 348.199 Tm
+(.) t
+1 0 0 -1 195.088 348.199 Tm
+(.) t
+1 0 0 -1 198.088 348.199 Tm
+(.) t
+1 0 0 -1 201.088 348.199 Tm
+(.) t
+1 0 0 -1 204.088 348.199 Tm
+(.) t
+1 0 0 -1 207.088 348.199 Tm
+(.) t
+1 0 0 -1 210.088 348.199 Tm
+(.) t
+1 0 0 -1 213.088 348.199 Tm
+(.) t
+1 0 0 -1 216.088 348.199 Tm
+(.) t
+1 0 0 -1 219.088 348.199 Tm
+(.) t
+1 0 0 -1 222.088 348.199 Tm
+(.) t
+1 0 0 -1 225.088 348.199 Tm
+(.) t
+1 0 0 -1 228.088 348.199 Tm
+(.) t
+1 0 0 -1 231.088 348.199 Tm
+(.) t
+1 0 0 -1 234.088 348.199 Tm
+(.) t
+1 0 0 -1 237.088 348.199 Tm
+(.) t
+1 0 0 -1 240.088 348.199 Tm
+(.) t
+1 0 0 -1 243.088 348.199 Tm
+(.) t
+1 0 0 -1 246.088 348.199 Tm
+(.) t
+1 0 0 -1 249.088 348.199 Tm
+(.) t
+1 0 0 -1 252.088 348.199 Tm
+(.) t
+1 0 0 -1 255.088 348.199 Tm
+(.) t
+1 0 0 -1 258.088 348.199 Tm
+(.) t
+1 0 0 -1 261.088 348.199 Tm
+(.) t
+1 0 0 -1 264.088 348.199 Tm
+(.) t
+1 0 0 -1 267.088 348.199 Tm
+(.) t
+1 0 0 -1 270.088 348.199 Tm
+(.) t
+1 0 0 -1 273.088 348.199 Tm
+(.) t
+1 0 0 -1 276.088 348.199 Tm
+(.) t
+1 0 0 -1 279.088 348.199 Tm
+(.) t
+1 0 0 -1 282.088 348.199 Tm
+(.) t
+1 0 0 -1 285.088 348.199 Tm
+(.) t
+1 0 0 -1 288.088 348.199 Tm
+(.) t
+1 0 0 -1 291.088 348.199 Tm
+(.) t
+1 0 0 -1 294.088 348.199 Tm
+(.) t
+1 0 0 -1 297.088 348.199 Tm
+(.) t
+1 0 0 -1 300.088 348.199 Tm
+(.) t
+1 0 0 -1 303.088 348.199 Tm
+(.) t
+1 0 0 -1 306.088 348.199 Tm
+(.) t
+1 0 0 -1 309.088 348.199 Tm
+(.) t
+1 0 0 -1 312.088 348.199 Tm
+(.) t
+1 0 0 -1 315.088 348.199 Tm
+(.) t
+1 0 0 -1 318.088 348.199 Tm
+(.) t
+1 0 0 -1 321.088 348.199 Tm
+(.) t
+1 0 0 -1 324.088 348.199 Tm
+(.) t
+1 0 0 -1 327.088 348.199 Tm
+(.) t
+1 0 0 -1 330.088 348.199 Tm
+(.) t
+1 0 0 -1 333.088 348.199 Tm
+(.) t
+1 0 0 -1 336.088 348.199 Tm
+(.) t
+1 0 0 -1 339.088 348.199 Tm
+(.) t
+1 0 0 -1 342.088 348.199 Tm
+(.) t
+1 0 0 -1 345.088 348.199 Tm
+(.) t
+1 0 0 -1 348.088 348.199 Tm
+(.) t
+1 0 0 -1 351.088 348.199 Tm
+(.) t
+1 0 0 -1 354.088 348.199 Tm
+(.) t
+1 0 0 -1 357.088 348.199 Tm
+(.) t
+1 0 0 -1 360.088 348.199 Tm
+(.) t
+1 0 0 -1 363.088 348.199 Tm
+(.) t
+1 0 0 -1 366.088 348.199 Tm
+(.) t
+1 0 0 -1 369.088 348.199 Tm
+(.) t
+1 0 0 -1 372.088 348.199 Tm
+(.) t
+1 0 0 -1 375.088 348.199 Tm
+(.) t
+1 0 0 -1 378.088 348.199 Tm
+(.) t
+1 0 0 -1 381.088 348.199 Tm
+(.) t
+1 0 0 -1 384.088 348.199 Tm
+(.) t
+1 0 0 -1 387.088 348.199 Tm
+(.) t
+1 0 0 -1 390.088 348.199 Tm
+(.) t
+1 0 0 -1 393.088 348.199 Tm
+(.) t
+1 0 0 -1 396.088 348.199 Tm
+(.) t
+1 0 0 -1 399.088 348.199 Tm
+(.) t
+1 0 0 -1 402.088 348.199 Tm
+(.) t
+1 0 0 -1 405.088 348.199 Tm
+(.) t
+1 0 0 -1 408.088 348.199 Tm
+(.) t
+1 0 0 -1 411.088 348.199 Tm
+(.) t
+1 0 0 -1 414.088 348.199 Tm
+(.) t
+1 0 0 -1 417.088 348.199 Tm
+(.) t
+1 0 0 -1 420.088 348.199 Tm
+(.) t
+1 0 0 -1 423.088 348.199 Tm
+(.) t
+1 0 0 -1 426.088 348.199 Tm
+(.) t
+1 0 0 -1 429.088 348.199 Tm
+(.) t
+1 0 0 -1 432.088 348.199 Tm
+(.) t
+1 0 0 -1 435.088 348.199 Tm
+(.) t
+1 0 0 -1 438.088 348.199 Tm
+(.) t
+1 0 0 -1 441.088 348.199 Tm
+(.) t
+1 0 0 -1 444.088 348.199 Tm
+(.) t
+1 0 0 -1 447.088 348.199 Tm
+(.) t
+1 0 0 -1 450.088 348.199 Tm
+(.) t
+1 0 0 -1 453.088 348.199 Tm
+(.) t
+1 0 0 -1 456.088 348.199 Tm
+(.) t
+1 0 0 -1 459.39 348.199 Tm
+3.531 0 RM
+1 0 0 -1 462.921 348.199 Tm
+(3) t
+1 0 0 -1 72 360.199 Tm
+(Output)
+[7.22 5 2.78 5 5 2.78]
+xshow
+3.581 0 RM
+(Format)
+[5.56 5 3.33 7.78 4.44 2.78]
+xshow
+1 0 0 -1 132.177 360.199 Tm
+3.581 0 RM
+1 0 0 -1 135.758 360.199 Tm
+(.) t
+1 0 0 -1 138.758 360.199 Tm
+(.) t
+1 0 0 -1 141.758 360.199 Tm
+(.) t
+1 0 0 -1 144.758 360.199 Tm
+(.) t
+1 0 0 -1 147.758 360.199 Tm
+(.) t
+1 0 0 -1 150.758 360.199 Tm
+(.) t
+1 0 0 -1 153.758 360.199 Tm
+(.) t
+1 0 0 -1 156.758 360.199 Tm
+(.) t
+1 0 0 -1 159.758 360.199 Tm
+(.) t
+1 0 0 -1 162.758 360.199 Tm
+(.) t
+1 0 0 -1 165.758 360.199 Tm
+(.) t
+1 0 0 -1 168.758 360.199 Tm
+(.) t
+1 0 0 -1 171.758 360.199 Tm
+(.) t
+1 0 0 -1 174.758 360.199 Tm
+(.) t
+1 0 0 -1 177.758 360.199 Tm
+(.) t
+1 0 0 -1 180.758 360.199 Tm
+(.) t
+1 0 0 -1 183.758 360.199 Tm
+(.) t
+1 0 0 -1 186.758 360.199 Tm
+(.) t
+1 0 0 -1 189.758 360.199 Tm
+(.) t
+1 0 0 -1 192.758 360.199 Tm
+(.) t
+1 0 0 -1 195.758 360.199 Tm
+(.) t
+1 0 0 -1 198.758 360.199 Tm
+(.) t
+1 0 0 -1 201.758 360.199 Tm
+(.) t
+1 0 0 -1 204.758 360.199 Tm
+(.) t
+1 0 0 -1 207.758 360.199 Tm
+(.) t
+1 0 0 -1 210.758 360.199 Tm
+(.) t
+1 0 0 -1 213.758 360.199 Tm
+(.) t
+1 0 0 -1 216.758 360.199 Tm
+(.) t
+1 0 0 -1 219.758 360.199 Tm
+(.) t
+1 0 0 -1 222.758 360.199 Tm
+(.) t
+1 0 0 -1 225.758 360.199 Tm
+(.) t
+1 0 0 -1 228.758 360.199 Tm
+(.) t
+1 0 0 -1 231.758 360.199 Tm
+(.) t
+1 0 0 -1 234.758 360.199 Tm
+(.) t
+1 0 0 -1 237.758 360.199 Tm
+(.) t
+1 0 0 -1 240.758 360.199 Tm
+(.) t
+1 0 0 -1 243.758 360.199 Tm
+(.) t
+1 0 0 -1 246.758 360.199 Tm
+(.) t
+1 0 0 -1 249.758 360.199 Tm
+(.) t
+1 0 0 -1 252.758 360.199 Tm
+(.) t
+1 0 0 -1 255.758 360.199 Tm
+(.) t
+1 0 0 -1 258.758 360.199 Tm
+(.) t
+1 0 0 -1 261.758 360.199 Tm
+(.) t
+1 0 0 -1 264.758 360.199 Tm
+(.) t
+1 0 0 -1 267.758 360.199 Tm
+(.) t
+1 0 0 -1 270.758 360.199 Tm
+(.) t
+1 0 0 -1 273.758 360.199 Tm
+(.) t
+1 0 0 -1 276.758 360.199 Tm
+(.) t
+1 0 0 -1 279.758 360.199 Tm
+(.) t
+1 0 0 -1 282.758 360.199 Tm
+(.) t
+1 0 0 -1 285.758 360.199 Tm
+(.) t
+1 0 0 -1 288.758 360.199 Tm
+(.) t
+1 0 0 -1 291.758 360.199 Tm
+(.) t
+1 0 0 -1 294.758 360.199 Tm
+(.) t
+1 0 0 -1 297.758 360.199 Tm
+(.) t
+1 0 0 -1 300.758 360.199 Tm
+(.) t
+1 0 0 -1 303.758 360.199 Tm
+(.) t
+1 0 0 -1 306.758 360.199 Tm
+(.) t
+1 0 0 -1 309.758 360.199 Tm
+(.) t
+1 0 0 -1 312.758 360.199 Tm
+(.) t
+1 0 0 -1 315.758 360.199 Tm
+(.) t
+1 0 0 -1 318.758 360.199 Tm
+(.) t
+1 0 0 -1 321.758 360.199 Tm
+(.) t
+1 0 0 -1 324.758 360.199 Tm
+(.) t
+1 0 0 -1 327.758 360.199 Tm
+(.) t
+1 0 0 -1 330.758 360.199 Tm
+(.) t
+1 0 0 -1 333.758 360.199 Tm
+(.) t
+1 0 0 -1 336.758 360.199 Tm
+(.) t
+1 0 0 -1 339.758 360.199 Tm
+(.) t
+1 0 0 -1 342.758 360.199 Tm
+(.) t
+1 0 0 -1 345.758 360.199 Tm
+(.) t
+1 0 0 -1 348.758 360.199 Tm
+(.) t
+1 0 0 -1 351.758 360.199 Tm
+(.) t
+1 0 0 -1 354.758 360.199 Tm
+(.) t
+1 0 0 -1 357.758 360.199 Tm
+(.) t
+1 0 0 -1 360.758 360.199 Tm
+(.) t
+1 0 0 -1 363.758 360.199 Tm
+(.) t
+1 0 0 -1 366.758 360.199 Tm
+(.) t
+1 0 0 -1 369.758 360.199 Tm
+(.) t
+1 0 0 -1 372.758 360.199 Tm
+(.) t
+1 0 0 -1 375.758 360.199 Tm
+(.) t
+1 0 0 -1 378.758 360.199 Tm
+(.) t
+1 0 0 -1 381.758 360.199 Tm
+(.) t
+1 0 0 -1 384.758 360.199 Tm
+(.) t
+1 0 0 -1 387.758 360.199 Tm
+(.) t
+1 0 0 -1 390.758 360.199 Tm
+(.) t
+1 0 0 -1 393.758 360.199 Tm
+(.) t
+1 0 0 -1 396.758 360.199 Tm
+(.) t
+1 0 0 -1 399.758 360.199 Tm
+(.) t
+1 0 0 -1 402.758 360.199 Tm
+(.) t
+1 0 0 -1 405.758 360.199 Tm
+(.) t
+1 0 0 -1 408.758 360.199 Tm
+(.) t
+1 0 0 -1 411.758 360.199 Tm
+(.) t
+1 0 0 -1 414.758 360.199 Tm
+(.) t
+1 0 0 -1 417.758 360.199 Tm
+(.) t
+1 0 0 -1 420.758 360.199 Tm
+(.) t
+1 0 0 -1 423.758 360.199 Tm
+(.) t
+1 0 0 -1 426.758 360.199 Tm
+(.) t
+1 0 0 -1 429.758 360.199 Tm
+(.) t
+1 0 0 -1 432.758 360.199 Tm
+(.) t
+1 0 0 -1 435.758 360.199 Tm
+(.) t
+1 0 0 -1 438.758 360.199 Tm
+(.) t
+1 0 0 -1 441.758 360.199 Tm
+(.) t
+1 0 0 -1 444.758 360.199 Tm
+(.) t
+1 0 0 -1 447.758 360.199 Tm
+(.) t
+1 0 0 -1 450.758 360.199 Tm
+(.) t
+1 0 0 -1 453.758 360.199 Tm
+(.) t
+1 0 0 -1 459.341 360.199 Tm
+3.581 0 RM
+1 0 0 -1 462.922 360.199 Tm
+(3) t
+1 0 0 -1 72 372.199 Tm
+(Date)
+[7.22 4.44 2.78 4.44]
+xshow
+3.558 0 RM
+(Formatting)
+[5.56 5 3.33 7.78 4.44 2.78 2.78 2.78
+5 5]
+xshow
+1 0 0 -1 138.814 372.199 Tm
+3.558 0 RM
+1 0 0 -1 142.372 372.199 Tm
+(.) t
+1 0 0 -1 145.372 372.199 Tm
+(.) t
+1 0 0 -1 148.372 372.199 Tm
+(.) t
+1 0 0 -1 151.372 372.199 Tm
+(.) t
+1 0 0 -1 154.372 372.199 Tm
+(.) t
+1 0 0 -1 157.372 372.199 Tm
+(.) t
+1 0 0 -1 160.372 372.199 Tm
+(.) t
+1 0 0 -1 163.372 372.199 Tm
+(.) t
+1 0 0 -1 166.372 372.199 Tm
+(.) t
+1 0 0 -1 169.372 372.199 Tm
+(.) t
+1 0 0 -1 172.372 372.199 Tm
+(.) t
+1 0 0 -1 175.372 372.199 Tm
+(.) t
+1 0 0 -1 178.372 372.199 Tm
+(.) t
+1 0 0 -1 181.372 372.199 Tm
+(.) t
+1 0 0 -1 184.372 372.199 Tm
+(.) t
+1 0 0 -1 187.372 372.199 Tm
+(.) t
+1 0 0 -1 190.372 372.199 Tm
+(.) t
+1 0 0 -1 193.372 372.199 Tm
+(.) t
+1 0 0 -1 196.372 372.199 Tm
+(.) t
+1 0 0 -1 199.372 372.199 Tm
+(.) t
+1 0 0 -1 202.372 372.199 Tm
+(.) t
+1 0 0 -1 205.372 372.199 Tm
+(.) t
+1 0 0 -1 208.372 372.199 Tm
+(.) t
+1 0 0 -1 211.372 372.199 Tm
+(.) t
+1 0 0 -1 214.372 372.199 Tm
+(.) t
+1 0 0 -1 217.372 372.199 Tm
+(.) t
+1 0 0 -1 220.372 372.199 Tm
+(.) t
+1 0 0 -1 223.372 372.199 Tm
+(.) t
+1 0 0 -1 226.372 372.199 Tm
+(.) t
+1 0 0 -1 229.372 372.199 Tm
+(.) t
+1 0 0 -1 232.372 372.199 Tm
+(.) t
+1 0 0 -1 235.372 372.199 Tm
+(.) t
+1 0 0 -1 238.372 372.199 Tm
+(.) t
+1 0 0 -1 241.372 372.199 Tm
+(.) t
+1 0 0 -1 244.372 372.199 Tm
+(.) t
+1 0 0 -1 247.372 372.199 Tm
+(.) t
+1 0 0 -1 250.372 372.199 Tm
+(.) t
+1 0 0 -1 253.372 372.199 Tm
+(.) t
+1 0 0 -1 256.372 372.199 Tm
+(.) t
+1 0 0 -1 259.372 372.199 Tm
+(.) t
+1 0 0 -1 262.372 372.199 Tm
+(.) t
+1 0 0 -1 265.372 372.199 Tm
+(.) t
+1 0 0 -1 268.372 372.199 Tm
+(.) t
+1 0 0 -1 271.372 372.199 Tm
+(.) t
+1 0 0 -1 274.372 372.199 Tm
+(.) t
+1 0 0 -1 277.372 372.199 Tm
+(.) t
+1 0 0 -1 280.372 372.199 Tm
+(.) t
+1 0 0 -1 283.372 372.199 Tm
+(.) t
+1 0 0 -1 286.372 372.199 Tm
+(.) t
+1 0 0 -1 289.372 372.199 Tm
+(.) t
+1 0 0 -1 292.372 372.199 Tm
+(.) t
+1 0 0 -1 295.372 372.199 Tm
+(.) t
+1 0 0 -1 298.372 372.199 Tm
+(.) t
+1 0 0 -1 301.372 372.199 Tm
+(.) t
+1 0 0 -1 304.372 372.199 Tm
+(.) t
+1 0 0 -1 307.372 372.199 Tm
+(.) t
+1 0 0 -1 310.372 372.199 Tm
+(.) t
+1 0 0 -1 313.372 372.199 Tm
+(.) t
+1 0 0 -1 316.372 372.199 Tm
+(.) t
+1 0 0 -1 319.372 372.199 Tm
+(.) t
+1 0 0 -1 322.372 372.199 Tm
+(.) t
+1 0 0 -1 325.372 372.199 Tm
+(.) t
+1 0 0 -1 328.372 372.199 Tm
+(.) t
+1 0 0 -1 331.372 372.199 Tm
+(.) t
+1 0 0 -1 334.372 372.199 Tm
+(.) t
+1 0 0 -1 337.372 372.199 Tm
+(.) t
+1 0 0 -1 340.372 372.199 Tm
+(.) t
+1 0 0 -1 343.372 372.199 Tm
+(.) t
+1 0 0 -1 346.372 372.199 Tm
+(.) t
+1 0 0 -1 349.372 372.199 Tm
+(.) t
+1 0 0 -1 352.372 372.199 Tm
+(.) t
+1 0 0 -1 355.372 372.199 Tm
+(.) t
+1 0 0 -1 358.372 372.199 Tm
+(.) t
+1 0 0 -1 361.372 372.199 Tm
+(.) t
+1 0 0 -1 364.372 372.199 Tm
+(.) t
+1 0 0 -1 367.372 372.199 Tm
+(.) t
+1 0 0 -1 370.372 372.199 Tm
+(.) t
+1 0 0 -1 373.372 372.199 Tm
+(.) t
+1 0 0 -1 376.372 372.199 Tm
+(.) t
+1 0 0 -1 379.372 372.199 Tm
+(.) t
+1 0 0 -1 382.372 372.199 Tm
+(.) t
+1 0 0 -1 385.372 372.199 Tm
+(.) t
+1 0 0 -1 388.372 372.199 Tm
+(.) t
+1 0 0 -1 391.372 372.199 Tm
+(.) t
+1 0 0 -1 394.372 372.199 Tm
+(.) t
+1 0 0 -1 397.372 372.199 Tm
+(.) t
+1 0 0 -1 400.372 372.199 Tm
+(.) t
+1 0 0 -1 403.372 372.199 Tm
+(.) t
+1 0 0 -1 406.372 372.199 Tm
+(.) t
+1 0 0 -1 409.372 372.199 Tm
+(.) t
+1 0 0 -1 412.372 372.199 Tm
+(.) t
+1 0 0 -1 415.372 372.199 Tm
+(.) t
+1 0 0 -1 418.372 372.199 Tm
+(.) t
+1 0 0 -1 421.372 372.199 Tm
+(.) t
+1 0 0 -1 424.372 372.199 Tm
+(.) t
+1 0 0 -1 427.372 372.199 Tm
+(.) t
+1 0 0 -1 430.372 372.199 Tm
+(.) t
+1 0 0 -1 433.372 372.199 Tm
+(.) t
+1 0 0 -1 436.372 372.199 Tm
+(.) t
+1 0 0 -1 439.372 372.199 Tm
+(.) t
+1 0 0 -1 442.372 372.199 Tm
+(.) t
+1 0 0 -1 445.372 372.199 Tm
+(.) t
+1 0 0 -1 448.372 372.199 Tm
+(.) t
+1 0 0 -1 451.372 372.199 Tm
+(.) t
+1 0 0 -1 454.372 372.199 Tm
+(.) t
+1 0 0 -1 459.364 372.199 Tm
+3.558 0 RM
+1 0 0 -1 462.922 372.199 Tm
+(4) t
+1 0 0 -1 72 384.199 Tm
+(Correlation)
+[6.67 5 3.33 3.33 4.44 2.78 4.44 2.78
+2.78 5 5]
+xshow
+3.51 0 RM
+(Options)
+[7.22 5 2.78 2.78 5 5 3.89]
+xshow
+1 0 0 -1 152.656 384.199 Tm
+3.51 0 RM
+1 0 0 -1 156.166 384.199 Tm
+(.) t
+1 0 0 -1 159.166 384.199 Tm
+(.) t
+1 0 0 -1 162.166 384.199 Tm
+(.) t
+1 0 0 -1 165.166 384.199 Tm
+(.) t
+1 0 0 -1 168.166 384.199 Tm
+(.) t
+1 0 0 -1 171.166 384.199 Tm
+(.) t
+1 0 0 -1 174.166 384.199 Tm
+(.) t
+1 0 0 -1 177.166 384.199 Tm
+(.) t
+1 0 0 -1 180.166 384.199 Tm
+(.) t
+1 0 0 -1 183.166 384.199 Tm
+(.) t
+1 0 0 -1 186.166 384.199 Tm
+(.) t
+1 0 0 -1 189.166 384.199 Tm
+(.) t
+1 0 0 -1 192.166 384.199 Tm
+(.) t
+1 0 0 -1 195.166 384.199 Tm
+(.) t
+1 0 0 -1 198.166 384.199 Tm
+(.) t
+1 0 0 -1 201.166 384.199 Tm
+(.) t
+1 0 0 -1 204.166 384.199 Tm
+(.) t
+1 0 0 -1 207.166 384.199 Tm
+(.) t
+1 0 0 -1 210.166 384.199 Tm
+(.) t
+1 0 0 -1 213.166 384.199 Tm
+(.) t
+1 0 0 -1 216.166 384.199 Tm
+(.) t
+1 0 0 -1 219.166 384.199 Tm
+(.) t
+1 0 0 -1 222.166 384.199 Tm
+(.) t
+1 0 0 -1 225.166 384.199 Tm
+(.) t
+1 0 0 -1 228.166 384.199 Tm
+(.) t
+1 0 0 -1 231.166 384.199 Tm
+(.) t
+1 0 0 -1 234.166 384.199 Tm
+(.) t
+1 0 0 -1 237.166 384.199 Tm
+(.) t
+1 0 0 -1 240.166 384.199 Tm
+(.) t
+1 0 0 -1 243.166 384.199 Tm
+(.) t
+1 0 0 -1 246.166 384.199 Tm
+(.) t
+1 0 0 -1 249.166 384.199 Tm
+(.) t
+1 0 0 -1 252.166 384.199 Tm
+(.) t
+1 0 0 -1 255.166 384.199 Tm
+(.) t
+1 0 0 -1 258.166 384.199 Tm
+(.) t
+1 0 0 -1 261.166 384.199 Tm
+(.) t
+1 0 0 -1 264.166 384.199 Tm
+(.) t
+1 0 0 -1 267.166 384.199 Tm
+(.) t
+1 0 0 -1 270.166 384.199 Tm
+(.) t
+1 0 0 -1 273.166 384.199 Tm
+(.) t
+1 0 0 -1 276.166 384.199 Tm
+(.) t
+1 0 0 -1 279.166 384.199 Tm
+(.) t
+1 0 0 -1 282.166 384.199 Tm
+(.) t
+1 0 0 -1 285.166 384.199 Tm
+(.) t
+1 0 0 -1 288.166 384.199 Tm
+(.) t
+1 0 0 -1 291.166 384.199 Tm
+(.) t
+1 0 0 -1 294.166 384.199 Tm
+(.) t
+1 0 0 -1 297.166 384.199 Tm
+(.) t
+1 0 0 -1 300.166 384.199 Tm
+(.) t
+1 0 0 -1 303.166 384.199 Tm
+(.) t
+1 0 0 -1 306.166 384.199 Tm
+(.) t
+1 0 0 -1 309.166 384.199 Tm
+(.) t
+1 0 0 -1 312.166 384.199 Tm
+(.) t
+1 0 0 -1 315.166 384.199 Tm
+(.) t
+1 0 0 -1 318.166 384.199 Tm
+(.) t
+1 0 0 -1 321.166 384.199 Tm
+(.) t
+1 0 0 -1 324.166 384.199 Tm
+(.) t
+1 0 0 -1 327.166 384.199 Tm
+(.) t
+1 0 0 -1 330.166 384.199 Tm
+(.) t
+1 0 0 -1 333.166 384.199 Tm
+(.) t
+1 0 0 -1 336.166 384.199 Tm
+(.) t
+1 0 0 -1 339.166 384.199 Tm
+(.) t
+1 0 0 -1 342.166 384.199 Tm
+(.) t
+1 0 0 -1 345.166 384.199 Tm
+(.) t
+1 0 0 -1 348.166 384.199 Tm
+(.) t
+1 0 0 -1 351.166 384.199 Tm
+(.) t
+1 0 0 -1 354.166 384.199 Tm
+(.) t
+1 0 0 -1 357.166 384.199 Tm
+(.) t
+1 0 0 -1 360.166 384.199 Tm
+(.) t
+1 0 0 -1 363.166 384.199 Tm
+(.) t
+1 0 0 -1 366.166 384.199 Tm
+(.) t
+1 0 0 -1 369.166 384.199 Tm
+(.) t
+1 0 0 -1 372.166 384.199 Tm
+(.) t
+1 0 0 -1 375.166 384.199 Tm
+(.) t
+1 0 0 -1 378.166 384.199 Tm
+(.) t
+1 0 0 -1 381.166 384.199 Tm
+(.) t
+1 0 0 -1 384.166 384.199 Tm
+(.) t
+1 0 0 -1 387.166 384.199 Tm
+(.) t
+1 0 0 -1 390.166 384.199 Tm
+(.) t
+1 0 0 -1 393.166 384.199 Tm
+(.) t
+1 0 0 -1 396.166 384.199 Tm
+(.) t
+1 0 0 -1 399.166 384.199 Tm
+(.) t
+1 0 0 -1 402.166 384.199 Tm
+(.) t
+1 0 0 -1 405.166 384.199 Tm
+(.) t
+1 0 0 -1 408.166 384.199 Tm
+(.) t
+1 0 0 -1 411.166 384.199 Tm
+(.) t
+1 0 0 -1 414.166 384.199 Tm
+(.) t
+1 0 0 -1 417.166 384.199 Tm
+(.) t
+1 0 0 -1 420.166 384.199 Tm
+(.) t
+1 0 0 -1 423.166 384.199 Tm
+(.) t
+1 0 0 -1 426.166 384.199 Tm
+(.) t
+1 0 0 -1 429.166 384.199 Tm
+(.) t
+1 0 0 -1 432.166 384.199 Tm
+(.) t
+1 0 0 -1 435.166 384.199 Tm
+(.) t
+1 0 0 -1 438.166 384.199 Tm
+(.) t
+1 0 0 -1 441.166 384.199 Tm
+(.) t
+1 0 0 -1 444.166 384.199 Tm
+(.) t
+1 0 0 -1 447.166 384.199 Tm
+(.) t
+1 0 0 -1 450.166 384.199 Tm
+(.) t
+1 0 0 -1 453.166 384.199 Tm
+(.) t
+1 0 0 -1 456.166 384.199 Tm
+(.) t
+1 0 0 -1 459.411 384.199 Tm
+3.51 0 RM
+1 0 0 -1 462.921 384.199 Tm
+(4) t
+1 0 0 -1 72 396.199 Tm
+(Date)
+[7.22 4.44 2.78 4.44]
+xshow
+3.638 0 RM
+(Input)
+[3.33 5 5 5 2.78]
+xshow
+1 0 0 -1 115.554 396.199 Tm
+3.638 0 RM
+1 0 0 -1 119.192 396.199 Tm
+(.) t
+1 0 0 -1 122.192 396.199 Tm
+(.) t
+1 0 0 -1 125.192 396.199 Tm
+(.) t
+1 0 0 -1 128.192 396.199 Tm
+(.) t
+1 0 0 -1 131.192 396.199 Tm
+(.) t
+1 0 0 -1 134.192 396.199 Tm
+(.) t
+1 0 0 -1 137.192 396.199 Tm
+(.) t
+1 0 0 -1 140.192 396.199 Tm
+(.) t
+1 0 0 -1 143.192 396.199 Tm
+(.) t
+1 0 0 -1 146.192 396.199 Tm
+(.) t
+1 0 0 -1 149.192 396.199 Tm
+(.) t
+1 0 0 -1 152.192 396.199 Tm
+(.) t
+1 0 0 -1 155.192 396.199 Tm
+(.) t
+1 0 0 -1 158.192 396.199 Tm
+(.) t
+1 0 0 -1 161.192 396.199 Tm
+(.) t
+1 0 0 -1 164.192 396.199 Tm
+(.) t
+1 0 0 -1 167.192 396.199 Tm
+(.) t
+1 0 0 -1 170.192 396.199 Tm
+(.) t
+1 0 0 -1 173.192 396.199 Tm
+(.) t
+1 0 0 -1 176.192 396.199 Tm
+(.) t
+1 0 0 -1 179.192 396.199 Tm
+(.) t
+1 0 0 -1 182.192 396.199 Tm
+(.) t
+1 0 0 -1 185.192 396.199 Tm
+(.) t
+1 0 0 -1 188.192 396.199 Tm
+(.) t
+1 0 0 -1 191.192 396.199 Tm
+(.) t
+1 0 0 -1 194.192 396.199 Tm
+(.) t
+1 0 0 -1 197.192 396.199 Tm
+(.) t
+1 0 0 -1 200.192 396.199 Tm
+(.) t
+1 0 0 -1 203.192 396.199 Tm
+(.) t
+1 0 0 -1 206.192 396.199 Tm
+(.) t
+1 0 0 -1 209.192 396.199 Tm
+(.) t
+1 0 0 -1 212.192 396.199 Tm
+(.) t
+1 0 0 -1 215.192 396.199 Tm
+(.) t
+1 0 0 -1 218.192 396.199 Tm
+(.) t
+1 0 0 -1 221.192 396.199 Tm
+(.) t
+1 0 0 -1 224.192 396.199 Tm
+(.) t
+1 0 0 -1 227.192 396.199 Tm
+(.) t
+1 0 0 -1 230.192 396.199 Tm
+(.) t
+1 0 0 -1 233.192 396.199 Tm
+(.) t
+1 0 0 -1 236.192 396.199 Tm
+(.) t
+1 0 0 -1 239.192 396.199 Tm
+(.) t
+1 0 0 -1 242.192 396.199 Tm
+(.) t
+1 0 0 -1 245.192 396.199 Tm
+(.) t
+1 0 0 -1 248.192 396.199 Tm
+(.) t
+1 0 0 -1 251.192 396.199 Tm
+(.) t
+1 0 0 -1 254.192 396.199 Tm
+(.) t
+1 0 0 -1 257.192 396.199 Tm
+(.) t
+1 0 0 -1 260.192 396.199 Tm
+(.) t
+1 0 0 -1 263.192 396.199 Tm
+(.) t
+1 0 0 -1 266.192 396.199 Tm
+(.) t
+1 0 0 -1 269.192 396.199 Tm
+(.) t
+1 0 0 -1 272.192 396.199 Tm
+(.) t
+1 0 0 -1 275.192 396.199 Tm
+(.) t
+1 0 0 -1 278.192 396.199 Tm
+(.) t
+1 0 0 -1 281.192 396.199 Tm
+(.) t
+1 0 0 -1 284.192 396.199 Tm
+(.) t
+1 0 0 -1 287.192 396.199 Tm
+(.) t
+1 0 0 -1 290.192 396.199 Tm
+(.) t
+1 0 0 -1 293.192 396.199 Tm
+(.) t
+1 0 0 -1 296.192 396.199 Tm
+(.) t
+1 0 0 -1 299.192 396.199 Tm
+(.) t
+1 0 0 -1 302.192 396.199 Tm
+(.) t
+1 0 0 -1 305.192 396.199 Tm
+(.) t
+1 0 0 -1 308.192 396.199 Tm
+(.) t
+1 0 0 -1 311.192 396.199 Tm
+(.) t
+1 0 0 -1 314.192 396.199 Tm
+(.) t
+1 0 0 -1 317.192 396.199 Tm
+(.) t
+1 0 0 -1 320.192 396.199 Tm
+(.) t
+1 0 0 -1 323.192 396.199 Tm
+(.) t
+1 0 0 -1 326.192 396.199 Tm
+(.) t
+1 0 0 -1 329.192 396.199 Tm
+(.) t
+1 0 0 -1 332.192 396.199 Tm
+(.) t
+1 0 0 -1 335.192 396.199 Tm
+(.) t
+1 0 0 -1 338.192 396.199 Tm
+(.) t
+1 0 0 -1 341.192 396.199 Tm
+(.) t
+1 0 0 -1 344.192 396.199 Tm
+(.) t
+1 0 0 -1 347.192 396.199 Tm
+(.) t
+1 0 0 -1 350.192 396.199 Tm
+(.) t
+1 0 0 -1 353.192 396.199 Tm
+(.) t
+1 0 0 -1 356.192 396.199 Tm
+(.) t
+1 0 0 -1 359.192 396.199 Tm
+(.) t
+1 0 0 -1 362.192 396.199 Tm
+(.) t
+1 0 0 -1 365.192 396.199 Tm
+(.) t
+1 0 0 -1 368.192 396.199 Tm
+(.) t
+1 0 0 -1 371.192 396.199 Tm
+(.) t
+1 0 0 -1 374.192 396.199 Tm
+(.) t
+1 0 0 -1 377.192 396.199 Tm
+(.) t
+1 0 0 -1 380.192 396.199 Tm
+(.) t
+1 0 0 -1 383.192 396.199 Tm
+(.) t
+1 0 0 -1 386.192 396.199 Tm
+(.) t
+1 0 0 -1 389.192 396.199 Tm
+(.) t
+1 0 0 -1 392.192 396.199 Tm
+(.) t
+1 0 0 -1 395.192 396.199 Tm
+(.) t
+1 0 0 -1 398.192 396.199 Tm
+(.) t
+1 0 0 -1 401.192 396.199 Tm
+(.) t
+1 0 0 -1 404.192 396.199 Tm
+(.) t
+1 0 0 -1 407.192 396.199 Tm
+(.) t
+1 0 0 -1 410.192 396.199 Tm
+(.) t
+1 0 0 -1 413.192 396.199 Tm
+(.) t
+1 0 0 -1 416.192 396.199 Tm
+(.) t
+1 0 0 -1 419.192 396.199 Tm
+(.) t
+1 0 0 -1 422.192 396.199 Tm
+(.) t
+1 0 0 -1 425.192 396.199 Tm
+(.) t
+1 0 0 -1 428.192 396.199 Tm
+(.) t
+1 0 0 -1 431.192 396.199 Tm
+(.) t
+1 0 0 -1 434.192 396.199 Tm
+(.) t
+1 0 0 -1 437.192 396.199 Tm
+(.) t
+1 0 0 -1 440.192 396.199 Tm
+(.) t
+1 0 0 -1 443.192 396.199 Tm
+(.) t
+1 0 0 -1 446.192 396.199 Tm
+(.) t
+1 0 0 -1 449.192 396.199 Tm
+(.) t
+1 0 0 -1 452.192 396.199 Tm
+(.) t
+1 0 0 -1 455.192 396.199 Tm
+(.) t
+1 0 0 -1 459.283 396.199 Tm
+3.638 0 RM
+1 0 0 -1 462.921 396.199 Tm
+(4) t
+1 0 0 -1 72 408.199 Tm
+(Miscellaneous)
+[8.89 2.78 3.89 4.44 4.44 2.78 2.78 4.44
+5 4.44 5 5 3.89]
+xshow
+3.468 0 RM
+(Options)
+[7.22 5 2.78 2.78 5 5 3.89]
+xshow
+1 0 0 -1 164.834 408.199 Tm
+3.468 0 RM
+1 0 0 -1 168.302 408.199 Tm
+(.) t
+1 0 0 -1 171.302 408.199 Tm
+(.) t
+1 0 0 -1 174.302 408.199 Tm
+(.) t
+1 0 0 -1 177.302 408.199 Tm
+(.) t
+1 0 0 -1 180.302 408.199 Tm
+(.) t
+1 0 0 -1 183.302 408.199 Tm
+(.) t
+1 0 0 -1 186.302 408.199 Tm
+(.) t
+1 0 0 -1 189.302 408.199 Tm
+(.) t
+1 0 0 -1 192.302 408.199 Tm
+(.) t
+1 0 0 -1 195.302 408.199 Tm
+(.) t
+1 0 0 -1 198.302 408.199 Tm
+(.) t
+1 0 0 -1 201.302 408.199 Tm
+(.) t
+1 0 0 -1 204.302 408.199 Tm
+(.) t
+1 0 0 -1 207.302 408.199 Tm
+(.) t
+1 0 0 -1 210.302 408.199 Tm
+(.) t
+1 0 0 -1 213.302 408.199 Tm
+(.) t
+1 0 0 -1 216.302 408.199 Tm
+(.) t
+1 0 0 -1 219.302 408.199 Tm
+(.) t
+1 0 0 -1 222.302 408.199 Tm
+(.) t
+1 0 0 -1 225.302 408.199 Tm
+(.) t
+1 0 0 -1 228.302 408.199 Tm
+(.) t
+1 0 0 -1 231.302 408.199 Tm
+(.) t
+1 0 0 -1 234.302 408.199 Tm
+(.) t
+1 0 0 -1 237.302 408.199 Tm
+(.) t
+1 0 0 -1 240.302 408.199 Tm
+(.) t
+1 0 0 -1 243.302 408.199 Tm
+(.) t
+1 0 0 -1 246.302 408.199 Tm
+(.) t
+1 0 0 -1 249.302 408.199 Tm
+(.) t
+1 0 0 -1 252.302 408.199 Tm
+(.) t
+1 0 0 -1 255.302 408.199 Tm
+(.) t
+1 0 0 -1 258.302 408.199 Tm
+(.) t
+1 0 0 -1 261.302 408.199 Tm
+(.) t
+1 0 0 -1 264.302 408.199 Tm
+(.) t
+1 0 0 -1 267.302 408.199 Tm
+(.) t
+1 0 0 -1 270.302 408.199 Tm
+(.) t
+1 0 0 -1 273.302 408.199 Tm
+(.) t
+1 0 0 -1 276.302 408.199 Tm
+(.) t
+1 0 0 -1 279.302 408.199 Tm
+(.) t
+1 0 0 -1 282.302 408.199 Tm
+(.) t
+1 0 0 -1 285.302 408.199 Tm
+(.) t
+1 0 0 -1 288.302 408.199 Tm
+(.) t
+1 0 0 -1 291.302 408.199 Tm
+(.) t
+1 0 0 -1 294.302 408.199 Tm
+(.) t
+1 0 0 -1 297.302 408.199 Tm
+(.) t
+1 0 0 -1 300.302 408.199 Tm
+(.) t
+1 0 0 -1 303.302 408.199 Tm
+(.) t
+1 0 0 -1 306.302 408.199 Tm
+(.) t
+1 0 0 -1 309.302 408.199 Tm
+(.) t
+1 0 0 -1 312.302 408.199 Tm
+(.) t
+1 0 0 -1 315.302 408.199 Tm
+(.) t
+1 0 0 -1 318.302 408.199 Tm
+(.) t
+1 0 0 -1 321.302 408.199 Tm
+(.) t
+1 0 0 -1 324.302 408.199 Tm
+(.) t
+1 0 0 -1 327.302 408.199 Tm
+(.) t
+1 0 0 -1 330.302 408.199 Tm
+(.) t
+1 0 0 -1 333.302 408.199 Tm
+(.) t
+1 0 0 -1 336.302 408.199 Tm
+(.) t
+1 0 0 -1 339.302 408.199 Tm
+(.) t
+1 0 0 -1 342.302 408.199 Tm
+(.) t
+1 0 0 -1 345.302 408.199 Tm
+(.) t
+1 0 0 -1 348.302 408.199 Tm
+(.) t
+1 0 0 -1 351.302 408.199 Tm
+(.) t
+1 0 0 -1 354.302 408.199 Tm
+(.) t
+1 0 0 -1 357.302 408.199 Tm
+(.) t
+1 0 0 -1 360.302 408.199 Tm
+(.) t
+1 0 0 -1 363.302 408.199 Tm
+(.) t
+1 0 0 -1 366.302 408.199 Tm
+(.) t
+1 0 0 -1 369.302 408.199 Tm
+(.) t
+1 0 0 -1 372.302 408.199 Tm
+(.) t
+1 0 0 -1 375.302 408.199 Tm
+(.) t
+1 0 0 -1 378.302 408.199 Tm
+(.) t
+1 0 0 -1 381.302 408.199 Tm
+(.) t
+1 0 0 -1 384.302 408.199 Tm
+(.) t
+1 0 0 -1 387.302 408.199 Tm
+(.) t
+1 0 0 -1 390.302 408.199 Tm
+(.) t
+1 0 0 -1 393.302 408.199 Tm
+(.) t
+1 0 0 -1 396.302 408.199 Tm
+(.) t
+1 0 0 -1 399.302 408.199 Tm
+(.) t
+1 0 0 -1 402.302 408.199 Tm
+(.) t
+1 0 0 -1 405.302 408.199 Tm
+(.) t
+1 0 0 -1 408.302 408.199 Tm
+(.) t
+1 0 0 -1 411.302 408.199 Tm
+(.) t
+1 0 0 -1 414.302 408.199 Tm
+(.) t
+1 0 0 -1 417.302 408.199 Tm
+(.) t
+1 0 0 -1 420.302 408.199 Tm
+(.) t
+1 0 0 -1 423.302 408.199 Tm
+(.) t
+1 0 0 -1 426.302 408.199 Tm
+(.) t
+1 0 0 -1 429.302 408.199 Tm
+(.) t
+1 0 0 -1 432.302 408.199 Tm
+(.) t
+1 0 0 -1 435.302 408.199 Tm
+(.) t
+1 0 0 -1 438.302 408.199 Tm
+(.) t
+1 0 0 -1 441.302 408.199 Tm
+(.) t
+1 0 0 -1 444.302 408.199 Tm
+(.) t
+1 0 0 -1 447.302 408.199 Tm
+(.) t
+1 0 0 -1 450.302 408.199 Tm
+(.) t
+1 0 0 -1 453.302 408.199 Tm
+(.) t
+1 0 0 -1 456.302 408.199 Tm
+(.) t
+1 0 0 -1 459.453 408.199 Tm
+3.468 0 RM
+1 0 0 -1 462.921 408.199 Tm
+(5) t
+1 0 0 -1 48 420.199 Tm
+(Limitations)
+[6.11 2.78 7.78 2.78 2.78 4.44 2.78 2.78
+5 5 3.89]
+xshow
+1 0 0 -1 94.12 420.199 Tm
+3.637 0 RM
+1 0 0 -1 97.757 420.199 Tm
+(.) t
+1 0 0 -1 100.757 420.199 Tm
+(.) t
+1 0 0 -1 103.757 420.199 Tm
+(.) t
+1 0 0 -1 106.757 420.199 Tm
+(.) t
+1 0 0 -1 109.757 420.199 Tm
+(.) t
+1 0 0 -1 112.757 420.199 Tm
+(.) t
+1 0 0 -1 115.757 420.199 Tm
+(.) t
+1 0 0 -1 118.757 420.199 Tm
+(.) t
+1 0 0 -1 121.757 420.199 Tm
+(.) t
+1 0 0 -1 124.757 420.199 Tm
+(.) t
+1 0 0 -1 127.757 420.199 Tm
+(.) t
+1 0 0 -1 130.757 420.199 Tm
+(.) t
+1 0 0 -1 133.757 420.199 Tm
+(.) t
+1 0 0 -1 136.757 420.199 Tm
+(.) t
+1 0 0 -1 139.757 420.199 Tm
+(.) t
+1 0 0 -1 142.757 420.199 Tm
+(.) t
+1 0 0 -1 145.757 420.199 Tm
+(.) t
+1 0 0 -1 148.757 420.199 Tm
+(.) t
+1 0 0 -1 151.757 420.199 Tm
+(.) t
+1 0 0 -1 154.757 420.199 Tm
+(.) t
+1 0 0 -1 157.757 420.199 Tm
+(.) t
+1 0 0 -1 160.757 420.199 Tm
+(.) t
+1 0 0 -1 163.757 420.199 Tm
+(.) t
+1 0 0 -1 166.757 420.199 Tm
+(.) t
+1 0 0 -1 169.757 420.199 Tm
+(.) t
+1 0 0 -1 172.757 420.199 Tm
+(.) t
+1 0 0 -1 175.757 420.199 Tm
+(.) t
+1 0 0 -1 178.757 420.199 Tm
+(.) t
+1 0 0 -1 181.757 420.199 Tm
+(.) t
+1 0 0 -1 184.757 420.199 Tm
+(.) t
+1 0 0 -1 187.757 420.199 Tm
+(.) t
+1 0 0 -1 190.757 420.199 Tm
+(.) t
+1 0 0 -1 193.757 420.199 Tm
+(.) t
+1 0 0 -1 196.757 420.199 Tm
+(.) t
+1 0 0 -1 199.757 420.199 Tm
+(.) t
+1 0 0 -1 202.757 420.199 Tm
+(.) t
+1 0 0 -1 205.757 420.199 Tm
+(.) t
+1 0 0 -1 208.757 420.199 Tm
+(.) t
+1 0 0 -1 211.757 420.199 Tm
+(.) t
+1 0 0 -1 214.757 420.199 Tm
+(.) t
+1 0 0 -1 217.757 420.199 Tm
+(.) t
+1 0 0 -1 220.757 420.199 Tm
+(.) t
+1 0 0 -1 223.757 420.199 Tm
+(.) t
+1 0 0 -1 226.757 420.199 Tm
+(.) t
+1 0 0 -1 229.757 420.199 Tm
+(.) t
+1 0 0 -1 232.757 420.199 Tm
+(.) t
+1 0 0 -1 235.757 420.199 Tm
+(.) t
+1 0 0 -1 238.757 420.199 Tm
+(.) t
+1 0 0 -1 241.757 420.199 Tm
+(.) t
+1 0 0 -1 244.757 420.199 Tm
+(.) t
+1 0 0 -1 247.757 420.199 Tm
+(.) t
+1 0 0 -1 250.757 420.199 Tm
+(.) t
+1 0 0 -1 253.757 420.199 Tm
+(.) t
+1 0 0 -1 256.757 420.199 Tm
+(.) t
+1 0 0 -1 259.757 420.199 Tm
+(.) t
+1 0 0 -1 262.757 420.199 Tm
+(.) t
+1 0 0 -1 265.757 420.199 Tm
+(.) t
+1 0 0 -1 268.757 420.199 Tm
+(.) t
+1 0 0 -1 271.757 420.199 Tm
+(.) t
+1 0 0 -1 274.757 420.199 Tm
+(.) t
+1 0 0 -1 277.757 420.199 Tm
+(.) t
+1 0 0 -1 280.757 420.199 Tm
+(.) t
+1 0 0 -1 283.757 420.199 Tm
+(.) t
+1 0 0 -1 286.757 420.199 Tm
+(.) t
+1 0 0 -1 289.757 420.199 Tm
+(.) t
+1 0 0 -1 292.757 420.199 Tm
+(.) t
+1 0 0 -1 295.757 420.199 Tm
+(.) t
+1 0 0 -1 298.757 420.199 Tm
+(.) t
+1 0 0 -1 301.757 420.199 Tm
+(.) t
+1 0 0 -1 304.757 420.199 Tm
+(.) t
+1 0 0 -1 307.757 420.199 Tm
+(.) t
+1 0 0 -1 310.757 420.199 Tm
+(.) t
+1 0 0 -1 313.757 420.199 Tm
+(.) t
+1 0 0 -1 316.757 420.199 Tm
+(.) t
+1 0 0 -1 319.757 420.199 Tm
+(.) t
+1 0 0 -1 322.757 420.199 Tm
+(.) t
+1 0 0 -1 325.757 420.199 Tm
+(.) t
+1 0 0 -1 328.757 420.199 Tm
+(.) t
+1 0 0 -1 331.757 420.199 Tm
+(.) t
+1 0 0 -1 334.757 420.199 Tm
+(.) t
+1 0 0 -1 337.757 420.199 Tm
+(.) t
+1 0 0 -1 340.757 420.199 Tm
+(.) t
+1 0 0 -1 343.757 420.199 Tm
+(.) t
+1 0 0 -1 346.757 420.199 Tm
+(.) t
+1 0 0 -1 349.757 420.199 Tm
+(.) t
+1 0 0 -1 352.757 420.199 Tm
+(.) t
+1 0 0 -1 355.757 420.199 Tm
+(.) t
+1 0 0 -1 358.757 420.199 Tm
+(.) t
+1 0 0 -1 361.757 420.199 Tm
+(.) t
+1 0 0 -1 364.757 420.199 Tm
+(.) t
+1 0 0 -1 367.757 420.199 Tm
+(.) t
+1 0 0 -1 370.757 420.199 Tm
+(.) t
+1 0 0 -1 373.757 420.199 Tm
+(.) t
+1 0 0 -1 376.757 420.199 Tm
+(.) t
+1 0 0 -1 379.757 420.199 Tm
+(.) t
+1 0 0 -1 382.757 420.199 Tm
+(.) t
+1 0 0 -1 385.757 420.199 Tm
+(.) t
+1 0 0 -1 388.757 420.199 Tm
+(.) t
+1 0 0 -1 391.757 420.199 Tm
+(.) t
+1 0 0 -1 394.757 420.199 Tm
+(.) t
+1 0 0 -1 397.757 420.199 Tm
+(.) t
+1 0 0 -1 400.757 420.199 Tm
+(.) t
+1 0 0 -1 403.757 420.199 Tm
+(.) t
+1 0 0 -1 406.757 420.199 Tm
+(.) t
+1 0 0 -1 409.757 420.199 Tm
+(.) t
+1 0 0 -1 412.757 420.199 Tm
+(.) t
+1 0 0 -1 415.757 420.199 Tm
+(.) t
+1 0 0 -1 418.757 420.199 Tm
+(.) t
+1 0 0 -1 421.757 420.199 Tm
+(.) t
+1 0 0 -1 424.757 420.199 Tm
+(.) t
+1 0 0 -1 427.757 420.199 Tm
+(.) t
+1 0 0 -1 430.757 420.199 Tm
+(.) t
+1 0 0 -1 433.757 420.199 Tm
+(.) t
+1 0 0 -1 436.757 420.199 Tm
+(.) t
+1 0 0 -1 439.757 420.199 Tm
+(.) t
+1 0 0 -1 442.757 420.199 Tm
+(.) t
+1 0 0 -1 445.757 420.199 Tm
+(.) t
+1 0 0 -1 448.757 420.199 Tm
+(.) t
+1 0 0 -1 451.757 420.199 Tm
+(.) t
+1 0 0 -1 454.757 420.199 Tm
+(.) t
+1 0 0 -1 459.36 420.199 Tm
+3.637 0 RM
+1 0 0 -1 462.997 420.199 Tm
+(5) t
+/Helvetica-Bold 20.736 F
+1 0 0 -1 0 449.905 Tm
+(Introduction)
+[5.764 12.669 6.905 8.066 12.669 12.669 12.669 11.529
+6.905 5.764 12.669 12.669]
+xshow
+/Helvetica-Bold 17.28 F
+1 0 0 -1 0 480.129 Tm
+(What)
+[16.312 10.558 9.607 5.754]
+xshow
+4.803 0 RM
+(is)
+[4.803 9.607]
+xshow
+4.803 0 RM
+(Mdate?)
+[14.394 10.558 9.607 5.754 9.607 10.558]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 48 502.709 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+2.963 0 RM
+(was)
+[7.22 4.44 3.89]
+xshow
+2.963 0 RM
+(written)
+[7.22 3.33 2.78 2.78 2.78 4.44 5]
+xshow
+2.963 0 RM
+(to)
+[2.78 5]
+xshow
+2.963 0 RM
+(fill)
+[3.33 2.78 2.78 2.78]
+xshow
+2.963 0 RM
+(a)
+[4.44]
+xshow
+2.963 0 RM
+(need:)
+[5 4.44 4.44 5 2.78]
+xshow
+2.963 0 RM
+(a)
+[4.44]
+xshow
+2.963 0 RM
+(simple,)
+[3.89 2.78 7.78 5 2.78 4.44 2.5]
+xshow
+2.963 0 RM
+(freely-available)
+[3.33 3.33 4.44 4.44 2.78 5 3.33 4.44
+5 4.44 2.78 2.78 4.44 5 2.78 4.44]
+xshow
+2.963 0 RM
+(program)
+[5 3.33 5 5 3.33 4.44 7.78]
+xshow
+2.963 0 RM
+(for)
+[3.33 5 3.33]
+xshow
+2.963 0 RM
+(non-academic)
+[5 5 5 3.33 4.44 4.44 4.44 5
+4.44 7.78 2.78 4.44]
+xshow
+2.963 0 RM
+(people)
+[5 4.44 5 5 2.78 4.44]
+xshow
+2.963 0 RM
+(interested)
+[2.78 5 2.78 4.44 3.33 4.44 3.89 2.78
+4.44 5]
+xshow
+1 0 0 -1 48 514.709 Tm
+(in)
+[2.78 5]
+xshow
+2.488 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.488 0 RM
+(Mayan)
+[8.89 4.44 5 4.44 5]
+xshow
+2.488 0 RM
+(calendar.)
+[4.44 4.44 2.78 4.44 5 5 4.44 3.33
+2.5]
+xshow
+2.488 0 RM
+(Except)
+[6.11 5 4.44 4.44 5 2.78]
+xshow
+2.488 0 RM
+(for)
+[3.33 5 3.33]
+xshow
+2.488 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.488 0 RM
+(Emacs)
+[6.11 7.78 4.44 4.44 3.89]
+xshow
+2.488 0 RM
+(Mayan)
+[8.89 4.44 5 4.44 5]
+xshow
+2.488 0 RM
+(calendar)
+[4.44 4.44 2.78 4.44 5 5 4.44 3.33]
+xshow
+2.488 0 RM
+(mode)
+[7.78 5 5 4.44]
+xshow
+2.488 0 RM
+(\(which)
+[3.33 7.22 5 2.78 4.44 5]
+xshow
+2.488 0 RM
+(has)
+[5 4.44 3.89]
+xshow
+2.488 0 RM
+(some)
+[3.89 5 7.78 4.44]
+xshow
+2.488 0 RM
+(severe)
+[3.89 4.44 5 4.44 3.33 4.44]
+xshow
+2.488 0 RM
+(limitations\),)
+[2.78 2.78 7.78 2.78 2.78 4.44 2.78 2.78
+5 5 3.89 3.33 2.5]
+xshow
+1 0 0 -1 48 526.709 Tm
+(this)
+[2.78 5 2.78 3.89]
+xshow
+3.242 0 RM
+(has)
+[5 4.44 3.89]
+xshow
+3.242 0 RM
+(been)
+[5 4.44 4.44 5]
+xshow
+3.242 0 RM
+(lacking)
+[2.78 4.44 4.44 5 2.78 5 5]
+xshow
+3.242 0 RM
+(on)
+[5 5]
+xshow
+3.242 0 RM
+(all)
+[4.44 2.78 2.78]
+xshow
+3.242 0 RM
+(popular)
+[5 5 5 5 2.78 4.44 3.33]
+xshow
+3.242 0 RM
+(operating)
+[5 5 4.44 3.33 4.44 2.78 2.78 5
+5]
+xshow
+3.242 0 RM
+(systems,)
+[3.89 5 3.89 2.78 4.44 7.78 3.89 2.5]
+xshow
+3.242 0 RM
+(which)
+[7.22 5 2.78 4.44 5]
+xshow
+3.242 0 RM
+(is)
+[2.78 3.89]
+xshow
+3.242 0 RM
+(odd)
+[5 5 5]
+xshow
+3.242 0 RM
+(considering)
+[4.44 5 5 3.89 2.78 5 4.44 3.33
+2.78 5 5]
+xshow
+3.242 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+3.242 0 RM
+(continuing)
+[4.44 5 5 2.78 2.78 5 5 2.78
+5 5]
+xshow
+3.242 0 RM
+(public)
+[5 5 5 2.78 2.78 4.44]
+xshow
+1 0 0 -1 48 538.709 Tm
+(interest)
+[2.78 5 2.78 4.44 3.33 4.44 3.89 2.78]
+xshow
+2.5 0 RM
+(in)
+[2.78 5]
+xshow
+2.5 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.5 0 RM
+(Mayan)
+[8.89 4.44 5 4.44 5]
+xshow
+2.5 0 RM
+(civilisation.)
+[4.44 2.78 5 2.78 2.78 2.78 3.89 4.44
+2.78 2.78 5 5 2.5]
+xshow
+1 0 0 -1 48 559.006 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+2.829 0 RM
+(has)
+[5 4.44 3.89]
+xshow
+2.829 0 RM
+(been)
+[5 4.44 4.44 5]
+xshow
+2.829 0 RM
+(in)
+[2.78 5]
+xshow
+2.829 0 RM
+(continuous)
+[4.44 5 5 2.78 2.78 5 5 5
+5 3.89]
+xshow
+2.829 0 RM
+(development)
+[5 4.44 5 4.44 2.78 5 5 7.78
+4.44 5 2.78]
+xshow
+2.829 0 RM
+(for)
+[3.33 5 3.33]
+xshow
+2.829 0 RM
+(over)
+[5 5 4.44 3.33]
+xshow
+2.829 0 RM
+(ten)
+[2.78 4.44 5]
+xshow
+2.829 0 RM
+(years,)
+[5 4.44 4.44 3.33 3.89 2.5]
+xshow
+2.829 0 RM
+(mostly)
+[7.78 5 3.89 2.78 2.78 5]
+xshow
+2.829 0 RM
+(due)
+[5 5 4.44]
+xshow
+2.829 0 RM
+(to)
+[2.78 5]
+xshow
+2.829 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.829 0 RM
+(limited)
+[2.78 2.78 7.78 2.78 2.78 4.44 5]
+xshow
+2.829 0 RM
+(interest)
+[2.78 5 2.78 4.44 3.33 4.44 3.89 2.78]
+xshow
+2.829 0 RM
+(in)
+[2.78 5]
+xshow
+2.829 0 RM
+(such)
+[3.89 5 4.44 5]
+xshow
+1 0 0 -1 48 571.006 Tm
+(a)
+[4.44]
+xshow
+2.5 0 RM
+(program)
+[5 3.33 5 5 3.33 4.44 7.78]
+xshow
+2.5 0 RM
+(by)
+[5 5]
+xshow
+2.5 0 RM
+(programmers,)
+[5 3.33 5 5 3.33 4.44 7.78 7.78
+4.44 3.33 3.89 2.5]
+xshow
+2.5 0 RM
+(but)
+[5 5 2.78]
+xshow
+2.5 0 RM
+(fortunately)
+[3.33 5 3.33 2.78 5 5 4.44 2.78
+4.44 2.78 5]
+xshow
+2.5 0 RM
+(not)
+[5 5 2.78]
+xshow
+2.5 0 RM
+(by)
+[5 5]
+xshow
+2.5 0 RM
+(users.)
+[5 3.89 4.44 3.33 3.89 2.5]
+xshow
+/Helvetica-Bold 17.28 F
+1 0 0 -1 0 597.756 Tm
+(Disclaimer)
+[12.476 4.803 9.607 9.607 4.803 9.607 4.803 15.361
+9.607 6.721]
+xshow
+4.803 0 RM
+(&)
+[12.476]
+xshow
+4.803 0 RM
+(License)
+[10.558 4.803 9.607 9.607 10.558 9.607 9.607]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 48 620.336 Tm
+(This)
+[6.11 5 2.78 3.89]
+xshow
+2.195 0 RM
+(document)
+[5 5 4.44 5 7.78 4.44 5 2.78]
+xshow
+2.195 0 RM
+(was)
+[7.22 4.44 3.89]
+xshow
+2.195 0 RM
+(formerly)
+[3.33 5 3.33 7.78 4.44 3.33 2.78 5]
+xshow
+2.195 0 RM
+(licensed)
+[2.78 2.78 4.44 4.44 5 3.89 4.44 5]
+xshow
+2.195 0 RM
+(under)
+[5 5 5 4.44 3.33]
+xshow
+2.195 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.195 0 RM
+(GNU)
+[7.22 7.22 7.22]
+xshow
+2.195 0 RM
+(FDL)
+[5.56 7.22 6.11]
+xshow
+2.195 0 RM
+(1.1.)
+[5 2.5 5 2.5]
+xshow
+2.195 0 RM
+(It)
+[3.33 2.78]
+xshow
+2.195 0 RM
+(now)
+[5 5 7.22]
+xshow
+2.195 0 RM
+(falls)
+[3.33 4.44 2.78 2.78 3.89]
+xshow
+2.195 0 RM
+(under)
+[5 5 5 4.44 3.33]
+xshow
+2.195 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.195 0 RM
+(general)
+[5 4.44 5 4.44 3.33 4.44 2.78]
+xshow
+2.195 0 RM
+(GPL)
+[7.22 5.56 6.11]
+xshow
+2.195 0 RM
+(license)
+[2.78 2.78 4.44 4.44 5 3.89 4.44]
+xshow
+1 0 0 -1 48 632.336 Tm
+(of)
+[5 3.33]
+xshow
+2.762 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.762 0 RM
+(accompanying)
+[4.44 4.44 4.44 5 7.78 5 4.44 5
+5 2.78 5 5]
+xshow
+2.762 0 RM
+(code.)
+[4.44 5 5 4.44 2.5]
+xshow
+2.762 0 RM
+(Previous)
+[5.56 3.33 4.44 5 2.78 5 5 3.89]
+xshow
+2.762 0 RM
+(versions)
+[5 4.44 3.33 3.89 2.78 5 5 3.89]
+xshow
+2.762 0 RM
+(of)
+[5 3.33]
+xshow
+2.762 0 RM
+(this)
+[2.78 5 2.78 3.89]
+xshow
+2.762 0 RM
+(documentation)
+[5 5 4.44 5 7.78 4.44 5 2.78
+4.44 2.78 2.78 5 5]
+xshow
+2.762 0 RM
+(may,)
+[7.78 4.44 5 2.5]
+xshow
+2.762 0 RM
+(if)
+[2.78 3.33]
+xshow
+2.762 0 RM
+(wished,)
+[7.22 2.78 3.89 5 4.44 5 2.5]
+xshow
+2.762 0 RM
+(also)
+[4.44 2.78 3.89 5]
+xshow
+2.762 0 RM
+(fall)
+[3.33 4.44 2.78 2.78]
+xshow
+2.762 0 RM
+(under)
+[5 5 5 4.44 3.33]
+xshow
+2.762 0 RM
+(GPL)
+[7.22 5.56 6.11]
+xshow
+1 0 0 -1 48 644.336 Tm
+(on)
+[5 5]
+xshow
+2.5 0 RM
+(contact)
+[4.44 5 5 2.78 4.44 4.44 2.78]
+xshow
+2.5 0 RM
+(with)
+[7.22 2.78 2.78 5]
+xshow
+2.5 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.5 0 RM
+(author.)
+[4.44 5 2.78 5 5 3.33 2.5]
+xshow
+ET
+grestore
+grestore
+%FOPEndRegionViewport
+showpage
+%%PageTrailer
+%%PageResources: font Helvetica-Bold
+%%+ font Times-Roman
+%%+ font Courier
+%%+ procset (Apache XML Graphics Std ProcSet) 1.0 0
+%%+ font Helvetica
+%%Page: 2 2
+%%PageBoundingBox: 0 0 612 792
+%%PageHiResBoundingBox: 0 0 612 792
+%%PageResources: (atend)
+%FOPSimplePageMaster: body-odd
+%%BeginPageSetup
+%FOPBeginSetPageDevice
+<<
+/PageSize [612 792]
+/ImagingBBox null
+>> setpagedevice
+%FOPEndSetPageDevice
+[1 0 0 -1 0 792] concat
+%%EndPageSetup
+%FOPBeginRegionViewport: xsl-region-before-odd
+gsave
+[1 0 0 1 72 36] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+156 14.25 M
+156 14.5 lineto
+0 14.5 lineto
+0 14.25 lineto
+0 14 lineto
+156 14 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 14.25 M 156 14.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+gsave
+[1 0 0 1 156 0] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+156 14.25 M
+156 14.5 lineto
+0 14.5 lineto
+0 14.25 lineto
+0 14 lineto
+156 14 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 14.25 M 156 14.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+/Times-Roman 10 F
+gsave
+BT
+1 0 0 -1 65.225 8.33 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+ET
+grestore
+grestore
+gsave
+[1 0 0 1 312 0] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+156 14.25 M
+156 14.5 lineto
+0 14.5 lineto
+0 14.25 lineto
+0 14 lineto
+156 14 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 14.25 M 156 14.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+grestore
+grestore
+%FOPEndRegionViewport
+%FOPBeginRegionViewport: xsl-region-after-odd
+gsave
+[1 0 0 1 72 727.2] concat
+gsave
+[1 0 0 1 0 28.55] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+0 0.25 M
+0 0 lineto
+156 0 lineto
+156 0.25 lineto
+156 0.5 lineto
+0 0.5 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 0.25 M 156 0.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+grestore
+gsave
+[1 0 0 1 156 28.55] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+0 0.25 M
+0 0 lineto
+156 0 lineto
+156 0.25 lineto
+156 0.5 lineto
+0 0.5 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 0.25 M 156 0.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+/Times-Roman 10 F
+gsave
+BT
+1 0 0 -1 75.5 10.83 Tm
+(2) t
+ET
+grestore
+grestore
+gsave
+[1 0 0 1 312 28.55] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+0 0.25 M
+0 0 lineto
+156 0 lineto
+156 0.25 lineto
+156 0.5 lineto
+0 0.5 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 0.25 M 156 0.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+grestore
+grestore
+%FOPEndRegionViewport
+%FOPBeginRegionViewport: xsl-region-body
+gsave
+[1 0 0 1 72 72] concat
+/Times-Roman 10 F
+gsave
+BT
+1 0 0 -1 48 8.33 Tm
+(Copyright)
+[6.67 5 5 5 3.33 2.78 5 5
+2.78]
+xshow
+2.5 0 RM
+(\(c\))
+[3.33 4.44 3.33]
+xshow
+2.5 0 RM
+(2002-2011)
+[5 5 5 5 3.33 5 5 5
+5]
+xshow
+2.5 0 RM
+(by)
+[5 5]
+xshow
+2.5 0 RM
+(Sean)
+[5.56 4.44 4.44 5]
+xshow
+2.5 0 RM
+(Dwyer.)
+[7.22 7.22 5 4.44 3.33 2.5]
+xshow
+1 0 0 -1 48 32.33 Tm
+(Please)
+[5.56 2.78 4.44 4.44 3.89 4.44]
+xshow
+2.903 0 RM
+(freely)
+[3.33 3.33 4.44 4.44 2.78 5]
+xshow
+2.903 0 RM
+(copy)
+[4.44 5 5 5]
+xshow
+2.903 0 RM
+(and)
+[4.44 5 5]
+xshow
+2.903 0 RM
+(distribute)
+[5 2.78 3.89 2.78 3.33 2.78 5 5
+2.78 4.44]
+xshow
+2.903 0 RM
+(\(sell)
+[3.33 3.89 4.44 2.78 2.78]
+xshow
+2.903 0 RM
+(or)
+[5 3.33]
+xshow
+2.903 0 RM
+(give)
+[5 2.78 5 4.44]
+xshow
+2.903 0 RM
+(away\))
+[4.44 7.22 4.44 5 3.33]
+xshow
+2.903 0 RM
+(this)
+[2.78 5 2.78 3.89]
+xshow
+2.903 0 RM
+(document)
+[5 5 4.44 5 7.78 4.44 5 2.78]
+xshow
+2.903 0 RM
+(in)
+[2.78 5]
+xshow
+2.903 0 RM
+(any)
+[4.44 5 5]
+xshow
+2.903 0 RM
+(format,)
+[3.33 5 3.33 7.78 4.44 2.78 2.5]
+xshow
+2.903 0 RM
+(providing)
+[5 3.33 5 5 2.78 5 2.78 5
+5]
+xshow
+2.903 0 RM
+(you)
+[5 5 5]
+xshow
+2.903 0 RM
+(adhere)
+[4.44 5 5 4.44 3.33 4.44]
+xshow
+1 0 0 -1 48 44.33 Tm
+(to)
+[2.78 5]
+xshow
+3.313 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+3.313 0 RM
+(terms)
+[2.78 4.44 3.33 7.78 3.89]
+xshow
+3.313 0 RM
+(of)
+[5 3.33]
+xshow
+3.313 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+3.313 0 RM
+(above)
+[4.44 5 5 5 4.44]
+xshow
+3.313 0 RM
+(License.)
+[6.11 2.78 4.44 4.44 5 3.89 4.44 2.5]
+xshow
+3.313 0 RM
+(It's)
+[3.33 2.78 1.8 3.89]
+xshow
+3.313 0 RM
+(requested)
+[3.33 4.44 5 5 4.44 3.89 2.78 4.44
+5]
+xshow
+3.313 0 RM
+(that)
+[2.78 5 4.44 2.78]
+xshow
+3.313 0 RM
+(corrections)
+[4.44 5 3.33 3.33 4.44 4.44 2.78 2.78
+5 5 3.89]
+xshow
+3.313 0 RM
+(and/or)
+[4.44 5 5 2.78 5 3.33]
+xshow
+3.313 0 RM
+(comments)
+[4.44 5 7.78 7.78 4.44 5 2.78 3.89]
+xshow
+3.313 0 RM
+(be)
+[5 4.44]
+xshow
+3.313 0 RM
+(forwarded)
+[3.33 5 3.33 7.22 4.44 3.33 5 4.44
+5]
+xshow
+3.313 0 RM
+(to)
+[2.78 5]
+xshow
+3.313 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+1 0 0 -1 48 56.33 Tm
+(document)
+[5 5 4.44 5 7.78 4.44 5 2.78]
+xshow
+2.5 0 RM
+(maintainer.)
+[7.78 4.44 2.78 5 2.78 4.44 2.78 5
+4.44 3.33 2.5]
+xshow
+/Helvetica-Bold 17.28 F
+1 0 0 -1 0 86.783 Tm
+(History)
+[12.476 4.803 9.607 5.754 10.558 6.721 9.607]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 48 113.066 Tm
+(The)
+[6.11 5 4.44]
+xshow
+2.443 0 RM
+(current)
+[4.44 5 3.33 3.33 4.44 5 2.78]
+xshow
+2.443 0 RM
+(version)
+[5 4.44 3.33 3.89 2.78 5 5]
+xshow
+2.443 0 RM
+(of)
+[5 3.33]
+xshow
+2.443 0 RM
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+2.443 0 RM
+(is)
+[2.78 3.89]
+xshow
+2.443 0 RM
+(1.5.8,)
+[5 2.5 5 2.5 5 2.5]
+xshow
+2.443 0 RM
+(written)
+[7.22 3.33 2.78 2.78 2.78 4.44 5]
+xshow
+2.443 0 RM
+(by)
+[5 5]
+xshow
+2.443 0 RM
+(Sean)
+[5.56 4.44 4.44 5]
+xshow
+2.443 0 RM
+(Dwyer)
+[7.22 7.22 5 4.44 3.33]
+xshow
+2.443 0 RM
+(with)
+[7.22 2.78 2.78 5]
+xshow
+2.443 0 RM
+(help)
+[5 4.44 2.78 5]
+xshow
+2.443 0 RM
+(from)
+[3.33 3.33 5 7.78]
+xshow
+2.443 0 RM
+(many)
+[7.78 4.44 5 5]
+xshow
+2.443 0 RM
+(others)
+[5 2.78 5 4.44 3.33 3.89]
+xshow
+2.443 0 RM
+(over)
+[5 5 4.44 3.33]
+xshow
+2.443 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.443 0 RM
+(years.)
+[5 4.44 4.44 3.33 3.89 2.5]
+xshow
+1 0 0 -1 48 137.066 Tm
+(The)
+[6.11 5 4.44]
+xshow
+2.61 0 RM
+(first)
+[3.33 2.78 3.33 3.89 2.78]
+xshow
+2.61 0 RM
+(public)
+[5 5 5 2.78 2.78 4.44]
+xshow
+2.61 0 RM
+(version)
+[5 4.44 3.33 3.89 2.78 5 5]
+xshow
+2.61 0 RM
+(of)
+[5 3.33]
+xshow
+2.61 0 RM
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+2.61 0 RM
+(was)
+[7.22 4.44 3.89]
+xshow
+2.61 0 RM
+(0.5.0,)
+[5 2.5 5 2.5 5 2.5]
+xshow
+2.61 0 RM
+(written)
+[7.22 3.33 2.78 2.78 2.78 4.44 5]
+xshow
+2.61 0 RM
+(in)
+[2.78 5]
+xshow
+2.61 0 RM
+(late)
+[2.78 4.44 2.78 4.44]
+xshow
+2.61 0 RM
+(1998,)
+[5 5 5 5 2.5]
+xshow
+2.61 0 RM
+(and)
+[4.44 5 5]
+xshow
+2.61 0 RM
+(was)
+[7.22 4.44 3.89]
+xshow
+2.61 0 RM
+(also)
+[4.44 2.78 3.89 5]
+xshow
+2.61 0 RM
+(ported)
+[5 5 3.33 2.78 4.44 5]
+xshow
+2.61 0 RM
+(to)
+[2.78 5]
+xshow
+2.61 0 RM
+(MS-DOS.)
+[8.89 5.56 3.33 7.22 7.22 5.56 2.5]
+xshow
+2.61 0 RM
+(Craig)
+[6.67 3.33 4.44 2.78 5]
+xshow
+1 0 0 -1 48 149.066 Tm
+(Robbins)
+[6.67 5 5 5 2.78 5 3.89]
+xshow
+2.562 0 RM
+(contributed)
+[4.44 5 5 2.78 3.33 2.78 5 5
+2.78 4.44 5]
+xshow
+2.562 0 RM
+(to)
+[2.78 5]
+xshow
+2.562 0 RM
+(versions)
+[5 4.44 3.33 3.89 2.78 5 5 3.89]
+xshow
+2.562 0 RM
+(0.5.1)
+[5 2.5 5 2.5 5]
+xshow
+2.562 0 RM
+(to)
+[2.78 5]
+xshow
+2.562 0 RM
+(1.0.0beta1.)
+[5 2.5 5 2.5 5 5 4.44 2.78
+4.44 5 2.5]
+xshow
+2.562 0 RM
+(Version)
+[7.22 4.44 3.33 3.89 2.78 5 5]
+xshow
+2.562 0 RM
+(1.0.0beta1)
+[5 2.5 5 2.5 5 5 4.44 2.78
+4.44 5]
+xshow
+2.562 0 RM
+(\(1999\))
+[3.33 5 5 5 5 3.33]
+xshow
+2.562 0 RM
+(was)
+[7.22 4.44 3.89]
+xshow
+2.562 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.562 0 RM
+(first)
+[3.33 2.78 3.33 3.89 2.78]
+xshow
+2.562 0 RM
+(GPL)
+[7.22 5.56 6.11]
+xshow
+2.562 0 RM
+(version)
+[5 4.44 3.33 3.89 2.78 5 5]
+xshow
+1 0 0 -1 48 161.066 Tm
+(of)
+[5 3.33]
+xshow
+2.5 0 RM
+(Mdate,)
+[8.89 5 4.44 2.78 4.44 2.5]
+xshow
+2.5 0 RM
+(and)
+[4.44 5 5]
+xshow
+2.5 0 RM
+(included)
+[2.78 5 4.44 2.78 5 5 4.44 5]
+xshow
+2.5 0 RM
+(a)
+[4.44]
+xshow
+2.5 0 RM
+(Tk)
+[6.11 5]
+xshow
+2.5 0 RM
+(interface.)
+[2.78 5 2.78 4.44 3.33 3.33 4.44 4.44
+4.44 2.5]
+xshow
+1 0 0 -1 48 185.066 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+2.434 0 RM
+(1.0.5)
+[5 2.5 5 2.5 5]
+xshow
+2.434 0 RM
+(was)
+[7.22 4.44 3.89]
+xshow
+2.434 0 RM
+(internationalised,)
+[2.78 5 2.78 4.44 3.33 5 4.44 2.78
+2.78 5 5 4.44 2.78 2.78 3.89 4.44
+5 2.5]
+xshow
+2.434 0 RM
+(and)
+[4.44 5 5]
+xshow
+2.434 0 RM
+(was)
+[7.22 4.44 3.89]
+xshow
+2.434 0 RM
+(quickly)
+[5 5 2.78 4.44 5 2.78 5]
+xshow
+2.434 0 RM
+(followed)
+[3.33 5 2.78 2.78 5 7.22 4.44 5]
+xshow
+2.434 0 RM
+(by)
+[5 5]
+xshow
+2.434 0 RM
+(version)
+[5 4.44 3.33 3.89 2.78 5 5]
+xshow
+2.434 0 RM
+(1.1.0,)
+[5 2.5 5 2.5 5 2.5]
+xshow
+2.434 0 RM
+(also)
+[4.44 2.78 3.89 5]
+xshow
+2.434 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.434 0 RM
+(first)
+[3.33 2.78 3.33 3.89 2.78]
+xshow
+2.434 0 RM
+(version)
+[5 4.44 3.33 3.89 2.78 5 5]
+xshow
+2.434 0 RM
+(at)
+[4.44 2.78]
+xshow
+2.434 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+1 0 0 -1 48 197.066 Tm
+(new)
+[5 4.44 7.22]
+xshow
+2.5 0 RM
+(sourceforge.net)
+[3.89 5 5 3.33 4.44 4.44 3.33 5
+3.33 5 4.44 2.5 5 4.44 2.78]
+xshow
+2.5 0 RM
+(home.)
+[5 5 7.78 4.44 2.5]
+xshow
+1 0 0 -1 48 221.066 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+2.5 0 RM
+(1.2.0)
+[5 2.5 5 2.5 5]
+xshow
+2.5 0 RM
+(was)
+[7.22 4.44 3.89]
+xshow
+2.5 0 RM
+(modularised)
+[7.78 5 5 5 2.78 4.44 3.33 2.78
+3.89 4.44 5]
+xshow
+2.5 0 RM
+(into)
+[2.78 5 2.78 5]
+xshow
+2.5 0 RM
+(a)
+[4.44]
+xshow
+2.5 0 RM
+(library)
+[2.78 2.78 5 3.33 4.44 3.33 5]
+xshow
+2.5 0 RM
+(\(libmdate\))
+[3.33 2.78 2.78 5 7.78 5 4.44 2.78
+4.44 3.33]
+xshow
+2.5 0 RM
+(and)
+[4.44 5 5]
+xshow
+2.5 0 RM
+(front-ends)
+[3.33 3.33 5 5 2.78 3.33 4.44 5
+5 3.89]
+xshow
+2.5 0 RM
+(for)
+[3.33 5 3.33]
+xshow
+2.5 0 RM
+(Tk,)
+[6.11 5 2.5]
+xshow
+2.5 0 RM
+(command-line)
+[4.44 5 7.78 7.78 4.44 5 5 3.33
+2.78 2.78 5 4.44]
+xshow
+2.5 0 RM
+(and)
+[4.44 5 5]
+xshow
+2.5 0 RM
+(GTK+.)
+[7.22 6.11 7.22 5.64 2.5]
+xshow
+1 0 0 -1 48 245.066 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+3.488 0 RM
+(1.2.8)
+[5 2.5 5 2.5 5]
+xshow
+3.488 0 RM
+(was)
+[7.22 4.44 3.89]
+xshow
+3.488 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+3.488 0 RM
+(last)
+[2.78 4.44 3.89 2.78]
+xshow
+3.488 0 RM
+(libmdate-dependent)
+[2.78 2.78 5 7.78 5 4.44 2.78 4.44
+3.33 5 4.44 5 4.44 5 5 4.44
+5 2.78]
+xshow
+3.488 0 RM
+(and)
+[4.44 5 5]
+xshow
+3.488 0 RM
+(frontend-oriented)
+[3.33 3.33 5 5 2.78 4.44 5 5
+3.33 5 3.33 2.78 4.44 5 2.78 4.44
+5]
+xshow
+3.488 0 RM
+(Mdate,)
+[8.89 5 4.44 2.78 4.44 2.5]
+xshow
+3.488 0 RM
+(by)
+[5 5]
+xshow
+3.488 0 RM
+(now)
+[5 5 7.22]
+xshow
+3.488 0 RM
+(suffering)
+[3.89 5 3.33 3.33 4.44 3.33 2.78 5
+5]
+xshow
+3.488 0 RM
+(from)
+[3.33 3.33 5 7.78]
+xshow
+3.488 0 RM
+(too)
+[2.78 5 5]
+xshow
+1 0 0 -1 48 257.066 Tm
+(much)
+[7.78 5 4.44 5]
+xshow
+2.5 0 RM
+(setup)
+[3.89 4.44 2.78 5 5]
+xshow
+2.5 0 RM
+(code)
+[4.44 5 5 4.44]
+xshow
+2.5 0 RM
+(and)
+[4.44 5 5]
+xshow
+2.5 0 RM
+(neglect.)
+[5 4.44 5 2.78 4.44 4.44 2.78 2.5]
+xshow
+1 0 0 -1 48 281.066 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+3.308 0 RM
+(1.3.0)
+[5 2.5 5 2.5 5]
+xshow
+3.308 0 RM
+(dropped)
+[5 3.33 5 5 5 4.44 5]
+xshow
+3.308 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+3.308 0 RM
+(libmdate)
+[2.78 2.78 5 7.78 5 4.44 2.78 4.44]
+xshow
+3.308 0 RM
+(dependence,)
+[5 4.44 5 4.44 5 5 4.44 5
+4.44 4.44 2.5]
+xshow
+3.308 0 RM
+(had)
+[5 4.44 5]
+xshow
+3.308 0 RM
+(a)
+[4.44]
+xshow
+3.308 0 RM
+(total)
+[2.78 5 2.78 4.44 2.78]
+xshow
+3.308 0 RM
+(rewrite)
+[3.33 4.44 7.22 3.33 2.78 2.78 4.44]
+xshow
+3.308 0 RM
+(in)
+[2.78 5]
+xshow
+3.308 0 RM
+(C++/C)
+[6.67 5.64 5.64 2.78 6.67]
+xshow
+3.308 0 RM
+(and)
+[4.44 5 5]
+xshow
+3.308 0 RM
+(a)
+[4.44]
+xshow
+3.308 0 RM
+(much)
+[7.78 5 4.44 5]
+xshow
+3.308 0 RM
+(simpler)
+[3.89 2.78 7.78 5 2.78 4.44 3.33]
+xshow
+3.308 0 RM
+(build)
+[5 5 2.78 2.78 5]
+xshow
+1 0 0 -1 48 293.066 Tm
+(system,)
+[3.89 5 3.89 2.78 4.44 7.78 2.5]
+xshow
+2.5 0 RM
+(although)
+[4.44 2.78 2.78 5 5 5 5 5]
+xshow
+2.5 0 RM
+(still)
+[3.89 2.78 2.78 2.78 2.78]
+xshow
+2.5 0 RM
+(missing)
+[7.78 2.78 3.89 3.89 2.78 5 5]
+xshow
+2.5 0 RM
+(internationalisation)
+[2.78 5 2.78 4.44 3.33 5 4.44 2.78
+2.78 5 5 4.44 2.78 2.78 3.89 4.44
+2.78 2.78 5 5]
+xshow
+2.5 0 RM
+(support)
+[3.89 5 5 5 5 3.33 2.78]
+xshow
+2.5 0 RM
+(and)
+[4.44 5 5]
+xshow
+2.5 0 RM
+(needing)
+[5 4.44 4.44 5 2.78 5 5]
+xshow
+2.5 0 RM
+(new)
+[5 4.44 7.22]
+xshow
+2.5 0 RM
+(front-ends.)
+[3.33 3.33 5 5 2.78 3.33 4.44 5
+5 3.89 2.5]
+xshow
+1 0 0 -1 48 317.066 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+2.5 0 RM
+(1.3.4)
+[5 2.5 5 2.5 5]
+xshow
+2.5 0 RM
+(added)
+[4.44 5 5 4.44 5]
+xshow
+2.5 0 RM
+(a)
+[4.44]
+xshow
+2.5 0 RM
+(simple)
+[3.89 2.78 7.78 5 2.78 4.44]
+xshow
+2.5 0 RM
+(translation)
+[2.78 3.33 4.44 5 3.89 2.78 4.44 2.78
+2.78 5 5]
+xshow
+2.5 0 RM
+(layer,)
+[2.78 4.44 5 4.44 3.33 2.5]
+xshow
+2.5 0 RM
+(following)
+[3.33 5 2.78 2.78 5 7.22 2.78 5
+5]
+xshow
+2.5 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.5 0 RM
+(mplayer)
+[7.78 5 2.78 4.44 5 4.44 3.33]
+xshow
+2.5 0 RM
+(method.)
+[7.78 4.44 2.78 5 5 5 2.5]
+xshow
+1 0 0 -1 48 341.066 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+6.731 0 RM
+(1.4.0)
+[5 2.5 5 2.5 5]
+xshow
+6.731 0 RM
+(brought)
+[5 3.33 5 5 5 5 2.78]
+xshow
+6.731 0 RM
+(in)
+[2.78 5]
+xshow
+6.731 0 RM
+(user)
+[5 3.89 4.44 3.33]
+xshow
+6.731 0 RM
+(date)
+[5 4.44 2.78 4.44]
+xshow
+6.731 0 RM
+(formatting)
+[3.33 5 3.33 7.78 4.44 2.78 2.78 2.78
+5 5]
+xshow
+6.731 0 RM
+(\(like)
+[3.33 2.78 2.78 5 4.44]
+xshow
+6.731 0 RM
+/Times-Bold 10 F
+1 0 0 -1 280.161 341.066 Tm
+(date\(1\))
+[5.56 5 3.33 4.44 3.33 5 3.33]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 310.151 341.066 Tm
+(,)
+[2.5]
+xshow
+6.731 0 RM
+(and)
+[4.44 5 5]
+xshow
+6.731 0 RM
+(began)
+[5 4.44 5 4.44 5]
+xshow
+6.731 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+6.731 0 RM
+(process)
+[5 3.33 5 4.44 4.44 3.89 3.89]
+xshow
+6.731 0 RM
+(of)
+[5 3.33]
+xshow
+6.731 0 RM
+(proper)
+[5 3.33 5 5 4.44 3.33]
+xshow
+1 0 0 -1 48 353.066 Tm
+(internationalization)
+[2.78 5 2.78 4.44 3.33 5 4.44 2.78
+2.78 5 5 4.44 2.78 2.78 4.44 4.44
+2.78 2.78 5 5]
+xshow
+2.5 0 RM
+(and)
+[4.44 5 5]
+xshow
+2.5 0 RM
+(configuration.,)
+[4.44 5 5 3.33 2.78 5 5 3.33
+4.44 2.78 2.78 5 5 2.5 2.5]
+xshow
+2.5 0 RM
+(still)
+[3.89 2.78 2.78 2.78 2.78]
+xshow
+2.5 0 RM
+(using)
+[5 3.89 2.78 5 5]
+xshow
+2.5 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.5 0 RM
+(example)
+[4.44 5 4.44 7.78 5 2.78 4.44]
+xshow
+2.5 0 RM
+(of)
+[5 3.33]
+xshow
+2.5 0 RM
+(mplayer.)
+[7.78 5 2.78 4.44 5 4.44 3.33 2.5]
+xshow
+1 0 0 -1 48 377.066 Tm
+(The)
+[6.11 5 4.44]
+xshow
+2.5 0 RM
+(first)
+[3.33 2.78 3.33 3.89 2.78]
+xshow
+2.5 0 RM
+(BeOS)
+[6.67 4.44 7.22 5.56]
+xshow
+2.5 0 RM
+(port)
+[5 5 3.33 2.78]
+xshow
+2.5 0 RM
+(was)
+[7.22 4.44 3.89]
+xshow
+2.5 0 RM
+(made)
+[7.78 4.44 5 4.44]
+xshow
+2.5 0 RM
+(in)
+[2.78 5]
+xshow
+2.5 0 RM
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+2.5 0 RM
+(version)
+[5 4.44 3.33 3.89 2.78 5 5]
+xshow
+2.5 0 RM
+(1.4.1.)
+[5 2.5 5 2.5 5 2.5]
+xshow
+1 0 0 -1 48 401.066 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+2.5 0 RM
+(1.4.2)
+[5 2.5 5 2.5 5]
+xshow
+2.5 0 RM
+(enhanced)
+[4.44 5 5 4.44 5 4.44 4.44 5]
+xshow
+2.5 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.5 0 RM
+(language)
+[2.78 4.44 5 5 5 4.44 5 4.44]
+xshow
+2.5 0 RM
+(support)
+[3.89 5 5 5 5 3.33 2.78]
+xshow
+2.5 0 RM
+(by)
+[5 5]
+xshow
+2.5 0 RM
+(making)
+[7.78 4.44 5 2.78 5 5]
+xshow
+2.5 0 RM
+(it)
+[2.78 2.78]
+xshow
+2.5 0 RM
+(a)
+[4.44]
+xshow
+2.5 0 RM
+(runtime)
+[3.33 5 5 2.78 2.78 7.78 4.44]
+xshow
+2.5 0 RM
+(choice)
+[4.44 5 5 2.78 4.44 4.44]
+xshow
+2.5 0 RM
+(per)
+[5 4.44 3.33]
+xshow
+2.5 0 RM
+(an)
+[4.44 5]
+xshow
+2.5 0 RM
+(option.)
+[5 5 2.78 2.78 5 5 2.5]
+xshow
+1 0 0 -1 48 425.066 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+2.5 0 RM
+(1.4.3)
+[5 2.5 5 2.5 5]
+xshow
+2.5 0 RM
+(added)
+[4.44 5 5 4.44 5]
+xshow
+2.5 0 RM
+(a)
+[4.44]
+xshow
+2.5 0 RM
+(mingw32)
+[7.78 2.78 5 5 7.22 5 5]
+xshow
+2.5 0 RM
+(cross-compiler)
+[4.44 3.33 5 3.89 3.89 3.33 4.44 5
+7.78 5 2.78 2.78 4.44 3.33]
+xshow
+2.5 0 RM
+(port)
+[5 5 3.33 2.78]
+xshow
+2.5 0 RM
+(and)
+[4.44 5 5]
+xshow
+2.5 0 RM
+(allowed)
+[4.44 2.78 2.78 5 7.22 4.44 5]
+xshow
+2.5 0 RM
+(different)
+[5 2.78 3.33 3.33 4.44 3.33 4.44 5
+2.78]
+xshow
+2.5 0 RM
+(language)
+[2.78 4.44 5 5 5 4.44 5 4.44]
+xshow
+2.5 0 RM
+(defaults.)
+[5 4.44 3.33 4.44 5 2.78 2.78 3.89
+2.5]
+xshow
+1 0 0 -1 48 449.066 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+2.5 0 RM
+(1.4.5)
+[5 2.5 5 2.5 5]
+xshow
+2.5 0 RM
+(included)
+[2.78 5 4.44 2.78 5 5 4.44 5]
+xshow
+2.5 0 RM
+(a)
+[4.44]
+xshow
+2.5 0 RM
+(compile-time)
+[4.44 5 7.78 5 2.78 2.78 4.44 3.33
+2.78 2.78 7.78 4.44]
+xshow
+2.5 0 RM
+(option)
+[5 5 2.78 2.78 5 5]
+xshow
+2.5 0 RM
+(to)
+[2.78 5]
+xshow
+2.5 0 RM
+(use)
+[5 3.89 4.44]
+xshow
+2.5 0 RM
+(modern)
+[7.78 5 5 4.44 3.33 5]
+xshow
+2.5 0 RM
+(Mayan)
+[8.89 4.44 5 4.44 5]
+xshow
+2.5 0 RM
+(calendar)
+[4.44 4.44 2.78 4.44 5 5 4.44 3.33]
+xshow
+2.5 0 RM
+(month)
+[7.78 5 5 2.78 5]
+xshow
+2.5 0 RM
+(names.)
+[5 4.44 7.78 4.44 3.89 2.5]
+xshow
+1 0 0 -1 48 473.066 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+4.22 0 RM
+(1.4.7)
+[5 2.5 5 2.5 5]
+xshow
+4.22 0 RM
+(introduced)
+[2.78 5 2.78 3.33 5 5 5 4.44
+4.44 5]
+xshow
+4.22 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+4.22 0 RM
+(first)
+[3.33 2.78 3.33 3.89 2.78]
+xshow
+4.22 0 RM
+(FreeBSD)
+[5.56 3.33 4.44 4.44 6.67 5.56 7.22]
+xshow
+4.22 0 RM
+(\(4.9-STABLE\))
+[3.33 5 2.5 5 3.33 5.56 6.11 7.22
+6.67 6.11 6.11 3.33]
+xshow
+4.22 0 RM
+(port.)
+[5 5 3.33 2.78 2.5]
+xshow
+4.22 0 RM
+(The)
+[6.11 5 4.44]
+xshow
+4.22 0 RM
+(program-parseable)
+[5 3.33 5 5 3.33 4.44 7.78 3.33
+5 4.44 3.33 3.89 4.44 4.44 5 2.78
+4.44]
+xshow
+4.22 0 RM
+(flag)
+[3.33 2.78 4.44 5]
+xshow
+4.22 0 RM
+(\(-p\))
+[3.33 3.33 5 3.33]
+xshow
+4.22 0 RM
+(was)
+[7.22 4.44 3.89]
+xshow
+1 0 0 -1 48 485.066 Tm
+(rendered)
+[3.33 4.44 5 5 4.44 3.33 4.44 5]
+xshow
+2.731 0 RM
+(defunct)
+[5 4.44 3.33 5 5 4.44 2.78]
+xshow
+2.731 0 RM
+(when)
+[7.22 5 4.44 5]
+xshow
+2.731 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.731 0 RM
+(parseable)
+[5 4.44 3.33 3.89 4.44 4.44 5 2.78
+4.44]
+xshow
+2.731 0 RM
+(output)
+[5 5 2.78 5 5 2.78]
+xshow
+2.731 0 RM
+(became)
+[5 4.44 4.44 4.44 7.78 4.44]
+xshow
+2.731 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.731 0 RM
+(default)
+[5 4.44 3.33 4.44 5 2.78 2.78]
+xshow
+2.731 0 RM
+(output)
+[5 5 2.78 5 5 2.78]
+xshow
+2.731 0 RM
+(format.)
+[3.33 5 3.33 7.78 4.44 2.78 2.5]
+xshow
+2.731 0 RM
+(A)
+[7.22]
+xshow
+2.731 0 RM
+(new)
+[5 4.44 7.22]
+xshow
+2.731 0 RM
+(OS)
+[7.22 5.56]
+xshow
+2.731 0 RM
+(X)
+[7.22]
+xshow
+2.731 0 RM
+(\(Mac)
+[3.33 8.89 4.44 4.44]
+xshow
+2.731 0 RM
+(32-bit)
+[5 5 3.33 5 2.78 2.78]
+xshow
+1 0 0 -1 48 497.066 Tm
+(console\))
+[4.44 5 5 3.89 5 2.78 4.44 3.33]
+xshow
+2.5 0 RM
+(port)
+[5 5 3.33 2.78]
+xshow
+2.5 0 RM
+(also)
+[4.44 2.78 3.89 5]
+xshow
+2.5 0 RM
+(became)
+[5 4.44 4.44 4.44 7.78 4.44]
+xshow
+2.5 0 RM
+(available.)
+[4.44 5 4.44 2.78 2.78 4.44 5 2.78
+4.44 2.5]
+xshow
+1 0 0 -1 48 521.066 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+2.831 0 RM
+(1.5.2)
+[5 2.5 5 2.5 5]
+xshow
+2.831 0 RM
+(switched)
+[3.89 7.22 2.78 2.78 4.44 5 4.44 5]
+xshow
+2.831 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.831 0 RM
+(VC)
+[7.22 6.67]
+xshow
+2.831 0 RM
+(system)
+[3.89 5 3.89 2.78 4.44 7.78]
+xshow
+2.831 0 RM
+(over)
+[5 5 4.44 3.33]
+xshow
+2.831 0 RM
+(to)
+[2.78 5]
+xshow
+2.831 0 RM
+(subversion,)
+[3.89 5 5 5 4.44 3.33 3.89 2.78
+5 5 2.5]
+xshow
+2.831 0 RM
+(with)
+[7.22 2.78 2.78 5]
+xshow
+2.831 0 RM
+(intentions)
+[2.78 5 2.78 4.44 5 2.78 2.78 5
+5 3.89]
+xshow
+2.831 0 RM
+(to)
+[2.78 5]
+xshow
+2.831 0 RM
+(open)
+[5 5 4.44 5]
+xshow
+2.831 0 RM
+(up)
+[5 5]
+xshow
+2.831 0 RM
+(development)
+[5 4.44 5 4.44 2.78 5 5 7.78
+4.44 5 2.78]
+xshow
+2.831 0 RM
+(with)
+[7.22 2.78 2.78 5]
+xshow
+2.831 0 RM
+(a)
+[4.44]
+xshow
+1 0 0 -1 48 533.066 Tm
+(better)
+[5 4.44 2.78 2.78 4.44 3.33]
+xshow
+2.5 0 RM
+(multiple)
+[7.78 5 2.78 2.78 2.78 5 2.78 4.44]
+xshow
+2.5 0 RM
+(developer)
+[5 4.44 5 4.44 2.78 5 5 4.44
+3.33]
+xshow
+2.5 0 RM
+(system.)
+[3.89 5 3.89 2.78 4.44 7.78 2.5]
+xshow
+1 0 0 -1 48 557.066 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+2.5 0 RM
+(1.5.6)
+[5 2.5 5 2.5 5]
+xshow
+2.5 0 RM
+(was)
+[7.22 4.44 3.89]
+xshow
+2.5 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.5 0 RM
+(first)
+[3.33 2.78 3.33 3.89 2.78]
+xshow
+2.5 0 RM
+(new)
+[5 4.44 7.22]
+xshow
+2.5 0 RM
+(release)
+[3.33 4.44 2.78 4.44 4.44 3.89 4.44]
+xshow
+2.5 0 RM
+(of)
+[5 3.33]
+xshow
+2.5 0 RM
+(mdate)
+[7.78 5 4.44 2.78 4.44]
+xshow
+2.5 0 RM
+(since)
+[3.89 2.78 5 4.44 4.44]
+xshow
+2.5 0 RM
+(version)
+[5 4.44 3.33 3.89 2.78 5 5]
+xshow
+2.5 0 RM
+(1.5.1)
+[5 2.5 5 2.5 5]
+xshow
+2.5 0 RM
+(on)
+[5 5]
+xshow
+2.5 0 RM
+(sourceforge.net.)
+[3.89 5 5 3.33 4.44 4.44 3.33 5
+3.33 5 4.44 2.5 5 4.44 2.78 2.5]
+xshow
+1 0 0 -1 48 581.066 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+2.5 0 RM
+(1.5.7)
+[5 2.5 5 2.5 5]
+xshow
+2.5 0 RM
+(was)
+[7.22 4.44 3.89]
+xshow
+2.5 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.5 0 RM
+(first)
+[3.33 2.78 3.33 3.89 2.78]
+xshow
+2.5 0 RM
+(release)
+[3.33 4.44 2.78 4.44 4.44 3.89 4.44]
+xshow
+2.5 0 RM
+(on)
+[5 5]
+xshow
+2.5 0 RM
+(code.google.com.)
+[4.44 5 5 4.44 2.5 5 5 5
+5 2.78 4.44 2.5 4.44 5 7.78 2.5]
+xshow
+1 0 0 -1 48 605.066 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+2.5 0 RM
+(1.6.0)
+[5 2.5 5 2.5 5]
+xshow
+2.5 0 RM
+(made)
+[7.78 4.44 5 4.44]
+xshow
+2.5 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.5 0 RM
+(GMT)
+[7.22 8.89 6.11]
+xshow
+2.5 0 RM
+(correlation)
+[4.44 5 3.33 3.33 4.44 2.78 4.44 2.78
+2.78 5 5]
+xshow
+2.5 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.5 0 RM
+(default.)
+[5 4.44 3.33 4.44 5 2.78 2.78 2.5]
+xshow
+2.5 0 RM
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+2.5 0 RM
+(was)
+[7.22 4.44 3.89]
+xshow
+2.5 0 RM
+(moved)
+[7.78 5 5 4.44 5]
+xshow
+2.5 0 RM
+(to)
+[2.78 5]
+xshow
+2.5 0 RM
+(git)
+[5 2.78 2.78]
+xshow
+2.5 0 RM
+(version)
+[5 4.44 3.33 3.89 2.78 5 5]
+xshow
+2.5 0 RM
+(control.)
+[4.44 5 5 2.78 3.33 5 2.78 2.5]
+xshow
+1 0 0 -1 48 629.066 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+2.5 0 RM
+(1.7.0)
+[5 2.5 5 2.5 5]
+xshow
+2.5 0 RM
+(implemented)
+[2.78 7.78 5 2.78 4.44 7.78 4.44 5
+2.78 4.44 5]
+xshow
+2.5 0 RM
+(a)
+[4.44]
+xshow
+2.5 0 RM
+(configuration)
+[4.44 5 5 3.33 2.78 5 5 3.33
+4.44 2.78 2.78 5 5]
+xshow
+2.5 0 RM
+(file.)
+[3.33 2.78 2.78 4.44 2.5]
+xshow
+ET
+grestore
+grestore
+%FOPEndRegionViewport
+showpage
+%%PageTrailer
+%%PageResources: font Times-Bold
+%%+ font Helvetica-Bold
+%%+ font Times-Roman
+%%+ procset (Apache XML Graphics Std ProcSet) 1.0 0
+%%Page: 3 3
+%%PageBoundingBox: 0 0 612 792
+%%PageHiResBoundingBox: 0 0 612 792
+%%PageResources: (atend)
+%FOPSimplePageMaster: body-odd
+%%BeginPageSetup
+%FOPBeginSetPageDevice
+<<
+/PageSize [612 792]
+/ImagingBBox null
+>> setpagedevice
+%FOPEndSetPageDevice
+[1 0 0 -1 0 792] concat
+%%EndPageSetup
+%FOPBeginRegionViewport: xsl-region-before-odd
+gsave
+[1 0 0 1 72 36] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+156 14.25 M
+156 14.5 lineto
+0 14.5 lineto
+0 14.25 lineto
+0 14 lineto
+156 14 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 14.25 M 156 14.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+gsave
+[1 0 0 1 156 0] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+156 14.25 M
+156 14.5 lineto
+0 14.5 lineto
+0 14.25 lineto
+0 14 lineto
+156 14 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 14.25 M 156 14.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+/Times-Roman 10 F
+gsave
+BT
+1 0 0 -1 65.225 8.33 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+ET
+grestore
+grestore
+gsave
+[1 0 0 1 312 0] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+156 14.25 M
+156 14.5 lineto
+0 14.5 lineto
+0 14.25 lineto
+0 14 lineto
+156 14 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 14.25 M 156 14.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+grestore
+grestore
+%FOPEndRegionViewport
+%FOPBeginRegionViewport: xsl-region-after-odd
+gsave
+[1 0 0 1 72 727.2] concat
+gsave
+[1 0 0 1 0 28.55] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+0 0.25 M
+0 0 lineto
+156 0 lineto
+156 0.25 lineto
+156 0.5 lineto
+0 0.5 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 0.25 M 156 0.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+grestore
+gsave
+[1 0 0 1 156 28.55] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+0 0.25 M
+0 0 lineto
+156 0 lineto
+156 0.25 lineto
+156 0.5 lineto
+0 0.5 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 0.25 M 156 0.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+/Times-Roman 10 F
+gsave
+BT
+1 0 0 -1 75.5 10.83 Tm
+(3) t
+ET
+grestore
+grestore
+gsave
+[1 0 0 1 312 28.55] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+0 0.25 M
+0 0 lineto
+156 0 lineto
+156 0.25 lineto
+156 0.5 lineto
+0 0.5 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 0.25 M 156 0.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+grestore
+grestore
+%FOPEndRegionViewport
+%FOPBeginRegionViewport: xsl-region-body
+gsave
+[1 0 0 1 72 72] concat
+/Helvetica-Bold 20.736 F
+gsave
+BT
+1 0 0 -1 0 17.739 Tm
+(Usage)
+[14.971 11.529 11.529 12.669 11.529]
+xshow
+/Helvetica-Bold 17.28 F
+1 0 0 -1 0 51.428 Tm
+(Mayan)
+[14.394 9.607 9.607 9.607 10.558]
+xshow
+4.803 0 RM
+(Calendar)
+[12.476 9.607 4.803 9.607 10.558 10.558 9.607 6.721]
+xshow
+4.803 0 RM
+(Names)
+[12.476 9.607 15.361 9.607 9.607]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 48 77.473 Tm
+(From)
+[5.56 3.33 5 7.78]
+xshow
+3.477 0 RM
+(version)
+[5 4.44 3.33 3.89 2.78 5 5]
+xshow
+3.477 0 RM
+(1.4.5,)
+[5 2.5 5 2.5 5 2.5]
+xshow
+3.477 0 RM
+(a)
+[4.44]
+xshow
+3.477 0 RM
+(compile-time)
+[4.44 5 7.78 5 2.78 2.78 4.44 3.33
+2.78 2.78 7.78 4.44]
+xshow
+3.477 0 RM
+(option)
+[5 5 2.78 2.78 5 5]
+xshow
+3.477 0 RM
+(was)
+[7.22 4.44 3.89]
+xshow
+3.477 0 RM
+(added)
+[4.44 5 5 4.44 5]
+xshow
+3.477 0 RM
+(for)
+[3.33 5 3.33]
+xshow
+3.477 0 RM
+(those)
+[2.78 5 5 3.89 4.44]
+xshow
+3.477 0 RM
+(preferring)
+[5 3.33 4.44 3.33 4.44 3.33 3.33 2.78
+5 5]
+xshow
+3.477 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+3.477 0 RM
+(new)
+[5 4.44 7.22]
+xshow
+3.477 0 RM
+(Romanized)
+[6.67 5 7.78 4.44 5 2.78 4.44 4.44
+5]
+xshow
+3.477 0 RM
+(Mayan)
+[8.89 4.44 5 4.44 5]
+xshow
+1 0 0 -1 48 89.473 Tm
+(calendar)
+[4.44 4.44 2.78 4.44 5 5 4.44 3.33]
+xshow
+2.513 0 RM
+(names)
+[5 4.44 7.78 4.44 3.89]
+xshow
+2.513 0 RM
+(to)
+[2.78 5]
+xshow
+2.513 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.513 0 RM
+(old)
+[5 2.78 5]
+xshow
+2.513 0 RM
+(ones,)
+[5 5 4.44 3.89 2.5]
+xshow
+2.513 0 RM
+(e.g.)
+[4.44 2.5 5 2.5]
+xshow
+2.513 0 RM
+(Kumk'u)
+[7.22 5 7.78 5 1.8 5]
+xshow
+2.513 0 RM
+(\(new\))
+[3.33 5 4.44 7.22 3.33]
+xshow
+2.513 0 RM
+(for)
+[3.33 5 3.33]
+xshow
+2.513 0 RM
+(Cumku)
+[6.67 5 7.78 5 5]
+xshow
+2.513 0 RM
+(\(old\))
+[3.33 5 2.78 5 3.33]
+xshow
+2.513 0 RM
+(and)
+[4.44 5 5]
+xshow
+2.513 0 RM
+('Ahaw)
+[1.8 7.22 5 4.44 7.22]
+xshow
+2.513 0 RM
+(\(new\))
+[3.33 5 4.44 7.22 3.33]
+xshow
+2.513 0 RM
+(for)
+[3.33 5 3.33]
+xshow
+2.513 0 RM
+(Ahau)
+[7.22 5 4.44 5]
+xshow
+2.513 0 RM
+(\(old\).)
+[3.33 5 2.78 5 3.33 2.5]
+xshow
+2.513 0 RM
+(I'm)
+[3.33 1.8 7.78]
+xshow
+1 0 0 -1 48 101.473 Tm
+(interested)
+[2.78 5 2.78 4.44 3.33 4.44 3.89 2.78
+4.44 5]
+xshow
+2.5 0 RM
+(in)
+[2.78 5]
+xshow
+2.5 0 RM
+(feedback)
+[3.33 4.44 4.44 5 5 4.44 4.44 5]
+xshow
+2.5 0 RM
+(about)
+[4.44 5 5 5 2.78]
+xshow
+2.5 0 RM
+(this)
+[2.78 5 2.78 3.89]
+xshow
+2.5 0 RM
+(option,)
+[5 5 2.78 2.78 5 5 2.5]
+xshow
+2.5 0 RM
+(and)
+[4.44 5 5]
+xshow
+2.5 0 RM
+(whether)
+[7.22 5 4.44 2.78 5 4.44 3.33]
+xshow
+2.5 0 RM
+(it)
+[2.78 2.78]
+xshow
+2.5 0 RM
+(could)
+[4.44 5 5 2.78 5]
+xshow
+2.5 0 RM
+(be)
+[5 4.44]
+xshow
+2.5 0 RM
+(a)
+[4.44]
+xshow
+2.5 0 RM
+(format)
+[3.33 5 3.33 7.78 4.44 2.78]
+xshow
+2.5 0 RM
+(item)
+[2.78 2.78 4.44 7.78]
+xshow
+2.5 0 RM
+(in)
+[2.78 5]
+xshow
+2.5 0 RM
+(its)
+[2.78 2.78 3.89]
+xshow
+2.5 0 RM
+(own)
+[5 7.22 5]
+xshow
+2.5 0 RM
+(right.)
+[3.33 2.78 5 5 2.78 2.5]
+xshow
+/Helvetica-Bold 17.28 F
+1 0 0 -1 0 131.688 Tm
+(Language)
+[10.558 9.607 10.558 10.558 10.558 9.607 10.558 9.607]
+xshow
+4.803 0 RM
+(Support)
+[11.525 10.558 10.558 10.558 10.558 6.721 5.754]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 48 157.733 Tm
+(As)
+[7.22 3.89]
+xshow
+2.521 0 RM
+(at)
+[4.44 2.78]
+xshow
+2.521 0 RM
+(version)
+[5 4.44 3.33 3.89 2.78 5 5]
+xshow
+2.521 0 RM
+(1.4.5,)
+[5 2.5 5 2.5 5 2.5]
+xshow
+2.521 0 RM
+(mdate)
+[7.78 5 4.44 2.78 4.44]
+xshow
+2.521 0 RM
+(supports)
+[3.89 5 5 5 5 3.33 2.78 3.89]
+xshow
+2.521 0 RM
+(five)
+[3.33 2.78 5 4.44]
+xshow
+2.521 0 RM
+(languages:)
+[2.78 4.44 5 5 5 4.44 5 4.44
+3.89 2.78]
+xshow
+2.521 0 RM
+(English,)
+[6.11 5 5 2.78 2.78 3.89 5 2.5]
+xshow
+2.521 0 RM
+(Spanish,)
+[5.56 5 4.44 5 2.78 3.89 5 2.5]
+xshow
+2.521 0 RM
+(German,)
+[7.22 4.44 3.33 7.78 4.44 5 2.5]
+xshow
+2.521 0 RM
+(French)
+[5.56 3.33 4.44 5 4.44 5]
+xshow
+2.521 0 RM
+(and)
+[4.44 5 5]
+xshow
+2.521 0 RM
+(Polish)
+[5.56 5 2.78 2.78 3.89 5]
+xshow
+2.521 0 RM
+(\(en,)
+[3.33 4.44 5 2.5]
+xshow
+2.521 0 RM
+(es,)
+[4.44 3.89 2.5]
+xshow
+1 0 0 -1 48 169.733 Tm
+(de,)
+[5 4.44 2.5]
+xshow
+2.358 0 RM
+(fr)
+[3.33 3.33]
+xshow
+2.358 0 RM
+(and)
+[4.44 5 5]
+xshow
+2.358 0 RM
+(pl\).)
+[5 2.78 3.33 2.5]
+xshow
+2.358 0 RM
+(A)
+[7.22]
+xshow
+2.358 0 RM
+(runtime)
+[3.33 5 5 2.78 2.78 7.78 4.44]
+xshow
+2.358 0 RM
+(option)
+[5 5 2.78 2.78 5 5]
+xshow
+2.358 0 RM
+(was)
+[7.22 4.44 3.89]
+xshow
+2.358 0 RM
+(added)
+[4.44 5 5 4.44 5]
+xshow
+2.358 0 RM
+(so)
+[3.89 5]
+xshow
+2.358 0 RM
+(you)
+[5 5 5]
+xshow
+2.358 0 RM
+(could)
+[4.44 5 5 2.78 5]
+xshow
+2.358 0 RM
+(use)
+[5 3.89 4.44]
+xshow
+2.358 0 RM
+(a)
+[4.44]
+xshow
+2.358 0 RM
+(different)
+[5 2.78 3.33 3.33 4.44 3.33 4.44 5
+2.78]
+xshow
+2.358 0 RM
+(language.)
+[2.78 4.44 5 5 5 4.44 5 4.44
+2.5]
+xshow
+2.358 0 RM
+(The)
+[6.11 5 4.44]
+xshow
+2.358 0 RM
+(language)
+[2.78 4.44 5 5 5 4.44 5 4.44]
+xshow
+2.358 0 RM
+(support)
+[3.89 5 5 5 5 3.33 2.78]
+xshow
+2.358 0 RM
+(is)
+[2.78 3.89]
+xshow
+1 0 0 -1 48 181.733 Tm
+(compiled-in)
+[4.44 5 7.78 5 2.78 2.78 4.44 5
+3.33 2.78 5]
+xshow
+2.5 0 RM
+(and)
+[4.44 5 5]
+xshow
+2.5 0 RM
+(currently)
+[4.44 5 3.33 3.33 4.44 5 2.78 2.78
+5]
+xshow
+2.5 0 RM
+(ignores)
+[2.78 5 5 5 3.33 4.44 3.89]
+xshow
+2.5 0 RM
+(environment)
+[4.44 5 5 2.78 3.33 5 5 7.78
+4.44 5 2.78]
+xshow
+2.5 0 RM
+(language)
+[2.78 4.44 5 5 5 4.44 5 4.44]
+xshow
+2.5 0 RM
+(variables.)
+[5 4.44 3.33 2.78 4.44 5 2.78 4.44
+3.89 2.5]
+xshow
+1 0 0 -1 48 205.495 Tm
+(Example)
+[6.11 5 4.44 7.78 5 2.78 4.44]
+xshow
+2.5 0 RM
+(usage:)
+[5 3.89 4.44 5 4.44 2.78]
+xshow
+/Courier 10 F
+1 0 0 -1 48 241.287 Tm
+($)
+[6]
+xshow
+6 0 RM
+(mdate)
+[6 6 6 6 6]
+xshow
+6 0 RM
+(-L)
+[6 6]
+xshow
+6 0 RM
+(es)
+[6 6]
+xshow
+1 0 0 -1 48 253.287 Tm
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+1 0 0 -1 48 265.287 Tm
+(NDJ:)
+[6 6 6 6]
+xshow
+6 0 RM
+(2453168.0)
+[6 6 6 6 6 6 6 6
+6]
+xshow
+6 0 RM
+(fecha:)
+[6 6 6 6 6 6]
+xshow
+6 0 RM
+(Fri)
+[6 6 6]
+xshow
+6 0 RM
+(11)
+[6 6]
+xshow
+6 0 RM
+(06)
+[6 6]
+xshow
+6 0 RM
+(2004)
+[6 6 6 6]
+xshow
+6 0 RM
+6 0 RM
+(12.19.11.06.03)
+[6 6 6 6 6 6 6 6
+6 6 6 6 6 6]
+xshow
+6 0 RM
+(7)
+[6]
+xshow
+6 0 RM
+(Ak'bal)
+[6 6 6 6 6 6]
+xshow
+6 0 RM
+6 0 RM
+(06)
+[6 6]
+xshow
+6 0 RM
+(Sots)
+[6 6 6 6]
+xshow
+1 0 0 -1 48 277.287 Tm
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+/Times-Roman 10 F
+1 0 0 -1 48 301.019 Tm
+(The)
+[6.11 5 4.44]
+xshow
+2.194 0 RM
+(default)
+[5 4.44 3.33 4.44 5 2.78 2.78]
+xshow
+2.194 0 RM
+(language)
+[2.78 4.44 5 5 5 4.44 5 4.44]
+xshow
+2.194 0 RM
+(is)
+[2.78 3.89]
+xshow
+2.194 0 RM
+(English)
+[6.11 5 5 2.78 2.78 3.89 5]
+xshow
+2.194 0 RM
+(\(en\).)
+[3.33 4.44 5 3.33 2.5]
+xshow
+2.194 0 RM
+(There)
+[6.11 5 4.44 3.33 4.44]
+xshow
+2.194 0 RM
+(is)
+[2.78 3.89]
+xshow
+2.194 0 RM
+(no)
+[5 5]
+xshow
+2.194 0 RM
+(support)
+[3.89 5 5 5 5 3.33 2.78]
+xshow
+2.194 0 RM
+(for)
+[3.33 5 3.33]
+xshow
+2.194 0 RM
+(regional)
+[3.33 4.44 5 2.78 5 5 4.44 2.78]
+xshow
+2.194 0 RM
+(language)
+[2.78 4.44 5 5 5 4.44 5 4.44]
+xshow
+2.194 0 RM
+(subsets)
+[3.89 5 5 3.89 4.44 2.78 3.89]
+xshow
+2.194 0 RM
+(\(eg)
+[3.33 4.44 5]
+xshow
+2.194 0 RM
+(en_AU\).)
+[4.44 5 5 7.22 7.22 3.33 2.5]
+xshow
+2.194 0 RM
+(Other)
+[7.22 2.78 5 4.44 3.33]
+xshow
+1 0 0 -1 48 313.019 Tm
+(languages)
+[2.78 4.44 5 5 5 4.44 5 4.44
+3.89]
+xshow
+2.5 0 RM
+(may)
+[7.78 4.44 5]
+xshow
+2.5 0 RM
+(be)
+[5 4.44]
+xshow
+2.5 0 RM
+(compiled)
+[4.44 5 7.78 5 2.78 2.78 4.44 5]
+xshow
+2.5 0 RM
+(as)
+[4.44 3.89]
+xshow
+2.5 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.5 0 RM
+(default.)
+[5 4.44 3.33 4.44 5 2.78 2.78 2.5]
+xshow
+/Helvetica-Bold 17.28 F
+1 0 0 -1 0 343.234 Tm
+(Output)
+[13.443 10.558 5.754 10.558 10.558 5.754]
+xshow
+4.803 0 RM
+(Format)
+[10.558 10.558 6.721 15.361 9.607 5.754]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 48 369.279 Tm
+(The)
+[6.11 5 4.44]
+xshow
+2.764 0 RM
+(previous)
+[5 3.33 4.44 5 2.78 5 5 3.89]
+xshow
+2.764 0 RM
+(default)
+[5 4.44 3.33 4.44 5 2.78 2.78]
+xshow
+2.764 0 RM
+(behaviour)
+[5 4.44 5 4.44 5 2.78 5 5
+3.33]
+xshow
+2.764 0 RM
+(of)
+[5 3.33]
+xshow
+2.764 0 RM
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+2.764 0 RM
+(was)
+[7.22 4.44 3.89]
+xshow
+2.764 0 RM
+(to)
+[2.78 5]
+xshow
+2.764 0 RM
+(output)
+[5 5 2.78 5 5 2.78]
+xshow
+2.764 0 RM
+(a)
+[4.44]
+xshow
+2.764 0 RM
+(formatted)
+[3.33 5 3.33 7.78 4.44 2.78 2.78 4.44
+5]
+xshow
+2.764 0 RM
+(printout)
+[5 3.33 2.78 5 2.78 5 5 2.78]
+xshow
+2.764 0 RM
+(of)
+[5 3.33]
+xshow
+2.764 0 RM
+(current)
+[4.44 5 3.33 3.33 4.44 5 2.78]
+xshow
+2.764 0 RM
+(date)
+[5 4.44 2.78 4.44]
+xshow
+2.764 0 RM
+(information,)
+[2.78 5 3.33 5 3.33 7.78 4.44 2.78
+2.78 5 5 2.5]
+xshow
+1 0 0 -1 48 381.279 Tm
+(using)
+[5 3.89 2.78 5 5]
+xshow
+2.5 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.5 0 RM
+(default)
+[5 4.44 3.33 4.44 5 2.78 2.78]
+xshow
+2.5 0 RM
+(Lounsbury)
+[6.11 5 5 5 3.89 5 5 3.33
+5]
+xshow
+2.5 0 RM
+(correlation)
+[4.44 5 3.33 3.33 4.44 2.78 4.44 2.78
+2.78 5 5]
+xshow
+2.5 0 RM
+(for)
+[3.33 5 3.33]
+xshow
+2.5 0 RM
+(today's)
+[2.78 5 5 4.44 5 1.8 3.89]
+xshow
+2.5 0 RM
+(date:)
+[5 4.44 2.78 4.44 2.78]
+xshow
+/Courier 10 F
+1 0 0 -1 48 417.071 Tm
+($)
+[6]
+xshow
+6 0 RM
+(mdate)
+[6 6 6 6 6]
+xshow
+1 0 0 -1 48 429.071 Tm
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+1 0 0 -1 48 441.071 Tm
+(Gregorian)
+[6 6 6 6 6 6 6 6
+6]
+xshow
+6 0 RM
+(Date)
+[6 6 6 6]
+xshow
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+(:)
+[6]
+xshow
+6 0 RM
+(05-April-2002)
+[6 6 6 6 6 6 6 6
+6 6 6 6 6]
+xshow
+6 0 RM
+(\(05/04/2002\))
+[6 6 6 6 6 6 6 6
+6 6 6 6]
+xshow
+1 0 0 -1 48 453.071 Tm
+(Julian)
+[6 6 6 6 6 6]
+xshow
+6 0 RM
+(Day)
+[6 6 6]
+xshow
+6 0 RM
+(Number)
+[6 6 6 6 6 6]
+xshow
+6 0 RM
+(:)
+[6]
+xshow
+6 0 RM
+(2452370.0)
+[6 6 6 6 6 6 6 6
+6]
+xshow
+1 0 0 -1 48 465.071 Tm
+(Long)
+[6 6 6 6]
+xshow
+6 0 RM
+(Count)
+[6 6 6 6 6]
+xshow
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+(:)
+[6]
+xshow
+6 0 RM
+(12.19.09.02.05)
+[6 6 6 6 6 6 6 6
+6 6 6 6 6 6]
+xshow
+1 0 0 -1 48 477.071 Tm
+(Tzolkin)
+[6 6 6 6 6 6 6]
+xshow
+6 0 RM
+(Date)
+[6 6 6 6]
+xshow
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+(:)
+[6]
+xshow
+6 0 RM
+(2)
+[6]
+xshow
+6 0 RM
+(Chicchan)
+[6 6 6 6 6 6 6 6]
+xshow
+1 0 0 -1 48 489.071 Tm
+(Haab)
+[6 6 6 6]
+xshow
+6 0 RM
+(Date)
+[6 6 6 6]
+xshow
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+(:)
+[6]
+xshow
+6 0 RM
+(3)
+[6]
+xshow
+6 0 RM
+(Uayeb)
+[6 6 6 6 6]
+xshow
+1 0 0 -1 48 501.071 Tm
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+/Times-Roman 10 F
+1 0 0 -1 48 524.803 Tm
+(However,)
+[7.22 5 7.22 4.44 5 4.44 3.33 2.5]
+xshow
+2.15 0 RM
+(pretty)
+[5 3.33 4.44 2.78 2.78 5]
+xshow
+2.15 0 RM
+(output)
+[5 5 2.78 5 5 2.78]
+xshow
+2.15 0 RM
+(formatting)
+[3.33 5 3.33 7.78 4.44 2.78 2.78 2.78
+5 5]
+xshow
+2.15 0 RM
+(is)
+[2.78 3.89]
+xshow
+2.15 0 RM
+(now)
+[5 5 7.22]
+xshow
+2.15 0 RM
+(a)
+[4.44]
+xshow
+2.15 0 RM
+(compile-time)
+[4.44 5 7.78 5 2.78 2.78 4.44 3.33
+2.78 2.78 7.78 4.44]
+xshow
+2.15 0 RM
+(option)
+[5 5 2.78 2.78 5 5]
+xshow
+2.15 0 RM
+(only,)
+[5 5 2.78 5 2.5]
+xshow
+2.15 0 RM
+(due)
+[5 5 4.44]
+xshow
+2.15 0 RM
+(to)
+[2.78 5]
+xshow
+2.15 0 RM
+(ongoing)
+[5 5 5 5 2.78 5 5]
+xshow
+2.15 0 RM
+(problems)
+[5 3.33 5 5 2.78 4.44 7.78 3.89]
+xshow
+2.15 0 RM
+(\(i.e.)
+[3.33 2.78 2.5 4.44 2.5]
+xshow
+2.15 0 RM
+(bugs\))
+[5 5 5 3.89 3.33]
+xshow
+1 0 0 -1 48 536.803 Tm
+(on)
+[5 5]
+xshow
+1.93 0 RM
+(several)
+[3.89 4.44 5 4.44 3.33 4.44 2.78]
+xshow
+1.93 0 RM
+(platforms.)
+[5 2.78 4.44 2.78 3.33 5 3.33 7.78
+3.89 2.5]
+xshow
+1.93 0 RM
+(The)
+[6.11 5 4.44]
+xshow
+1.93 0 RM
+(old)
+[5 2.78 5]
+xshow
+1.93 0 RM
+/Times-Bold 10 F
+1 0 0 -1 165.13 536.803 Tm
+(-p,)
+[3.33 5.56 2.5]
+xshow
+1.93 0 RM
+(--parseable)
+[3.33 3.33 5.56 5 4.44 3.89 4.44 5
+5.56 2.78 4.44]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 226.22 536.803 Tm
+1.93 0 RM
+(flag)
+[3.33 2.78 4.44 5]
+xshow
+1.93 0 RM
+(is)
+[2.78 3.89]
+xshow
+1.93 0 RM
+(now)
+[5 5 7.22]
+xshow
+1.93 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+1.93 0 RM
+(default)
+[5 4.44 3.33 4.44 5 2.78 2.78]
+xshow
+1.93 0 RM
+(behavior,)
+[5 4.44 5 4.44 5 2.78 5 3.33
+2.5]
+xshow
+1.93 0 RM
+(and)
+[4.44 5 5]
+xshow
+1.93 0 RM
+(outputs)
+[5 5 2.78 5 5 2.78 3.89]
+xshow
+1.93 0 RM
+(this)
+[2.78 5 2.78 3.89]
+xshow
+1.93 0 RM
+(information)
+[2.78 5 3.33 5 3.33 7.78 4.44 2.78
+2.78 5 5]
+xshow
+1 0 0 -1 48 548.803 Tm
+(in)
+[2.78 5]
+xshow
+2.5 0 RM
+(one)
+[5 5 4.44]
+xshow
+2.5 0 RM
+(line,)
+[2.78 2.78 5 4.44 2.5]
+xshow
+2.5 0 RM
+(much)
+[7.78 5 4.44 5]
+xshow
+2.5 0 RM
+(like)
+[2.78 2.78 5 4.44]
+xshow
+2.5 0 RM
+/Times-Bold 10 F
+1 0 0 -1 137.44 548.803 Tm
+(date\(1\))
+[5.56 5 3.33 4.44 3.33 5 3.33]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 167.43 548.803 Tm
+(.)
+[2.5]
+xshow
+2.5 0 RM
+(Example:)
+[6.11 5 4.44 7.78 5 2.78 4.44 2.78]
+xshow
+/Courier 10 F
+1 0 0 -1 48 584.595 Tm
+($)
+[6]
+xshow
+6 0 RM
+(mdate)
+[6 6 6 6 6]
+xshow
+1 0 0 -1 48 596.595 Tm
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+1 0 0 -1 48 608.595 Tm
+(JDN:)
+[6 6 6 6]
+xshow
+6 0 RM
+(2452370.0)
+[6 6 6 6 6 6 6 6
+6]
+xshow
+6 0 RM
+(date:)
+[6 6 6 6 6]
+xshow
+6 0 RM
+6 0 RM
+(05)
+[6 6]
+xshow
+6 0 RM
+6 0 RM
+(04)
+[6 6]
+xshow
+6 0 RM
+6 0 RM
+(2002)
+[6 6 6 6]
+xshow
+6 0 RM
+(12.19.09.02.05)
+[6 6 6 6 6 6 6 6
+6 6 6 6 6 6]
+xshow
+6 0 RM
+6 0 RM
+(02)
+[6 6]
+xshow
+6 0 RM
+(Chicchan)
+[6 6 6 6 6 6 6 6]
+xshow
+6 0 RM
+6 0 RM
+(03)
+[6 6]
+xshow
+6 0 RM
+(Uayeb)
+[6 6 6 6 6]
+xshow
+6 0 RM
+1 0 0 -1 48 620.595 Tm
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+/Times-Roman 10 F
+1 0 0 -1 48 644.327 Tm
+(The)
+[6.11 5 4.44]
+xshow
+2.5 0 RM
+(parseable)
+[5 4.44 3.33 3.89 4.44 4.44 5 2.78
+4.44]
+xshow
+2.5 0 RM
+(flag)
+[3.33 2.78 4.44 5]
+xshow
+2.5 0 RM
+(is)
+[2.78 3.89]
+xshow
+2.5 0 RM
+(now)
+[5 5 7.22]
+xshow
+2.5 0 RM
+(effectively)
+[4.44 3.33 3.33 4.44 4.44 2.78 2.78 5
+4.44 2.78 5]
+xshow
+2.5 0 RM
+(ignored)
+[2.78 5 5 5 3.33 4.44 5]
+xshow
+2.5 0 RM
+(when)
+[7.22 5 4.44 5]
+xshow
+2.5 0 RM
+(pretty)
+[5 3.33 4.44 2.78 2.78 5]
+xshow
+2.5 0 RM
+(formatting)
+[3.33 5 3.33 7.78 4.44 2.78 2.78 2.78
+5 5]
+xshow
+2.5 0 RM
+(is)
+[2.78 3.89]
+xshow
+2.5 0 RM
+(not)
+[5 5 2.78]
+xshow
+2.5 0 RM
+(compiled)
+[4.44 5 7.78 5 2.78 2.78 4.44 5]
+xshow
+2.5 0 RM
+(in.)
+[2.78 5 2.5]
+xshow
+ET
+grestore
+grestore
+%FOPEndRegionViewport
+showpage
+%%PageTrailer
+%%PageResources: font Times-Bold
+%%+ font Helvetica-Bold
+%%+ font Times-Roman
+%%+ font Courier
+%%+ procset (Apache XML Graphics Std ProcSet) 1.0 0
+%%Page: 4 4
+%%PageBoundingBox: 0 0 612 792
+%%PageHiResBoundingBox: 0 0 612 792
+%%PageResources: (atend)
+%FOPSimplePageMaster: body-odd
+%%BeginPageSetup
+%FOPBeginSetPageDevice
+<<
+/PageSize [612 792]
+/ImagingBBox null
+>> setpagedevice
+%FOPEndSetPageDevice
+[1 0 0 -1 0 792] concat
+%%EndPageSetup
+%FOPBeginRegionViewport: xsl-region-before-odd
+gsave
+[1 0 0 1 72 36] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+156 14.25 M
+156 14.5 lineto
+0 14.5 lineto
+0 14.25 lineto
+0 14 lineto
+156 14 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 14.25 M 156 14.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+gsave
+[1 0 0 1 156 0] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+156 14.25 M
+156 14.5 lineto
+0 14.5 lineto
+0 14.25 lineto
+0 14 lineto
+156 14 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 14.25 M 156 14.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+/Times-Roman 10 F
+gsave
+BT
+1 0 0 -1 65.225 8.33 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+ET
+grestore
+grestore
+gsave
+[1 0 0 1 312 0] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+156 14.25 M
+156 14.5 lineto
+0 14.5 lineto
+0 14.25 lineto
+0 14 lineto
+156 14 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 14.25 M 156 14.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+grestore
+grestore
+%FOPEndRegionViewport
+%FOPBeginRegionViewport: xsl-region-after-odd
+gsave
+[1 0 0 1 72 727.2] concat
+gsave
+[1 0 0 1 0 28.55] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+0 0.25 M
+0 0 lineto
+156 0 lineto
+156 0.25 lineto
+156 0.5 lineto
+0 0.5 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 0.25 M 156 0.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+grestore
+gsave
+[1 0 0 1 156 28.55] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+0 0.25 M
+0 0 lineto
+156 0 lineto
+156 0.25 lineto
+156 0.5 lineto
+0 0.5 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 0.25 M 156 0.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+/Times-Roman 10 F
+gsave
+BT
+1 0 0 -1 75.5 10.83 Tm
+(4) t
+ET
+grestore
+grestore
+gsave
+[1 0 0 1 312 28.55] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+0 0.25 M
+0 0 lineto
+156 0 lineto
+156 0.25 lineto
+156 0.5 lineto
+0 0.5 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 0.25 M 156 0.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+grestore
+grestore
+%FOPEndRegionViewport
+%FOPBeginRegionViewport: xsl-region-body
+gsave
+[1 0 0 1 72 72] concat
+/Helvetica-Bold 17.28 F
+gsave
+BT
+1 0 0 -1 0 14.783 Tm
+(Date)
+[12.476 9.607 5.754 9.607]
+xshow
+4.803 0 RM
+(Formatting)
+[10.558 10.558 6.721 15.361 9.607 5.754 5.754 4.803
+10.558 10.558]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 48 37.593 Tm
+(You)
+[7.22 5 5]
+xshow
+3.231 0 RM
+(may)
+[7.78 4.44 5]
+xshow
+3.231 0 RM
+(want)
+[7.22 4.44 5 2.78]
+xshow
+3.231 0 RM
+(to)
+[2.78 5]
+xshow
+3.231 0 RM
+(specify)
+[3.89 5 4.44 4.44 2.78 3.33 5]
+xshow
+3.231 0 RM
+(your)
+[5 5 5 3.33]
+xshow
+3.231 0 RM
+(current)
+[4.44 5 3.33 3.33 4.44 5 2.78]
+xshow
+3.231 0 RM
+(date)
+[5 4.44 2.78 4.44]
+xshow
+3.231 0 RM
+(in)
+[2.78 5]
+xshow
+3.231 0 RM
+(a)
+[4.44]
+xshow
+3.231 0 RM
+(specific)
+[3.89 5 4.44 4.44 2.78 3.33 2.78 4.44]
+xshow
+3.231 0 RM
+(way,)
+[7.22 4.44 5 2.5]
+xshow
+3.231 0 RM
+(using)
+[5 3.89 2.78 5 5]
+xshow
+3.231 0 RM
+(one)
+[5 5 4.44]
+xshow
+3.231 0 RM
+(of)
+[5 3.33]
+xshow
+3.231 0 RM
+(mdate's)
+[7.78 5 4.44 2.78 4.44 1.8 3.89]
+xshow
+3.231 0 RM
+(formatting)
+[3.33 5 3.33 7.78 4.44 2.78 2.78 2.78
+5 5]
+xshow
+3.231 0 RM
+(options.)
+[5 5 2.78 2.78 5 5 3.89 2.5]
+xshow
+1 0 0 -1 48 49.593 Tm
+(Here)
+[7.22 4.44 3.33 4.44]
+xshow
+2.5 0 RM
+(is)
+[2.78 3.89]
+xshow
+2.5 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.5 0 RM
+(full)
+[3.33 5 2.78 2.78]
+xshow
+2.5 0 RM
+(list:)
+[2.78 2.78 3.89 2.78 2.78]
+xshow
+/Courier 10 F
+1 0 0 -1 48 82.15 Tm
+(@a)
+[6 6]
+xshow
+6 0 RM
+(abbreviated)
+[6 6 6 6 6 6 6 6
+6 6 6]
+xshow
+6 0 RM
+(weekday)
+[6 6 6 6 6 6 6]
+xshow
+6 0 RM
+(name)
+[6 6 6 6]
+xshow
+1 0 0 -1 48 94.15 Tm
+(@A)
+[6 6]
+xshow
+6 0 RM
+(full)
+[6 6 6 6]
+xshow
+6 0 RM
+(weekday)
+[6 6 6 6 6 6 6]
+xshow
+6 0 RM
+(name)
+[6 6 6 6]
+xshow
+1 0 0 -1 48 106.15 Tm
+(@b)
+[6 6]
+xshow
+6 0 RM
+(abbreviated)
+[6 6 6 6 6 6 6 6
+6 6 6]
+xshow
+6 0 RM
+(month)
+[6 6 6 6 6]
+xshow
+6 0 RM
+(name)
+[6 6 6 6]
+xshow
+1 0 0 -1 48 118.15 Tm
+(@B)
+[6 6]
+xshow
+6 0 RM
+(full)
+[6 6 6 6]
+xshow
+6 0 RM
+(month)
+[6 6 6 6 6]
+xshow
+6 0 RM
+(name)
+[6 6 6 6]
+xshow
+1 0 0 -1 48 130.15 Tm
+(@d)
+[6 6]
+xshow
+6 0 RM
+(weekday)
+[6 6 6 6 6 6 6]
+xshow
+6 0 RM
+(\(01..31\))
+[6 6 6 6 6 6 6 6]
+xshow
+1 0 0 -1 48 142.15 Tm
+(@e)
+[6 6]
+xshow
+6 0 RM
+(weekday)
+[6 6 6 6 6 6 6]
+xshow
+6 0 RM
+(without)
+[6 6 6 6 6 6 6]
+xshow
+6 0 RM
+(a)
+[6]
+xshow
+6 0 RM
+(leading)
+[6 6 6 6 6 6 6]
+xshow
+6 0 RM
+(zero)
+[6 6 6 6]
+xshow
+1 0 0 -1 48 154.15 Tm
+(@F)
+[6 6]
+xshow
+6 0 RM
+(ISO)
+[6 6 6]
+xshow
+6 0 RM
+(format)
+[6 6 6 6 6 6]
+xshow
+6 0 RM
+(Gregorian)
+[6 6 6 6 6 6 6 6
+6]
+xshow
+6 0 RM
+(date)
+[6 6 6 6]
+xshow
+6 0 RM
+(\(%Y-%m-%d\))
+[6 6 6 6 6 6 6 6
+6 6]
+xshow
+1 0 0 -1 48 166.15 Tm
+(@f)
+[6 6]
+xshow
+6 0 RM
+(ISO)
+[6 6 6]
+xshow
+6 0 RM
+(format)
+[6 6 6 6 6 6]
+xshow
+6 0 RM
+(Gregorian)
+[6 6 6 6 6 6 6 6
+6]
+xshow
+6 0 RM
+(date)
+[6 6 6 6]
+xshow
+6 0 RM
+(\(%Y%m%d\))
+[6 6 6 6 6 6 6 6]
+xshow
+1 0 0 -1 48 178.15 Tm
+(@h)
+[6 6]
+xshow
+6 0 RM
+(unpadded)
+[6 6 6 6 6 6 6 6]
+xshow
+6 0 RM
+(Haab)
+[6 6 6 6]
+xshow
+6 0 RM
+(date)
+[6 6 6 6]
+xshow
+1 0 0 -1 48 190.15 Tm
+(@H)
+[6 6]
+xshow
+6 0 RM
+(padded)
+[6 6 6 6 6 6]
+xshow
+6 0 RM
+(Haab)
+[6 6 6 6]
+xshow
+6 0 RM
+(date)
+[6 6 6 6]
+xshow
+1 0 0 -1 48 202.15 Tm
+(@l)
+[6 6]
+xshow
+6 0 RM
+(Long)
+[6 6 6 6]
+xshow
+6 0 RM
+(Count)
+[6 6 6 6 6]
+xshow
+1 0 0 -1 48 214.15 Tm
+(@M)
+[6 6]
+xshow
+6 0 RM
+(named)
+[6 6 6 6 6]
+xshow
+6 0 RM
+(Gregorian)
+[6 6 6 6 6 6 6 6
+6]
+xshow
+6 0 RM
+(month)
+[6 6 6 6 6]
+xshow
+1 0 0 -1 48 226.15 Tm
+(@m)
+[6 6]
+xshow
+6 0 RM
+(numbered)
+[6 6 6 6 6 6 6 6]
+xshow
+6 0 RM
+(Gregorian)
+[6 6 6 6 6 6 6 6
+6]
+xshow
+6 0 RM
+(month)
+[6 6 6 6 6]
+xshow
+1 0 0 -1 48 238.15 Tm
+(@T)
+[6 6]
+xshow
+6 0 RM
+(padded)
+[6 6 6 6 6 6]
+xshow
+6 0 RM
+(Tzolkin)
+[6 6 6 6 6 6 6]
+xshow
+6 0 RM
+(date)
+[6 6 6 6]
+xshow
+1 0 0 -1 48 250.15 Tm
+(@t)
+[6 6]
+xshow
+6 0 RM
+(unpadded)
+[6 6 6 6 6 6 6 6]
+xshow
+6 0 RM
+(Tzolkin)
+[6 6 6 6 6 6 6]
+xshow
+6 0 RM
+(date)
+[6 6 6 6]
+xshow
+1 0 0 -1 48 262.15 Tm
+(@y)
+[6 6]
+xshow
+6 0 RM
+(year)
+[6 6 6 6]
+xshow
+6 0 RM
+(as)
+[6 6]
+xshow
+6 0 RM
+(decimal)
+[6 6 6 6 6 6 6]
+xshow
+6 0 RM
+(00)
+[6 6]
+xshow
+6 0 RM
+(to)
+[6 6]
+xshow
+6 0 RM
+(99)
+[6 6]
+xshow
+1 0 0 -1 48 274.15 Tm
+(@Y)
+[6 6]
+xshow
+6 0 RM
+(Gregorian)
+[6 6 6 6 6 6 6 6
+6]
+xshow
+6 0 RM
+(year)
+[6 6 6 6]
+xshow
+1 0 0 -1 48 286.15 Tm
+(@n)
+[6 6]
+xshow
+6 0 RM
+(add)
+[6 6 6]
+xshow
+6 0 RM
+(a)
+[6]
+xshow
+6 0 RM
+(newline)
+[6 6 6 6 6 6 6]
+xshow
+6 0 RM
+(to)
+[6 6]
+xshow
+6 0 RM
+(the)
+[6 6 6]
+xshow
+6 0 RM
+(output)
+[6 6 6 6 6 6]
+xshow
+1 0 0 -1 48 298.15 Tm
+(@j)
+[6 6]
+xshow
+6 0 RM
+(add)
+[6 6 6]
+xshow
+6 0 RM
+(a)
+[6]
+xshow
+6 0 RM
+(tab)
+[6 6 6]
+xshow
+6 0 RM
+(to)
+[6 6]
+xshow
+6 0 RM
+(the)
+[6 6 6]
+xshow
+6 0 RM
+(output)
+[6 6 6 6 6 6]
+xshow
+1 0 0 -1 48 310.15 Tm
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+/Times-Roman 10 F
+1 0 0 -1 48 330.647 Tm
+(Like)
+[6.11 2.78 5 4.44]
+xshow
+2.5 0 RM
+/Times-Bold 10 F
+1 0 0 -1 68.83 330.647 Tm
+(date\(1\))
+[5.56 5 3.33 4.44 3.33 5 3.33]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 98.82 330.647 Tm
+(,)
+[2.5]
+xshow
+2.5 0 RM
+(mdate)
+[7.78 5 4.44 2.78 4.44]
+xshow
+2.5 0 RM
+(will)
+[7.22 2.78 2.78 2.78]
+xshow
+2.5 0 RM
+(format)
+[3.33 5 3.33 7.78 4.44 2.78]
+xshow
+2.5 0 RM
+(a)
+[4.44]
+xshow
+2.5 0 RM
+(date)
+[5 4.44 2.78 4.44]
+xshow
+2.5 0 RM
+(when)
+[7.22 5 4.44 5]
+xshow
+2.5 0 RM
+(given)
+[5 2.78 5 4.44 5]
+xshow
+2.5 0 RM
+(a)
+[4.44]
+xshow
+2.5 0 RM
+(`+')
+[3.33 5.64 1.8]
+xshow
+2.5 0 RM
+(option,)
+[5 5 2.78 2.78 5 5 2.5]
+xshow
+2.5 0 RM
+(for)
+[3.33 5 3.33]
+xshow
+2.5 0 RM
+(example:)
+[4.44 5 4.44 7.78 5 2.78 4.44 2.78]
+xshow
+/Courier 10 F
+1 0 0 -1 48 363.204 Tm
+($)
+[6]
+xshow
+6 0 RM
+(mdate)
+[6 6 6 6 6]
+xshow
+6 0 RM
+(-d)
+[6 6]
+xshow
+6 0 RM
+('07)
+[6 6 6]
+xshow
+6 0 RM
+(09)
+[6 6]
+xshow
+6 0 RM
+(2003')
+[6 6 6 6 6]
+xshow
+6 0 RM
+(+'@f)
+[6 6 6 6]
+xshow
+6 0 RM
+(@l')
+[6 6 6]
+xshow
+1 0 0 -1 48 375.204 Tm
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+1 0 0 -1 48 387.204 Tm
+(20030907)
+[6 6 6 6 6 6 6 6]
+xshow
+6 0 RM
+(12.19.10.10.15)
+[6 6 6 6 6 6 6 6
+6 6 6 6 6 6]
+xshow
+1 0 0 -1 48 399.204 Tm
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+/Times-Roman 10 F
+1 0 0 -1 48 419.701 Tm
+(This)
+[6.11 5 2.78 3.89]
+xshow
+3.974 0 RM
+(was)
+[7.22 4.44 3.89]
+xshow
+3.974 0 RM
+(specifically)
+[3.89 5 4.44 4.44 2.78 3.33 2.78 4.44
+4.44 2.78 2.78 5]
+xshow
+3.974 0 RM
+(requested)
+[3.33 4.44 5 5 4.44 3.89 2.78 4.44
+5]
+xshow
+3.974 0 RM
+(for)
+[3.33 5 3.33]
+xshow
+3.974 0 RM
+(those)
+[2.78 5 5 3.89 4.44]
+xshow
+3.974 0 RM
+(who)
+[7.22 5 5]
+xshow
+3.974 0 RM
+(like)
+[2.78 2.78 5 4.44]
+xshow
+3.974 0 RM
+(to)
+[2.78 5]
+xshow
+3.974 0 RM
+(add)
+[4.44 5 5]
+xshow
+3.974 0 RM
+(a)
+[4.44]
+xshow
+3.974 0 RM
+(Mayan)
+[8.89 4.44 5 4.44 5]
+xshow
+3.974 0 RM
+(byline)
+[5 5 2.78 2.78 5 4.44]
+xshow
+3.974 0 RM
+(to)
+[2.78 5]
+xshow
+3.974 0 RM
+(emails)
+[4.44 7.78 4.44 2.78 2.78 3.89]
+xshow
+3.974 0 RM
+(and)
+[4.44 5 5]
+xshow
+3.974 0 RM
+(web)
+[7.22 4.44 5]
+xshow
+3.974 0 RM
+(pages.)
+[5 4.44 5 4.44 3.89 2.5]
+xshow
+1 0 0 -1 48 431.701 Tm
+(However,)
+[7.22 5 7.22 4.44 5 4.44 3.33 2.5]
+xshow
+2.217 0 RM
+(mdate)
+[7.78 5 4.44 2.78 4.44]
+xshow
+2.217 0 RM
+(has)
+[5 4.44 3.89]
+xshow
+2.217 0 RM
+(not)
+[5 5 2.78]
+xshow
+2.217 0 RM
+(ever)
+[4.44 5 4.44 3.33]
+xshow
+2.217 0 RM
+(supported)
+[3.89 5 5 5 5 3.33 2.78 4.44
+5]
+xshow
+2.217 0 RM
+(time)
+[2.78 2.78 7.78 4.44]
+xshow
+2.217 0 RM
+(of)
+[5 3.33]
+xshow
+2.217 0 RM
+(day)
+[5 4.44 5]
+xshow
+2.217 0 RM
+(parsing/formatting,)
+[5 4.44 3.33 3.89 2.78 5 5 2.78
+3.33 5 3.33 7.78 4.44 2.78 2.78 2.78
+5 5 2.5]
+xshow
+2.217 0 RM
+(so)
+[3.89 5]
+xshow
+2.217 0 RM
+(it's)
+[2.78 2.78 1.8 3.89]
+xshow
+2.217 0 RM
+(not)
+[5 5 2.78]
+xshow
+2.217 0 RM
+(rfc822)
+[3.33 3.33 4.44 5 5 5]
+xshow
+2.217 0 RM
+(compliant!)
+[4.44 5 7.78 5 2.78 2.78 4.44 5
+2.78 3.33]
+xshow
+2.217 0 RM
+(Most)
+[8.89 5 3.89 2.78]
+xshow
+1 0 0 -1 48 443.701 Tm
+(formats)
+[3.33 5 3.33 7.78 4.44 2.78 3.89]
+xshow
+2.5 0 RM
+(are)
+[4.44 3.33 4.44]
+xshow
+2.5 0 RM
+(merely)
+[7.78 4.44 3.33 4.44 2.78 5]
+xshow
+2.5 0 RM
+(passed)
+[5 4.44 3.89 3.89 4.44 5]
+xshow
+2.5 0 RM
+(on)
+[5 5]
+xshow
+2.5 0 RM
+(to)
+[2.78 5]
+xshow
+2.5 0 RM
+/Times-Bold 10 F
+1 0 0 -1 177.97 443.701 Tm
+(strftime\(3\))
+[3.89 3.33 4.44 3.33 3.33 2.78 8.33 4.44
+3.33 5 3.33]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 223.5 443.701 Tm
+2.5 0 RM
+(where)
+[7.22 5 4.44 3.33 4.44]
+xshow
+2.5 0 RM
+(applicable.)
+[4.44 5 5 2.78 2.78 4.44 4.44 5
+2.78 4.44 2.5]
+xshow
+/Helvetica-Bold 17.28 F
+1 0 0 -1 0 470.681 Tm
+(Correlation)
+[12.476 10.558 6.721 6.721 9.607 4.803 9.607 5.754
+4.803 10.558 10.558]
+xshow
+4.803 0 RM
+(Options)
+[13.443 10.558 5.754 4.803 10.558 10.558 9.607]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 48 493.491 Tm
+(By)
+[6.67 5]
+xshow
+2.614 0 RM
+(default,)
+[5 4.44 3.33 4.44 5 2.78 2.78 2.5]
+xshow
+2.614 0 RM
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+2.614 0 RM
+(used)
+[5 3.89 4.44 5]
+xshow
+2.614 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.614 0 RM
+(Lounsbury)
+[6.11 5 5 5 3.89 5 5 3.33
+5]
+xshow
+2.614 0 RM
+(correlation)
+[4.44 5 3.33 3.33 4.44 2.78 4.44 2.78
+2.78 5 5]
+xshow
+2.614 0 RM
+(which)
+[7.22 5 2.78 4.44 5]
+xshow
+2.614 0 RM
+(is)
+[2.78 3.89]
+xshow
+2.614 0 RM
+(equivalent)
+[4.44 5 5 2.78 5 4.44 2.78 4.44
+5 2.78]
+xshow
+2.614 0 RM
+(to)
+[2.78 5]
+xshow
+2.614 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.614 0 RM
+(Julian)
+[3.89 5 2.78 2.78 4.44 5]
+xshow
+2.614 0 RM
+(Day)
+[7.22 4.44 5]
+xshow
+2.614 0 RM
+(Number)
+[7.22 5 7.78 5 4.44 3.33]
+xshow
+2.614 0 RM
+(584285)
+[5 5 5 5 5 5]
+xshow
+1 0 0 -1 48 505.491 Tm
+(in)
+[2.78 5]
+xshow
+2.5 0 RM
+(versions)
+[5 4.44 3.33 3.89 2.78 5 5 3.89]
+xshow
+2.5 0 RM
+(of)
+[5 3.33]
+xshow
+2.5 0 RM
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+2.5 0 RM
+(prior)
+[5 3.33 2.78 5 3.33]
+xshow
+2.5 0 RM
+(to)
+[2.78 5]
+xshow
+2.5 0 RM
+(1.6.0.)
+[5 2.5 5 2.5 5 2.5]
+xshow
+2.5 0 RM
+(Since)
+[5.56 2.78 5 4.44 4.44]
+xshow
+2.5 0 RM
+(then)
+[2.78 5 4.44 5]
+xshow
+2.5 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.5 0 RM
+(GMT)
+[7.22 8.89 6.11]
+xshow
+2.5 0 RM
+(correlation)
+[4.44 5 3.33 3.33 4.44 2.78 4.44 2.78
+2.78 5 5]
+xshow
+2.5 0 RM
+(is)
+[2.78 3.89]
+xshow
+2.5 0 RM
+(standard.)
+[3.89 2.78 4.44 5 5 4.44 3.33 5
+2.5]
+xshow
+1 0 0 -1 48 526.018 Tm
+(The)
+[6.11 5 4.44]
+xshow
+3.664 0 RM
+/Times-Bold 10 F
+1 0 0 -1 67.214 526.018 Tm
+(-g,)
+[3.33 5 2.5]
+xshow
+3.664 0 RM
+(--gmt)
+[3.33 3.33 5 8.33 3.33]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 105.028 526.018 Tm
+3.664 0 RM
+(option)
+[5 5 2.78 2.78 5 5]
+xshow
+3.664 0 RM
+(uses)
+[5 3.89 4.44 3.89]
+xshow
+3.664 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+3.664 0 RM
+(standard)
+[3.89 2.78 4.44 5 5 4.44 3.33 5]
+xshow
+3.664 0 RM
+(Goodman-Martinez-Thompson)
+[7.22 5 5 5 7.78 4.44 5 3.33
+8.89 4.44 3.33 2.78 2.78 5 4.44 4.44
+3.33 6.11 5 5 7.78 5 3.89 5
+5]
+xshow
+3.664 0 RM
+(correlation)
+[4.44 5 3.33 3.33 4.44 2.78 4.44 2.78
+2.78 5 5]
+xshow
+3.664 0 RM
+(\(GMT)
+[3.33 7.22 8.89 6.11]
+xshow
+3.664 0 RM
+(for)
+[3.33 5 3.33]
+xshow
+3.664 0 RM
+(short\).)
+[3.89 5 5 3.33 2.78 3.33 2.5]
+xshow
+3.664 0 RM
+(It)
+[3.33 2.78]
+xshow
+1 0 0 -1 48 538.018 Tm
+(corresponds)
+[4.44 5 3.33 3.33 4.44 3.89 5 5
+5 5 3.89]
+xshow
+2.373 0 RM
+(to)
+[2.78 5]
+xshow
+2.373 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.373 0 RM
+(Julian)
+[3.89 5 2.78 2.78 4.44 5]
+xshow
+2.373 0 RM
+(Day)
+[7.22 4.44 5]
+xshow
+2.373 0 RM
+(Number)
+[7.22 5 7.78 5 4.44 3.33]
+xshow
+2.373 0 RM
+(584283.)
+[5 5 5 5 5 5 2.5]
+xshow
+2.373 0 RM
+(Versions)
+[7.22 4.44 3.33 3.89 2.78 5 5 3.89]
+xshow
+2.373 0 RM
+(of)
+[5 3.33]
+xshow
+2.373 0 RM
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+2.373 0 RM
+(from)
+[3.33 3.33 5 7.78]
+xshow
+2.373 0 RM
+(1.6.0)
+[5 2.5 5 2.5 5]
+xshow
+2.373 0 RM
+(silently)
+[3.89 2.78 2.78 4.44 5 2.78 2.78 5]
+xshow
+2.373 0 RM
+(ignores)
+[2.78 5 5 5 3.33 4.44 3.89]
+xshow
+2.373 0 RM
+(this)
+[2.78 5 2.78 3.89]
+xshow
+2.373 0 RM
+(option.)
+[5 5 2.78 2.78 5 5 2.5]
+xshow
+1 0 0 -1 48 558.545 Tm
+(If)
+[3.33 3.33]
+xshow
+2.802 0 RM
+(you)
+[5 5 5]
+xshow
+2.802 0 RM
+(don't)
+[5 5 5 1.8 2.78]
+xshow
+2.802 0 RM
+(agree)
+[4.44 5 3.33 4.44 4.44]
+xshow
+2.802 0 RM
+(with)
+[7.22 2.78 2.78 5]
+xshow
+2.802 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.802 0 RM
+(correlation)
+[4.44 5 3.33 3.33 4.44 2.78 4.44 2.78
+2.78 5 5]
+xshow
+2.802 0 RM
+(constant,)
+[4.44 5 5 3.89 2.78 4.44 5 2.78
+2.5]
+xshow
+2.802 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.802 0 RM
+/Times-Bold 10 F
+1 0 0 -1 257.485 558.545 Tm
+(-c,)
+[3.33 4.44 2.5]
+xshow
+2.802 0 RM
+(--correlation[=DOUBLE])
+[3.33 3.33 4.44 5 4.44 4.44 4.44 2.78
+5 3.33 2.78 5 5.56 3.33 5.7 7.22
+7.78 7.22 6.67 6.67 6.67 3.33]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 379.017 558.545 Tm
+2.802 0 RM
+(allows)
+[4.44 2.78 2.78 5 7.22 3.89]
+xshow
+2.802 0 RM
+(you)
+[5 5 5]
+xshow
+2.802 0 RM
+(to)
+[2.78 5]
+xshow
+2.802 0 RM
+(specify)
+[3.89 5 4.44 4.44 2.78 3.33 5]
+xshow
+1 0 0 -1 48 570.545 Tm
+(a)
+[4.44]
+xshow
+2.359 0 RM
+(correlation)
+[4.44 5 3.33 3.33 4.44 2.78 4.44 2.78
+2.78 5 5]
+xshow
+2.359 0 RM
+(of)
+[5 3.33]
+xshow
+2.359 0 RM
+(your)
+[5 5 5 3.33]
+xshow
+2.359 0 RM
+(own.)
+[5 7.22 5 2.5]
+xshow
+2.359 0 RM
+(Don't)
+[7.22 5 5 1.8 2.78]
+xshow
+2.359 0 RM
+(be)
+[5 4.44]
+xshow
+2.359 0 RM
+(surprised,)
+[3.89 5 3.33 5 3.33 2.78 3.89 4.44
+5 2.5]
+xshow
+2.359 0 RM
+(however)
+[5 5 7.22 4.44 5 4.44 3.33]
+xshow
+2.359 0 RM
+(if)
+[2.78 3.33]
+xshow
+2.359 0 RM
+(it)
+[2.78 2.78]
+xshow
+2.359 0 RM
+(doesn't)
+[5 5 4.44 3.89 5 1.8 2.78]
+xshow
+2.359 0 RM
+(work)
+[7.22 5 3.33 5]
+xshow
+2.359 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.359 0 RM
+(way)
+[7.22 4.44 5]
+xshow
+2.359 0 RM
+(you)
+[5 5 5]
+xshow
+2.359 0 RM
+(intended,)
+[2.78 5 2.78 4.44 5 5 4.44 5
+2.5]
+xshow
+2.359 0 RM
+(especially)
+[4.44 3.89 5 4.44 4.44 2.78 4.44 2.78
+2.78 5]
+xshow
+1 0 0 -1 48 582.545 Tm
+(if)
+[2.78 3.33]
+xshow
+2.5 0 RM
+(you)
+[5 5 5]
+xshow
+2.5 0 RM
+(set)
+[3.89 4.44 2.78]
+xshow
+2.5 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.5 0 RM
+(Julian)
+[3.89 5 2.78 2.78 4.44 5]
+xshow
+2.5 0 RM
+(Day)
+[7.22 4.44 5]
+xshow
+2.5 0 RM
+(Number)
+[7.22 5 7.78 5 4.44 3.33]
+xshow
+2.5 0 RM
+(too)
+[2.78 5 5]
+xshow
+2.5 0 RM
+(low)
+[2.78 5 7.22]
+xshow
+2.5 0 RM
+(\(see)
+[3.33 3.89 4.44 4.44]
+xshow
+2.5 0 RM
+1 0 0 -1 234.64 582.545 Tm
+(Limitations)
+[6.11 2.78 7.78 2.78 2.78 4.44 2.78 2.78
+5 5 3.89]
+xshow
+1 0 0 -1 280.76 582.545 Tm
+2.5 0 RM
+(to)
+[2.78 5]
+xshow
+2.5 0 RM
+(understand)
+[5 5 5 4.44 3.33 3.89 2.78 4.44
+5 5]
+xshow
+2.5 0 RM
+(why!\))
+[7.22 5 5 3.33 3.33]
+xshow
+/Helvetica-Bold 17.28 F
+1 0 0 -1 0 609.525 Tm
+(Date)
+[12.476 9.607 5.754 9.607]
+xshow
+4.803 0 RM
+(Input)
+[4.803 10.558 10.558 10.558 5.754]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 48 632.335 Tm
+(You)
+[7.22 5 5]
+xshow
+3.276 0 RM
+(probably)
+[5 3.33 5 5 4.44 5 2.78 5]
+xshow
+3.276 0 RM
+(want)
+[7.22 4.44 5 2.78]
+xshow
+3.276 0 RM
+(to)
+[2.78 5]
+xshow
+3.276 0 RM
+(check)
+[4.44 5 4.44 4.44 5]
+xshow
+3.276 0 RM
+(a)
+[4.44]
+xshow
+3.276 0 RM
+(specific)
+[3.89 5 4.44 4.44 2.78 3.33 2.78 4.44]
+xshow
+3.276 0 RM
+(date)
+[5 4.44 2.78 4.44]
+xshow
+3.276 0 RM
+(at)
+[4.44 2.78]
+xshow
+3.276 0 RM
+(some)
+[3.89 5 7.78 4.44]
+xshow
+3.276 0 RM
+(point.)
+[5 5 2.78 5 2.78 2.5]
+xshow
+3.276 0 RM
+(This)
+[6.11 5 2.78 3.89]
+xshow
+3.276 0 RM
+(can)
+[4.44 4.44 5]
+xshow
+3.276 0 RM
+(be)
+[5 4.44]
+xshow
+3.276 0 RM
+(done)
+[5 5 5 4.44]
+xshow
+3.276 0 RM
+(in)
+[2.78 5]
+xshow
+3.276 0 RM
+(several)
+[3.89 4.44 5 4.44 3.33 4.44 2.78]
+xshow
+3.276 0 RM
+(different)
+[5 2.78 3.33 3.33 4.44 3.33 4.44 5
+2.78]
+xshow
+3.276 0 RM
+(ways,)
+[7.22 4.44 5 3.89 2.5]
+xshow
+1 0 0 -1 48 644.335 Tm
+(depending)
+[5 4.44 5 4.44 5 5 2.78 5
+5]
+xshow
+2.5 0 RM
+(on)
+[5 5]
+xshow
+2.5 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.5 0 RM
+(kind)
+[5 2.78 5 5]
+xshow
+2.5 0 RM
+(of)
+[5 3.33]
+xshow
+2.5 0 RM
+(date)
+[5 4.44 2.78 4.44]
+xshow
+2.5 0 RM
+(you)
+[5 5 5]
+xshow
+2.5 0 RM
+(already)
+[4.44 2.78 3.33 4.44 4.44 5 5]
+xshow
+2.5 0 RM
+(have.)
+[5 4.44 5 4.44 2.5]
+xshow
+ET
+grestore
+grestore
+%FOPEndRegionViewport
+showpage
+%%PageTrailer
+%%PageResources: font Times-Bold
+%%+ font Helvetica-Bold
+%%+ font Times-Roman
+%%+ font Courier
+%%+ procset (Apache XML Graphics Std ProcSet) 1.0 0
+%%Page: 5 5
+%%PageBoundingBox: 0 0 612 792
+%%PageHiResBoundingBox: 0 0 612 792
+%%PageResources: (atend)
+%FOPSimplePageMaster: body-odd
+%%BeginPageSetup
+%FOPBeginSetPageDevice
+<<
+/PageSize [612 792]
+/ImagingBBox null
+>> setpagedevice
+%FOPEndSetPageDevice
+[1 0 0 -1 0 792] concat
+%%EndPageSetup
+%FOPBeginRegionViewport: xsl-region-before-odd
+gsave
+[1 0 0 1 72 36] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+156 14.25 M
+156 14.5 lineto
+0 14.5 lineto
+0 14.25 lineto
+0 14 lineto
+156 14 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 14.25 M 156 14.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+gsave
+[1 0 0 1 156 0] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+156 14.25 M
+156 14.5 lineto
+0 14.5 lineto
+0 14.25 lineto
+0 14 lineto
+156 14 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 14.25 M 156 14.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+/Times-Roman 10 F
+gsave
+BT
+1 0 0 -1 65.225 8.33 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+ET
+grestore
+grestore
+gsave
+[1 0 0 1 312 0] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+156 14.25 M
+156 14.5 lineto
+0 14.5 lineto
+0 14.25 lineto
+0 14 lineto
+156 14 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 14.25 M 156 14.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+grestore
+grestore
+%FOPEndRegionViewport
+%FOPBeginRegionViewport: xsl-region-after-odd
+gsave
+[1 0 0 1 72 727.2] concat
+gsave
+[1 0 0 1 0 28.55] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+0 0.25 M
+0 0 lineto
+156 0 lineto
+156 0.25 lineto
+156 0.5 lineto
+0 0.5 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 0.25 M 156 0.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+grestore
+gsave
+[1 0 0 1 156 28.55] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+0 0.25 M
+0 0 lineto
+156 0 lineto
+156 0.25 lineto
+156 0.5 lineto
+0 0.5 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 0.25 M 156 0.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+/Times-Roman 10 F
+gsave
+BT
+1 0 0 -1 75.5 10.83 Tm
+(5) t
+ET
+grestore
+grestore
+gsave
+[1 0 0 1 312 28.55] concat
+%FOPBeginBackgroundAndBorder: 0.0 0.0 156.0 14.5
+gsave
+0 0.25 M
+0 0 lineto
+156 0 lineto
+156 0.25 lineto
+156 0.5 lineto
+0 0.5 lineto
+cp
+clip newpath
+0.5 setlinewidth
+0 0.25 M 156 0.25 lineto stroke newpath
+grestore
+%FOPEndBackgroundAndBorder
+grestore
+grestore
+%FOPEndRegionViewport
+%FOPBeginRegionViewport: xsl-region-body
+gsave
+[1 0 0 1 72 72] concat
+/Times-Roman 10 F
+gsave
+BT
+1 0 0 -1 48 8.33 Tm
+(The)
+[6.11 5 4.44]
+xshow
+2.67 0 RM
+/Times-Bold 10 F
+1 0 0 -1 66.22 8.33 Tm
+(-d,)
+[3.33 5.56 2.5]
+xshow
+2.67 0 RM
+(--dmy[="dd)
+[3.33 3.33 5.56 8.33 5 3.33 5.7 5.55
+5.56 5.56]
+xshow
+2.67 0 RM
+(mm)
+[8.33 8.33]
+xshow
+2.67 0 RM
+([-]yyyy"])
+[3.33 3.33 3.33 5 5 5 5 5.55
+3.33]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 192.4 8.33 Tm
+2.67 0 RM
+(option)
+[5 5 2.78 2.78 5 5]
+xshow
+2.67 0 RM
+(allows)
+[4.44 2.78 2.78 5 7.22 3.89]
+xshow
+2.67 0 RM
+(you)
+[5 5 5]
+xshow
+2.67 0 RM
+(to)
+[2.78 5]
+xshow
+2.67 0 RM
+(specify)
+[3.89 5 4.44 4.44 2.78 3.33 5]
+xshow
+2.67 0 RM
+(a)
+[4.44]
+xshow
+2.67 0 RM
+(Gregorian)
+[7.22 3.33 4.44 5 5 3.33 2.78 4.44
+5]
+xshow
+2.67 0 RM
+(date.)
+[5 4.44 2.78 4.44 2.5]
+xshow
+2.67 0 RM
+(You)
+[7.22 5 5]
+xshow
+2.67 0 RM
+(can)
+[4.44 4.44 5]
+xshow
+2.67 0 RM
+(also)
+[4.44 2.78 3.89 5]
+xshow
+2.67 0 RM
+(specify)
+[3.89 5 4.44 4.44 2.78 3.33 5]
+xshow
+1 0 0 -1 48 20.33 Tm
+(negative)
+[5 4.44 5 4.44 2.78 2.78 5 4.44]
+xshow
+2.5 0 RM
+(\(BC\))
+[3.33 6.67 6.67 3.33]
+xshow
+2.5 0 RM
+(years.)
+[5 4.44 4.44 3.33 3.89 2.5]
+xshow
+/Courier 10 F
+1 0 0 -1 48 54.36 Tm
+($)
+[6]
+xshow
+6 0 RM
+(mdate)
+[6 6 6 6 6]
+xshow
+6 0 RM
+(-d)
+[6 6]
+xshow
+6 0 RM
+('05)
+[6 6 6]
+xshow
+6 0 RM
+(04)
+[6 6]
+xshow
+6 0 RM
+(2002')
+[6 6 6 6 6]
+xshow
+1 0 0 -1 48 66.36 Tm
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+1 0 0 -1 48 78.36 Tm
+(JDN:)
+[6 6 6 6]
+xshow
+6 0 RM
+(2452311.0)
+[6 6 6 6 6 6 6 6
+6]
+xshow
+6 0 RM
+(date:)
+[6 6 6 6 6]
+xshow
+6 0 RM
+(Tues)
+[6 6 6 6]
+xshow
+6 0 RM
+(05)
+[6 6]
+xshow
+6 0 RM
+(02)
+[6 6]
+xshow
+6 0 RM
+(2002)
+[6 6 6 6]
+xshow
+6 0 RM
+6 0 RM
+(12.19.08.17.06)
+[6 6 6 6 6 6 6 6
+6 6 6 6 6 6]
+xshow
+6 0 RM
+(8)
+[6]
+xshow
+6 0 RM
+(Kimi)
+[6 6 6 6]
+xshow
+6 0 RM
+6 0 RM
+(04)
+[6 6]
+xshow
+6 0 RM
+(Pax)
+[6 6 6]
+xshow
+1 0 0 -1 48 90.36 Tm
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+/Times-Roman 10 F
+1 0 0 -1 48 112.33 Tm
+(In)
+[3.33 5]
+xshow
+3.604 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+3.604 0 RM
+(same)
+[3.89 4.44 7.78 4.44]
+xshow
+3.604 0 RM
+(way,)
+[7.22 4.44 5 2.5]
+xshow
+3.604 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+3.604 0 RM
+/Times-Bold 10 F
+1 0 0 -1 138.501 112.33 Tm
+(-j,)
+[3.33 3.33 2.5]
+xshow
+3.604 0 RM
+(--julian=[DOUBLE])
+[3.33 3.33 3.33 5.56 2.78 2.78 5 5.56
+5.7 3.33 7.22 7.78 7.22 6.67 6.67 6.67
+3.33]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 237.525 112.33 Tm
+3.604 0 RM
+(option)
+[5 5 2.78 2.78 5 5]
+xshow
+3.604 0 RM
+(will)
+[7.22 2.78 2.78 2.78]
+xshow
+3.604 0 RM
+(output)
+[5 5 2.78 5 5 2.78]
+xshow
+3.604 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+3.604 0 RM
+(date)
+[5 4.44 2.78 4.44]
+xshow
+3.604 0 RM
+(with)
+[7.22 2.78 2.78 5]
+xshow
+3.604 0 RM
+(a)
+[4.44]
+xshow
+3.604 0 RM
+(specified)
+[3.89 5 4.44 4.44 2.78 3.33 2.78 4.44
+5]
+xshow
+3.604 0 RM
+(Julian)
+[3.89 5 2.78 2.78 4.44 5]
+xshow
+3.604 0 RM
+(Day)
+[7.22 4.44 5]
+xshow
+1 0 0 -1 48 124.33 Tm
+(Number:)
+[7.22 5 7.78 5 4.44 3.33 2.78]
+xshow
+/Courier 10 F
+1 0 0 -1 48 158.36 Tm
+($)
+[6]
+xshow
+6 0 RM
+(mdate)
+[6 6 6 6 6]
+xshow
+6 0 RM
+(-j)
+[6 6]
+xshow
+6 0 RM
+(2452370)
+[6 6 6 6 6 6 6]
+xshow
+1 0 0 -1 48 170.36 Tm
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+1 0 0 -1 48 182.36 Tm
+(JDN:)
+[6 6 6 6]
+xshow
+6 0 RM
+(2452370.0)
+[6 6 6 6 6 6 6 6
+6]
+xshow
+6 0 RM
+(date:)
+[6 6 6 6 6]
+xshow
+6 0 RM
+(Fri)
+[6 6 6]
+xshow
+6 0 RM
+(05)
+[6 6]
+xshow
+6 0 RM
+(04)
+[6 6]
+xshow
+6 0 RM
+(2002)
+[6 6 6 6]
+xshow
+6 0 RM
+6 0 RM
+(12.19.09.02.05)
+[6 6 6 6 6 6 6 6
+6 6 6 6 6 6]
+xshow
+6 0 RM
+(2)
+[6]
+xshow
+6 0 RM
+(Chik'chan)
+[6 6 6 6 6 6 6 6
+6]
+xshow
+6 0 RM
+6 0 RM
+(03)
+[6 6]
+xshow
+6 0 RM
+(Wayeb)
+[6 6 6 6 6]
+xshow
+1 0 0 -1 48 194.36 Tm
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+/Times-Roman 10 F
+1 0 0 -1 48 216.33 Tm
+(Notice)
+[7.22 5 2.78 2.78 4.44 4.44]
+xshow
+2.5 0 RM
+(that)
+[2.78 5 4.44 2.78]
+xshow
+2.5 0 RM
+(you)
+[5 5 5]
+xshow
+2.5 0 RM
+(can)
+[4.44 4.44 5]
+xshow
+2.5 0 RM
+(leave)
+[2.78 4.44 4.44 5 4.44]
+xshow
+2.5 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.5 0 RM
+(decimal)
+[5 4.44 4.44 2.78 7.78 4.44 2.78]
+xshow
+2.5 0 RM
+(part)
+[5 4.44 3.33 2.78]
+xshow
+2.5 0 RM
+(out)
+[5 5 2.78]
+xshow
+2.5 0 RM
+(if)
+[2.78 3.33]
+xshow
+2.5 0 RM
+(you)
+[5 5 5]
+xshow
+2.5 0 RM
+(wish.)
+[7.22 2.78 3.89 5 2.5]
+xshow
+1 0 0 -1 48 238.33 Tm
+(Finally,)
+[5.56 2.78 5 4.44 2.78 2.78 5 2.5]
+xshow
+3.127 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+3.127 0 RM
+/Times-Bold 10 F
+1 0 0 -1 97.315 238.33 Tm
+(-l,)
+[3.33 2.78 2.5]
+xshow
+3.127 0 RM
+(--longcount[="nn)
+[3.33 3.33 2.78 5 5.56 5 4.44 5
+5.56 5.56 3.33 3.33 5.7 5.55 5.56 5.56]
+xshow
+3.127 0 RM
+(nn)
+[5.56 5.56]
+xshow
+3.127 0 RM
+(nn)
+[5.56 5.56]
+xshow
+3.127 0 RM
+(nn)
+[5.56 5.56]
+xshow
+3.127 0 RM
+(nn"])
+[5.56 5.56 5.55 3.33]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 249.513 238.33 Tm
+3.127 0 RM
+(option)
+[5 5 2.78 2.78 5 5]
+xshow
+3.127 0 RM
+(does)
+[5 5 4.44 3.89]
+xshow
+3.127 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+3.127 0 RM
+(same)
+[3.89 4.44 7.78 4.44]
+xshow
+3.127 0 RM
+(thing)
+[2.78 5 2.78 5 5]
+xshow
+3.127 0 RM
+(with)
+[7.22 2.78 2.78 5]
+xshow
+3.127 0 RM
+(a)
+[4.44]
+xshow
+3.127 0 RM
+(Mayan)
+[8.89 4.44 5 4.44 5]
+xshow
+3.127 0 RM
+(long)
+[2.78 5 5 5]
+xshow
+3.127 0 RM
+(count)
+[4.44 5 5 5 2.78]
+xshow
+1 0 0 -1 48 250.33 Tm
+(date)
+[5 4.44 2.78 4.44]
+xshow
+2.5 0 RM
+(input:)
+[2.78 5 5 5 2.78 2.78]
+xshow
+/Courier 10 F
+1 0 0 -1 48 284.36 Tm
+($)
+[6]
+xshow
+6 0 RM
+(mdate)
+[6 6 6 6 6]
+xshow
+6 0 RM
+(-l)
+[6 6]
+xshow
+6 0 RM
+('12)
+[6 6 6]
+xshow
+6 0 RM
+(19)
+[6 6]
+xshow
+6 0 RM
+(09)
+[6 6]
+xshow
+6 0 RM
+(02)
+[6 6]
+xshow
+6 0 RM
+(05')
+[6 6 6]
+xshow
+1 0 0 -1 48 296.36 Tm
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+1 0 0 -1 48 308.36 Tm
+(JDN:)
+[6 6 6 6]
+xshow
+6 0 RM
+(2452370.0)
+[6 6 6 6 6 6 6 6
+6]
+xshow
+6 0 RM
+(date:)
+[6 6 6 6 6]
+xshow
+6 0 RM
+(Fri)
+[6 6 6]
+xshow
+6 0 RM
+(05)
+[6 6]
+xshow
+6 0 RM
+(04)
+[6 6]
+xshow
+6 0 RM
+(2002)
+[6 6 6 6]
+xshow
+6 0 RM
+6 0 RM
+(12.19.09.02.05)
+[6 6 6 6 6 6 6 6
+6 6 6 6 6 6]
+xshow
+6 0 RM
+(2)
+[6]
+xshow
+6 0 RM
+(Chik'chan)
+[6 6 6 6 6 6 6 6
+6]
+xshow
+6 0 RM
+6 0 RM
+(03)
+[6 6]
+xshow
+6 0 RM
+(Wayeb)
+[6 6 6 6 6]
+xshow
+1 0 0 -1 48 320.36 Tm
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+/Helvetica-Bold 17.28 F
+1 0 0 -1 0 348.783 Tm
+(Miscellaneous)
+[14.394 4.803 9.607 9.607 9.607 4.803 4.803 9.607
+10.558 9.607 10.558 10.558 9.607]
+xshow
+4.803 0 RM
+(Options)
+[13.443 10.558 5.754 4.803 10.558 10.558 9.607]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 48 373.066 Tm
+(The)
+[6.11 5 4.44]
+xshow
+2.5 0 RM
+/Times-Bold 10 F
+1 0 0 -1 66.05 373.066 Tm
+(-h,)
+[3.33 5.56 2.5]
+xshow
+2.5 0 RM
+(--help)
+[3.33 3.33 5.56 4.44 2.78 5.56]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 104.94 373.066 Tm
+2.5 0 RM
+(option)
+[5 5 2.78 2.78 5 5]
+xshow
+2.5 0 RM
+(gives)
+[5 2.78 5 4.44 3.89]
+xshow
+2.5 0 RM
+(a)
+[4.44]
+xshow
+2.5 0 RM
+(simple)
+[3.89 2.78 7.78 5 2.78 4.44]
+xshow
+2.5 0 RM
+(display)
+[5 2.78 3.89 5 2.78 4.44 5]
+xshow
+2.5 0 RM
+(of)
+[5 3.33]
+xshow
+2.5 0 RM
+(help)
+[5 4.44 2.78 5]
+xshow
+2.5 0 RM
+(for)
+[3.33 5 3.33]
+xshow
+2.5 0 RM
+(Mdate.)
+[8.89 5 4.44 2.78 4.44 2.5]
+xshow
+1 0 0 -1 48 395.066 Tm
+(The)
+[6.11 5 4.44]
+xshow
+2.5 0 RM
+/Times-Bold 10 F
+1 0 0 -1 66.05 395.066 Tm
+(-v,)
+[3.33 5 2.5]
+xshow
+2.5 0 RM
+(-V,)
+[3.33 7.22 2.5]
+xshow
+2.5 0 RM
+(--version)
+[3.33 3.33 5 4.44 4.44 3.89 2.78 5
+5.56]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 132.7 395.066 Tm
+2.5 0 RM
+(option)
+[5 5 2.78 2.78 5 5]
+xshow
+2.5 0 RM
+(outputs)
+[5 5 2.78 5 5 2.78 3.89]
+xshow
+2.5 0 RM
+(version)
+[5 4.44 3.33 3.89 2.78 5 5]
+xshow
+2.5 0 RM
+(information)
+[2.78 5 3.33 5 3.33 7.78 4.44 2.78
+2.78 5 5]
+xshow
+2.5 0 RM
+(for)
+[3.33 5 3.33]
+xshow
+2.5 0 RM
+(Mdate.)
+[8.89 5 4.44 2.78 4.44 2.5]
+xshow
+/Helvetica-Bold 20.736 F
+1 0 0 -1 0 426.475 Tm
+(Limitations)
+[12.669 5.764 18.434 5.764 6.905 11.529 6.905 5.764
+12.669 12.669 11.529]
+xshow
+/Times-Roman 10 F
+1 0 0 -1 48 451.949 Tm
+(Mdate)
+[8.89 5 4.44 2.78 4.44]
+xshow
+1.671 0 RM
+(does)
+[5 5 4.44 3.89]
+xshow
+1.671 0 RM
+(not)
+[5 5 2.78]
+xshow
+1.671 0 RM
+(support)
+[3.89 5 5 5 5 3.33 2.78]
+xshow
+1.671 0 RM
+(any)
+[4.44 5 5]
+xshow
+1.671 0 RM
+(dates)
+[5 4.44 2.78 4.44 3.89]
+xshow
+1.671 0 RM
+(beyond)
+[5 4.44 5 5 5 5]
+xshow
+1.671 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+1.671 0 RM
+(beginning)
+[5 4.44 5 2.78 5 5 2.78 5
+5]
+xshow
+1.671 0 RM
+(of)
+[5 3.33]
+xshow
+1.671 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+1.671 0 RM
+(current)
+[4.44 5 3.33 3.33 4.44 5 2.78]
+xshow
+1.671 0 RM
+(epoch)
+[4.44 5 5 4.44 5]
+xshow
+1.671 0 RM
+(\(longcount)
+[3.33 2.78 5 5 5 4.44 5 5
+5 2.78]
+xshow
+1.671 0 RM
+(0.0.0.0.0\))
+[5 2.5 5 2.5 5 2.5 5 2.5
+5 3.33]
+xshow
+1.671 0 RM
+(matching)
+[7.78 4.44 2.78 4.44 5 2.78 5 5]
+xshow
+1 0 0 -1 48 463.949 Tm
+(with)
+[7.22 2.78 2.78 5]
+xshow
+3.676 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+3.676 0 RM
+(Julian)
+[3.89 5 2.78 2.78 4.44 5]
+xshow
+3.676 0 RM
+(Day)
+[7.22 4.44 5]
+xshow
+3.676 0 RM
+(Number)
+[7.22 5 7.78 5 4.44 3.33]
+xshow
+3.676 0 RM
+(correlation,)
+[4.44 5 3.33 3.33 4.44 2.78 4.44 2.78
+2.78 5 5 2.5]
+xshow
+3.676 0 RM
+(including)
+[2.78 5 4.44 2.78 5 5 2.78 5
+5]
+xshow
+3.676 0 RM
+(Gregorian)
+[7.22 3.33 4.44 5 5 3.33 2.78 4.44
+5]
+xshow
+3.676 0 RM
+(dates.)
+[5 4.44 2.78 4.44 3.89 2.5]
+xshow
+3.676 0 RM
+(However,)
+[7.22 5 7.22 4.44 5 4.44 3.33 2.5]
+xshow
+3.676 0 RM
+(you)
+[5 5 5]
+xshow
+3.676 0 RM
+(can)
+[4.44 4.44 5]
+xshow
+3.676 0 RM
+(have)
+[5 4.44 5 4.44]
+xshow
+3.676 0 RM
+(fun)
+[3.33 5 5]
+xshow
+3.676 0 RM
+(with)
+[7.22 2.78 2.78 5]
+xshow
+1 0 0 -1 48 475.949 Tm
+(correlations,)
+[4.44 5 3.33 3.33 4.44 2.78 4.44 2.78
+2.78 5 5 3.89 2.5]
+xshow
+2.5 0 RM
+(for)
+[3.33 5 3.33]
+xshow
+2.5 0 RM
+(example:)
+[4.44 5 4.44 7.78 5 2.78 4.44 2.78]
+xshow
+/Courier 10 F
+1 0 0 -1 48 509.979 Tm
+($)
+[6]
+xshow
+6 0 RM
+(mdate)
+[6 6 6 6 6]
+xshow
+6 0 RM
+(-c)
+[6 6]
+xshow
+6 0 RM
+(584285)
+[6 6 6 6 6 6]
+xshow
+6 0 RM
+(-j)
+[6 6]
+xshow
+6 0 RM
+(584285)
+[6 6 6 6 6 6]
+xshow
+6 0 RM
+('+@J)
+[6 6 6 6]
+xshow
+6 0 RM
+(@d)
+[6 6]
+xshow
+6 0 RM
+(@m)
+[6 6]
+xshow
+6 0 RM
+(@Y)
+[6 6]
+xshow
+6 0 RM
+(@l)
+[6 6]
+xshow
+6 0 RM
+(@h)
+[6 6]
+xshow
+6 0 RM
+(@t')
+[6 6 6]
+xshow
+1 0 0 -1 48 521.979 Tm
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+1 0 0 -1 48 533.979 Tm
+(584285.0)
+[6 6 6 6 6 6 6 6]
+xshow
+6 0 RM
+(13)
+[6 6]
+xshow
+6 0 RM
+(08)
+[6 6]
+xshow
+6 0 RM
+(-3113)
+[6 6 6 6 6]
+xshow
+6 0 RM
+(00.00.00.00.00)
+[6 6 6 6 6 6 6 6
+6 6 6 6 6 6]
+xshow
+6 0 RM
+(8)
+[6]
+xshow
+6 0 RM
+(Kumk'u)
+[6 6 6 6 6 6]
+xshow
+6 0 RM
+6 0 RM
+(04)
+[6 6]
+xshow
+6 0 RM
+('Ahaw)
+[6 6 6 6 6]
+xshow
+1 0 0 -1 48 545.979 Tm
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+6 0 RM
+/Times-Roman 10 F
+1 0 0 -1 48 567.949 Tm
+(However,)
+[7.22 5 7.22 4.44 5 4.44 3.33 2.5]
+xshow
+2.5 0 RM
+(the)
+[2.78 5 4.44]
+xshow
+2.5 0 RM
+(Mayan)
+[8.89 4.44 5 4.44 5]
+xshow
+2.5 0 RM
+(date)
+[5 4.44 2.78 4.44]
+xshow
+2.5 0 RM
+(above)
+[4.44 5 5 5 4.44]
+xshow
+2.5 0 RM
+(is)
+[2.78 3.89]
+xshow
+2.5 0 RM
+(meaningless)
+[7.78 4.44 4.44 5 2.78 5 5 2.78
+4.44 3.89 3.89]
+xshow
+2.5 0 RM
+(:\))
+[2.78 3.33]
+xshow
+ET
+grestore
+grestore
+%FOPEndRegionViewport
+showpage
+%%PageTrailer
+%%PageResources: font Times-Bold
+%%+ font Helvetica-Bold
+%%+ font Times-Roman
+%%+ font Courier
+%%+ procset (Apache XML Graphics Std ProcSet) 1.0 0
+%%Trailer
+%%Pages: 5
+%%BoundingBox: 0 0 612 792
+%%HiResBoundingBox: 0 0 612 792
+%%DocumentNeededResources: font Times-Bold
+%%+ font Helvetica-Bold
+%%+ font Times-Roman
+%%+ font Courier
+%%+ font Helvetica
+%%DocumentSuppliedResources: encoding WinAnsiEncoding
+%%+ procset (Apache XML Graphics EPS ProcSet) 1.0 0
+%%+ procset (Apache XML Graphics Std ProcSet) 1.0 0
+%%EOF

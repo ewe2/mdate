@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="classmdate" kind="class" prot="public">
+    <compoundname>mdate</compoundname>
+    <basecompoundref refid="classlongdate" prot="public" virt="non-virtual">longdate</basecompoundref>
+    <basecompoundref refid="classgregdate" prot="private" virt="non-virtual">gregdate</basecompoundref>
+    <basecompoundref refid="classhaabdate" prot="private" virt="non-virtual">haabdate</basecompoundref>
+    <basecompoundref refid="classtzolkindate" prot="private" virt="non-virtual">tzolkindate</basecompoundref>
+    <basecompoundref refid="classjulian" prot="private" virt="non-virtual">julian</basecompoundref>
+    <includes refid="mdate_8h" local="no">mdate.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmdate_1a8aef8fcbf47eba075fb959ac3eb5dc85" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mdate::pflag</definition>
+        <argsstring></argsstring>
+        <name>pflag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="212" bodyfile="/home/ewe2/devel/mdate/mdate.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmdate_1a4ff76fd82a8834038357c32cd2eb4621" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mdate::mdate</definition>
+        <argsstring>(void)</argsstring>
+        <name>mdate</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="207" bodyfile="/home/ewe2/devel/mdate/mdate.h" bodystart="224" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classmdate_1a75467f36d045e17436f51493f6518dc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mdate::gregdate_from_jdate</definition>
+        <argsstring>(corr c, julian_date from, gregdate *to)</argsstring>
+        <name>gregdate_from_jdate</name>
+        <param>
+          <type><ref refid="mdate_8h_1aa480c491d51df64ec4de7d2b35d0343f" kindref="member">corr</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="mdate_8h_1a77a333d1063792890537f00e3f3d1328" kindref="member">julian_date</ref></type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classgregdate" kindref="compound">gregdate</ref> *</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="215" bodyfile="/home/ewe2/devel/mdate/mdate.cpp" bodystart="161" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classmdate_1aadb84c0222eb71c3acc27c9e9f554b14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mdate::jdate_from_gregdate</definition>
+        <argsstring>(corr c, gregdate from, julian_date *to)</argsstring>
+        <name>jdate_from_gregdate</name>
+        <param>
+          <type><ref refid="mdate_8h_1aa480c491d51df64ec4de7d2b35d0343f" kindref="member">corr</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="classgregdate" kindref="compound">gregdate</ref></type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="mdate_8h_1a77a333d1063792890537f00e3f3d1328" kindref="member">julian_date</ref> *</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="216" bodyfile="/home/ewe2/devel/mdate/mdate.cpp" bodystart="190" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classmdate_1a8f7f73c050d55660225bf5106c0014d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mdate::jdate_from_tm</definition>
+        <argsstring>(corr c, struct tm from, julian_date *to)</argsstring>
+        <name>jdate_from_tm</name>
+        <param>
+          <type><ref refid="mdate_8h_1aa480c491d51df64ec4de7d2b35d0343f" kindref="member">corr</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>struct tm</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="mdate_8h_1a77a333d1063792890537f00e3f3d1328" kindref="member">julian_date</ref> *</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="217" bodyfile="/home/ewe2/devel/mdate/mdate.cpp" bodystart="145" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classmdate_1a2b6bdd0bcd1864b12e4f8fe74fab1b3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mdate::jdate_from_longcount</definition>
+        <argsstring>(corr c, longdate from, julian_date *to)</argsstring>
+        <name>jdate_from_longcount</name>
+        <param>
+          <type><ref refid="mdate_8h_1aa480c491d51df64ec4de7d2b35d0343f" kindref="member">corr</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="classlongdate" kindref="compound">longdate</ref></type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="mdate_8h_1a77a333d1063792890537f00e3f3d1328" kindref="member">julian_date</ref> *</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="218" bodyfile="/home/ewe2/devel/mdate/mdate.cpp" bodystart="345" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classmdate_1a45098659942fa229bfcae9e0c30fefaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mdate::mdate_strftime</definition>
+        <argsstring>(corr c, std::stringstream *to, const char *format, julian_date thedate)</argsstring>
+        <name>mdate_strftime</name>
+        <param>
+          <type><ref refid="mdate_8h_1aa480c491d51df64ec4de7d2b35d0343f" kindref="member">corr</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>std::stringstream *</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type><ref refid="mdate_8h_1a77a333d1063792890537f00e3f3d1328" kindref="member">julian_date</ref></type>
+          <declname>thedate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="219" bodyfile="/home/ewe2/devel/mdate/mdate.cpp" bodystart="504" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="classmdate_1adbbd0019300bd6fda6613188390db212" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mdate::set_time</definition>
+        <argsstring>(corr c, julian_date *to)</argsstring>
+        <name>set_time</name>
+        <param>
+          <type><ref refid="mdate_8h_1aa480c491d51df64ec4de7d2b35d0343f" kindref="member">corr</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="mdate_8h_1a77a333d1063792890537f00e3f3d1328" kindref="member">julian_date</ref> *</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="220" bodyfile="/home/ewe2/devel/mdate/mdate.cpp" bodystart="633" bodyend="646"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="14">
+        <label>mdate</label>
+        <link refid="classmdate"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="private-inheritance">
+        </childnode>
+        <childnode refid="17" relation="private-inheritance">
+        </childnode>
+        <childnode refid="18" relation="private-inheritance">
+        </childnode>
+        <childnode refid="19" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>longdate</label>
+        <link refid="classlongdate"/>
+      </node>
+      <node id="17">
+        <label>haabdate</label>
+        <link refid="classhaabdate"/>
+      </node>
+      <node id="18">
+        <label>tzolkindate</label>
+        <link refid="classtzolkindate"/>
+      </node>
+      <node id="16">
+        <label>gregdate</label>
+        <link refid="classgregdate"/>
+      </node>
+      <node id="19">
+        <label>julian</label>
+        <link refid="classjulian"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="20">
+        <label>mdate</label>
+        <link refid="classmdate"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+        <childnode refid="22" relation="private-inheritance">
+        </childnode>
+        <childnode refid="23" relation="private-inheritance">
+        </childnode>
+        <childnode refid="24" relation="private-inheritance">
+        </childnode>
+        <childnode refid="25" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>longdate</label>
+        <link refid="classlongdate"/>
+      </node>
+      <node id="23">
+        <label>haabdate</label>
+        <link refid="classhaabdate"/>
+      </node>
+      <node id="24">
+        <label>tzolkindate</label>
+        <link refid="classtzolkindate"/>
+      </node>
+      <node id="22">
+        <label>gregdate</label>
+        <link refid="classgregdate"/>
+      </node>
+      <node id="25">
+        <label>julian</label>
+        <link refid="classjulian"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ewe2/devel/mdate/mdate.h" line="204" bodyfile="/home/ewe2/devel/mdate/mdate.h" bodystart="204" bodyend="221"/>
+    <listofallmembers>
+      <member refid="classjulian_1a318fc8e74197dcf00fc5b429a34320ca" prot="private" virt="non-virtual"><scope>mdate</scope><name>corr_set</name></member>
+      <member refid="classlongdate_1ad42081ca01c07543bab305cbed08570e" prot="public" virt="non-virtual" ambiguityscope="longdate::"><scope>mdate</scope><name>gregdate</name></member>
+      <member refid="classgregdate_1a5b657c34269f9d1247b04c6a94ff328d" prot="private" virt="non-virtual" ambiguityscope="gregdate::"><scope>mdate</scope><name>gregdate</name></member>
+      <member refid="classmdate_1a75467f36d045e17436f51493f6518dc7" prot="public" virt="non-virtual"><scope>mdate</scope><name>gregdate_from_jdate</name></member>
+      <member refid="classgregdate_1accd8cc5622f583157f84cd926b25bf72" prot="private" virt="non-virtual"><scope>mdate</scope><name>gregdate_sstr</name></member>
+      <member refid="classgregdate_1a4a39294a22ed6c033c725c769e480de8" prot="private" virt="non-virtual"><scope>mdate</scope><name>gregdate_tostr</name></member>
+      <member refid="classgregdate_1a25c3aba20144a807cadeaf766ed178b1" prot="private" virt="non-virtual"><scope>mdate</scope><name>gregdate_tostr</name></member>
+      <member refid="classgregdate_1a02487efb588ca55e0f43e284324bb385" prot="private" virt="non-virtual"><scope>mdate</scope><name>gregdate_weekday</name></member>
+      <member refid="classgregdate_1af04d56abe4f25069950c090eaa3c479e" prot="private" virt="non-virtual"><scope>mdate</scope><name>gregday_str</name></member>
+      <member refid="classgregdate_1ab05124cab2f4b7af18df7b9a8b8b7705" prot="private" virt="non-virtual"><scope>mdate</scope><name>gregorian_leap_year</name></member>
+      <member refid="classhaabdate_1a906b7a95f1ef3917665d997a4076f135" prot="private" virt="non-virtual"><scope>mdate</scope><name>haabdate</name></member>
+      <member refid="classhaabdate_1a3416d804d34eab02b309dfb308d83f67" prot="private" virt="non-virtual"><scope>mdate</scope><name>haabdate_from_jdate</name></member>
+      <member refid="classhaabdate_1a77f6c1de3d7738e4300a885dc6f17c1e" prot="private" virt="non-virtual"><scope>mdate</scope><name>haabdate_tostr</name></member>
+      <member refid="classhaabdate_1a53cd6602db19a69a6d9372a782ce19aa" prot="private" virt="non-virtual"><scope>mdate</scope><name>haabdate_tostr</name></member>
+      <member refid="classhaabdate_1a68bf6d48e55efbd93af57c756fa68823" prot="private" virt="non-virtual"><scope>mdate</scope><name>haabmonth_str</name></member>
+      <member refid="classgregdate_1afa7258dda92aab04ce365d7dcafaf747" prot="private" virt="non-virtual"><scope>mdate</scope><name>is_valid_gregdate</name></member>
+      <member refid="classjulian_1abd0bdfcb90e045aa89f08ffd4d2c7f29" prot="private" virt="non-virtual"><scope>mdate</scope><name>is_valid_jdate</name></member>
+      <member refid="classmdate_1aadb84c0222eb71c3acc27c9e9f554b14" prot="public" virt="non-virtual"><scope>mdate</scope><name>jdate_from_gregdate</name></member>
+      <member refid="classjulian_1a81218a52a69b59a1d67c1ec7e270ca33" prot="private" virt="non-virtual"><scope>mdate</scope><name>jdate_from_jd</name></member>
+      <member refid="classmdate_1a2b6bdd0bcd1864b12e4f8fe74fab1b3b" prot="public" virt="non-virtual"><scope>mdate</scope><name>jdate_from_longcount</name></member>
+      <member refid="classmdate_1a8f7f73c050d55660225bf5106c0014d2" prot="public" virt="non-virtual"><scope>mdate</scope><name>jdate_from_tm</name></member>
+      <member refid="classjulian_1a7a722d44dca824f095d08411bdd09ce0" prot="private" virt="non-virtual"><scope>mdate</scope><name>jdate_tostr</name></member>
+      <member refid="classjulian_1a5acf96305079bab0e00135384dbedb3b" prot="private" virt="non-virtual"><scope>mdate</scope><name>jdate_tostr</name></member>
+      <member refid="classlongdate_1a23c34cd307c2d67207393ae8c4e5411e" prot="public" virt="non-virtual" ambiguityscope="longdate::"><scope>mdate</scope><name>julian</name></member>
+      <member refid="classjulian_1aaa6c0bcafec0f1820152f4fa3b23c426" prot="private" virt="non-virtual" ambiguityscope="julian::"><scope>mdate</scope><name>julian</name></member>
+      <member refid="classlongdate_1affd811e30958170adf3aa874373a5a76" prot="public" virt="non-virtual"><scope>mdate</scope><name>longcount_from_jdate</name></member>
+      <member refid="classlongdate_1a0d6bc95d400e08f2b31096c2244bd23f" prot="public" virt="non-virtual"><scope>mdate</scope><name>longcount_tostr</name></member>
+      <member refid="classlongdate_1ad13eb0ad11ba9d8ad9045a90e4d64604" prot="public" virt="non-virtual" ambiguityscope="longdate::"><scope>mdate</scope><name>longdate</name></member>
+      <member refid="classjulian_1a0bc390520196c2bceb95df9b8373485f" prot="private" virt="non-virtual" ambiguityscope="julian::"><scope>mdate</scope><name>longdate</name></member>
+      <member refid="classmdate_1a4ff76fd82a8834038357c32cd2eb4621" prot="public" virt="non-virtual"><scope>mdate</scope><name>mdate</name></member>
+      <member refid="classlongdate_1aa1d735148f6cba1d928f28633359e5c8" prot="public" virt="non-virtual" ambiguityscope="longdate::"><scope>mdate</scope><name>mdate</name></member>
+      <member refid="classgregdate_1aa1d735148f6cba1d928f28633359e5c8" prot="private" virt="non-virtual" ambiguityscope="gregdate::"><scope>mdate</scope><name>mdate</name></member>
+      <member refid="classjulian_1aa1d735148f6cba1d928f28633359e5c8" prot="private" virt="non-virtual" ambiguityscope="julian::"><scope>mdate</scope><name>mdate</name></member>
+      <member refid="classmdate_1a45098659942fa229bfcae9e0c30fefaf" prot="public" virt="non-virtual"><scope>mdate</scope><name>mdate_strftime</name></member>
+      <member refid="classmdate_1a8aef8fcbf47eba075fb959ac3eb5dc85" prot="public" virt="non-virtual"><scope>mdate</scope><name>pflag</name></member>
+      <member refid="classjulian_1ae9f58e99ff99b16f1e0cdbf8afa0408f" prot="private" virt="non-virtual"><scope>mdate</scope><name>set_correlation</name></member>
+      <member refid="classgregdate_1aa8147581a4a6395bad1d017e45e683f2" prot="private" virt="non-virtual"><scope>mdate</scope><name>set_gregdate</name></member>
+      <member refid="classlongdate_1a44d77cd530be25904868e7af2cd61506" prot="public" virt="non-virtual"><scope>mdate</scope><name>set_longdate</name></member>
+      <member refid="classmdate_1adbbd0019300bd6fda6613188390db212" prot="public" virt="non-virtual"><scope>mdate</scope><name>set_time</name></member>
+      <member refid="classtzolkindate_1aad494f2b2c7b74479b359b62f960b3bb" prot="private" virt="non-virtual"><scope>mdate</scope><name>tzolkindate</name></member>
+      <member refid="classtzolkindate_1a955e4b3b102821c808d377d2bcd1bdd3" prot="private" virt="non-virtual"><scope>mdate</scope><name>tzolkindate_from_jdate</name></member>
+      <member refid="classtzolkindate_1af102301352860ed664646348a80b8f19" prot="private" virt="non-virtual"><scope>mdate</scope><name>tzolkindate_tostr</name></member>
+      <member refid="classtzolkindate_1aab1da79dbd4182ad070f1974c54f52cd" prot="private" virt="non-virtual"><scope>mdate</scope><name>tzolkindate_tostr</name></member>
+      <member refid="classtzolkindate_1a0b2cee3829d1a41aaf2f8b406aa01589" prot="private" virt="non-virtual"><scope>mdate</scope><name>tzolkinmonth_str</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
