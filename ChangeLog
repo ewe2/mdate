@@ -8,13 +8,312 @@
 
 -- 
 
+commit 05d398763d20152b58f865e374e433b2fc064bcd
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Sun Mar 27 02:42:24 2011 +1100
+
+    Documentation targets and structure overhaul.
+    
+    New doc/ subdirectory and submake added. This doesn't alter the main Makefile too much.
+    Added Doxygen API target and pregenerated documentation. Fixed a bug in the main xml target.
+
+Makefile
+db2fo
+db2html
+doc/Doxyfile
+doc/Makefile
+doc/db2fo
+doc/db2html
+doc/doxygen_log.txt
+doc/html/annotated.html
+doc/html/bc_s.png
+doc/html/bparse_8cpp.html
+doc/html/classes.html
+doc/html/classgregdate-members.html
+doc/html/classgregdate.html
+doc/html/classgregdate.png
+doc/html/classhaabdate-members.html
+doc/html/classhaabdate.html
+doc/html/classhaabdate.png
+doc/html/classjulian-members.html
+doc/html/classjulian.html
+doc/html/classjulian.png
+doc/html/classlongdate-members.html
+doc/html/classlongdate.html
+doc/html/classlongdate.png
+doc/html/classmdate-members.html
+doc/html/classmdate.html
+doc/html/classmdate.png
+doc/html/classtzolkindate-members.html
+doc/html/classtzolkindate.html
+doc/html/classtzolkindate.png
+doc/html/closed.png
+doc/html/cmdline_8cpp.html
+doc/html/cmdline_8h.html
+doc/html/cmdline_8h_source.html
+doc/html/config_8h.html
+doc/html/config_8h_source.html
+doc/html/de_8h.html
+doc/html/de_8h_source.html
+doc/html/doxygen.css
+doc/html/doxygen.png
+doc/html/en_8h.html
+doc/html/en_8h_source.html
+doc/html/es_8h.html
+doc/html/es_8h_source.html
+doc/html/files.html
+doc/html/fr_8h.html
+doc/html/fr_8h_source.html
+doc/html/functions.html
+doc/html/functions_func.html
+doc/html/functions_rela.html
+doc/html/functions_vars.html
+doc/html/getopt1_8c.html
+doc/html/getopt_8c.html
+doc/html/getopt_8h.html
+doc/html/getopt_8h_source.html
+doc/html/globals.html
+doc/html/globals_defs.html
+doc/html/globals_eval.html
+doc/html/globals_func.html
+doc/html/globals_type.html
+doc/html/globals_vars.html
+doc/html/hierarchy.html
+doc/html/index.html
+doc/html/installdox
+doc/html/lang_8cpp.html
+doc/html/lang_8h.html
+doc/html/lang_8h_source.html
+doc/html/main_8cpp.html
+doc/html/mdate_8cpp.html
+doc/html/mdate_8h.html
+doc/html/mdate_8h_source.html
+doc/html/names_8h.html
+doc/html/names_8h_source.html
+doc/html/nav_f.png
+doc/html/nav_h.png
+doc/html/open.png
+doc/html/pl_8h.html
+doc/html/pl_8h_source.html
+doc/html/search/all_5f.html
+doc/html/search/all_61.html
+doc/html/search/all_62.html
+doc/html/search/all_63.html
+doc/html/search/all_64.html
+doc/html/search/all_65.html
+doc/html/search/all_66.html
+doc/html/search/all_67.html
+doc/html/search/all_68.html
+doc/html/search/all_69.html
+doc/html/search/all_6a.html
+doc/html/search/all_6c.html
+doc/html/search/all_6d.html
+doc/html/search/all_6e.html
+doc/html/search/all_6f.html
+doc/html/search/all_70.html
+doc/html/search/all_72.html
+doc/html/search/all_73.html
+doc/html/search/all_74.html
+doc/html/search/all_76.html
+doc/html/search/classes_67.html
+doc/html/search/classes_68.html
+doc/html/search/classes_6a.html
+doc/html/search/classes_6c.html
+doc/html/search/classes_6d.html
+doc/html/search/classes_6f.html
+doc/html/search/classes_74.html
+doc/html/search/close.png
+doc/html/search/defines_5f.html
+doc/html/search/defines_61.html
+doc/html/search/defines_63.html
+doc/html/search/defines_64.html
+doc/html/search/defines_67.html
+doc/html/search/defines_68.html
+doc/html/search/defines_6c.html
+doc/html/search/defines_6d.html
+doc/html/search/defines_6e.html
+doc/html/search/defines_6f.html
+doc/html/search/defines_70.html
+doc/html/search/defines_72.html
+doc/html/search/defines_73.html
+doc/html/search/defines_76.html
+doc/html/search/enumvalues_70.html
+doc/html/search/enumvalues_72.html
+doc/html/search/files_62.html
+doc/html/search/files_63.html
+doc/html/search/files_64.html
+doc/html/search/files_65.html
+doc/html/search/files_66.html
+doc/html/search/files_67.html
+doc/html/search/files_6c.html
+doc/html/search/files_6d.html
+doc/html/search/files_6e.html
+doc/html/search/files_70.html
+doc/html/search/files_73.html
+doc/html/search/functions_5f.html
+doc/html/search/functions_63.html
+doc/html/search/functions_67.html
+doc/html/search/functions_68.html
+doc/html/search/functions_69.html
+doc/html/search/functions_6a.html
+doc/html/search/functions_6c.html
+doc/html/search/functions_6d.html
+doc/html/search/functions_6f.html
+doc/html/search/functions_73.html
+doc/html/search/functions_74.html
+doc/html/search/functions_76.html
+doc/html/search/mag_sel.png
+doc/html/search/nomatches.html
+doc/html/search/related_67.html
+doc/html/search/related_6a.html
+doc/html/search/related_6c.html
+doc/html/search/related_6d.html
+doc/html/search/search.css
+doc/html/search/search.js
+doc/html/search/search_l.png
+doc/html/search/search_m.png
+doc/html/search/search_r.png
+doc/html/search/typedefs_63.html
+doc/html/search/typedefs_6a.html
+doc/html/search/variables_5f.html
+doc/html/search/variables_63.html
+doc/html/search/variables_64.html
+doc/html/search/variables_65.html
+doc/html/search/variables_66.html
+doc/html/search/variables_67.html
+doc/html/search/variables_68.html
+doc/html/search/variables_6a.html
+doc/html/search/variables_6c.html
+doc/html/search/variables_6d.html
+doc/html/search/variables_6e.html
+doc/html/search/variables_6f.html
+doc/html/search/variables_70.html
+doc/html/search/variables_73.html
+doc/html/search/variables_76.html
+doc/html/snprintf_8c.html
+doc/html/structgengetopt__args__info-members.html
+doc/html/structgengetopt__args__info.html
+doc/html/structoption-members.html
+doc/html/structoption.html
+doc/html/tab_a.png
+doc/html/tab_b.png
+doc/html/tab_h.png
+doc/html/tab_s.png
+doc/html/tabs.css
+doc/mdate.1
+doc/mdate.html
+doc/mdate.pdf
+doc/mdate.ps
+doc/mdate.txt
+doc/mdate.xml
+doc/mdate.xpr
+doc/mdate_pl.sgml
+doc/xml/bparse_8cpp.xml
+doc/xml/classgregdate.xml
+doc/xml/classhaabdate.xml
+doc/xml/classjulian.xml
+doc/xml/classlongdate.xml
+doc/xml/classmdate.xml
+doc/xml/classtzolkindate.xml
+doc/xml/cmdline_8cpp.xml
+doc/xml/cmdline_8h.xml
+doc/xml/combine.xslt
+doc/xml/compound.xsd
+doc/xml/config_8h.xml
+doc/xml/de_8h.xml
+doc/xml/en_8h.xml
+doc/xml/es_8h.xml
+doc/xml/fr_8h.xml
+doc/xml/getopt1_8c.xml
+doc/xml/getopt_8c.xml
+doc/xml/getopt_8h.xml
+doc/xml/index.xml
+doc/xml/index.xsd
+doc/xml/lang_8cpp.xml
+doc/xml/lang_8h.xml
+doc/xml/main_8cpp.xml
+doc/xml/mdate_8cpp.xml
+doc/xml/mdate_8h.xml
+doc/xml/names_8h.xml
+doc/xml/namespacestd.xml
+doc/xml/pl_8h.xml
+doc/xml/snprintf_8c.xml
+doc/xml/structgengetopt__args__info.xml
+doc/xml/structoption.xml
+mdate.1
+mdate.html
+mdate.pdf
+mdate.ps
+mdate.txt
+mdate.xml
+mdate.xpr
+mdate_pl.sgml
+
+commit f5954d14b186301a40e5a9f2948fd8f9294c2271
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Fri Mar 4 00:40:11 2011 +1100
+
+    more parsing work
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+bparse.cpp
+
+commit fb10ed60bd00c065e42c91fee549b14b9f18210d
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Wed Mar 2 17:52:29 2011 +1100
+
+    fixed email
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+AUTHORS
+
+commit 8a96bc548b55c7a344b512224aa65466b262a672
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Wed Mar 2 17:48:39 2011 +1100
+
+    copyright added
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+bparse.cpp
+
+commit 88dfa677fa99c7da9b8cc4a8105b1ec41454138a
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Wed Mar 2 17:46:41 2011 +1100
+
+    skeleton boost-based parser to enable config file handling
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+bparse.cpp
+
+commit 856ee5245f0c680e49b329028807721584975441
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Wed Mar 2 17:46:08 2011 +1100
+
+    doc fix
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+TODO
+
+commit 7a662b2ecf71a2f9058a0a14999d68854e10ec26
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Wed Mar 2 01:02:08 2011 +1100
+
+    ChangeLog update
+
+ChangeLog
+
 commit 7917045349f464aac30438510c489ece67d01290
 Author: Sean Dwyer <ewetoo@gmail.com>
 Date:   Wed Mar 2 00:30:28 2011 +1100
 
     versioning for 1.7.x
     
-	Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
 
 Makefile
 NEWS
@@ -30,7 +329,7 @@ Author: Sean Dwyer <ewetoo@gmail.com>
 Date:   Tue Mar 1 23:29:04 2011 +1100
 
     removed README.devel
-   
+    
     Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
 
 README.devel
