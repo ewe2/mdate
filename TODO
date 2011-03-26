@@ -44,6 +44,9 @@ mdate.xml
 Makefile (also requires change to mdate-1-5-x)
 mdate.1
 
+Move to asciidoc format to ease multiformat output and simplify updates (eg by
+simple substitution).
+
 Code:
 
 change our correlation possibilities to GMT1 (standard GMT),GMT2,GMT3(Lounsbury) 
