@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="en_8h" kind="file">
+    <compoundname>en.h</compoundname>
+    <includedby refid="lang_8cpp" local="yes">/home/ewe2/devel/mdate/lang.cpp</includedby>
+    <invincdepgraph>
+      <node id="43">
+        <label>/home/ewe2/devel/mdate/lang.cpp</label>
+        <link refid="lang_8cpp"/>
+      </node>
+      <node id="42">
+        <label>/home/ewe2/devel/mdate/en.h</label>
+        <link refid="en.h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="en_8h_1a55ce7ef90881852fdd4e07c900d70866" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* EN_MSG_CERR</definition>
+        <argsstring></argsstring>
+        <name>EN_MSG_CERR</name>
+        <initializer>&quot;Mdate: `--correlation&apos; (`-c&apos;) <ref refid="structoption" kindref="compound">option</ref> given more than once\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/en.h" line="61" bodyfile="/home/ewe2/devel/mdate/en.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="en_8h_1aceec42ff032222421fd6eadbc970fd0e" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* EN_MSG_DERR</definition>
+        <argsstring></argsstring>
+        <name>EN_MSG_DERR</name>
+        <initializer>&quot;Mdate: `--dmy&apos; (`-d&apos;) <ref refid="structoption" kindref="compound">option</ref> given more than once\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/en.h" line="62" bodyfile="/home/ewe2/devel/mdate/en.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="en_8h_1a671c780c1916f21a2eb24d8d4cdd81ae" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* EN_MSG_JERR</definition>
+        <argsstring></argsstring>
+        <name>EN_MSG_JERR</name>
+        <initializer>&quot;Mdate: `--<ref refid="classjulian" kindref="compound">julian</ref>&apos; (`-j&apos;) <ref refid="structoption" kindref="compound">option</ref> given more than once\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/en.h" line="63" bodyfile="/home/ewe2/devel/mdate/en.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="en_8h_1a49a9282dc8bac6184c9466879dd46a74" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* EN_MSG_LERR</definition>
+        <argsstring></argsstring>
+        <name>EN_MSG_LERR</name>
+        <initializer>&quot;Mdate: `--longcount&apos; (`-l&apos;) <ref refid="structoption" kindref="compound">option</ref> given more than once\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/en.h" line="64" bodyfile="/home/ewe2/devel/mdate/en.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="en_8h_1afe1ca6627fa4ba802f6cc48c8f90fd28" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* EN_MSG_OPTERR</definition>
+        <argsstring></argsstring>
+        <name>EN_MSG_OPTERR</name>
+        <initializer>&quot;Mdate: <ref refid="structoption" kindref="compound">option</ref> unknown: &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/en.h" line="65" bodyfile="/home/ewe2/devel/mdate/en.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="en_8h_1a4278faabbaffad2c557370c5f1473dc6" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* EN_MSG_NONOPTERR</definition>
+        <argsstring></argsstring>
+        <name>EN_MSG_NONOPTERR</name>
+        <initializer>&quot;Too many non-<ref refid="structoption" kindref="compound">option</ref> arguments!\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/en.h" line="66" bodyfile="/home/ewe2/devel/mdate/en.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="en_8h_1aca4dbc1ee16b63caa83106b52bc6fc67" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* EN_MSG_LONGERR</definition>
+        <argsstring></argsstring>
+        <name>EN_MSG_LONGERR</name>
+        <initializer>&quot;Invalid LongCount specified!\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/en.h" line="67" bodyfile="/home/ewe2/devel/mdate/en.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="en_8h_1a3cc7d97a997f014c11bbb08ac10acebc" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* EN_MSG_GENERR</definition>
+        <argsstring></argsstring>
+        <name>EN_MSG_GENERR</name>
+        <initializer>&quot;error!\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/en.h" line="68" bodyfile="/home/ewe2/devel/mdate/en.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="en_8h_1a788c92d0111e438e063114832b505801" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* EN_MSG_ILC</definition>
+        <argsstring></argsstring>
+        <name>EN_MSG_ILC</name>
+        <initializer>&quot;Invalid Long Count entered!\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/en.h" line="69" bodyfile="/home/ewe2/devel/mdate/en.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="en_8h_1aa78a00b6d8a2ec48fb98fb2c83524d4a" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* EN_MSG_IGD</definition>
+        <argsstring></argsstring>
+        <name>EN_MSG_IGD</name>
+        <initializer>&quot;Invalid Gregorian Date entered!\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/en.h" line="70" bodyfile="/home/ewe2/devel/mdate/en.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="en_8h_1a10f7d9dc0d63f935c3c98143f5636e57" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* EN_MSG_IJDN</definition>
+        <argsstring></argsstring>
+        <name>EN_MSG_IJDN</name>
+        <initializer>&quot;Invalid Julian Day Number entered!\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/en.h" line="71" bodyfile="/home/ewe2/devel/mdate/en.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="en_8h_1a47c056329997f2625d7c1320b090e0bb" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* EN_MSG_FORMATERR</definition>
+        <argsstring></argsstring>
+        <name>EN_MSG_FORMATERR</name>
+        <initializer>&quot;Unknown format!\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/en.h" line="72" bodyfile="/home/ewe2/devel/mdate/en.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="en_8h_1af0a920297e1faeb1627e9235f474c77b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char en_pretty_format[]</type>
+        <definition>static char en_pretty_format [] __attribute__</definition>
+        <argsstring>((unused))</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(unused)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/en.h" line="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>DEFAULT<sp/>TRANSLATION.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Things<sp/>that<sp/>are<sp/>NOT<sp/>translatable:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>at<sp/>present,<sp/>NO<sp/>Mayan<sp/>names,<sp/>printf<sp/>formats,<sp/>program<sp/>options<sp/>or<sp/>CVS<sp/>ids!!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>English<sp/>translation<sp/>strings.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>follows<sp/>the<sp/>mplayer<sp/>translation<sp/>string<sp/>system.<sp/>Please<sp/>add<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>version<sp/>your<sp/>translation<sp/>is<sp/>synced<sp/>for<sp/>below<sp/>to<sp/>help<sp/>keep<sp/>things<sp/>updated.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>version<sp/>1.5.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>$Id$</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>=============================<sp/>Mdate<sp/>help<sp/>===============================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>STATIC_HELP</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>en_helptext[]<sp/>__attribute__<sp/>((unused))<sp/>=</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Mdate<sp/>outputs<sp/>simple<sp/>Mayan<sp/>dates.\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Usage:<sp/>mdate<sp/>[OPTION]...<sp/>[+FORMAT]\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>-h,<sp/>--help<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Print<sp/>help<sp/>and<sp/>exit\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>-V,<sp/>--version<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Print<sp/>version<sp/>and<sp/>exit\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>-p,<sp/>--parseable<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>program-parseable<sp/>output<sp/>(default=off)\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>-g,<sp/>--gmt<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>use<sp/>gmt<sp/>correlation<sp/>(default=on)\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>-L,<sp/>--lang=LANGUAGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>change<sp/>language<sp/>(default<sp/>en)\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>-c,<sp/>--correlation=DOUBLE<sp/><sp/>optional<sp/>correlation<sp/>(default=no)\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>-d,<sp/>--dmy=STRING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>day<sp/>month<sp/>year<sp/>(Gregorian)\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>-j,<sp/>--julian=DOUBLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>julian<sp/>day<sp/>number\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>-l,<sp/>--longcount=STRING<sp/><sp/><sp/><sp/>long<sp/>count\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Valid<sp/>LANGUAGE<sp/>identifiers<sp/>are:\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>en<sp/>English\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>es<sp/>Spanish\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>pl<sp/>Polish\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>de<sp/>German\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>fr<sp/>French\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Valid<sp/>FORMAT<sp/>identifiers<sp/>are:\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@a<sp/>abbreviated<sp/>weekday<sp/>name\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@A<sp/>full<sp/>weekday<sp/>name\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@b<sp/>abbreviated<sp/>month<sp/>name\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@B<sp/>full<sp/>month<sp/>name\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@d<sp/>weekday<sp/>(01..31)\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@e<sp/>weekday<sp/>without<sp/>a<sp/>leading<sp/>zero<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@F<sp/>ISO<sp/>format<sp/>Gregorian<sp/>date<sp/>(%Y-%m-%d)\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@f<sp/>ISO<sp/>format<sp/>Gregorian<sp/>date<sp/>(%Y%m%d)\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@h<sp/>unpadded<sp/>Haab<sp/>date\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@H<sp/>padded<sp/>Haab<sp/>date\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@l<sp/>Long<sp/>Count\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@M<sp/>named<sp/>Gregorian<sp/>month\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@m<sp/>numbered<sp/>Gregorian<sp/>month\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@T<sp/>padded<sp/>Tzolkin<sp/>date\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@t<sp/>unpadded<sp/>Tzolkin<sp/>date\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@y<sp/>year<sp/>as<sp/>decimal<sp/>00<sp/>to<sp/>99\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@Y<sp/>Gregorian<sp/>year\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@n<sp/>add<sp/>a<sp/>newline<sp/>to<sp/>the<sp/>output\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;<sp/><sp/>@j<sp/>add<sp/>a<sp/>tab<sp/>to<sp/>the<sp/>output\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/>=============================<sp/>Mdate<sp/>messages<sp/>===========================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="en_8h_1a55ce7ef90881852fdd4e07c900d70866" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="en_8h_1a55ce7ef90881852fdd4e07c900d70866" kindref="member">EN_MSG_CERR</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Mdate:<sp/>`--correlation&apos;<sp/>(`-c&apos;)<sp/>option<sp/>given<sp/>more<sp/>than<sp/>once\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62" refid="en_8h_1aceec42ff032222421fd6eadbc970fd0e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="en_8h_1aceec42ff032222421fd6eadbc970fd0e" kindref="member">EN_MSG_DERR</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Mdate:<sp/>`--dmy&apos;<sp/>(`-d&apos;)<sp/>option<sp/>given<sp/>more<sp/>than<sp/>once\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63" refid="en_8h_1a671c780c1916f21a2eb24d8d4cdd81ae" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="en_8h_1a671c780c1916f21a2eb24d8d4cdd81ae" kindref="member">EN_MSG_JERR</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Mdate:<sp/>`--julian&apos;<sp/>(`-j&apos;)<sp/>option<sp/>given<sp/>more<sp/>than<sp/>once\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64" refid="en_8h_1a49a9282dc8bac6184c9466879dd46a74" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="en_8h_1a49a9282dc8bac6184c9466879dd46a74" kindref="member">EN_MSG_LERR</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Mdate:<sp/>`--longcount&apos;<sp/>(`-l&apos;)<sp/>option<sp/>given<sp/>more<sp/>than<sp/>once\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65" refid="en_8h_1afe1ca6627fa4ba802f6cc48c8f90fd28" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="en_8h_1afe1ca6627fa4ba802f6cc48c8f90fd28" kindref="member">EN_MSG_OPTERR</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Mdate:<sp/>option<sp/>unknown:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66" refid="en_8h_1a4278faabbaffad2c557370c5f1473dc6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="en_8h_1a4278faabbaffad2c557370c5f1473dc6" kindref="member">EN_MSG_NONOPTERR</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Too<sp/>many<sp/>non-option<sp/>arguments!\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67" refid="en_8h_1aca4dbc1ee16b63caa83106b52bc6fc67" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="en_8h_1aca4dbc1ee16b63caa83106b52bc6fc67" kindref="member">EN_MSG_LONGERR</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Invalid<sp/>LongCount<sp/>specified!\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68" refid="en_8h_1a3cc7d97a997f014c11bbb08ac10acebc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="en_8h_1a3cc7d97a997f014c11bbb08ac10acebc" kindref="member">EN_MSG_GENERR</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;error!\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69" refid="en_8h_1a788c92d0111e438e063114832b505801" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="en_8h_1a788c92d0111e438e063114832b505801" kindref="member">EN_MSG_ILC</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Invalid<sp/>Long<sp/>Count<sp/>entered!\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70" refid="en_8h_1aa78a00b6d8a2ec48fb98fb2c83524d4a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="en_8h_1aa78a00b6d8a2ec48fb98fb2c83524d4a" kindref="member">EN_MSG_IGD</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Invalid<sp/>Gregorian<sp/>Date<sp/>entered!\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71" refid="en_8h_1a10f7d9dc0d63f935c3c98143f5636e57" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="en_8h_1a10f7d9dc0d63f935c3c98143f5636e57" kindref="member">EN_MSG_IJDN</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Invalid<sp/>Julian<sp/>Day<sp/>Number<sp/>entered!\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72" refid="en_8h_1a47c056329997f2625d7c1320b090e0bb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="en_8h_1a47c056329997f2625d7c1320b090e0bb" kindref="member">EN_MSG_FORMATERR</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Unknown<sp/>format!\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//<sp/>=============================<sp/>Mdate<sp/>formats<sp/>============================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>en_pretty_format[]<sp/>__attribute__<sp/>((unused))<sp/>=</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Gregorian<sp/>Date<sp/><sp/><sp/><sp/><sp/>:<sp/>@d-@B-@Y<sp/>(@d/@m/@Y)\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Julian<sp/>Day<sp/>Number<sp/><sp/>:<sp/>@J\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Long<sp/>Count<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>@l\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Tzolkin<sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>@T\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Haab<sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>@h\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>en_default_format[]<sp/>__attribute__<sp/>((unused))<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;JDN:<sp/>@J<sp/>date:<sp/>@d<sp/>@m<sp/>@Y<sp/><sp/>@l<sp/>@T<sp/>@H&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//<sp/>=============================<sp/>Mdate<sp/>days<sp/>===============================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*en_short_days[]<sp/>__attribute__<sp/>((unused))<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Mon&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Tues&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Wed&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Thur&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Fri&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Sat&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Sun&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*en_days[]<sp/>__attribute__<sp/>((unused))<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Monday&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Tuesday&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Wednesday&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Thursday&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Friday&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Saturday&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Sunday&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/ewe2/devel/mdate/en.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="getopt_8h" kind="file">
+    <compoundname>getopt.h</compoundname>
+    <includedby refid="getopt_8c" local="yes">/home/ewe2/devel/mdate/getopt.c</includedby>
+    <includedby refid="getopt1_8c" local="yes">/home/ewe2/devel/mdate/getopt1.c</includedby>
+    <includedby refid="main_8cpp" local="no">/home/ewe2/devel/mdate/main.cpp</includedby>
+    <invincdepgraph>
+      <node id="58">
+        <label>/home/ewe2/devel/mdate/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="57">
+        <label>/home/ewe2/devel/mdate/getopt1.c</label>
+        <link refid="getopt1_8c"/>
+      </node>
+      <node id="56">
+        <label>/home/ewe2/devel/mdate/getopt.c</label>
+        <link refid="getopt_8c"/>
+      </node>
+      <node id="55">
+        <label>/home/ewe2/devel/mdate/getopt.h</label>
+        <link refid="getopt.h"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structoption" prot="public">option</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="getopt_8h_1a3bc1d5f667b5b4ca4b4abb685dc874ce" prot="public" static="no">
+        <name>no_argument</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/getopt.h" line="98" bodyfile="/home/ewe2/devel/mdate/getopt.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="getopt_8h_1a6ece8d8dfa8378778f7290fdaba5b8bc" prot="public" static="no">
+        <name>required_argument</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/getopt.h" line="99" bodyfile="/home/ewe2/devel/mdate/getopt.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="getopt_8h_1acca06c0a947656bd8b395bf1084ffb72" prot="public" static="no">
+        <name>optional_argument</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/getopt.h" line="100" bodyfile="/home/ewe2/devel/mdate/getopt.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="getopt_8h_1adb50a0eab9fed92fc3bfc7dfa4f2c410" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* optarg</definition>
+        <argsstring></argsstring>
+        <name>optarg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/getopt.h" line="36" bodyfile="/home/ewe2/devel/mdate/getopt.c" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="getopt_8h_1ad5e1c16213bbee2d5e8cc363309f418c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int optind</definition>
+        <argsstring></argsstring>
+        <name>optind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/getopt.h" line="50" bodyfile="/home/ewe2/devel/mdate/getopt.c" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="getopt_8h_1ae30f05ee1e2e5652f174a35c7875d25e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int opterr</definition>
+        <argsstring></argsstring>
+        <name>opterr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/getopt.h" line="55" bodyfile="/home/ewe2/devel/mdate/getopt.c" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="getopt_8h_1a475b8db98445da73e5f62a1ef6324b95" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int optopt</definition>
+        <argsstring></argsstring>
+        <name>optopt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/getopt.h" line="59" bodyfile="/home/ewe2/devel/mdate/getopt.c" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="getopt_8h_1a6c5b232cca42dab05f40b47f69715f8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int getopt</definition>
+        <argsstring>()</argsstring>
+        <name>getopt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/getopt.h" line="130"/>
+      </memberdef>
+      <memberdef kind="function" id="getopt_8h_1a8616b8a74ae6c01a7ad95ad2876226ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int getopt_long</definition>
+        <argsstring>()</argsstring>
+        <name>getopt_long</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/getopt.h" line="131"/>
+      </memberdef>
+      <memberdef kind="function" id="getopt_8h_1ac07930413317507d5c51c19b3ac6ed20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int getopt_long_only</definition>
+        <argsstring>()</argsstring>
+        <name>getopt_long_only</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/getopt.h" line="132"/>
+      </memberdef>
+      <memberdef kind="function" id="getopt_8h_1a60428225710059ca135c6b2a8941855f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int _getopt_internal</definition>
+        <argsstring>()</argsstring>
+        <name>_getopt_internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/getopt.h" line="134"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Declarations<sp/>for<sp/>getopt.</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/>Copyright<sp/>1989,<sp/>1990,<sp/>1991,<sp/>1992,<sp/>1993,<sp/>1994,<sp/>1996,<sp/>1997,<sp/>1998,<sp/>2000</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/>NOTE:<sp/>The<sp/>canonical<sp/>source<sp/>of<sp/>this<sp/>file<sp/>is<sp/>maintained<sp/>with<sp/>the<sp/>GNU<sp/>C<sp/>Library.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/>Bugs<sp/>can<sp/>be<sp/>reported<sp/>to<sp/>bug-glibc@gnu.org.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/>Foundation,<sp/>Inc.,<sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/>02111-1307,</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/>USA.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_GETOPT_H</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_GETOPT_H<sp/>1</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/><sp/>__cplusplus</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>For<sp/>communication<sp/>from<sp/>`getopt&apos;<sp/>to<sp/>the<sp/>caller.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/>When<sp/>`getopt&apos;<sp/>finds<sp/>an<sp/>option<sp/>that<sp/>takes<sp/>an<sp/>argument,</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/>the<sp/>argument<sp/>value<sp/>is<sp/>returned<sp/>here.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/>Also,<sp/>when<sp/>`ordering&apos;<sp/>is<sp/>RETURN_IN_ORDER,</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/>each<sp/>non-option<sp/>ARGV-element<sp/>is<sp/>returned<sp/>here.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="getopt_8c_1adb50a0eab9fed92fc3bfc7dfa4f2c410" kindref="member">optarg</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Index<sp/>in<sp/>ARGV<sp/>of<sp/>the<sp/>next<sp/>element<sp/>to<sp/>be<sp/>scanned.</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/>This<sp/>is<sp/>used<sp/>for<sp/>communication<sp/>to<sp/>and<sp/>from<sp/>the<sp/>caller</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/>and<sp/>for<sp/>communication<sp/>between<sp/>successive<sp/>calls<sp/>to<sp/>`getopt&apos;.</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"></highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/>On<sp/>entry<sp/>to<sp/>`getopt&apos;,<sp/>zero<sp/>means<sp/>this<sp/>is<sp/>the<sp/>first<sp/>call;<sp/>initialize.</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"></highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/>When<sp/>`getopt&apos;<sp/>returns<sp/>-1,<sp/>this<sp/>is<sp/>the<sp/>index<sp/>of<sp/>the<sp/>first<sp/>of<sp/>the</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/>non-option<sp/>elements<sp/>that<sp/>the<sp/>caller<sp/>should<sp/>itself<sp/>scan.</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"></highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/><sp/>Otherwise,<sp/>`optind&apos;<sp/>communicates<sp/>from<sp/>one<sp/>call<sp/>to<sp/>the<sp/>next</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/>how<sp/>much<sp/>of<sp/>ARGV<sp/>has<sp/>been<sp/>scanned<sp/>so<sp/>far.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="getopt_8c_1ad5e1c16213bbee2d5e8cc363309f418c" kindref="member">optind</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Callers<sp/>store<sp/>zero<sp/>here<sp/>to<sp/>inhibit<sp/>the<sp/>error<sp/>message<sp/>`getopt&apos;<sp/>prints</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/>for<sp/>unrecognized<sp/>options.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="getopt_8c_1ae30f05ee1e2e5652f174a35c7875d25e" kindref="member">opterr</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Set<sp/>to<sp/>an<sp/>option<sp/>character<sp/>which<sp/>was<sp/>unrecognized.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="getopt_8c_1a475b8db98445da73e5f62a1ef6324b95" kindref="member">optopt</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Describe<sp/>the<sp/>long-named<sp/>options<sp/>requested<sp/>by<sp/>the<sp/>application.</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/><sp/>The<sp/>LONG_OPTIONS<sp/>argument<sp/>to<sp/>getopt_long<sp/>or<sp/>getopt_long_only<sp/>is<sp/>a<sp/>vector</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/><sp/><sp/>of<sp/>`struct<sp/>option&apos;<sp/>terminated<sp/>by<sp/>an<sp/>element<sp/>containing<sp/>a<sp/>name<sp/>which<sp/>is</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/><sp/><sp/>zero.</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"></highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/><sp/><sp/>The<sp/>field<sp/>`has_arg&apos;<sp/>is:</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/><sp/><sp/>no_argument<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(or<sp/>0)<sp/>if<sp/>the<sp/>option<sp/>does<sp/>not<sp/>take<sp/>an<sp/>argument,</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/><sp/><sp/>required_argument<sp/><sp/><sp/><sp/>(or<sp/>1)<sp/>if<sp/>the<sp/>option<sp/>requires<sp/>an<sp/>argument,</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/><sp/><sp/>optional_argument<sp/><sp/><sp/><sp/>(or<sp/>2)<sp/>if<sp/>the<sp/>option<sp/>takes<sp/>an<sp/>optional<sp/>argument.</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"></highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/><sp/><sp/>If<sp/>the<sp/>field<sp/>`flag&apos;<sp/>is<sp/>not<sp/>NULL,<sp/>it<sp/>points<sp/>to<sp/>a<sp/>variable<sp/>that<sp/>is<sp/>set</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/><sp/><sp/>to<sp/>the<sp/>value<sp/>given<sp/>in<sp/>the<sp/>field<sp/>`val&apos;<sp/>when<sp/>the<sp/>option<sp/>is<sp/>found,<sp/>but</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/><sp/><sp/>left<sp/>unchanged<sp/>if<sp/>the<sp/>option<sp/>is<sp/>not<sp/>found.</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"></highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/><sp/><sp/>To<sp/>have<sp/>a<sp/>long-named<sp/>option<sp/>do<sp/>something<sp/>other<sp/>than<sp/>set<sp/>an<sp/>`int&apos;<sp/>to</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/><sp/><sp/>a<sp/>compiled-in<sp/>constant,<sp/>such<sp/>as<sp/>set<sp/>a<sp/>value<sp/>from<sp/>`optarg&apos;,<sp/>set<sp/>the</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/>option&apos;s<sp/>`flag&apos;<sp/>field<sp/>to<sp/>zero<sp/>and<sp/>its<sp/>`val&apos;<sp/>field<sp/>to<sp/>a<sp/>nonzero</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/><sp/><sp/>value<sp/>(the<sp/>equivalent<sp/>single-letter<sp/>option<sp/>character,<sp/>if<sp/>there<sp/>is</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/><sp/><sp/>one).<sp/><sp/>For<sp/>long<sp/>options<sp/>that<sp/>have<sp/>a<sp/>zero<sp/>`flag&apos;<sp/>field,<sp/>`getopt&apos;</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/><sp/><sp/>returns<sp/>the<sp/>contents<sp/>of<sp/>the<sp/>`val&apos;<sp/>field.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="structoption" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structoption" kindref="compound">option</ref></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>(__STDC__)<sp/>&amp;&amp;<sp/>__STDC__</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structoption_1a92c850a23c7828c1dba453bf8d15e1f0" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="87" refid="structoption_1a92c850a23c7828c1dba453bf8d15e1f0" refkind="member"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structoption_1a92c850a23c7828c1dba453bf8d15e1f0" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>has_arg<sp/>can&apos;t<sp/>be<sp/>an<sp/>enum<sp/>because<sp/>some<sp/>compilers<sp/>complain<sp/>about</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>type<sp/>mismatches<sp/>in<sp/>all<sp/>the<sp/>code<sp/>that<sp/>assumes<sp/>it<sp/>is<sp/>an<sp/>int.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="structoption_1a90d7ee9a51eea5c002682dbd0af149e4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structoption_1a90d7ee9a51eea5c002682dbd0af149e4" kindref="member">has_arg</ref>;</highlight></codeline>
+<codeline lineno="92" refid="structoption_1ab366eea5fe7be25c1928328ba715e353" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="structoption_1ab366eea5fe7be25c1928328ba715e353" kindref="member">flag</ref>;</highlight></codeline>
+<codeline lineno="93" refid="structoption_1a13bd155ec3b405d29c41ab8d0793be11" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structoption_1a13bd155ec3b405d29c41ab8d0793be11" kindref="member">val</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Names<sp/>for<sp/>the<sp/>values<sp/>of<sp/>the<sp/>`has_arg&apos;<sp/>field<sp/>of<sp/>`struct<sp/>option&apos;.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="getopt_8h_1a3bc1d5f667b5b4ca4b4abb685dc874ce" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>no_argument<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="99" refid="getopt_8h_1a6ece8d8dfa8378778f7290fdaba5b8bc" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>required_argument<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="100" refid="getopt_8h_1acca06c0a947656bd8b395bf1084ffb72" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>optional_argument<sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>(__STDC__)<sp/>&amp;&amp;<sp/>__STDC__</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>HAVE_DECL_*<sp/>is<sp/>a<sp/>three-state<sp/>macro:<sp/>undefined,<sp/>0<sp/>or<sp/>1.<sp/><sp/>If<sp/>it<sp/>is</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/><sp/><sp/>undefined,<sp/>we<sp/>haven&apos;t<sp/>run<sp/>the<sp/>autoconf<sp/>check<sp/>so<sp/>provide<sp/>the</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/><sp/><sp/>declaration<sp/>without<sp/>arguments.<sp/><sp/>If<sp/>it<sp/>is<sp/>0,<sp/>we<sp/>checked<sp/>and<sp/>failed</highlight></codeline>
+<codeline lineno="106"><highlight class="comment"><sp/><sp/><sp/>to<sp/>find<sp/>the<sp/>declaration<sp/>so<sp/>provide<sp/>a<sp/>fully<sp/>prototyped<sp/>one.<sp/><sp/>If<sp/>it</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/><sp/><sp/>is<sp/>1,<sp/>we<sp/>found<sp/>it<sp/>so<sp/>don&apos;t<sp/>provide<sp/>any<sp/>declaration<sp/>at<sp/>all.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>(__GNU_LIBRARY__)<sp/>||<sp/>(defined<sp/>(HAVE_DECL_GETOPT)<sp/>&amp;&amp;<sp/>!HAVE_DECL_GETOPT)</highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>Many<sp/>other<sp/>libraries<sp/>have<sp/>conflicting<sp/>prototypes<sp/>for<sp/>getopt,<sp/>with</highlight></codeline>
+<codeline lineno="110"><highlight class="comment"><sp/><sp/><sp/>differences<sp/>in<sp/>the<sp/>consts,<sp/>in<sp/>stdlib.h.<sp/><sp/>To<sp/>avoid<sp/>compilation</highlight></codeline>
+<codeline lineno="111"><highlight class="comment"><sp/><sp/><sp/>errors,<sp/>only<sp/>prototype<sp/>getopt<sp/>for<sp/>the<sp/>GNU<sp/>C<sp/>library.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="getopt_8c_1a1b2ada39ab92162c6ec9c67c8093fa2e" kindref="member">getopt</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*argv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*shortopts);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/></highlight><highlight class="comment">/*<sp/>not<sp/>__GNU_LIBRARY__<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>if<sp/>!defined<sp/>(HAVE_DECL_GETOPT)</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="getopt_8c_1a1b2ada39ab92162c6ec9c67c8093fa2e" kindref="member">getopt</ref><sp/>();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__GNU_LIBRARY__<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="getopt_8h_1a8616b8a74ae6c01a7ad95ad2876226ec" kindref="member">getopt_long</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*argv,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*shortopts,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structoption" kindref="compound">option</ref><sp/>*longopts,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*longind);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="getopt_8h_1ac07930413317507d5c51c19b3ac6ed20" kindref="member">getopt_long_only</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*argv,</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*shortopts,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structoption" kindref="compound">option</ref><sp/>*longopts,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*longind);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Internal<sp/>only.<sp/><sp/>Users<sp/>should<sp/>not<sp/>call<sp/>this<sp/>directly.<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="getopt_8c_1a0df92a0ae8fe1fd43268c738f548674f" kindref="member">_getopt_internal</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*argv,</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*shortopts,</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structoption" kindref="compound">option</ref><sp/>*longopts,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*longind,</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>long_only);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/></highlight><highlight class="comment">/*<sp/>not<sp/>__STDC__<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="getopt_8c_1a1b2ada39ab92162c6ec9c67c8093fa2e" kindref="member">getopt</ref><sp/>();</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="getopt_8h_1a8616b8a74ae6c01a7ad95ad2876226ec" kindref="member">getopt_long</ref><sp/>();</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="getopt_8h_1ac07930413317507d5c51c19b3ac6ed20" kindref="member">getopt_long_only</ref><sp/>();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="getopt_8c_1a0df92a0ae8fe1fd43268c738f548674f" kindref="member">_getopt_internal</ref><sp/>();</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__STDC__<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/><sp/>__cplusplus</highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="140"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>getopt.h<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ewe2/devel/mdate/getopt.h"/>
+  </compounddef>
+</doxygen>

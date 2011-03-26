@@ -248,6 +248,7 @@ endif
 all: mdate
 
 .PHONY: help clean docpplean distclean gitch updategit reltag devtag
+# need this for directory search
 
 mdate: $(OBJS)
 	$(CXX) $(CFLAGS) $(INC) -o mdate $(OBJS) $(LDFLAGS) $(LIBS)
@@ -268,28 +269,9 @@ endif
 #	[ -f mdate_pl.html ] || sgml2html -H header -F footer mdate_pl.sgml
 #endif
 
-createdoc: mdate.pdf mdate.html mdate.ps mdate.txt
-
-# prevent the HTML docs being acppidently remade
-mdate.html:	mdate.xml
-	[ -f mdate.html ] || ./db2html $< > mdate.html 
-
-# we build mdate.txt from html2text now as there are issues with fop
-# translation
-mdate.txt: mdate.html
-	[ -f mdate.txt ] || html2text -nobs -style pretty $< > mdate.txt 
-
-# optional tidy target. it upsets make but works
-htmltidy: mdate.html
-	cat $< | tidy -q -m -o mdate.html
-
-# these will require fop, xsltproc will create an intermediate *.fo which can
-# later be deleted
-mdate.ps: mdate.xml
-	./db2fo --ps $<
-
-mdate.pdf: mdate.xml
-	./db2fo $<
+# pass the doc stuff off to a submake in doc/
+createdoc:
+	cd doc && $(MAKE)
 
 ## install targets
 
@@ -301,15 +283,15 @@ installbin: mdate installman
 
 installman: mdate
 	[ -d $(MANDIR) ] || mkdir -p $(MANDIR); \
-    install -m 644 mdate.1 $(MANDIR); \
+    install -m 644 doc/mdate.1 $(MANDIR); \
     gzip -9f $(MANDIR)/mdate.1
 		
 
 installdoc: createdoc installman
 	[ -d $(DOCDIR) ] || mkdir -p $(DOCDIR); \
-	install -m 644  mdate.dvi mdate.ps $(DOCDIR); \
+	install -m 644  doc/mdate.dvi doc/mdate.ps $(DOCDIR); \
 	gzip $(DOCDIR)/mdate.dvi $(DOCDIR)/mdate.ps; \
-	install -m 644 mdate.text $(DOCDIR);	gzip $(DOCDIR)/mdate.text ; \
+	install -m 644 doc/mdate.text $(DOCDIR);	gzip $(DOCDIR)/mdate.text ; \
 	install -m 644  README NEWS ChangeLog GPL API $(DOCDIR); \
 	install -m 644  AUTHORS Translators $(DOCDIR); \
 	[ -d $(HTMLDIR) ] || mkdir -p $(HTMLDIR); \
@@ -328,9 +310,9 @@ snprintf.o: snprintf.c config.h
 distclean: clean docpplean
 
 SOURCES=*.cpp *.c *.h
-DOX=mdate.html mdate.pdf mdate.txt NEWS README GPL API ChangeLog \
-AUTHORS mdate.xml Translators mdate.1 BUGS ChangeLog.old README.devel
-CONFS=Makefile mdate.spec ChangeLog.header .gitattributes .gitignore mdate.xpr
+DOX=doc/mdate.html doc/mdate.pdf doc/mdate.txt NEWS README GPL API ChangeLog \
+AUTHORS doc/mdate.xml Translators doc/mdate.1 BUGS ChangeLog.old README.devel
+CONFS=Makefile mdate.spec ChangeLog.header .gitattributes .gitignore doc/mdate.xpr
 DEBCONF=debian/*
 DISTFILES= $(SOURCES) $(DOX) $(CONFS)
 

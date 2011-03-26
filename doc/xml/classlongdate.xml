@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.1">
+  <compounddef id="classlongdate" kind="class" prot="public">
+    <compoundname>longdate</compoundname>
+    <derivedcompoundref refid="classmdate" prot="public" virt="non-virtual">mdate</derivedcompoundref>
+    <includes refid="mdate_8h" local="no">mdate.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classlongdate_1ad42081ca01c07543bab305cbed08570e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class gregdate</definition>
+        <argsstring></argsstring>
+        <name>gregdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="75" bodyfile="/home/ewe2/devel/mdate/mdate.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classlongdate_1a23c34cd307c2d67207393ae8c4e5411e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class julian</definition>
+        <argsstring></argsstring>
+        <name>julian</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="76" bodyfile="/home/ewe2/devel/mdate/mdate.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classlongdate_1aa1d735148f6cba1d928f28633359e5c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class mdate</definition>
+        <argsstring></argsstring>
+        <name>mdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="77" bodyfile="/home/ewe2/devel/mdate/mdate.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlongdate_1afa05e19a216a787ebcb0a9f0164be008" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int longdate::bak</definition>
+        <argsstring></argsstring>
+        <name>bak</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="86" bodyfile="/home/ewe2/devel/mdate/mdate.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlongdate_1a0bfee40baf70c2559e2a867ba3d40d55" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int longdate::kat</definition>
+        <argsstring></argsstring>
+        <name>kat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="86" bodyfile="/home/ewe2/devel/mdate/mdate.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlongdate_1adb853327977df5f18f0f4227041f4579" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int longdate::tun</definition>
+        <argsstring></argsstring>
+        <name>tun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="86" bodyfile="/home/ewe2/devel/mdate/mdate.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlongdate_1a03496a26fff5019a2515c3671f8b9624" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int longdate::uin</definition>
+        <argsstring></argsstring>
+        <name>uin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="86" bodyfile="/home/ewe2/devel/mdate/mdate.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlongdate_1a4426095361d8fc8f208e6f5f5887d9ce" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int longdate::kin</definition>
+        <argsstring></argsstring>
+        <name>kin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="86" bodyfile="/home/ewe2/devel/mdate/mdate.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlongdate_1ad13eb0ad11ba9d8ad9045a90e4d64604" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>longdate::longdate</definition>
+        <argsstring>(void)</argsstring>
+        <name>longdate</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="72" bodyfile="/home/ewe2/devel/mdate/mdate.h" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classlongdate_1a0d6bc95d400e08f2b31096c2244bd23f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void longdate::longcount_tostr</definition>
+        <argsstring>(longdate from, char *to)</argsstring>
+        <name>longcount_tostr</name>
+        <param>
+          <type><ref refid="classlongdate" kindref="compound">longdate</ref></type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="80" bodyfile="/home/ewe2/devel/mdate/mdate.cpp" bodystart="377" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="classlongdate_1affd811e30958170adf3aa874373a5a76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool longdate::longcount_from_jdate</definition>
+        <argsstring>(corr c, julian_date from, longdate *to)</argsstring>
+        <name>longcount_from_jdate</name>
+        <param>
+          <type><ref refid="mdate_8h_1aa480c491d51df64ec4de7d2b35d0343f" kindref="member">corr</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="mdate_8h_1a77a333d1063792890537f00e3f3d1328" kindref="member">julian_date</ref></type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="classlongdate" kindref="compound">longdate</ref> *</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="81" bodyfile="/home/ewe2/devel/mdate/mdate.cpp" bodystart="356" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="classlongdate_1a44d77cd530be25904868e7af2cd61506" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void longdate::set_longdate</definition>
+        <argsstring>(int bak, int kat, int tun, int uin, int kin)</argsstring>
+        <name>set_longdate</name>
+        <param>
+          <type>int</type>
+          <declname>bak</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>kat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tun</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>uin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>kin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ewe2/devel/mdate/mdate.h" line="82" bodyfile="/home/ewe2/devel/mdate/mdate.cpp" bodystart="124" bodyend="131"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="12">
+        <label>mdate</label>
+        <link refid="classmdate"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>longdate</label>
+        <link refid="classlongdate"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/ewe2/devel/mdate/mdate.h" line="69" bodyfile="/home/ewe2/devel/mdate/mdate.h" bodystart="69" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classlongdate_1afa05e19a216a787ebcb0a9f0164be008" prot="private" virt="non-virtual"><scope>longdate</scope><name>bak</name></member>
+      <member refid="classlongdate_1ad42081ca01c07543bab305cbed08570e" prot="public" virt="non-virtual"><scope>longdate</scope><name>gregdate</name></member>
+      <member refid="classlongdate_1a23c34cd307c2d67207393ae8c4e5411e" prot="public" virt="non-virtual"><scope>longdate</scope><name>julian</name></member>
+      <member refid="classlongdate_1a0bfee40baf70c2559e2a867ba3d40d55" prot="private" virt="non-virtual"><scope>longdate</scope><name>kat</name></member>
+      <member refid="classlongdate_1a4426095361d8fc8f208e6f5f5887d9ce" prot="private" virt="non-virtual"><scope>longdate</scope><name>kin</name></member>
+      <member refid="classlongdate_1affd811e30958170adf3aa874373a5a76" prot="public" virt="non-virtual"><scope>longdate</scope><name>longcount_from_jdate</name></member>
+      <member refid="classlongdate_1a0d6bc95d400e08f2b31096c2244bd23f" prot="public" virt="non-virtual"><scope>longdate</scope><name>longcount_tostr</name></member>
+      <member refid="classlongdate_1ad13eb0ad11ba9d8ad9045a90e4d64604" prot="public" virt="non-virtual"><scope>longdate</scope><name>longdate</name></member>
+      <member refid="classlongdate_1aa1d735148f6cba1d928f28633359e5c8" prot="public" virt="non-virtual"><scope>longdate</scope><name>mdate</name></member>
+      <member refid="classlongdate_1a44d77cd530be25904868e7af2cd61506" prot="public" virt="non-virtual"><scope>longdate</scope><name>set_longdate</name></member>
+      <member refid="classlongdate_1adb853327977df5f18f0f4227041f4579" prot="private" virt="non-virtual"><scope>longdate</scope><name>tun</name></member>
+      <member refid="classlongdate_1a03496a26fff5019a2515c3671f8b9624" prot="private" virt="non-virtual"><scope>longdate</scope><name>uin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
