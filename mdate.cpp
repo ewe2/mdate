@@ -203,7 +203,7 @@ bool mdate::jdate_from_gregdate(corr c, gregdate from, julian_date *to)
 	j2 = (m - 14)/12;
 	ju = d - 32075 + (int)(1461 * (y +4800 + j2) /4);
 	ju = ju + (int)(367 * (m - 2 - j2 * 12) /12);
-	ju = ju - (int)(3 * (int)(y + 4900 + j2) / 100 / 4);
+	ju = ju - (int)(3 * (int)(y + 4800 + j2) / 100 / 4);
 	j  = ju;
 
 	*to = j;
