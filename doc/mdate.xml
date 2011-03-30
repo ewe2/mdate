@@ -1,221 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.oasis-open.org/docbook/xml/5.0/rng/docbook.rng" type="xml"?>
-<!-- SVN revision $Id$ -->
-<article xmlns="http://docbook.org/ns/docbook"
-    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
-    <info>
-        <title>Mdate</title>
-        <author>
-            <personname>Sean Dwyer</personname>
-            <email>ewe2@users.sourceforge.net</email>
-        </author>
-        <revhistory>
-            <revision>
-                <revnumber>0.1</revnumber>
-                <date>2009-06-14</date>
-                <authorinitials>asd</authorinitials>
-                <revremark>Initial conversion from linuxdoc to Docbook XML</revremark>
-			</revision>
-			<revision>
-				<revnumber>$Rev: 18 $</revnumber>
-				<date>2009-11-15</date>
-				<authorinitials>asd</authorinitials>
-				<revremark>Minor work.</revremark>
-			</revision>
-			<revision>
-				<revnumber>$Id$</revnumber>
-				<date>2011-01-12</date>
-				<authorinitials>asd</authorinitials>
-				<revremark>per-version updates</revremark>
-			</revision>
-        </revhistory>
-        <abstract>
-            <para>
-            Mdate is an easy to use command-line utility for conversion between Gregorian
-            calendar  dates and Mayan calendar dates.
-             </para>
-        </abstract>
-    </info>
-    
-    <sect1>
-        <title>Introduction</title>
-        <sect2>
-            <title>What is Mdate?</title>
-            <para>Mdate was written to fill a need: a simple, freely-available program for
-            non-academic people interested in the Mayan calendar. Except for the Emacs
-            Mayan calendar mode (which has some severe limitations), this has been lacking
-            on all popular operating systems, which is odd considering the continuing
-            public interest in the Mayan civilisation.
-            </para>
-            <para>Mdate has been in continuous development for over ten years, mostly due to
-            the limited interest in such a program by programmers, but fortunately not by
-            users.
-            </para>
-        </sect2>
-        <sect2>
-            <title>Disclaimer &amp; License</title>
-            <para>
-                This document was formerly licensed under the GNU FDL 1.1. It now falls under
-                the general GPL license of the accompanying code. Previous versions of this
-                documentation may, if wished, also fall under GPL on contact with the author.
-            </para>
-            <para>
-                Copyright (c) 2002-2011 by Sean Dwyer.
-            </para>
-            <para>
-                Please freely copy and distribute (sell or give away) this document in any
-                format, providing you adhere to the terms of the above License.  It's
-                requested that corrections and/or comments be forwarded to the document
-                maintainer. 
-            </para>
-        </sect2>
-        <sect2>
-            <title>History</title>
-            <para>
-                The current version of Mdate is 1.5.8, written by Sean Dwyer with help from
-                many others over the years.
-            </para>
-            <para>
-                The first public version of Mdate was 0.5.0, written in late 1998, and was
-                also ported to MS-DOS. Craig Robbins contributed to versions 0.5.1 to
-                1.0.0beta1. Version 1.0.0beta1 (1999) was the first GPL version of Mdate, and
-                included a Tk interface.
-            </para>
-            <para>
-                Mdate 1.0.5 was internationalised, and was quickly followed by version 1.1.0,
-                also the first version at the new sourceforge.net home.
-            </para>
-            <para>
-                Mdate 1.2.0 was modularised into a library (libmdate) and front-ends for Tk,
-                command-line and GTK+.
-            </para>
-            <para>
-                Mdate 1.2.8 was the last libmdate-dependent and frontend-oriented Mdate, by
-                now suffering from too much setup code and neglect.
-            </para>
-            <para>
-                Mdate 1.3.0 dropped the libmdate dependence, had a total rewrite in C++/C and
-                a much simpler build system, although still missing internationalisation
-                support and needing new front-ends. 
-            </para>
-            <para>
-                Mdate 1.3.4 added a simple translation layer, following the mplayer method.
-            </para>
-            <para>
-                Mdate 1.4.0 brought in user date formatting (like <command>date(1)</command>, and began
-                the process of proper internationalization and configuration., still using the
-                example of mplayer.
-            </para>
-            <para>
-                The first BeOS port was made in Mdate version 1.4.1.
-            </para>
-            <para>
-                Mdate 1.4.2 enhanced the language support by making it a runtime choice per an
-                option.
-            </para>
-            <para>
-                Mdate 1.4.3 added a mingw32 cross-compiler port and allowed different
-                language defaults.
-            </para>
-            <para>
-                Mdate 1.4.5 included a compile-time option to use modern Mayan calendar month
-                names.
-            </para>
-            <para>
-                Mdate 1.4.7 introduced the first FreeBSD (4.9-STABLE) port. The
-                program-parseable flag (-p) was rendered defunct when the parseable output
-                became the default output format. A new OS X (Mac 32-bit console) port also
-                became available.
-            </para>
-            <para>
-                Mdate 1.5.2 switched the VC system over to subversion, with intentions to open
-                up development with a better multiple developer system.
-            </para>
-            <para>
-                Mdate 1.5.6 was the first new release of mdate since version 1.5.1 on
-                sourceforge.net.
-			</para>
-			<para>
-				Mdate 1.5.7 was the first release on code.google.com.
-			</para>
-			<para>
-				Mdate 1.6.0 made the GMT correlation the default. Mdate was
-				moved to git version control.
-			</para>
-			<para>
-				Mdate 1.7.0 implemented a configuration file.
-			</para>
-        </sect2>
-    </sect1>
-    <sect1>
-        <title>Usage</title>
-        <sect2>
-            <title>Mayan Calendar Names</title>
-            <para>
-                From version 1.4.5, a compile-time option was added for those preferring the
-                new Romanized Mayan calendar names to the old ones, e.g. Kumk'u (new) for
-                Cumku (old) and 'Ahaw (new) for Ahau (old). I'm interested in feedback about
-                this option, and whether it could be a format item in its own right.
-            </para>
-        </sect2>
-        <sect2>
-            <title>Language Support</title>
-            <para>
-               As at version 1.4.5, mdate supports five languages: English, Spanish, German,
-               French and Polish (en, es, de, fr and pl). A runtime option was added so you
-               could use a different language. The language support is compiled-in and
-               currently ignores environment language variables.
-            </para>
-            <para>
-                    Example usage:
-            <screen>
-$ mdate -L es
-                            
-NDJ: 2453168.0 fecha: Fri 11 06 2004  12.19.11.06.03 7 Ak'bal  06 Sots
-            </screen>
-            </para>
-            <para>
-               The default language is English (en). There is no support for regional
-               language subsets (eg en_AU). Other languages may be compiled as the default.
-            </para>
-        </sect2>
-        <sect2>
-            <title>Output Format</title>
-            <para>The previous default behaviour of Mdate was to output a formatted printout of
-                    current date information, using the default Lounsbury correlation for today's
-                    date:
-            <screen>
-$ mdate
-                        
-Gregorian Date    : 05-April-2002 (05/04/2002)
-Julian Day Number : 2452370.0
-Long Count        : 12.19.09.02.05
-Tzolkin Date      : 2 Chicchan
-Haab Date         : 3 Uayeb
-            </screen>
-            </para>
-            <para>However, pretty output formatting is now a compile-time option only, due to
-                    ongoing problems (i.e. bugs) on several platforms.
-                    
-                    The old <command>-p, --parseable</command> flag is now the default behavior, and outputs
-                    this information in one line, much like <command>date(1)</command>. Example:
-                    
-            <screen>
-$ mdate
-                        
-JDN: 2452370.0 date:  05  04  2002 12.19.09.02.05  02 Chicchan  03 Uayeb 
-            </screen>
-            </para>
-            <para>The parseable flag is now effectively ignored when pretty formatting is not
-                    compiled in.
-            </para>
-        </sect2>
-        <sect2>
-                <title>Date Formatting</title>
-                <para>You may want to specify your current date in a specific way, using one of
-                    mdate's formatting options. Here is the full list:
-                <screen>
-@a abbreviated weekday name
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+
+<article lang="en">
+<articleinfo>
+    <title>Mdate</title>
+    <author>
+        <firstname>Sean</firstname>
+        <surname>Dwyer</surname>
+        <email>ewetoo@gmail.com</email>
+    </author>
+    <authorinitials>SD</authorinitials>
+</articleinfo>
+<sidebar>
+<title>Revision History</title>
+<simpara>0.1, 2009-06-14: Initial conversion from linuxdoc to Docbook XML</simpara>
+<simpara>$Rev: 18 $, 2009-11-15: Minor_work.</simpara>
+<simpara>$Id 3b7919e113e1b728e73921c3386eece98fc78a4b $, 2011-01-12: per-version updates</simpara>
+<simpara>$Id$ : rewritten to support asciidoc processing.</simpara>
+</sidebar>
+<sidebar>
+<title>Abstract</title>
+<simpara>Mdate is an easy to use command-line utility for conversion between Gregorian
+calendar dates and Mayan calendar dates.</simpara>
+</sidebar>
+<section id="_introduction">
+<title>Introduction</title>
+<section id="_what_is_mdate">
+<title>What is Mdate?</title>
+<simpara>Mdate was written to fill a need: a simple, freely-available program for non-
+academic people interested in the Mayan calendar. Except for the Emacs Mayan
+calendar mode (which has some severe limitations), this has been lacking on all
+popular operating systems, which is odd considering the continuing public
+interest in the Mayan civilisation.</simpara>
+<simpara>Mdate has been in continuous development for over ten years, mostly due to the
+limited interest in such a program by programmers, but fortunately not by
+users.</simpara>
+</section>
+<section id="_disclaimer_amp_license">
+<title>Disclaimer &amp; License</title>
+<simpara>This document was formerly licensed under the GNU FDL 1.1. It now falls under
+the general GPL license of the accompanying code. Previous versions of this
+documentation may, if wished, also fall under GPL on contact with the author.</simpara>
+<simpara>Copyright (c) 2002-2011 by Sean Dwyer.</simpara>
+<simpara>Please freely copy and distribute (sell or give away) this document in any
+format, providing you adhere to the terms of the above License. It&#8217;s requested
+that corrections and/or comments be forwarded to the document maintainer.</simpara>
+</section>
+<section id="_history">
+<title>History</title>
+<simpara>The current version of Mdate is 1.7.0, written by Sean Dwyer with help from
+many others over the years.</simpara>
+<simpara>The first public version of Mdate was 0.5.0, written in late 1998, and was also
+ported to MS-DOS. Craig Robbins contributed to versions 0.5.1 to 1.0.0beta1.</simpara>
+<simpara>Version 1.0.0beta1 (1999) was the first GPL version of Mdate, and included a Tk
+interface.</simpara>
+<simpara>Mdate 1.0.5 was internationalised, and was quickly followed by version 1.1.0,
+also the first version at the new sourceforge.net home.</simpara>
+<simpara>Mdate 1.2.0 was modularised into a library (libmdate) and front-ends for Tk,
+command-line and GTK+.</simpara>
+<simpara>Mdate 1.2.8 was the last libmdate-dependent and frontend-oriented Mdate, by now
+suffering from too much setup code and neglect.</simpara>
+<simpara>Mdate 1.3.0 dropped the libmdate dependence, had a total rewrite in C++/C and a
+much simpler build system, although still missing internationalisation support
+and needing new front-ends.</simpara>
+<simpara>Mdate 1.3.4 added a simple translation layer, following the mplayer method.</simpara>
+<simpara>Mdate 1.4.0 brought in user date formatting (like date(1), and began the
+process of proper internationalization and configuration, still using the
+example of mplayer.</simpara>
+<simpara>The first BeOS port was made in Mdate version 1.4.1.</simpara>
+<simpara>Mdate 1.4.2 enhanced the language support by making it a runtime choice per an
+option.</simpara>
+<simpara>Mdate 1.4.3 added a mingw32 cross-compiler port and allowed different language
+defaults.</simpara>
+<simpara>Mdate 1.4.5 included a compile-time option to use modern Mayan calendar month
+names.</simpara>
+<simpara>Mdate 1.4.7 introduced the first FreeBSD (4.9-STABLE) port. The program-
+parseable flag (-p) was rendered defunct when the parseable output became the
+default output format. A new OS X (Mac 32-bit console) port also became
+available.</simpara>
+<simpara>Mdate 1.5.2 switched the VC system over to subversion, with intentions to open
+up development with a better multiple developer system.</simpara>
+<simpara>Mdate 1.5.6 was the first new release of mdate since version 1.5.1 on
+sourceforge.net.</simpara>
+<simpara>Mdate 1.5.7 was the first release on code.google.com.</simpara>
+<simpara>Mdate 1.6.0 made the GMT correlation the default. Mdate was moved to git
+version control on github.com.</simpara>
+<simpara>Mdate 1.7.0 implemented a configuration file.</simpara>
+</section>
+</section>
+<section id="_usage">
+<title>Usage</title>
+<section id="_mayan_calendar_names">
+<title>Mayan Calendar Names</title>
+<simpara>From version 1.4.5, a compile-time option was added for those preferring the
+new Romanized Mayan calendar names to the old ones, e.g. Kumk&#8217;u (new) for Cumku
+(old) and 'Ahaw (new) for Ahau (old). I&#8217;m interested in feedback about this
+option, and whether it could be a format item in its own right.</simpara>
+</section>
+<section id="_language_support">
+<title>Language Support</title>
+<simpara>As at version 1.4.5, mdate supports five languages: English, Spanish, German,
+French and Polish (en, es, de, fr and pl). A runtime option was added so you
+could use a different language. The language support is compiled-in and
+currently ignores environment language variables.</simpara>
+<formalpara><title>Example usage:</title><para>
+<screen>  $ mdate -L es
+
+  NDJ: 2453168.0 fecha: Fri 11 06 2004  12.19.11.06.03 7 Ak'bal  06 Sots</screen>
+</para></formalpara>
+<simpara>The default language is English (en). There is no support for regional language
+subsets (eg en_AU). Other languages may be compiled as the default.</simpara>
+</section>
+<section id="_output_format">
+<title>Output Format</title>
+<simpara>The previous default behaviour of Mdate was to output a formatted printout of
+current date information, using the default Lounsbury correlation for today&#8217;s
+date:</simpara>
+<screen>  $ mdate
+
+  Gregorian Date    : 05-April-2002 (05/04/2002)
+  Julian Day Number : 2452370.0
+  Long Count        : 12.19.09.02.05
+  Tzolkin Date      : 2 Chicchan
+  Haab Date         : 3 Uayeb</screen>
+<simpara>However, pretty output formatting is now a compile-time option only, due to
+ongoing problems (i.e. bugs) on several platforms. The old -p, --parseable flag
+is now the default behavior, and outputs this information in one line, much
+like date(1).</simpara>
+<formalpara><title>Example:</title><para>
+<screen>  $ mdate
+
+  JDN: 2452370.0 date:  05  04  2002 12.19.09.02.05  02 Chicchan  03 Uayeb</screen>
+</para></formalpara>
+<simpara>The parseable flag is now effectively ignored when pretty formatting is not
+compiled in.</simpara>
+</section>
+<section id="_date_formatting">
+<title>Date Formatting</title>
+<simpara>You may want to specify your current date in a specific way, using one of
+mdate&#8217;s formatting options. Here is the full list:</simpara>
+<literallayout class="monospaced">@a abbreviated weekday name
 @A full weekday name
 @b abbreviated month name
 @B full month name
@@ -233,101 +159,65 @@ JDN: 2452370.0 date:  05  04  2002 12.19.09.02.05  02 Chicchan  03 Uayeb
 @y year as decimal 00 to 99
 @Y Gregorian year
 @n add a newline to the output
-@j add a tab to the output
-                </screen>
-                </para>
-                <para>Like <command>date(1)</command>, mdate will format a date when given a `+' option, for
-                    example:
-                    
-                    <screen>
-$ mdate -d '07 09 2003' +'@f @l'
-                        
-20030907 12.19.10.10.15
-                </screen>
-                </para>
-                <para>This was specifically requested for those who like to add a Mayan byline to
-                    emails and web pages. However, mdate has not ever supported time of day
-                    parsing/formatting, so it's not rfc822 compliant! Most formats are merely
-                    passed on to <command>strftime(3)</command> where applicable.
-                </para>
-        </sect2>
-        <sect2>
-            <title>Correlation Options</title>
-            <para>By default, Mdate used the Lounsbury correlation which is equivalent to the
-				Julian Day Number 584285 in versions of Mdate prior to 1.6.0.
-				Since then the GMT correlation is standard.
-            </para>
-            <para>The <command>-g, --gmt</command> option uses the standard Goodman-Martinez-Thompson
-                correlation (GMT for short). It corresponds to the Julian Day Number 584283. Versions of Mdate from 1.6.0 silently ignores this option.
-            </para>
-            <para>
-               If you don't agree with the correlation constant, the <command>-c,
-               --correlation[=DOUBLE]</command> allows you to specify a correlation of your own.
-               Don't be surprised, however if it doesn't work the way you intended,
-               especially if you set the Julian Day Number too low (see <xref linkend="limits"/>
-               to understand why!)
-            </para>
-        </sect2>
-        <sect2>
-            <title>Date Input</title>
-            <para>
-                    You probably want to check a specific date at some point. This can be done in
-                    several different ways, depending on the kind of date you already have.
-            </para>
-            <para>
-                    The <command>-d, --dmy[="dd mm [-]yyyy"]</command> option allows you to specify a
-                    Gregorian date. You can also specify negative (BC) years.
-                        
-            <screen>
-$ mdate -d '05 04 2002'
-                            
-JDN: 2452311.0 date: Tues 05 02 2002  12.19.08.17.06 8 Kimi  04 Pax
-            </screen>
-            </para>
-            <para>In the same way, the <command>-j, --julian=[DOUBLE]</command> option will output the
-                    date with a specified Julian Day Number:
-            <screen>
-$ mdate -j 2452370
-                        
-JDN: 2452370.0 date: Fri 05 04 2002  12.19.09.02.05 2 Chik'chan  03 Wayeb
-            </screen>                    
-    
-            </para>
-            <para>
-                    Notice that you can leave the decimal part out if you wish.
-            </para>
-            <para>
-                    Finally, the <command>-l, --longcount[="nn nn nn nn nn"]</command> option does the same
-                    thing with a Mayan long count date input:
-                    
-            <screen>
-$ mdate -l '12 19 09 02 05'
-                        
-JDN: 2452370.0 date: Fri 05 04 2002  12.19.09.02.05 2 Chik'chan  03 Wayeb
-            </screen>
-            </para>
-        </sect2>
-        <sect2>
-            <title>Miscellaneous Options</title>
-            <para>The <command>-h, --help</command> option gives a simple display of help for Mdate.
-            </para>
-            <para>The <command>-v, -V, --version</command> option outputs version information for Mdate.
-            </para>
-        </sect2>
-    </sect1>
-    <sect1 xml:id="limits" xreflabel="Limitations">
-        <title>Limitations</title>
-        <para>Mdate does not support any dates beyond the beginning of the current epoch
-                (longcount 0.0.0.0.0) matching with the Julian Day Number correlation,
-                including Gregorian dates. However, you can have fun with correlations, for
-                example:
-        <screen>
-$ mdate -c 584285 -j 584285 '+@J @d @m @Y @l @h @t'
-                    
-584285.0 13 08 -3113 00.00.00.00.00 8 Kumk'u  04 'Ahaw
-        </screen>
-                
-                However, the Mayan date above is meaningless :)
-        </para>
-    </sect1>
+@j add a tab to the output</literallayout>
+<simpara>Like date(1), mdate will format a date when given a &#8216;+&#8217; option, for example:</simpara>
+<screen>  $ mdate -d '07 09 2003' +'@f @l'
+
+  20030907 12.19.10.10.15</screen>
+<simpara>This was specifically requested for those who like to add a Mayan byline to
+emails and web pages. However, mdate has not ever supported time of day
+parsing/formatting, so it&#8217;s not rfc822 compliant! Most formats are merely
+passed on to strftime(3) where applicable.</simpara>
+</section>
+<section id="_correlation_options">
+<title>Correlation Options</title>
+<simpara>By default, Mdate used the Lounsbury correlation which is equivalent to the
+Julian Day Number 584285 in versions of Mdate prior to 1.6.0. Since then the
+GMT correlation is standard.
+The -g, --gmt option uses the standard Goodman-Martinez-Thompson correlation
+(GMT for short). It corresponds to the Julian Day Number 584283. Versions of
+Mdate from 1.6.0 silently ignores this option.
+If you don&#8217;t agree with the correlation constant, the -c, --correlation
+[=DOUBLE] allows you to specify a correlation of your own. Don&#8217;t be surprised,
+however if it doesn&#8217;t work the way you intended, especially if you set the
+Julian Day Number too low (see Limitations to understand why!)</simpara>
+</section>
+<section id="_date_input">
+<title>Date Input</title>
+<simpara>You probably want to check a specific date at some point. This can be done in
+several different ways, depending on the kind of date you already have.
+The -d, --dmy[="dd mm [-]yyyy"] option allows you to specify a Gregorian date.
+You can also specify negative (BC) years.</simpara>
+<screen>  $ mdate -d '05 04 2002'
+
+  JDN: 2452311.0 date: Tues 05 02 2002  12.19.08.17.06 8 Kimi  04 Pax</screen>
+<simpara>In the same way, the -j, --julian=[DOUBLE] option will output the date with a
+specified Julian Day Number:</simpara>
+<screen>  $ mdate -j 2452370
+
+  JDN: 2452370.0 date: Fri 05 04 2002  12.19.09.02.05 2 Chik'chan  03 Wayeb</screen>
+<simpara>Notice that you can leave the decimal part out if you wish.
+Finally, the -l, --longcount[="nn nn nn nn nn"] option does the same thing with
+a Mayan long count date input:</simpara>
+<screen>  $ mdate -l '12 19 09 02 05'
+
+  JDN: 2452370.0 date: Fri 05 04 2002  12.19.09.02.05 2 Chik'chan  03 Wayeb</screen>
+</section>
+<section id="_miscellaneous_options">
+<title>Miscellaneous Options</title>
+<simpara>The -h, --help option gives a simple display of help for Mdate.
+The -v, -V, --version option outputs version information for Mdate.</simpara>
+</section>
+</section>
+<section id="_limitations">
+<title>Limitations</title>
+<simpara>Mdate does not support any dates beyond the beginning of the current epoch
+(longcount 0.0.0.0.0) matching with the Julian Day Number correlation,
+including Gregorian dates. However, you can have fun with correlations, for
+example:</simpara>
+<screen>  $ mdate -c 584285 -j 584285 '+@J @d @m @Y @l @h @t'
+
+  584285.0 13 08 -3113 00.00.00.00.00 8 Kumk'u  04 'Ahaw</screen>
+<simpara>However, the Mayan date above is meaningless :)</simpara>
+</section>
 </article>

@@ -1,0 +1,5 @@
+#!/bin/sh
+# mdate.xml is a Makefile target.
+#asciidoc -a toc -b docbook mdate.txt
+xsltproc --nonet docbook-xsl/fo.xsl mdate.xml > mdate.fo
+fop mdate.fo mdate.pdf
