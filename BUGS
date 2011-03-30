@@ -23,3 +23,7 @@ Previously, you could mdate -c 0 -j 0 but that makes a bigger
 mess now. The only fix for this is to NOT make @a/@A default values for now,
 but I suspect it's a locale/struct tm problem really and nothing I care to
 rewrite for now.
+
+As of Debian Squeeze 64bit, this problem seems to be not so bad. At least
+trying the above tests doesnt spit out garbage any more, possibly because the
+default correlation has been moved back to 584283.
