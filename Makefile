@@ -158,10 +158,10 @@ DEFS+=-DUSE_MYDREM
 endif
 
 
-## Default compiler. On Debian, we're up to gcpp-4.2, so check your cflags!
+## Default compiler. On Debian, we're up to gcc-4.2, so check your cflags!
 # Updated for the nuisance deprecation of string conversions 
 CXX=g++
-CC=gcpp
+CC=gcc
 INC=-I/usr/include -I.
 DEFS+=-DHAVE_CONFIG_H -D$(DEFLANG) -DPACKAGE=\"$(PACKAGE)\" -DVERSION=\"$(VERSION)\"
 CFLAGS=-O -Wall -Wno-write-strings -ffloat-store $(DEFS)
@@ -178,8 +178,8 @@ endif
 ## linux Target.
 ## If you're not sure about your -march or -mcpu, try uname -a: it will tell
 ## you what cpu your kernel supports. Also see /proc/cpuinfo.
-## gcpp 2.95 and below do NOT support -march=athlon !!
-## new gcpp versions (4.1.x and above) prefer -mtune to -march, if your gcpp
+## gcc 2.95 and below do NOT support -march=athlon !!
+## new gcc versions (4.1.x and above) prefer -mtune to -march, if your gcc
 ## doesn't work with this parameter, revert
 
 ifeq ($(target),linux)
@@ -210,7 +210,7 @@ endif
 
 ## linux mingw32 cross-compiler
 ifeq ($(target),mingw32-cross)
-	CC = i586-mingw32msvc-gcpp
+	CC = i586-mingw32msvc-gcc
 	CXX = i586-mingw32msvc-g++
 	CFLAGS += -mconsole -I.
 endif
@@ -219,7 +219,7 @@ endif
 ifeq ($(target),beos)
 	INC=
 	CXXFLAGS += -I/boot/home/config/include -I./
-	CC= gcpp
+	CC= gcc
 	LIBS=-L/boot/home/config/lib -lintl
 endif
 
@@ -231,7 +231,7 @@ endif
 ## builds universal binaries, this will likely become default. ld up to 10.4.6
 ## does not support the -Wl syntax but may in the future, search Xcode docs for
 ## compiling universal binaries in the porting guide section. You shouldn't
-## need them here as gcpp will pass the link flags on.
+## need them here as gcc will pass the link flags on.
 ##
 ## If compiling on Leopard, you have the option of the old MacOSX10.4u.sdk or the new one
 ##
@@ -247,7 +247,7 @@ endif
 
 all: mdate
 
-.PHONY: help clean docpplean distclean gitch updategit reltag devtag
+.PHONY: help clean docclean distclean gitch updategit reltag devtag
 # need this for directory search
 
 mdate: $(OBJS)
@@ -259,15 +259,6 @@ mdate.exe: all
 endif
 
 ## documentation targets
-
-# temporary direct make for Polish mdate docs until we have enough languages
-# to justify unifying the make. this is well out of date and is no longer
-# supported.
-
-#ifeq ($(DEF_PL),1)
-#mdate_pl.html: mdate_pl.sgml
-#	[ -f mdate_pl.html ] || sgml2html -H header -F footer mdate_pl.sgml
-#endif
 
 # pass the doc stuff off to a submake in doc/
 createdoc:
@@ -289,9 +280,6 @@ installman: mdate
 
 installdoc: createdoc installman
 	[ -d $(DOCDIR) ] || mkdir -p $(DOCDIR); \
-	install -m 644  doc/mdate.dvi doc/mdate.ps $(DOCDIR); \
-	gzip $(DOCDIR)/mdate.dvi $(DOCDIR)/mdate.ps; \
-	install -m 644 doc/mdate.text $(DOCDIR);	gzip $(DOCDIR)/mdate.text ; \
 	install -m 644  README NEWS ChangeLog GPL API $(DOCDIR); \
 	install -m 644  AUTHORS Translators $(DOCDIR); \
 	[ -d $(HTMLDIR) ] || mkdir -p $(HTMLDIR); \
@@ -307,12 +295,12 @@ getopt.o: getopt.c config.h getopt.h
 getopt1.o: getopt1.c config.h getopt.h
 snprintf.o: snprintf.c config.h
 
-distclean: clean docpplean
+distclean: clean docclean
 
 SOURCES=*.cpp *.c *.h
 DOX=doc/mdate.html doc/mdate.pdf doc/mdate.txt NEWS README GPL API ChangeLog \
 AUTHORS doc/mdate.xml Translators doc/mdate.1 BUGS ChangeLog.old README.devel
-CONFS=Makefile mdate.spec ChangeLog.header .gitattributes .gitignore doc/mdate.xpr
+CONFS=Makefile mdate.spec ChangeLog.header .gitattributes .gitignore
 DEBCONF=debian/*
 DISTFILES= $(SOURCES) $(DOX) $(CONFS)
 
@@ -393,11 +381,8 @@ deb:
 clean:
 	-rm -f mdate $(OBJS) *.o mdate.exe *~ *core
 
-foclean:
-	-rm -f *.fo
-	
-docpplean: foclean
-	-rm -f *.bak
+docclean: 
+	cd doc && $(MAKE) docclean
 
 help:
 	@echo " "
