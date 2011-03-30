@@ -198,11 +198,10 @@ ifeq ($(target),cygwin)
 	CC += $(INC)
 endif
 
-## linux mingw64 cross-compiler, can output both 64 and 32bit code. Default to
-## 64bit unless you need 32bit help (alter the x86_64 to i686).
-ifeq ($(target),mingw64-cross)
-	CC = x86_64-w64-mingw32-gcc
-	CXX = x86_64-w64-mingw32-g++
+## linux mingw32 cross-compiler
+ifeq ($(target),mingw32-cross)
+	CC = i586-mingw32msvc-gcc
+	CXX = i586-mingw32msvc-g++
 	CFLAGS += -mconsole -I.
 endif
 
@@ -238,7 +237,7 @@ endif
 
 all: mdate
 
-.PHONY: help clean docpplean distclean gitch updategit reltag devtag
+.PHONY: help clean docclean distclean gitch updategit reltag devtag
 # need this for directory search
 
 mdate: $(OBJS)
@@ -271,9 +270,6 @@ installman: mdate
 
 installdoc: createdoc installman
 	[ -d $(DOCDIR) ] || mkdir -p $(DOCDIR); \
-	install -m 644  doc/mdate.dvi doc/mdate.ps $(DOCDIR); \
-	gzip $(DOCDIR)/mdate.dvi $(DOCDIR)/mdate.ps; \
-	install -m 644 doc/mdate.text $(DOCDIR);	gzip $(DOCDIR)/mdate.text ; \
 	install -m 644  README NEWS ChangeLog GPL API $(DOCDIR); \
 	install -m 644  AUTHORS Translators $(DOCDIR); \
 	[ -d $(HTMLDIR) ] || mkdir -p $(HTMLDIR); \
@@ -281,6 +277,7 @@ installdoc: createdoc installman
 	cp $(HTMLDIR)/mdate.html $(HTMLDIR)/index.html
 
 ## dependencies
+<<<<<<< HEAD
 $(OBJS): config.h 
 lang.o cmdline.o: lang.h
 mdate.o main.o: mdate.h
@@ -300,7 +297,7 @@ distclean: clean docclean
 SOURCES=*.cpp *.c *.h
 DOX=doc/mdate.html doc/mdate.pdf doc/mdate.txt NEWS README GPL API ChangeLog \
 AUTHORS doc/mdate.xml Translators doc/mdate.1 BUGS ChangeLog.old README.devel
-CONFS=Makefile mdate.spec ChangeLog.header .gitattributes .gitignore doc/mdate.xpr
+CONFS=Makefile mdate.spec ChangeLog.header .gitattributes .gitignore
 DEBCONF=debian/*
 DISTFILES= $(SOURCES) $(DOX) $(CONFS)
 
