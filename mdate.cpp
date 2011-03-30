@@ -1,9 +1,11 @@
 // vim:ts=4:sw=4
-// mdate.cc - member functions and other utilities
-// this is actually the core of the original mtools.c and the later libmdate.c
-// with new bits added of course.
+//! \file mdate.cpp
+//! \brief Member functions and other utilities
+
+//! This is actually the core of the original mtools.c and the later libmdate.c
+//! with new bits added of course.
 //
-// Copyright(c) under GPL 1998-2009 Sean Dwyer <ewe2@users.sourceforge.net>
+//! Copyright(c) under GPL 1998-2009 Sean Dwyer <ewetoo@gmail.com>
 
 #ifdef HAVE_CONFIG_H
 #include "config.h"
@@ -35,14 +37,19 @@
 
 using namespace std;
 
+//! \var VCS version
 static char rcsid[] __attribute__ ((unused)) = "@(#) $Id$";
 
-// Reinholt & Dershowitz augmented modulus, preventing over/underflow
+//! \def AMOD(x,y)
+//! \brief Reinholt & Dershowitz augmented modulus, preventing over/underflow
 #define AMOD(x,y) (1 + (((x) - 1) % (y)))
 
 // util functions
 
-// c implementation for drem-less
+//! \fn double my_drem(double x, double y)
+//! \brief Compatible drem function for OS's without one.
+//! \param x first number to compare
+//! \param y second number to compare
 #ifdef USE_MYDREM
 static double my_drem(double x, double y)
 {
@@ -66,7 +73,16 @@ static double my_drem(double x, double y)
 }
 #endif
 
-// signless modulus, compatible across most things (hopefully)
+
+//! \fn double my_mod(double x, double y)
+//! \brief Checks for a signed modulus and applies the correct function to
+//! provide a positive result.
+//! \param x first number to compare, may be signed or unsigned
+//! \param y second number to compare, may be signed or unsigned
+
+//! If the system has drem or remainder those functions are used.
+//! If the system has no compatible function, \fn my_drem() is called
+//! If the modulus is unsigned, fmod() is called.
 static double my_mod(double x, double y)
 {
 	double result;
@@ -189,7 +205,7 @@ bool mdate::gregdate_from_jdate(corr c, julian_date from, gregdate *to)
 
 bool mdate::jdate_from_gregdate(corr c, gregdate from, julian_date *to)
 {
-	double j,j2,ju;
+	double j,j1,j2,j3;
 	int d, m, y;
 
 	if (!(gregdate::is_valid_gregdate(from)))
@@ -200,13 +216,12 @@ bool mdate::jdate_from_gregdate(corr c, gregdate from, julian_date *to)
 	d = from.day;
 
 	// much safer than a one-liner
-	j2 = (m - 14)/12;
-	ju = d - 32075 + (int)(1461 * (y +4800 + j2) /4);
-	ju = ju + (int)(367 * (m - 2 - j2 * 12) /12);
-	ju = ju - (int)(3 * (int)(y + 4900 + j2) / 100 / 4);
-	j  = ju;
+	j = (m - 14)/12;
+	j1 = (d - 32075) + floor((1461 * (y +4800 + j) /4));
+	j2 = j1 + floor((367 * (m - 2 - j * 12) /12));
+	j3 = j2 - floor((3 * floor(y + 4800 + j) / 100 / 4));
 
-	*to = j;
+	*to = j3;
 	return 1;
 }
 
