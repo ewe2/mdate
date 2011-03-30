@@ -8,6 +8,91 @@
 
 -- 
 
+commit b50bd00aba6173e877e30a5bf2a785f4c8814785
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Thu Mar 31 00:22:32 2011 +1100
+
+    and the rest...
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+BUGS
+
+commit 28fa3666434bb388e1a70fdc61eef1a136fa8d44
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Thu Mar 31 00:22:21 2011 +1100
+
+    fixed silly Makefile typos and doc targets
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+Makefile
+
+commit 721a9e2b06d1ac0f33acf56f8160b4fb7155edfa
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Thu Mar 31 00:19:13 2011 +1100
+
+    Converted documentation to asciidoc-based generation
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+doc/Makefile
+doc/db2fo
+doc/db2html
+doc/db2pdf
+doc/docbook-xsl.css
+doc/docbook-xsl/asciidoc-docbook-xsl.txt
+doc/docbook-xsl/chunked.xsl
+doc/docbook-xsl/common.xsl
+doc/docbook-xsl/epub.xsl
+doc/docbook-xsl/fo.xsl
+doc/docbook-xsl/htmlhelp.xsl
+doc/docbook-xsl/manpage.xsl
+doc/docbook-xsl/text.xsl
+doc/docbook-xsl/xhtml.xsl
+doc/doxygen_log.txt
+doc/mdate.fo
+doc/mdate.html
+doc/mdate.pdf
+doc/mdate.ps
+doc/mdate.txt
+doc/mdate.xml
+doc/mdate.xpr
+doc/mdate_pl.sgml
+
+commit 6acd051373662528fda41f2a963923a2bfc528ab
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Thu Mar 31 00:17:43 2011 +1100
+
+    Squashed a silly off-by-one bug causing incorrect dates
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+mdate.cpp
+
+commit 6096226fcbcaa108c9566e8c3ac1e3885d701cbc
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Sun Mar 27 03:36:11 2011 +1100
+
+    Beginning the API Long March
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+doc/Makefile
+mdate.h
+
+commit 11adbb1c8349f1c3246134a438f43dc8b4c072df
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Sun Mar 27 02:58:40 2011 +1100
+
+    Some small references and changelog update.
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+API
+ChangeLog
+TODO
+
 commit 17ea749653437f1b57971d6698bdac4e4d356c41
 Author: Sean Dwyer <ewetoo@gmail.com>
 Date:   Sun Mar 27 02:48:44 2011 +1100
