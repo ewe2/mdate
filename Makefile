@@ -158,10 +158,10 @@ DEFS+=-DUSE_MYDREM
 endif
 
 
-## Default compiler. On Debian, we're up to gcpp-4.2, so check your cflags!
+## Default compiler. On Debian, we're up to gcc-4.2, so check your cflags!
 # Updated for the nuisance deprecation of string conversions 
 CXX=g++
-CC=gcpp
+CC=gcc
 INC=-I/usr/include -I.
 DEFS+=-DHAVE_CONFIG_H -D$(DEFLANG) -DPACKAGE=\"$(PACKAGE)\" -DVERSION=\"$(VERSION)\"
 CFLAGS=-O -Wall -Wno-write-strings -ffloat-store $(DEFS)
@@ -178,8 +178,8 @@ endif
 ## linux Target.
 ## If you're not sure about your -march or -mcpu, try uname -a: it will tell
 ## you what cpu your kernel supports. Also see /proc/cpuinfo.
-## gcpp 2.95 and below do NOT support -march=athlon !!
-## new gcpp versions (4.1.x and above) prefer -mtune to -march, if your gcpp
+## gcc 2.95 and below do NOT support -march=athlon !!
+## new gcc versions (4.1.x and above) prefer -mtune to -march, if your gcc
 ## doesn't work with this parameter, revert
 
 ifeq ($(target),linux)
@@ -210,7 +210,7 @@ endif
 
 ## linux mingw32 cross-compiler
 ifeq ($(target),mingw32-cross)
-	CC = i586-mingw32msvc-gcpp
+	CC = i586-mingw32msvc-gcc
 	CXX = i586-mingw32msvc-g++
 	CFLAGS += -mconsole -I.
 endif
@@ -247,7 +247,7 @@ endif
 
 all: mdate
 
-.PHONY: help clean docpplean distclean gitch updategit reltag devtag
+.PHONY: help clean docclean distclean gitch updategit reltag devtag
 
 mdate: $(OBJS)
 	$(CXX) $(CFLAGS) $(INC) -o mdate $(OBJS) $(LDFLAGS) $(LIBS)
@@ -270,7 +270,7 @@ endif
 
 createdoc: mdate.pdf mdate.html mdate.ps mdate.txt
 
-# prevent the HTML docs being acppidently remade
+# prevent the HTML docs being accidently remade
 mdate.html:	mdate.xml
 	[ -f mdate.html ] || ./db2html $< > mdate.html 
 
@@ -325,7 +325,7 @@ getopt.o: getopt.c config.h getopt.h
 getopt1.o: getopt1.c config.h getopt.h
 snprintf.o: snprintf.c config.h
 
-distclean: clean docpplean
+distclean: clean docclean
 
 SOURCES=*.cpp *.c *.h
 DOX=mdate.html mdate.pdf mdate.txt NEWS README GPL API ChangeLog \
@@ -414,7 +414,7 @@ clean:
 foclean:
 	-rm -f *.fo
 	
-docpplean: foclean
+docclean: foclean
 	-rm -f *.bak
 
 help:
