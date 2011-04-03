@@ -38,7 +38,7 @@
 
 PACKAGE=mdate
 VERSION=1.7.0
-DEVVER=1.7.0
+DEVVER=1.7.0.1
 
 # tagging for release and development. development branch should be tagged
 # DEVTAG when release master is done.
@@ -396,10 +396,11 @@ help:
 	@echo "	make target=uniosx"
 	@echo " "
 	@echo "Dev targets:"
-	@echo "	make gitch   - use git to update Changelog"
-	@echo "	make devtag  - tag src for development"
-	@echo "	make reltag  - tag src for release"
-	@echo "	make devdist - nightly tarballs"
-	@echo "	make reldist - release tarballs"
-	@echo "	make rpm     - rpm package"
-	@echo "	make deb     - deb package"
+	@echo "	make gitch     - use git to update Changelog"
+	@echo "	make devtag    - tag src for development"
+	@echo "	make reltag    - tag src for release"
+	@echo "	make devdist   - nightly tarballs"
+	@echo "	make reldist   - release tarballs"
+	@echo " make createdoc - generate documentation"
+	@echo "	make rpm       - rpm package"
+	@echo "	make deb       - deb package"
