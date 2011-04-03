@@ -319,7 +319,7 @@ reltag:
 	GIT_COMMITER_DATE=`date +'%F %R'` git tag -s -m "mdate $(RELTAG)" $(RELTAG) $(com)
 
 devtag:
-	GIT_COMMITTER_DATE=`date +'%f %R'` git tag -s -m "mdate $(DEVTAG)" $(DEVTAG) $(com)
+	GIT_COMMITTER_DATE=`date +'%F %R'` git tag -s -m "mdate $(DEVTAG)" $(DEVTAG) $(com)
 
 # Retained for historical use, do not use.
 # svn2cl has now been debianized so i am using that with appropriate flags.
