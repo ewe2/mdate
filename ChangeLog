@@ -8,6 +8,36 @@
 
 -- 
 
+commit 99d8b35f2a9d66b02129e95144806325217bd6b6
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Mon Apr 4 09:01:15 2011 +1000
+
+    updated devtag target to v1.7.0.1 for new documentation structure
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+Makefile
+
+commit 669cf3620ba0b8ac07b08028cbfd72abef4c6987
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Mon Apr 4 08:57:08 2011 +1000
+
+    basic parsit() function added
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+bparse.cpp
+
+commit 2d15288528ed3b99eb2b1ca769649052d0f42022
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Thu Mar 31 00:24:10 2011 +1100
+
+    changelog
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+ChangeLog
+
 commit b50bd00aba6173e877e30a5bf2a785f4c8814785
 Author: Sean Dwyer <ewetoo@gmail.com>
 Date:   Thu Mar 31 00:22:32 2011 +1100
