@@ -39,7 +39,6 @@ const char* MSG_ILC = EN_MSG_ILC;
 const char* MSG_IGD = EN_MSG_IGD;
 const char* MSG_IJDN = EN_MSG_IJDN;
 const char* MSG_FORMATERR = EN_MSG_FORMATERR;
-const char* pretty_format = en_pretty_format;
 const char* default_format = en_default_format;
 const char** short_days = en_short_days;
 const char** days = en_days;
@@ -59,7 +58,6 @@ const char* MSG_ILC = DE_MSG_ILC;
 const char* MSG_IGD = DE_MSG_IGD;
 const char* MSG_IJDN = DE_MSG_IJDN;
 const char* MSG_FORMATERR = DE_MSG_FORMATERR;
-const char* pretty_format = de_pretty_format;
 const char* default_format = de_default_format;
 const char** short_days = de_short_days;
 const char** days = de_days;
@@ -79,7 +77,6 @@ const char* MSG_ILC = ES_MSG_ILC;
 const char* MSG_IGD = ES_MSG_IGD;
 const char* MSG_IJDN = ES_MSG_IJDN;
 const char* MSG_FORMATERR = ES_MSG_FORMATERR;
-const char* pretty_format = es_pretty_format;
 const char* default_format = es_default_format;
 const char** short_days = es_short_days;
 const char** days = es_days;
@@ -99,7 +96,6 @@ const char* MSG_ILC = PL_MSG_ILC;
 const char* MSG_IGD = PL_MSG_IGD;
 const char* MSG_IJDN = PL_MSG_IJDN;
 const char* MSG_FORMATERR = PL_MSG_FORMATERR;
-const char* pretty_format = pl_pretty_format;
 const char* default_format = pl_default_format;
 const char** short_days = pl_short_days;
 const char** days = pl_days;
@@ -119,7 +115,6 @@ const char* MSG_ILC = FR_MSG_ILC;
 const char* MSG_IGD = FR_MSG_IGD;
 const char* MSG_IJDN = FR_MSG_IJDN;
 const char* MSG_FORMATERR = FR_MSG_FORMATERR;
-const char* pretty_format = fr_pretty_format;
 const char* default_format = fr_default_format;
 const char** short_days = fr_short_days;
 const char** days = fr_days;
@@ -152,7 +147,6 @@ int set_lang(const char *lang)
 				MSG_IJDN = EN_MSG_IJDN;
 				MSG_FORMATERR = EN_MSG_FORMATERR;
 
-				pretty_format = en_pretty_format;
 				default_format = en_default_format;
 
 				short_days = en_short_days;
@@ -174,7 +168,6 @@ int set_lang(const char *lang)
 				MSG_IJDN = ES_MSG_IJDN;
 				MSG_FORMATERR = ES_MSG_FORMATERR;
 
-				pretty_format = es_pretty_format;
 				default_format = es_default_format;
 
 				short_days = es_short_days;
@@ -203,7 +196,6 @@ int set_lang(const char *lang)
 				MSG_IJDN = DE_MSG_IJDN;
 				MSG_FORMATERR = DE_MSG_FORMATERR;
 
-				pretty_format = de_pretty_format;
 				default_format = de_default_format;
 
 				short_days = de_short_days;
@@ -231,7 +223,6 @@ int set_lang(const char *lang)
 				MSG_IJDN = FR_MSG_IJDN;
 				MSG_FORMATERR = FR_MSG_FORMATERR;
 
-				pretty_format = fr_pretty_format;
 				default_format = fr_default_format;
 
 				short_days = fr_short_days;
@@ -259,7 +250,6 @@ int set_lang(const char *lang)
 				MSG_IJDN = PL_MSG_IJDN;
 				MSG_FORMATERR = PL_MSG_FORMATERR;
 
-				pretty_format = pl_pretty_format;
 				default_format = pl_default_format;
 
 				short_days = pl_short_days;
