@@ -6,12 +6,15 @@ LIBS=-lboost_program_options
 CXX=g++
 DEFS+=-DDEF_EN -DHAVE_CONFIG_H -DTEST -DPACKAGE=\"$(PACKAGE)\" -DVERSION=\"$(VERSION)\"
 CFLAGS=$(DEFS)
+CXXFLAGS=$(CFLAGS)
 OBJS=lang.o bparse.o
 
 bparse: $(OBJS) 
-	$(CXX) $CFLAGS) -o bparse $(OBJS) $(LIBS)
+	$(CXX) $(CFLAGS) -o bparse $(OBJS) $(LIBS)
 
 
+clean:
+	rm -f bparse *.o *~
 ##
 lang.o: lang.cpp config.h lang.h
 bparse.o: bparse.cpp config.h mdate.h
