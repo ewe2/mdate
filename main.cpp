@@ -91,24 +91,8 @@ int main (int argc, char *argv[])
  			::exit(0);
 		}
 		
-		// pretty or one-liner?
-        // the FreeBSD port helped debug string space problems
-        // that led to output format errors.
-        // we now give you the option of an output format or just hardcore
-        // date(1) like mode.
-
-#ifdef WANT_PRETTY
-		if(args_info.parseable_given) {
-			datey=datey?datey:default_format;
-			md.mdate_strftime(cor,&buffy,datey,thedate);
-		} else {
-			datey=datey?datey:pretty_format;
-			md.mdate_strftime(cor,&buffy,datey,thedate);
-		}
-#else
 		datey=default_format;
 		md.mdate_strftime(cor,&buffy,datey,thedate);
-#endif
 		cout << buffy.str() << endl;
 
 	} else {

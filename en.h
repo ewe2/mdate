@@ -6,7 +6,7 @@
 // This file follows the mplayer translation string system. Please add the
 // version your translation is synced for below to help keep things updated.
  
-// version 1.5.0
+// version 1.7.0
 // $Id$
 
 // ============================= Mdate help ===============================
@@ -18,7 +18,6 @@ static char en_helptext[] __attribute__ ((unused)) =
 "Usage: mdate [OPTION]... [+FORMAT]\n"
 "   -h, --help                Print help and exit\n"
 "   -V, --version             Print version and exit\n"
-"   -p, --parseable           program-parseable output (default=off)\n"
 "   -g, --gmt                 use gmt correlation (default=on)\n"
 "   -L, --lang=LANGUAGE       change language (default en)\n"
 "   -c, --correlation=DOUBLE  optional correlation (default=no)\n"
@@ -70,16 +69,6 @@ const char* EN_MSG_ILC = "Invalid Long Count entered!\n";
 const char* EN_MSG_IGD = "Invalid Gregorian Date entered!\n";
 const char* EN_MSG_IJDN = "Invalid Julian Day Number entered!\n";
 const char* EN_MSG_FORMATERR = "Unknown format!\n";
-
-// ============================= Mdate formats ============================
-
-static char en_pretty_format[] __attribute__ ((unused)) =
-"\n"
-"Gregorian Date     : @d-@B-@Y (@d/@m/@Y)\n"
-"Julian Day Number  : @J\n"
-"Long Count         : @l\n"
-"Tzolkin Date       : @T\n"
-"Haab Date          : @h\n";
 
 static char en_default_format[] __attribute__ ((unused)) = "JDN: @J date: @d @m @Y  @l @T @H";
 

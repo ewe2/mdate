@@ -18,7 +18,6 @@ static char de_helptext[] __attribute__ ((unused)) =
 "Aufruf: mdate [OPTION]... [+FORMAT]\n"
 "  -h, --help                    Gibt Hilfe aus und beendet\n"
 "  -V, --version                 Gibt die Version und beendet\n"
-"  -p, --parseable        Für Programme verarbeitbare Ausgabe (Standard=nein)\n"
 "  -g, --gmt                     Benutzen Sie GMT Korrelation (Standard=ja)\n"
 "  -L, --lang=SPRACHE            Sprache (Standard en)\n"
 "  -c, --correlation=DOUBLE      Benutzen Sie Korrelation (Standard=nein)\n"
@@ -70,16 +69,6 @@ const char* DE_MSG_ILC = "Ungültige Lange Zahl!\n";
 const char* DE_MSG_IGD = "Ungültige Gregorianische Datum!\n";
 const char* DE_MSG_IJDN = "Ungültige Julianische Tage Zahl\n";
 const char* DE_MSG_FORMATERR = "Unbekannte Format!\n";
-
-// ============================= Mdate formats ============================
-
-static char de_pretty_format[] __attribute__ ((unused)) =
-"\n"
-"Gregorianisches Datum   : @d-@B-@Y (@d/@m/@Y)\n"
-"Julianische Tageszahl   : @J\n"
-"Langzahl                : @l\n"
-"Tzolkin Datum           : @T\n"
-"Haab Datum              : @h\n";
 
 static char de_default_format[] __attribute__ ((unused)) = "JTZ: @J Datei: @d @m @Y  @l @T @H";
 

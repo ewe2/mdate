@@ -16,8 +16,6 @@ static char pl_helptext[] __attribute__ ((unused)) =
 "U¿ycie: mdate [OPCJE]... [+FORMAT]\n"
 "   -h, --help                wy¶wietla pomoc i koñczy dzia³anie\n"
 "   -V, --version             wy¶wietla wersjê programu i koñczy dzia³anie\n"
-"   -p, --parseable           wy¶wietla datê w formie ³atwej do wczytania\n"
-"				innym programem (standardowo wy³±czone)\n"
 "   -g, --gmt                 korelacja GMT (standardowo wy³±czone)\n"
 "   -L, --lang=LANGUAGE       wybór jêzyka\n"
 "   -c, --correlation=DOUBLE  opcjonalna korelacja (standardowo brak)\n"
@@ -69,17 +67,6 @@ const char* PL_MSG_ILC = "Nieprawid³owo podana D³uga Rachuba Kalendarzowa!\n";
 const char* PL_MSG_IGD = "Nieprawid³owo podana data Gregoriañska!\n";
 const char* PL_MSG_IJDN = "Nieprawid³owo podany Juliañski numer dnia!\n";
 const char* PL_MSG_FORMATERR = "Nieznany format!\n";
-
-// ============================= Mdate formats ============================
-
-static char pl_pretty_format[] __attribute__ ((unused)) =
-"\n"
-"Data Gregoriañska  : @d-@B-@Y (@d/@m/@Y)\n"
-"Juliañski Nr. Dnia : @J\n"
-"D³. Rachuba Kal.   : @l\n"
-"Data Tzolkin       : @T\n"
-"Data Haab          : @h\n";
-
 
 static char pl_default_format[] __attribute__ ((unused)) = "JND: @J data: @d @m @Y  @l @T @H";
 

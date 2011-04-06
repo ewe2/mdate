@@ -34,7 +34,6 @@ static struct option long_options[] = {
 	{ "help",       0, NULL, 'h' },
 	{ "version",    0, NULL, 'V' },
 	{ "version", 0, NULL, 'v' },
-	{ "parseable",  0, NULL, 'p' },
 	{ "gmt",        0, NULL, 'g' },
 	{ "lang",       1, NULL, 'L' },
 	{ "correlation", 1, NULL, 'c' },
@@ -67,7 +66,6 @@ cmdline_parser (int argc, char *const *argv, struct gengetopt_args_info *args_in
 
 	args_info->help_given = 0 ;
 	args_info->version_given = 0 ;
-	args_info->parseable_given = 0 ;
 	args_info->gmt_given = 0 ;
 	args_info->correlation_given = 0 ;
 	args_info->dmy_given = 0 ;
@@ -76,7 +74,6 @@ cmdline_parser (int argc, char *const *argv, struct gengetopt_args_info *args_in
 	args_info->format_given = 0;
 
 #define clear_args() { \
-  args_info->parseable_flag = 0;\
   args_info->gmt_flag = 0;\
   args_info->dmy_arg1 = 0; \
   args_info->dmy_arg2 = 0;\
@@ -101,8 +98,8 @@ cmdline_parser (int argc, char *const *argv, struct gengetopt_args_info *args_in
 
       switch (c)
       {
-				case 0:
-					break;
+		case 0:
+			break;
         case 'h':	// Print help and exit.
           clear_args ();
           cmdline_parser_print_help ();
@@ -113,11 +110,6 @@ cmdline_parser (int argc, char *const *argv, struct gengetopt_args_info *args_in
           clear_args ();
           cmdline_parser_print_version ();
           ::exit (0);
-
-        case 'p':	// program-parseable output.
-          args_info->parseable_given = 1;
-          args_info->parseable_flag = !(args_info->parseable_flag);
-          break;
 
         case 'g':	// use gmt correlation.
           if (args_info->correlation_given)
