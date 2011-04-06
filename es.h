@@ -15,8 +15,6 @@ static char es_helptext[] __attribute__ ((unused)) =
 "Sintaxis: mdate [OPCIÓN]... [+FORMATO]\n"
 "   -h, --help                Muestra este mensaje de ayuda y acaba.\n"
 "   -V, --version             Muestra la versión del programa y acaba.\n"
-"   -p, --parseable           Salida analizable por un programa\n"
-"                             (por omisión: desactivado).\n"
 "   -g, --gmt                 Usa la correlación Goodman-Martínez-Thompson.\n"
 "                             (por omisión: desactivado).\n"
 "   -L, --lang=IDIOMA         Cambia de idioma (por omisión: en).\n"
@@ -69,16 +67,6 @@ const char* ES_MSG_ILC = "La cuenta larga introducida no es válida.\n";
 const char* ES_MSG_IGD = "La fecha gregoriana introducida no es válida.\n";
 const char* ES_MSG_IJDN = "El número de día juliano introducido no es válido.\n";
 const char* ES_MSG_FORMATERR = "¡Formato desconocido!\n";
-
-// ============================= Mdate formats ============================
-
-static char es_pretty_format[] __attribute__ ((unused)) =
-"\n"
-"Fecha gregoriana      : @d-@B-@Y (@d/@m/@Y)\n"
-"Número de día juliano : @J\n"
-"Cuenta larga          : @l\n"
-"Fecha Tzolkin         : @T\n"
-"Fecha Haab            : @h\n";
 
 static char es_default_format[] __attribute__ ((unused)) = "NDJ: @J fecha: @d @m @Y  @l @T @H";
 

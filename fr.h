@@ -13,7 +13,6 @@ static char fr_helptext[] __attribute__ ((unused)) =
 "Utilisation: mdate [OPTION]... [+FORMAT]\n"
 "   -h, --help                Affiche ce message d'aide et quitte\n"
 "   -V, --version             Affiche le numéro de version et quitte\n"
-"   -p, --parseable           sortie à format fixe (par défaut : non)\n"
 "   -g, --gmt                 utilise la corrélation GTM (par défaut : oui)\n"
 "   -L, --lang=LANGUE         change la langue (par défaut : en)\n"
 "   -c, --correlation=DOUBLE  corrélation optionnelle (par défaut : non)\n"
@@ -65,17 +64,6 @@ const char* FR_MSG_ILC = "Ce compte long n'est pas valable !\n";
 const char* FR_MSG_IGD = "Cette date grégorienne n'est pas valable !\n";
 const char* FR_MSG_IJDN = "Cette date au calendrier julien n'est pas valable !\n";
 const char* FR_MSG_FORMATERR = "Format inconnu !\n";
-
-// ============================= Mdate formats ============================
-
-static char fr_pretty_format[] __attribute__ ((unused)) =
-"\n"
-"Jour grégorien : @d-@B-@Y (@d/@m/@Y)\n"
-"Jour julien    : @J\n"
-"Compte long    : @l\n"
-"Date Tzolkin   : @T\n"
-"Date Haab      : @h\n";
-
 
 static char fr_default_format[] __attribute__ ((unused)) = "JDN: @J date: @d @m @Y  @l @T @H";
 
