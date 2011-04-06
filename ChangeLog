@@ -8,6 +8,99 @@
 
 -- 
 
+commit 6d3ab6fd3a97af03845c4c6b1df87844f1a964b5
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Wed Apr 6 23:45:53 2011 +1000
+
+    removed -p parseable option, updated formats
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+cmdline.cpp
+de.h
+en.h
+es.h
+fr.h
+lang.cpp
+main.cpp
+pl.h
+
+commit e6918d3c7ff79b2afaef5af2cfed6a094708b9ff
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Wed Apr 6 23:45:15 2011 +1000
+
+    added language updates to boost testbed
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+boost/Makefile
+boost/de.h
+boost/en.h
+boost/es.h
+boost/fr.h
+boost/lang.cpp
+boost/names.h
+boost/pl.h
+
+commit 1ff4febba868d13db9bfde15677f9967ccdfb7e2
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Wed Apr 6 23:21:53 2011 +1000
+
+    added lang.h header to boost testbed
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+boost/lang.h
+
+commit f5686caaad9c1599f261f09f95ba2c02a7aad12c
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Wed Apr 6 23:20:51 2011 +1000
+
+    moved boost testbed to separate directory
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+boost/Makefile
+boost/bparse.cpp
+boost/config.h
+boost/en.h
+boost/lang.cpp
+boost/mdate.cpp
+boost/mdate.h
+bparse.cpp
+
+commit fe03569a7287dcdbba1b15b8d27fce36fba85dcc
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Wed Apr 6 23:20:02 2011 +1000
+
+    iostream syntax updates
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+cmdline.cpp
+main.cpp
+mdate.cpp
+
+commit 37a223afdbfefe291f1bfc6a63f0cbf4dc2e1138
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Mon Apr 4 09:02:58 2011 +1000
+
+    typo devtag crashed target
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+Makefile
+
+commit cdd8a4a9b5ad6dee454081cf640d567d76b5ceb8
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Mon Apr 4 09:02:00 2011 +1000
+
+    changelog
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+ChangeLog
+
 commit 99d8b35f2a9d66b02129e95144806325217bd6b6
 Author: Sean Dwyer <ewetoo@gmail.com>
 Date:   Mon Apr 4 09:01:15 2011 +1000
