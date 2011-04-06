@@ -47,8 +47,8 @@ static struct option long_options[] = {
 void
 cmdline_parser_print_version (void)
 {
-	std::cout << PACKAGE << " " << VERSION << "\n";
-	std::cout << "Copyright(c) 1998-2011 Sean Dwyer <ewe2@users.sourceforge.net>\n";
+	cout << PACKAGE << " " << VERSION << endl;
+	cout << "Copyright(c) 1998-2011 Sean Dwyer <ewe2@users.sourceforge.net>" << endl;
 }
 
 void
@@ -189,7 +189,7 @@ cmdline_parser (int argc, char *const *argv, struct gengetopt_args_info *args_in
           ::exit (1);
 
         default:	// bug: option not considered.
-          std::cerr << MSG_OPTERR << c << "\n";
+          cerr << MSG_OPTERR << c << endl;
           abort ();
       } // switch
     
