@@ -76,7 +76,7 @@ int main (int argc, char *argv[])
 		
 		// today's date
 		if (!md.set_time(cor, &thedate)) {
-			std::cerr << MSG_GENERR;
+			cerr << MSG_GENERR;
 			::exit(1);
 		}
 			
@@ -87,7 +87,7 @@ int main (int argc, char *argv[])
 			datey = args_info.format_arg;
 			md.mdate_strftime(cor, &buffy, datey, thedate);
 
-			std::cout << buffy.str() << "\n";
+			cout << buffy.str() << endl;
  			::exit(0);
 		}
 		
@@ -109,7 +109,7 @@ int main (int argc, char *argv[])
 		datey=default_format;
 		md.mdate_strftime(cor,&buffy,datey,thedate);
 #endif
-		std::cout << buffy.str() << "\n";
+		cout << buffy.str() << endl;
 
 	} else {
 		// we got a -d, -j or -l option
@@ -131,7 +131,7 @@ int main (int argc, char *argv[])
 			year = args_info.dmy_arg3;
 			gdate.set_gregdate(day, month, year);
 			if (!md.jdate_from_gregdate(cor, gdate, &thedate)) {
-				std::cerr << MSG_IGD;
+				cerr << MSG_IGD;
 				::exit(1);
 			}
 		}
@@ -141,7 +141,7 @@ int main (int argc, char *argv[])
 			double j;
 			j = args_info.julian_arg;
 			if (!jdate.jdate_from_jd(cor, j, &thedate)) {
-				std::cerr << MSG_IJDN;
+				cerr << MSG_IJDN;
 				::exit(1);
 			}
 		}
@@ -181,7 +181,7 @@ int main (int argc, char *argv[])
 			}
 			md.mdate_strftime(cor,&buffy,datey,thedate);
 		}
-		std::cout << buffy.str() << "\n";
+		cout << buffy.str() << endl;
 	}
  
 	return 0;
