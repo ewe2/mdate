@@ -41,10 +41,9 @@ void version(void)
 int parseit(int argc, char *argv[])
 {
 	string config_file;
-	// this is just for testing. we really don't want anything hardcoded in
-	// here, its just to parse the options, we'll validate later.
 	double corr;
 	double julian;
+	int gmt;
 
 	// Because these are vectors, we can do different stuff with the options.
 	// if we cast to string, we can do things the old way, escaping values and
@@ -52,6 +51,10 @@ int parseit(int argc, char *argv[])
 	// for us.
 	vector<int> longcount;
 	vector<int> dmy;
+	vector<string> fmt;
+
+	//format needs to be both a positional argument and a config file
+	//argument.
 
 	// minimum options
 	mo::options_description basic("Mdate options");
@@ -65,9 +68,10 @@ int parseit(int argc, char *argv[])
 	// configfile options
 	mo::options_description config("configuration");
 	config.add_options()
-		("correlation,c",mo::value<double>(&corr)->default_value(585283.0),	"default correlation")
+		("correlation,c",mo::value<double>(&corr)->default_value(584283.0),	"default correlation")
 		("language,L",mo::value<string>()->default_value("en"),"change language (default en)")
-		("gmt,g",mo::value<int>()->default_value(1),"use gmt (default on)");
+		("gmt,g",mo::value<int>(&gmt)->default_value(1),"use gmt (default on)")
+		("format,f",mo::value<vector <string> >(&fmt),"format string");
 
 	mo::options_description date("date options");
 	date.add_options()
@@ -82,12 +86,21 @@ int parseit(int argc, char *argv[])
 	config_file_options.add(config);
 
 	mo::positional_options_description p;
-	p.add("gmt",1).add("dmy",1).add("longcount",1).add("correlation",1);
+	p.add("format",-1);
 
 	mo::variables_map vm;
 	mo::parsed_options parsed = mo::command_line_parser(argc,argv).options(cmdline_options).positional(p).run();
 	mo::store(parsed,vm);
 	mo::notify(vm);
+
+	ifstream ifs(config_file.c_str());
+	if (!ifs) {
+		cout << "error: cannot open config file: " << config_file << endl;
+		return 0;
+	} else {
+		mo::store(parse_config_file(ifs, config_file_options),vm);
+		mo::notify(vm);
+	}
 
 	// at this point we're just validating options. the parser automatically
 	// validates data given to the option so we can save a bit of logic in
@@ -98,15 +111,15 @@ int parseit(int argc, char *argv[])
 	try {
 		if (vm.count("help")) {
 			version();
-			cout << helptext << endl;
-//			cout << basic << endl;
-//			cout << config << endl;
-//			cout << date << endl;
+//			cout << helptext << endl;
+			cout << basic << endl;
+			cout << config << endl;
+			cout << date << endl;
 			return 0;
 		}
 
 		if (vm.count("version")) {
-			cout << "Mdate v1.7.0" << "\n";
+			cout << "Mdate v1.7.0" << endl;
 			cout << "Copyright (c) Sean Dwyer 2011" << endl;
 			return 0;
 		}
@@ -114,8 +127,15 @@ int parseit(int argc, char *argv[])
 		if (vm.count("correlation")) {
 			cout << "correlation set to " << corr << endl;
 		} else {
-			cout << "compression not set." << endl;
+			cout << "correlation not set." << endl;
 		}
+		
+		if (vm.count("gmt")) {
+			cout << "gmt set " << gmt << endl;
+		} else {
+			cout << "gmt not set." << endl;
+		}
+
 		// these two are effectively tokenized so we can easily pass them on
 		// to their functions
 		// note simple logic to avoid tokenizing errors. the alternative is to
@@ -135,6 +155,14 @@ int parseit(int argc, char *argv[])
 			} else {
 				cout << "long count is " << longcount << endl;
 			}
+		}
+		
+		// all the work is done in mdate_strftime()
+		// the only issue with this is that
+		if (vm.count("format")) {
+			cout << "format is " << fmt << endl;
+		} else {
+			cout << "no format set." << endl;
 		}
 	}
 	catch(exception &e) {
