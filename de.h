@@ -6,7 +6,7 @@
 // Höchschuler Deutsch :)
 
  
-// version 1.5.1
+// version 1.7.0.3
 // $Id$
 
 // ============================= Mdate help ===============================
@@ -18,7 +18,6 @@ static char de_helptext[] __attribute__ ((unused)) =
 "Aufruf: mdate [OPTION]... [+FORMAT]\n"
 "  -h, --help                    Gibt Hilfe aus und beendet\n"
 "  -V, --version                 Gibt die Version und beendet\n"
-"  -g, --gmt                     Benutzen Sie GMT Korrelation (Standard=ja)\n"
 "  -L, --lang=SPRACHE            Sprache (Standard en)\n"
 "  -c, --correlation=DOUBLE      Benutzen Sie Korrelation (Standard=nein)\n"
 "  -d, --dmy=ZEICHENKETTE        Tag, Monat, Jahr (Gregorianisch)\n"

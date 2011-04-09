@@ -6,7 +6,7 @@
 // This file follows the mplayer translation string system. Please add the
 // version your translation is synced for below to help keep things updated.
  
-// version 1.7.0
+// version 1.7.0.3
 // $Id$
 
 // ============================= Mdate help ===============================
@@ -18,7 +18,6 @@ static char en_helptext[] __attribute__ ((unused)) =
 "Usage: mdate [OPTION]... [+FORMAT]\n"
 "   -h, --help                Print help and exit\n"
 "   -V, --version             Print version and exit\n"
-"   -g, --gmt                 use gmt correlation (default=on)\n"
 "   -L, --lang=LANGUAGE       change language (default en)\n"
 "   -c, --correlation=DOUBLE  optional correlation (default=no)\n"
 "   -d, --dmy=STRING          day month year (Gregorian)\n"

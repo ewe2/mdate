@@ -4,7 +4,7 @@
 // Wszelkie b³êdy/niejasno¶ci w t³umaczeniu zg³aszaæ na adres:
 // tuvokhome@interia.pl
  
-// version 1.5.1
+// version 1.7.0.3
 // $Id$
 
 // ============================= Mdate help ===============================
@@ -16,7 +16,6 @@ static char pl_helptext[] __attribute__ ((unused)) =
 "U¿ycie: mdate [OPCJE]... [+FORMAT]\n"
 "   -h, --help                wy¶wietla pomoc i koñczy dzia³anie\n"
 "   -V, --version             wy¶wietla wersjê programu i koñczy dzia³anie\n"
-"   -g, --gmt                 korelacja GMT (standardowo wy³±czone)\n"
 "   -L, --lang=LANGUAGE       wybór jêzyka\n"
 "   -c, --correlation=DOUBLE  opcjonalna korelacja (standardowo brak)\n"
 "   -d, --dmy=STRING          dzieñ miesi±c rok (wg. kalendarza Gregoriañskiego)\n"

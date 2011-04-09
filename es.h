@@ -3,7 +3,7 @@
 // Copyright (C) 1998-2009 Sean Dwyer <ewe2@users.sourceforge.net>
 // Quique <quique@sindominio.net>, 2003, 2004
 //
-// version 1.5.1
+// version 1.7.0.3
 // $Id$
 
 // ============================= Mdate help ===============================
@@ -15,8 +15,6 @@ static char es_helptext[] __attribute__ ((unused)) =
 "Sintaxis: mdate [OPCIÓN]... [+FORMATO]\n"
 "   -h, --help                Muestra este mensaje de ayuda y acaba.\n"
 "   -V, --version             Muestra la versión del programa y acaba.\n"
-"   -g, --gmt                 Usa la correlación Goodman-Martínez-Thompson.\n"
-"                             (por omisión: desactivado).\n"
 "   -L, --lang=IDIOMA         Cambia de idioma (por omisión: en).\n"
 "   -c, --correlation=DOBLE   Correlación opcional (por omisión: no).\n"
 "   -d, --dmy=CADENA          Día mes año (gregoriano).\n"

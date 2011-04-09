@@ -21,7 +21,6 @@ extern const char* MSG_IGD;
 extern const char* MSG_IJDN;
 extern const char* MSG_FORMATERR;
 
-extern const char* pretty_format;
 extern const char* default_format;
 
 extern const char** short_days;
