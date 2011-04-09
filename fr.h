@@ -1,7 +1,7 @@
 // French translation (c) 2003 by François-Xavier Coudert
 // <coudert@users.sourceforge.net>
  
-// version 1.5.1
+// version 1.7.0.3
 // $Id$
 
 // ============================= Mdate help ===============================
@@ -13,7 +13,6 @@ static char fr_helptext[] __attribute__ ((unused)) =
 "Utilisation: mdate [OPTION]... [+FORMAT]\n"
 "   -h, --help                Affiche ce message d'aide et quitte\n"
 "   -V, --version             Affiche le numéro de version et quitte\n"
-"   -g, --gmt                 utilise la corrélation GTM (par défaut : oui)\n"
 "   -L, --lang=LANGUE         change la langue (par défaut : en)\n"
 "   -c, --correlation=DOUBLE  corrélation optionnelle (par défaut : non)\n"
 "   -d, --dmy=CHAîNE          jour mois année (calendrier grégorien)\n"

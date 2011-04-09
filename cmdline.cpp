@@ -34,7 +34,6 @@ static struct option long_options[] = {
 	{ "help",       0, NULL, 'h' },
 	{ "version",    0, NULL, 'V' },
 	{ "version", 0, NULL, 'v' },
-	{ "gmt",        0, NULL, 'g' },
 	{ "lang",       1, NULL, 'L' },
 	{ "correlation", 1, NULL, 'c' },
 	{ "dmy",        1, NULL, 'd' },
@@ -66,7 +65,6 @@ cmdline_parser (int argc, char *const *argv, struct gengetopt_args_info *args_in
 
 	args_info->help_given = 0 ;
 	args_info->version_given = 0 ;
-	args_info->gmt_given = 0 ;
 	args_info->correlation_given = 0 ;
 	args_info->dmy_given = 0 ;
 	args_info->julian_given = 0 ;
@@ -74,7 +72,6 @@ cmdline_parser (int argc, char *const *argv, struct gengetopt_args_info *args_in
 	args_info->format_given = 0;
 
 #define clear_args() { \
-  args_info->gmt_flag = 0;\
   args_info->dmy_arg1 = 0; \
   args_info->dmy_arg2 = 0;\
   args_info->dmy_arg3 = 0;\
@@ -111,23 +108,12 @@ cmdline_parser (int argc, char *const *argv, struct gengetopt_args_info *args_in
           cmdline_parser_print_version ();
           ::exit (0);
 
-        case 'g':	// use gmt correlation.
-          if (args_info->correlation_given)
-            {
-                std::cerr << MSG_CERR;
-                clear_args();
-                ::exit(1);
-            }
-          args_info->gmt_given = 1;
-          args_info->gmt_flag = !(args_info->gmt_flag);
-          break;
-		
 		case 'L':	// language selection.
 		  set_lang(optarg);
 		  break;
 		  
         case 'c':	// optional correlation (default=no).
-          if ((args_info->correlation_given) || (args_info->gmt_given))
+          if (args_info->correlation_given)
             {
               std::cerr << MSG_CERR;
               clear_args ();

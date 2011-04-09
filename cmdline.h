@@ -27,7 +27,6 @@ extern "C" {
 
 struct gengetopt_args_info {
   int parseable_flag;	/* program-parseable output (default=off).  */
-  int gmt_flag;	/* use gmt correlation (default=off).  */
   double correlation_arg;	/* optional correlation (default=no).  */
   int dmy_arg1;	/* day month year (Gregorian).  */
   int dmy_arg2;

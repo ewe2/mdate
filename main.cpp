@@ -67,8 +67,6 @@ int main (int argc, char *argv[])
 		// this should be a conf file option
 		if (args_info.correlation_given)
 			cor = args_info.correlation_arg;
-		else if (args_info.gmt_given)
-			cor = 584285.0;
 		else
 			cor = 584285.0;
 		
@@ -141,31 +139,6 @@ int main (int argc, char *argv[])
 			ldate.set_longdate(ba,ka,tu,ui,ki);
 			md.jdate_from_longcount(cor, ldate, &thedate);
 		}
-		// check if we got any fries with that and output the result. allow
-		// format args after option args. to encourage the death of pretty
-		// format, you will notice that you don't actually need the -p option
-		// to output formatted dates given a -j, -d or -l, unless you want
-		// padded output (the future of -p). But see above for why pretty is
-		// really dead.
-		if(args_info.parseable_given) {
-			if(args_info.format_given)
-				datey=args_info.format_arg;
-			else
-				datey=datey?datey:default_format;
-				md.mdate_strftime(cor,&buffy,datey,thedate);
-		} else {
-			if(args_info.format_given) {
-				datey=args_info.format_arg;
-			} else {
-#ifdef WANT_PRETTY
-				datey=datey?datey:pretty_format;
-#else
-				datey=datey?datey:default_format;
-#endif
-			}
-			md.mdate_strftime(cor,&buffy,datey,thedate);
-		}
-		cout << buffy.str() << endl;
 	}
  
 	return 0;
