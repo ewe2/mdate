@@ -8,6 +8,158 @@
 
 -- 
 
+commit 7d41e7190e3628a953f82f6d930cb8d0227f0b19
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Sat Apr 9 17:12:50 2011 +1000
+
+    merged -p and -g fixes from branch commandline-approaches
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+boost/Makefile
+boost/altrc
+boost/bparse.cpp
+boost/config.h
+boost/de.h
+boost/en.h
+boost/es.h
+boost/fr.h
+boost/lang.cpp
+boost/lang.h
+boost/mdate.cpp
+boost/mdate.h
+boost/mdaterc
+boost/names.h
+boost/pcode
+boost/pl.h
+coptions/Makefile
+coptions/README.approaches
+coptions/altrc
+coptions/bparse.cpp
+coptions/config.h
+coptions/de.h
+coptions/en.h
+coptions/es.h
+coptions/fr.h
+coptions/lang.cpp
+coptions/lang.h
+coptions/mdate.cpp
+coptions/mdate.h
+coptions/mdaterc
+coptions/names.h
+coptions/pl.h
+
+commit 8b7a1a24e3d24f260fa1bc137e128b1b99f78bd6
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Sat Apr 9 17:07:22 2011 +1000
+
+    removed all vestiges of -p and -g options
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+cmdline.cpp
+cmdline.h
+de.h
+en.h
+es.h
+fr.h
+lang.h
+main.cpp
+pl.h
+
+commit 271709489c4e042d6e37288800ddbc834c143058
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Sat Apr 9 16:23:32 2011 +1000
+
+    renamed boost/ to coptions/
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+coptions/Makefile
+coptions/README.approaches
+coptions/altrc
+coptions/bparse.cpp
+coptions/config.h
+coptions/de.h
+coptions/en.h
+coptions/es.h
+coptions/fr.h
+coptions/lang.cpp
+coptions/lang.h
+coptions/mdate.cpp
+coptions/mdate.h
+coptions/mdaterc
+coptions/names.h
+coptions/pl.h
+
+commit 07e2aefb02bac0ae0077f6d59ce829f0beede9fc
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Sat Apr 9 16:00:09 2011 +1000
+
+    readded boost subdir to follow commandline-approaches branch
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+boost/Makefile
+boost/altrc
+boost/bparse.cpp
+boost/config.h
+boost/de.h
+boost/en.h
+boost/es.h
+boost/fr.h
+boost/lang.cpp
+boost/lang.h
+boost/mdate.cpp
+boost/mdate.h
+boost/mdaterc
+boost/names.h
+boost/pcode
+boost/pl.h
+
+commit 6aea1d04278236191e2e0476345178322e796a4b
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Sat Apr 9 15:54:23 2011 +1000
+
+    removed boost subdir so as to add a topic branch dealing with alternate approaches to commandline handling
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+boost/Makefile
+boost/bparse.cpp
+boost/config.h
+boost/de.h
+boost/en.h
+boost/es.h
+boost/fr.h
+boost/lang.cpp
+boost/lang.h
+boost/mdate.cpp
+boost/mdate.h
+boost/names.h
+boost/pl.h
+
+commit 99ebadfe117a1e402c9a6287e9be7083f5b15972
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Sat Apr 9 02:17:23 2011 +1000
+
+    integrated configfile options
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+boost/bparse.cpp
+
+commit ec0a03ffd23aaed9a0ebb4c5f2136f1030f86d82
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Wed Apr 6 23:50:16 2011 +1000
+
+    tagged mdate v1.7.0.2
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+ChangeLog
+Makefile
+
 commit 6d3ab6fd3a97af03845c4c6b1df87844f1a964b5
 Author: Sean Dwyer <ewetoo@gmail.com>
 Date:   Wed Apr 6 23:45:53 2011 +1000
