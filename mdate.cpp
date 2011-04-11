@@ -123,12 +123,7 @@ bool julian::set_correlation(corr c)
 	if (c == cor_def) {
 		corr_set = 1;
 		return 1;
-	}
-	else if (c == cor_gmt) {
-		corr_set = 1;
-		return 1;
-	}
-	else {
+	} 	else { // user-defined correlation
 		cor_usr = c;
 		corr_set = 1;
 		return 1;
