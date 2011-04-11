@@ -19,7 +19,7 @@
 #include <cstdio>
 #include <cstdlib>
 #include <cstdarg>
-#include <string.h>
+#include <cstring>
 #include <sstream>
 
 #ifdef HAVE_UNISTD_H

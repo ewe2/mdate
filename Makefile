@@ -109,15 +109,6 @@ ifeq ($(target),mingw32-cross)
 	noi18n=1
 endif
 
-## define pretty if you want to use the old pretty output, otherwise we stick
-## with the default one-line hardcore date(1) stuff. This renders the -p flag
-## inoperative.
-pretty=
-
-ifeq ($(pretty),1)
-	DEFS+=-DWANT_PRETTY
-endif
-
 ## define newmayan if you want newfangled Mayan calendar month names 
 ## define oldmayan if you want default behaviour.
 ## you MUST define one!

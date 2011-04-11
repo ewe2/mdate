@@ -14,7 +14,7 @@
 #include "mdate.h"
 
 #include <cstdlib>
-#include <string.h>
+#include <cstring>
 #include <iostream>
 
 #ifdef HAVE_UNISTD_H
