@@ -8,6 +8,9 @@ implement jdn <-> julian dates. if possible, integrate into jdn<-> gregdates.
 
 implement CR and other calculations.
 
+implement unit testing for correlation/option processing bugs. boost should be
+able to catch much of this.
+
 For 1.6.x:
 
 alter development to release+patch branch and unstable branch, to manage

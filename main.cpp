@@ -66,7 +66,7 @@ int main (int argc, char *argv[])
 		(!args_info.longcount_given)){
 		
 		// Set up the correlation. unless we got an argument, go with the GMT
-		// default. This should be a conf file option
+		// default. This will be a conf file option.
 		if (args_info.correlation_given)
 			cor = args_info.correlation_arg;
 		else
@@ -74,15 +74,15 @@ int main (int argc, char *argv[])
 		
 		jdate.set_correlation(cor);
 		
-		// Today's Date
+		// Today's date. If unable, this is a system error.
 		if (!md.set_time(cor, &thedate)) {
 			cerr << MSG_GENERR;
 			::exit(1);
 		}
 			
-		
 		// Output according to format, if given. 
 		// The use of pretty-printing is restricted to mdate_strftime().
+		// Short-circuits any other option and exits processing!
 		if (args_info.format_given) {
 			datey = args_info.format_arg;
 			md.mdate_strftime(cor, &buffy, datey, thedate);
@@ -91,7 +91,8 @@ int main (int argc, char *argv[])
  			::exit(0);
 		}
 		
-		// Fall-through for default mdate dates, enforce the standard format.
+		// Default mdate dates, enforce the standard format.
+		// Exits processing by fall-through
 		datey=default_format;
 		md.mdate_strftime(cor,&buffy,datey,thedate);
 		cout << buffy.str() << endl;
@@ -142,6 +143,18 @@ int main (int argc, char *argv[])
 			ldate.set_longdate(ba,ka,tu,ui,ki);
 			md.jdate_from_longcount(cor, ldate, &thedate);
 		}
+
+		// Allow format arguments after -d or -l 
+		if (args_info.format_given ) {
+			datey=args_info.format_arg;
+		} else {
+			datey=default_format;
+		}
+		
+		// Actually format dates and output for -d -l and/or format
+		md.mdate_strftime(cor,&buffy,datey,thedate);
+		
+		std::cout << buffy.str() << endl;
 	}
  
 	return 0;
