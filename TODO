@@ -20,7 +20,12 @@ Ports:
 Re-port to freeBSD, which has some challenges.  For example, unicode is basically
 absent in 4.x-6.2, which is a problem for translation files which have to be
 in utf-8. I don't have a working freeBSD system. other considerations are the
-available tools (esp. for documentation) and filesystem conventions.
+available tools (esp. for documentation) and filesystem conventions. Get a
+freeBSD in the new 7.x series and work from that, if mdate is in ports contact
+maintainer.
+
+Re-port to mingw32 using boost, which may require Windows-specific alteration
+(particularly config file usage).
 
 Someone called Eric has ported 1.5.6 to the latest OSX (Snow Leopard) but
 hasn't got back to me about his binary. I no longer have a working OSX
@@ -33,24 +38,15 @@ irix port (i have an o2) but i doubt if there is any interest.
 Distros:
 
 mdate.spec is badly out of date and doesn't build on my Debian system at
-present. should try and fix it.
+present. Should try and fix it - a user has contributed a simple working spec
+for his system.
 
 Documentation:
 
-write something q&d to update 1.5.x versions across source files:
-README
-NEWS
-mdate.xml
-Makefile (also requires change to mdate-1-5-x)
-mdate.1
-
-Move to asciidoc format to ease multiformat output and simplify updates (eg by
-simple substitution).
+use asciidoc, see git documentation makefile for howto.
 
 Code:
 
-change our correlation possibilities to GMT1 (standard GMT),GMT2,GMT3(Lounsbury) 
-http://www.members.shaw.ca/mjfinley/corr.html : perhaps a -gmt(1|2|3) option
-instead.
+see above.
 
 Ignore this line, its a test.
