@@ -7,10 +7,6 @@
 #ifndef _cmdline_h
 #define _cmdline_h
 
-#ifdef __cplusplus
-extern "C" {
-#endif /* __cplusplus */
-
 /* Don't define PACKAGE and VERSION if we use automake.  */
 #ifdef HAVE_CONFIG_H
 #include "config.h"
@@ -52,7 +48,4 @@ int cmdline_parser (int argc, char * const *argv, struct gengetopt_args_info *ar
 void cmdline_parser_print_help(void);
 void cmdline_parser_print_version(void);
 
-#ifdef __cplusplus
-}
-#endif /* __cplusplus */
 #endif /* _cmdline_h */

@@ -14,7 +14,7 @@
 #include <cstdio>
 #include <cstdlib>
 #include <iostream>
-#include <string.h>
+#include <cstring>
 // If we use autoconf
 #ifdef HAVE_CONFIG_H
 #include "config.h"
