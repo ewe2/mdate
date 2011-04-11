@@ -26,7 +26,6 @@ extern "C" {
 #endif
 
 struct gengetopt_args_info {
-  int parseable_flag;	/* program-parseable output (default=off).  */
   double correlation_arg;	/* optional correlation (default=no).  */
   int dmy_arg1;	/* day month year (Gregorian).  */
   int dmy_arg2;
@@ -41,8 +40,6 @@ struct gengetopt_args_info {
 
   int help_given ;	/* Whether help was given.  */
   int version_given ;	/* Whether version was given.  */
-  int parseable_given ;	/* Whether parseable was given.  */
-  int gmt_given ;	/* Whether gmt was given.  */
   int correlation_given ;	/* Whether correlation was given.  */
   int dmy_given ;	/* Whether dmy was given.  */
   int julian_given ;	/* Whether julian was given.  */

@@ -213,17 +213,15 @@ public:
 
 // data fields
 private:
-	// couple of standard correlations, plus a spare one for the weird users.
+	// Default correlation and user-defined correlation.
 	corr cor_def;
-	corr cor_gmt;
 	corr cor_usr;
 };
 
-// gmt is now default, the -g option is ignored.
+// gmt is now default, the -g option removed for 1.7.x 
 inline julian::julian(void)
 {
 	cor_def = 584283.0L;
-	cor_gmt = 584283.0L;
 	// cor_usr is uninitialised so it can be set
 	corr_set = 0;
 }
@@ -233,16 +231,18 @@ inline julian::julian(void)
 
 //! Class mdate inherits several date objects to provide a simple interface
 //! for converting Western calendar dates to and from Mayan calendar dates via
-//! Julian Day numbers.
+//! Julian Day numbers. No operator overloading is used, so default
+//! constructor and copy constructors are used.
 
 class mdate : public longdate, gregdate, haabdate, tzolkindate, julian {
 public:
 	//constructor
 	mdate(void);
-	// destructor
-	// copy constructor
+	// default destructor
+	// default copy constructor
 	
-	// public display flag
+	// Originally used for an alternate display flag, now restricted to
+	// formatting via mdate_strftime() 
 	int pflag;
 	
 	// inheritance-dependent methods
@@ -254,7 +254,7 @@ public:
 	bool set_time(corr c, julian_date *to);
 };
 
-// constructor calls all parent constructors
+//! \func mdate::mdate(void) constructor initializes all parent constructors
 inline mdate::mdate(void)
 {
 	pflag = 0;

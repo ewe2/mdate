@@ -23,10 +23,10 @@ using namespace std;
 
 static char rcsid[] __attribute__ ((unused)) = "@(#) $Id$";
 
-// the massive big ooooge main thingy. this is all we do here, everything else
+// The massive big ooooge main thingy. this is all we do here, everything else
 // has been folded into other files.
  
-// there is one option, runtime language (-L) support, that is not tested for
+// There is one option, runtime language (-L) support, that is not tested for
 // use here, it's transparent. This could be a problem later.
  
 int main (int argc, char *argv[])
@@ -40,47 +40,49 @@ int main (int argc, char *argv[])
 	const char *datey=0;
 	std::stringstream buffy;
 
+	//TODO: c++-ify this.
 #ifdef USE_I18N
 	setlocale(LC_ALL,"");
 	bindtextdomain("mdate", LOCALEDIR);
 	textdomain("mdate");
 #endif
 
+	// Use Gengetopt-generated argument structure.
 	struct gengetopt_args_info args_info;
 
-	// run the parser
+	// Run the parser
 	if (cmdline_parser(argc, argv, &args_info) != 0)
 		::exit(1);
 	
-	// check misc. options
+	// Check misc. options
 	if (args_info.help_given)
 		cmdline_parser_print_help();
 	if (args_info.version_given)
 		cmdline_parser_print_version();
 
-	// if we didnt get a date option, process for today's date
+	// If we didnt get a date option, process for today's date
 	if ((!args_info.dmy_given) && 
 		(!args_info.julian_given) &&
 		(!args_info.longcount_given)){
 		
-		// set up the correlation. silently ignore gmt option
-		// this should be a conf file option
+		// Set up the correlation. unless we got an argument, go with the GMT
+		// default. This should be a conf file option
 		if (args_info.correlation_given)
 			cor = args_info.correlation_arg;
 		else
-			cor = 584285.0;
+			cor = 584283.0;
 		
 		jdate.set_correlation(cor);
 		
-		// today's date
+		// Today's Date
 		if (!md.set_time(cor, &thedate)) {
 			cerr << MSG_GENERR;
 			::exit(1);
 		}
 			
 		
-		// output according to format, this is a non-option argument so exit
-		// here when done.
+		// Output according to format, if given. 
+		// The use of pretty-printing is restricted to mdate_strftime().
 		if (args_info.format_given) {
 			datey = args_info.format_arg;
 			md.mdate_strftime(cor, &buffy, datey, thedate);
@@ -89,23 +91,22 @@ int main (int argc, char *argv[])
  			::exit(0);
 		}
 		
+		// Fall-through for default mdate dates, enforce the standard format.
 		datey=default_format;
 		md.mdate_strftime(cor,&buffy,datey,thedate);
 		cout << buffy.str() << endl;
 
 	} else {
-		// we got a -d, -j or -l option
-		// process correlation first
+		// We got a -d, -j or -l option
+		// Process correlation first
 		if (args_info.correlation_given)
 			cor = args_info.correlation_arg;
-		else if (args_info.gmt_given)
-			cor = 584283.0;
 		else
-			cor = 584285.0;
+			cor = 584283.0;
 		jdate.set_correlation(cor);
 		
-		// process -d
-		// dates are expected to be in "dd mm [-]yyyy" format
+		// Process -d
+		// Dates are expected to be in "dd mm [-]yyyy" format
 		if (args_info.dmy_given == 1) {
 			int day, month, year;
 			day = args_info.dmy_arg1;
@@ -116,9 +117,10 @@ int main (int argc, char *argv[])
 				cerr << MSG_IGD;
 				::exit(1);
 			}
-		}
-		// process -j
-		// jdn's are expected in double format
+		} // fall-through
+
+		// Process -j
+		// JDN's are expected in double format
 		else if (args_info.julian_given) {
 			double j;
 			j = args_info.julian_arg;
@@ -126,9 +128,10 @@ int main (int argc, char *argv[])
 				cerr << MSG_IJDN;
 				::exit(1);
 			}
-		}
-		// process -l
-		// longcounts are expected in "00 00 00 00 00" format
+		} // fall-through
+
+		// Process -l
+		// LongCounts are expected in "00 00 00 00 00" format
 		else if (args_info.longcount_given) {
 			int ba,ka,tu,ui,ki;
 			ba = args_info.longcount_arg1;
