@@ -11,6 +11,9 @@ implement CR and other calculations.
 implement unit testing for correlation/option processing bugs. boost should be
 able to catch much of this.
 
+look to replace dependency on c-only functions particularly snprintf and type
+conversion functions.
+
 For 1.6.x:
 
 alter development to release+patch branch and unstable branch, to manage
