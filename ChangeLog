@@ -8,6 +8,64 @@
 
 -- 
 
+commit 3db5997e6d508abf3744a9de118549fd1528ce52
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Tue Apr 12 04:47:55 2011 +1000
+
+    screwed up main processing, fixed and simplified. Added testing TODO
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+TODO
+main.cpp
+
+commit 8a7ad11180f5d74388fa38d07cf64f87b59c9155
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Tue Apr 12 04:28:59 2011 +1000
+
+    more c++ fixes
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+Makefile
+cmdline.cpp
+cmdline.h
+mdate.cpp
+mdate.h
+
+commit 9eece58b607ed81b066ee103c9ad2f19ad118900
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Mon Apr 11 18:09:36 2011 +1000
+
+    Updates
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+TODO
+
+commit 59fddcdc0df795ee62d3faf8df01781644363300
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Mon Apr 11 18:09:08 2011 +1000
+
+    further work and documentation on the removal of -p and -g commandline-options
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+cmdline.h
+main.cpp
+mdate.cpp
+mdate.h
+
+commit 7cf63766cdf7bb692d8860c47c22202794d2eca0
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Sat Apr 9 17:15:12 2011 +1000
+
+    changelog
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+ChangeLog
+
 commit 7d41e7190e3628a953f82f6d930cb8d0227f0b19
 Author: Sean Dwyer <ewetoo@gmail.com>
 Date:   Sat Apr 9 17:12:50 2011 +1000
