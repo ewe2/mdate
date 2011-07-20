@@ -198,10 +198,10 @@ ifeq ($(target),cygwin)
 	CC += $(INC)
 endif
 
-## linux mingw32 cross-compiler
-ifeq ($(target),mingw32-cross)
-	CC = i586-mingw32msvc-gcc
-	CXX = i586-mingw32msvc-g++
+## linux mingw64 cross-compiler, can output both 64 and 32bit code. default to 32 anyway
+ifeq ($(target),mingw64-cross)
+	CC = i686-w64-mingw32-gcc
+	CXX = i686-w64-mingw32-g++
 	CFLAGS += -mconsole -I.
 endif
 
@@ -277,6 +277,7 @@ installdoc: createdoc installman
 	cp $(HTMLDIR)/mdate.html $(HTMLDIR)/index.html
 
 ## dependencies
+<<<<<<< HEAD
 <<<<<<< HEAD
 $(OBJS): config.h 
 lang.o cmdline.o: lang.h
