@@ -5,7 +5,7 @@
 # Usage:
 #	make target=linux					# linux
 #	make target=cygwin					# cygwin 1.3.x
-#	make target=mingw32-cross mdate.exe	# linux (Debian) win32 cross-compile
+#	make target=mingw64-cross mdate.exe	# linux (Debian) win32 cross-compile
 #	gmake target=freebsd				# FreeBSD 4.x target
 #	make target=beos					# BeOS r5
 #	make target=osx						# Mac OSX 32-bit console
@@ -14,9 +14,8 @@
 # I can't guarantee the other targets will work, I haven't used Cygwin for
 # quite a while now, it's probably out of date. Fixes would be most welcome.
 #
-# Update: the latest Debian packages for the mingw32 cross-compiler AND the
-# latest getopt() source files fixes previous compilation issues for that
-# target: we now have a working win32 port.
+# I use the default 32bit target for mingw64 at present. If there is need I
+# can provide a 64bit target also.
 #
 # If the CFLAGS bother you, please dont change -ffloat-store which avoids
 # architecture-related problems.
@@ -104,7 +103,7 @@ nogetopt=
 noi18n=
 nodrem=1
 
-ifeq ($(target),mingw32-cross)
+ifeq ($(target),mingw64-cross)
 	nogetopt=1
 	noi18n=1
 endif
@@ -199,10 +198,10 @@ ifeq ($(target),cygwin)
 	CC += $(INC)
 endif
 
-## linux mingw32 cross-compiler
-ifeq ($(target),mingw32-cross)
-	CC = i586-mingw32msvc-gcc
-	CXX = i586-mingw32msvc-g++
+## linux mingw64 cross-compiler, can output both 64 and 32bit code. default to 32 anyway
+ifeq ($(target),mingw64-cross)
+	CC = i686-w64-mingw32-gcc
+	CXX = i686-w64-mingw32-g++
 	CFLAGS += -mconsole -I.
 endif
 
@@ -244,7 +243,7 @@ all: mdate
 mdate: $(OBJS)
 	$(CXX) $(CFLAGS) $(INC) -o mdate $(OBJS) $(LDFLAGS) $(LIBS)
 
-ifeq ($(target),mingw32-cross)
+ifeq ($(target),mingw64-cross)
 mdate.exe: all
 	-cp mdate mdate.exe
 endif
@@ -278,13 +277,19 @@ installdoc: createdoc installman
 	cp $(HTMLDIR)/mdate.html $(HTMLDIR)/index.html
 
 ## dependencies
-lang.o: lang.cpp config.h lang.h
-mdate.o: mdate.cpp config.h mdate.h
-cmdline.o: cmdline.cpp config.h mdate.h cmdline.h getopt.h lang.h
-main.o: main.cpp config.h mdate.h cmdline.h getopt.h
-getopt.o: getopt.c config.h getopt.h
-getopt1.o: getopt1.c config.h getopt.h
-snprintf.o: snprintf.c config.h
+$(OBJS): config.h 
+lang.o cmdline.o: lang.h
+mdate.o main.o: mdate.h
+cmdline.o main.o: cmdline.h
+cmdline.o main.o getopt.o getopt1.o: getopt.h
+
+#lang.o: lang.cpp lang.h
+#mdate.o: mdate.cpp mdate.h
+#cmdline.o: cmdline.cpp mdate.h cmdline.h getopt.h lang.h
+#main.o: main.cpp mdate.h cmdline.h getopt.h
+#getopt.o: getopt.c getopt.h
+#getopt1.o: getopt1.c getopt.h
+#snprintf.o: snprintf.c
 
 distclean: clean docclean
 
@@ -380,7 +385,7 @@ help:
 	@echo "Usage:"
 	@echo "	make target=linux"
 	@echo "	make target=cygwin"
-	@echo "	make target=mingw32-cross mdate.exe"
+	@echo "	make target=mingw64-cross mdate.exe"
 	@echo "	make target=beos"
 	@echo "	gmake target=freebsd"
 	@echo "	make target=osx"
