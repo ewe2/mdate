@@ -1,9 +1,9 @@
 Mdate++ 1.7.0  Copyright(c) 1998-2011 Sean Dwyer <ewe2@users.sourceforge.net>
 =============================================================================
 
-Mdate++ is really Mdate 1.2.8 rewritten in C++, folding in libmdate 0.0.5, and
-removing autoconf facilities. It is distributed under the terms of the GNU
-General Public License version 2.
+Mdate++ is descended from Mdate 1.2.8 rewritten in C++, folding in libmdate
+0.0.5, and removing autoconf facilities. It is distributed under the terms of
+the GNU General Public License version 2.
 
 This version conforms to the GNU getopt command-line conventions (with help
 from gengetopt) and introduces new correlation options. More features will be
