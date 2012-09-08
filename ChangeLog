@@ -8,6 +8,58 @@
 
 -- 
 
+commit 108d3139fb014dae1ff99c2bc60edeee4f3742f2
+Merge: 7035496 bab46ea
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Sat Jul 28 18:54:04 2012 +1000
+
+    Merge branch 'devel' of ssh://git.pengsheep.org/~ewe2/devel/md into devel
+    
+    fixing branch merges between netstor and marvin before merging with origin
+
+commit 7035496cc4e71bf9aa86257e1caa3d82a05d6c37
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Sat Jul 28 18:44:09 2012 +1000
+
+    mingw and code generation updates
+
+Makefile
+
+commit bab46ea8bc860d0d435ef8c6ea101ff967a26c48
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Fri Jul 13 13:39:21 2012 +1000
+
+    base around core2, update mingw compiler chain
+
+Makefile
+
+commit 4fa217d968c3db36552112dc6ef53a834eb22471
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Thu Jul 21 00:28:26 2011 +1000
+
+    minor doc update
+
+README
+
+commit edb3f0c7108159ba0de0cf263131fad6ec157bb5
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Thu Jul 21 00:27:42 2011 +1000
+
+    Refactored for mingw64 32bit builds and use prerequisite dependencies
+
+Makefile
+
+commit 9ec5c284c3482f95111362d26c3baed7b0e19107
+Author: Sean Dwyer <ewetoo@gmail.com>
+Date:   Tue Apr 12 22:17:25 2011 +1000
+
+    update documentation
+    
+    Signed-off-by: Sean Dwyer <ewetoo@gmail.com>
+
+ChangeLog
+TODO
+
 commit 3db5997e6d508abf3744a9de118549fd1528ce52
 Author: Sean Dwyer <ewetoo@gmail.com>
 Date:   Tue Apr 12 04:47:55 2011 +1000
