@@ -5,7 +5,7 @@
 # Usage:
 #	make target=linux					# linux
 #	make target=cygwin					# cygwin 1.3.x
-#	make target=mingw32-cross mdate.exe	# linux (Debian) win32 cross-compile
+#	make target=mingw64-cross mdate.exe	# linux (Debian) win32 cross-compile
 #	gmake target=freebsd				# FreeBSD 4.x target
 #	make target=beos					# BeOS r5
 #	make target=osx						# Mac OSX 32-bit console
@@ -14,9 +14,8 @@
 # I can't guarantee the other targets will work, I haven't used Cygwin for
 # quite a while now, it's probably out of date. Fixes would be most welcome.
 #
-# Update: the latest Debian packages for the mingw32 cross-compiler AND the
-# latest getopt() source files fixes previous compilation issues for that
-# target: we now have a working win32 port.
+# I use the default 32bit target for mingw64 at present. If there is need I
+# can provide a 64bit target also.
 #
 # If the CFLAGS bother you, please dont change -ffloat-store which avoids
 # architecture-related problems.
@@ -37,8 +36,8 @@
 .SUFFIXES: .c .cpp .exe .o .obj
 
 PACKAGE=mdate
-VERSION=1.6.0.2
-DEVVER=1.7.0
+VERSION=1.7.0
+DEVVER=1.7.0.2
 
 # tagging for release and development. development branch should be tagged
 # DEVTAG when release master is done.
@@ -104,18 +103,9 @@ nogetopt=
 noi18n=
 nodrem=1
 
-ifeq ($(target),mingw32-cross)
+ifeq ($(target),mingw64-cross)
 	nogetopt=1
 	noi18n=1
-endif
-
-## define pretty if you want to use the old pretty output, otherwise we stick
-## with the default one-line hardcore date(1) stuff. This renders the -p flag
-## inoperative.
-pretty=
-
-ifeq ($(pretty),1)
-	DEFS+=-DWANT_PRETTY
 endif
 
 ## define newmayan if you want newfangled Mayan calendar month names 
@@ -169,7 +159,7 @@ CXXFLAGS=$(CFLAGS) -fno-rtti
 LIBS=-lm
 
 ## define debug if you want to help debug mdate with gdb. otherwise, ignore.
-debug=
+debug=1
 
 ifeq ($(debug),1)
 	CFLAGS+=-g
@@ -185,7 +175,7 @@ endif
 ifeq ($(target),linux)
 # A Pentium II or above is i686. Doubtful that multiprocessor optimizations are
 # useful here.
-	CFLAGS += -mtune=pentium-m $(INC)
+	CFLAGS += -mtune=core2 $(INC)
 # an example for my net box AMD K6-2
 #	CFLAGS += -march=i386 -mcpu=i586
 endif
@@ -208,10 +198,11 @@ ifeq ($(target),cygwin)
 	CC += $(INC)
 endif
 
-## linux mingw32 cross-compiler
-ifeq ($(target),mingw32-cross)
-	CC = i586-mingw32msvc-gcc
-	CXX = i586-mingw32msvc-g++
+## linux mingw64 cross-compiler, can output both 64 and 32bit code. Default to
+## 64bit unless you need 32bit help (alter the x86_64 to i686).
+ifeq ($(target),mingw64-cross)
+	CC = x86_64-w64-mingw32-gcc
+	CXX = x86_64-w64-mingw32-g++
 	CFLAGS += -mconsole -I.
 endif
 
@@ -219,7 +210,7 @@ endif
 ifeq ($(target),beos)
 	INC=
 	CXXFLAGS += -I/boot/home/config/include -I./
-	CC= gcpp
+	CC= gcc
 	LIBS=-L/boot/home/config/lib -lintl
 endif
 
@@ -231,7 +222,7 @@ endif
 ## builds universal binaries, this will likely become default. ld up to 10.4.6
 ## does not support the -Wl syntax but may in the future, search Xcode docs for
 ## compiling universal binaries in the porting guide section. You shouldn't
-## need them here as gcpp will pass the link flags on.
+## need them here as gcc will pass the link flags on.
 ##
 ## If compiling on Leopard, you have the option of the old MacOSX10.4u.sdk or the new one
 ##
@@ -248,48 +239,21 @@ endif
 all: mdate
 
 .PHONY: help clean docclean distclean gitch updategit reltag devtag
+# need this for directory search
 
 mdate: $(OBJS)
 	$(CXX) $(CFLAGS) $(INC) -o mdate $(OBJS) $(LDFLAGS) $(LIBS)
 
-ifeq ($(target),mingw32-cross)
+ifeq ($(target),mingw64-cross)
 mdate.exe: all
 	-cp mdate mdate.exe
 endif
 
 ## documentation targets
 
-# temporary direct make for Polish mdate docs until we have enough languages
-# to justify unifying the make. this is well out of date and is no longer
-# supported.
-
-#ifeq ($(DEF_PL),1)
-#mdate_pl.html: mdate_pl.sgml
-#	[ -f mdate_pl.html ] || sgml2html -H header -F footer mdate_pl.sgml
-#endif
-
-createdoc: mdate.pdf mdate.html mdate.ps mdate.txt
-
-# prevent the HTML docs being accidently remade
-mdate.html:	mdate.xml
-	[ -f mdate.html ] || ./db2html $< > mdate.html 
-
-# we build mdate.txt from html2text now as there are issues with fop
-# translation
-mdate.txt: mdate.html
-	[ -f mdate.txt ] || html2text -nobs -style pretty $< > mdate.txt 
-
-# optional tidy target. it upsets make but works
-htmltidy: mdate.html
-	cat $< | tidy -q -m -o mdate.html
-
-# these will require fop, xsltproc will create an intermediate *.fo which can
-# later be deleted
-mdate.ps: mdate.xml
-	./db2fo --ps $<
-
-mdate.pdf: mdate.xml
-	./db2fo $<
+# pass the doc stuff off to a submake in doc/
+createdoc:
+	cd doc && $(MAKE)
 
 ## install targets
 
@@ -301,15 +265,12 @@ installbin: mdate installman
 
 installman: mdate
 	[ -d $(MANDIR) ] || mkdir -p $(MANDIR); \
-    install -m 644 mdate.1 $(MANDIR); \
+    install -m 644 doc/mdate.1 $(MANDIR); \
     gzip -9f $(MANDIR)/mdate.1
 		
 
 installdoc: createdoc installman
 	[ -d $(DOCDIR) ] || mkdir -p $(DOCDIR); \
-	install -m 644  mdate.dvi mdate.ps $(DOCDIR); \
-	gzip $(DOCDIR)/mdate.dvi $(DOCDIR)/mdate.ps; \
-	install -m 644 mdate.text $(DOCDIR);	gzip $(DOCDIR)/mdate.text ; \
 	install -m 644  README NEWS ChangeLog GPL API $(DOCDIR); \
 	install -m 644  AUTHORS Translators $(DOCDIR); \
 	[ -d $(HTMLDIR) ] || mkdir -p $(HTMLDIR); \
@@ -317,20 +278,26 @@ installdoc: createdoc installman
 	cp $(HTMLDIR)/mdate.html $(HTMLDIR)/index.html
 
 ## dependencies
-lang.o: lang.cpp config.h lang.h
-mdate.o: mdate.cpp config.h mdate.h
-cmdline.o: cmdline.cpp config.h mdate.h cmdline.h getopt.h lang.h
-main.o: main.cpp config.h mdate.h cmdline.h getopt.h
-getopt.o: getopt.c config.h getopt.h
-getopt1.o: getopt1.c config.h getopt.h
-snprintf.o: snprintf.c config.h
+$(OBJS): config.h 
+lang.o cmdline.o: lang.h
+mdate.o main.o: mdate.h
+cmdline.o main.o: cmdline.h
+cmdline.o main.o getopt.o getopt1.o: getopt.h
+
+#lang.o: lang.cpp lang.h
+#mdate.o: mdate.cpp mdate.h
+#cmdline.o: cmdline.cpp mdate.h cmdline.h getopt.h lang.h
+#main.o: main.cpp mdate.h cmdline.h getopt.h
+#getopt.o: getopt.c getopt.h
+#getopt1.o: getopt1.c getopt.h
+#snprintf.o: snprintf.c
 
 distclean: clean docclean
 
 SOURCES=*.cpp *.c *.h
-DOX=mdate.html mdate.pdf mdate.txt NEWS README GPL API ChangeLog \
-AUTHORS mdate.xml Translators mdate.1 BUGS ChangeLog.old README.devel
-CONFS=Makefile mdate.spec ChangeLog.header .gitattributes .gitignore mdate.xpr
+DOX=doc/mdate.html doc/mdate.pdf doc/mdate.txt NEWS README GPL API ChangeLog \
+AUTHORS doc/mdate.xml Translators doc/mdate.1 BUGS ChangeLog.old README.devel
+CONFS=Makefile mdate.spec ChangeLog.header .gitattributes .gitignore
 DEBCONF=debian/*
 DISTFILES= $(SOURCES) $(DOX) $(CONFS)
 
@@ -352,7 +319,7 @@ reltag:
 	GIT_COMMITER_DATE=`date +'%F %R'` git tag -s -m "mdate $(RELTAG)" $(RELTAG) $(com)
 
 devtag:
-	GIT_COMMITTER_DATE=`date +'%f %R'` git tag -s -m "mdate $(DEVTAG)" $(DEVTAG) $(com)
+	GIT_COMMITTER_DATE=`date +'%F %R'` git tag -s -m "mdate $(DEVTAG)" $(DEVTAG) $(com)
 
 # Retained for historical use, do not use.
 # svn2cl has now been debianized so i am using that with appropriate flags.
@@ -411,28 +378,26 @@ deb:
 clean:
 	-rm -f mdate $(OBJS) *.o mdate.exe *~ *core
 
-foclean:
-	-rm -f *.fo
-	
-docclean: foclean
-	-rm -f *.bak
+docclean: 
+	cd doc && $(MAKE) docclean
 
 help:
 	@echo " "
 	@echo "Usage:"
 	@echo "	make target=linux"
 	@echo "	make target=cygwin"
-	@echo "	make target=mingw32-cross mdate.exe"
+	@echo "	make target=mingw64-cross mdate.exe"
 	@echo "	make target=beos"
 	@echo "	gmake target=freebsd"
 	@echo "	make target=osx"
 	@echo "	make target=uniosx"
 	@echo " "
 	@echo "Dev targets:"
-	@echo "	make gitch   - use git to update Changelog"
-	@echo "	make devtag  - tag src for development"
-	@echo "	make reltag  - tag src for release"
-	@echo "	make devdist - nightly tarballs"
-	@echo "	make reldist - release tarballs"
-	@echo "	make rpm     - rpm package"
-	@echo "	make deb     - deb package"
+	@echo "	make gitch     - use git to update Changelog"
+	@echo "	make devtag    - tag src for development"
+	@echo "	make reltag    - tag src for release"
+	@echo "	make devdist   - nightly tarballs"
+	@echo "	make reldist   - release tarballs"
+	@echo " make createdoc - generate documentation"
+	@echo "	make rpm       - rpm package"
+	@echo "	make deb       - deb package"
