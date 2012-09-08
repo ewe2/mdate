@@ -514,12 +514,12 @@ void mdate::mdate_strftime(corr c, std::stringstream *to, const char *format, ju
 	tzolkindate tdate;
 
     if (!ldate.longcount_from_jdate(c, thedate,	&ldate)) {
-		std::cerr << MSG_LONGERR;
+		cerr << MSG_LONGERR;
 		::exit(1);
 	}
 
 	if (!md.gregdate_from_jdate(c, thedate, &gdate)) {
-		std::cerr << MSG_GENERR;
+		cerr << MSG_GENERR;
 		::exit(1);
 	}
 
@@ -615,7 +615,7 @@ void mdate::mdate_strftime(corr c, std::stringstream *to, const char *format, ju
 				case 'n': *to << "\n"; break;
 				case 'j': *to << "\t"; break; // use a spare identifier
 				default:
-					std::cerr << MSG_FORMATERR;
+					cerr << MSG_FORMATERR;
 					break;
 			}
 			if(tempdate) {
@@ -639,7 +639,7 @@ bool mdate::set_time(corr c, julian_date *to)
 	t = time(NULL);
 	today = localtime(&t);
 	if (!md.jdate_from_tm(c, *today, to)) {
-		std::cerr << MSG_GENERR;
+		cerr << MSG_GENERR;
 		return 0;
 	}
 	return 1;
