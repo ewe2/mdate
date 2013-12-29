@@ -199,10 +199,10 @@ ifeq ($(target),cygwin)
 endif
 
 ## linux mingw64 cross-compiler, can output both 64 and 32bit code. Default to
-## 64bit unless you need 32bit help (alter the x86_64 to i686).
+## 64bit unless you need 32bit help (alter the x86_64 to i586).
 ifeq ($(target),mingw64-cross)
-	CC = x86_64-w64-mingw32-gcc
-	CXX = x86_64-w64-mingw32-g++
+	CC = i586-mingw32msvc-gcc
+	CXX = i586-mingw32msvc-g++
 	CFLAGS += -mconsole -I.
 endif
 
