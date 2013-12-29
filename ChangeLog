@@ -754,7 +754,6 @@ Date:   Mon Feb 28 22:58:29 2011 +1100
 ChangeLog
 Makefile
 
->>>>>>> ChangeLog update
 commit 14cbf9db282affe5c875c1a238cacf3a36ba5913
 Author: Sean Dwyer <ewetoo@gmail.com>
 Date:   Mon Feb 28 22:44:51 2011 +1100

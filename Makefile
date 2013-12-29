@@ -278,8 +278,6 @@ installdoc: createdoc installman
 	cp $(HTMLDIR)/mdate.html $(HTMLDIR)/index.html
 
 ## dependencies
-<<<<<<< HEAD
-<<<<<<< HEAD
 $(OBJS): config.h 
 lang.o cmdline.o: lang.h
 mdate.o main.o: mdate.h

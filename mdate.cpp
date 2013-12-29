@@ -37,7 +37,7 @@
 
 using namespace std;
 
-//! \var VCS version 
+//! \var VCS version
 static char rcsid[] __attribute__ ((unused)) = "@(#) $Id$";
 
 //! \def AMOD(x,y)
