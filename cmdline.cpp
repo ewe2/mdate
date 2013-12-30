@@ -8,7 +8,7 @@
 //  gengetopt output files to be in the public domain:
 //  we make no copyright claims on it.
 //
-// cmdline.cc - Copyright(c) under GPL 2003-2011 Sean Dwyer <ewe2@users.sourceforge.net>
+// cmdline.cc - Copyright(c) under GPL 2003-2013 Sean Dwyer <ewe2@users.sourceforge.net>
 // hacked around a bit from the original generated cmdline.c
 
 #include <cstdio>
@@ -46,7 +46,7 @@ void
 cmdline_parser_print_version (void)
 {
 	cout << PACKAGE << " " << VERSION << endl;
-	cout << "Copyright(c) 1998-2011 Sean Dwyer <ewe2@users.sourceforge.net>" << endl;
+	cout << "Copyright(c) 1998-2013 Sean Dwyer <ewe2@users.sourceforge.net>" << endl;
 }
 
 void
