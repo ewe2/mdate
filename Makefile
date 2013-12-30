@@ -37,7 +37,7 @@
 
 PACKAGE=mdate
 VERSION=1.7.0.3
-DEVVER=1.7.0.4
+DEVVER=1.8.0.0
 
 # tagging for release and development. development branch should be tagged
 # DEVTAG when release master is done.
